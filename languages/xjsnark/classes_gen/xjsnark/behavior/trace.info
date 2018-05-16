@@ -49,9 +49,6 @@
     <file name="FieldRecord_BehaviorDescriptor.java">
       <unit at="14,0,26,0" name="xjsnark.behavior.FieldRecord_BehaviorDescriptor" />
     </file>
-    <file name="GadgetDefinition_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="xjsnark.behavior.GadgetDefinition_BehaviorDescriptor" />
-    </file>
     <file name="InitEmptyMemory_BehaviorDescriptor.java">
       <unit at="12,0,21,0" name="xjsnark.behavior.InitEmptyMemory_BehaviorDescriptor" />
     </file>
