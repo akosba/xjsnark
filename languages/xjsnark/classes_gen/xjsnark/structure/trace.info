@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="13,0,193,0" name="xjsnark.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:ac758f58-669f-4ccd-a922-880e27e69e02(xjsnark.structure)/1186668138191">
+    <file name="BigDecimal_PropertySupport.java">
+      <node id="1186668138191" at="8,44,9,28" concept="4" />
+      <node id="1186668138191" at="10,24,11,21" concept="1" />
+      <node id="1186668138191" at="12,12,13,24" concept="1" />
+      <node id="1186668138191" at="14,5,15,49" concept="5" />
+      <node id="1186668138191" at="12,10,14,5" concept="0" />
+      <node id="1186668138191" at="9,28,14,5" concept="2" />
+      <node id="1186668138191" at="8,0,17,0" concept="3" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <scope id="1186668138191" at="10,24,11,21" />
+      <scope id="1186668138191" at="12,12,13,24" />
+      <scope id="1186668138191" at="8,44,15,49">
+        <var name="testValue" id="1186668138191" />
+      </scope>
+      <scope id="1186668138191" at="8,0,17,0">
+        <var name="value" id="1186668138191" />
+      </scope>
+      <unit id="1186668138191" at="7,0,18,0" name="xjsnark.structure.BigDecimal_PropertySupport" />
+    </file>
+  </root>
+  <root nodeRef="r:ac758f58-669f-4ccd-a922-880e27e69e02(xjsnark.structure)/9006659968700044564">
+    <file name="JUnsignedBigIntegerDecimalConstantString_PropertySupport.java">
+      <node id="9006659968700044564" at="8,44,9,28" concept="4" />
+      <node id="9006659968700044564" at="10,24,11,21" concept="1" />
+      <node id="9006659968700044564" at="12,12,13,24" concept="1" />
+      <node id="9006659968700044564" at="14,5,15,44" concept="5" />
+      <node id="9006659968700044564" at="12,10,14,5" concept="0" />
+      <node id="9006659968700044564" at="9,28,14,5" concept="2" />
+      <node id="9006659968700044564" at="8,0,17,0" concept="3" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <scope id="9006659968700044564" at="10,24,11,21" />
+      <scope id="9006659968700044564" at="12,12,13,24" />
+      <scope id="9006659968700044564" at="8,44,15,44">
+        <var name="testValue" id="9006659968700044564" />
+      </scope>
+      <scope id="9006659968700044564" at="8,0,17,0">
+        <var name="value" id="9006659968700044564" />
+      </scope>
+      <unit id="9006659968700044564" at="7,0,18,0" name="xjsnark.structure.JUnsignedBigIntegerDecimalConstantString_PropertySupport" />
+    </file>
+  </root>
+  <root nodeRef="r:ac758f58-669f-4ccd-a922-880e27e69e02(xjsnark.structure)/9006659968700047670">
+    <file name="JUnsignedBigIntegerHexConstantString_PropertySupport.java">
+      <node id="9006659968700047670" at="8,44,9,28" concept="4" />
+      <node id="9006659968700047670" at="10,24,11,21" concept="1" />
+      <node id="9006659968700047670" at="12,12,13,24" concept="1" />
+      <node id="9006659968700047670" at="14,5,15,52" concept="5" />
+      <node id="9006659968700047670" at="12,10,14,5" concept="0" />
+      <node id="9006659968700047670" at="9,28,14,5" concept="2" />
+      <node id="9006659968700047670" at="8,0,17,0" concept="3" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <scope id="9006659968700047670" at="10,24,11,21" />
+      <scope id="9006659968700047670" at="12,12,13,24" />
+      <scope id="9006659968700047670" at="8,44,15,52">
+        <var name="testValue" id="9006659968700047670" />
+      </scope>
+      <scope id="9006659968700047670" at="8,0,17,0">
+        <var name="value" id="9006659968700047670" />
+      </scope>
+      <unit id="9006659968700047670" at="7,0,18,0" name="xjsnark.structure.JUnsignedBigIntegerHexConstantString_PropertySupport" />
+    </file>
+  </root>
+</debug-info>
+
