@@ -43,9 +43,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1c95ad2L, "xjsnark.structure.FieldRecord"))) {
         return Collections.<ConceptEditor>singletonList(new FieldRecord_Editor());
       }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x701def9dcb923556L, "xjsnark.structure.GadgetDefinition"))) {
-        return Collections.<ConceptEditor>singletonList(new GadgetDefinition_Editor());
-      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x6804d86d4aa4dbc1L, "xjsnark.structure.InitEmptyMemory"))) {
         return Collections.<ConceptEditor>singletonList(new InitEmptyMemory_Editor());
       }

@@ -491,19 +491,6 @@
       <ref role="20lvS9" node="6zlb0z1MlFi" resolve="FieldRecord" />
     </node>
   </node>
-  <node concept="1TIwiD" id="70tVTRb$zlm">
-    <property role="1pbfSe" value="1001399539" />
-    <property role="TrG5h" value="GadgetDefinition" />
-    <property role="19KtqR" value="true" />
-    <property role="3GE5qa" value="Roots" />
-    <ref role="1TJDcQ" to="tpee:fz12cDA" resolve="ClassConcept" />
-    <node concept="1TJgyj" id="70tVTRb$zlp" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="witnessBlock" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3BesNbzZ3D$" resolve="WitnessBlock" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6jbzUkk0jsV">
     <property role="1pbfSe" value="2026686176" />
     <property role="TrG5h" value="ProgramDefinition" />

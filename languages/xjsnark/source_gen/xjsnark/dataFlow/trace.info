@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root>
+    <file name="DFABuilders.java">
+      <unit at="8,0,16,0" name="xjsnark.dataFlow.DFABuilders" />
+    </file>
+  </root>
+  <root nodeRef="r:0a902ec2-2c53-4437-8026-0ad15a6a0c9f(xjsnark.dataFlow)/1661166907730830640">
+    <file name="VerifyEqStatement_DataFlow.java">
+      <node id="1661166907730835678" at="15,102,16,217" concept="1" />
+      <node id="1661166907730836778" at="16,217,17,217" concept="1" />
+      <node id="1661166907730830640" at="13,0,15,0" concept="0" trace="VerifyEqStatement_DataFlow#()V" />
+      <node id="1661166907730830640" at="15,0,19,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1661166907730830640" at="13,39,13,39" />
+      <scope id="1661166907730830640" at="13,0,15,0" />
+      <scope id="1661166907730830642" at="15,102,17,217" />
+      <scope id="1661166907730830640" at="15,0,19,0">
+        <var name="_context" id="1661166907730830640" />
+        <var name="operationContext" id="1661166907730830640" />
+      </scope>
+      <unit id="1661166907730830640" at="12,0,20,0" name="xjsnark.dataFlow.VerifyEqStatement_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:0a902ec2-2c53-4437-8026-0ad15a6a0c9f(xjsnark.dataFlow)/2280652580003145282">
+    <file name="MemoryAccessExpression_DataFlow.java">
+      <node id="1207074635460" at="15,102,16,219" concept="1" />
+      <node id="1207074640225" at="16,219,17,218" concept="1" />
+      <node id="2280652580003145282" at="13,0,15,0" concept="0" trace="MemoryAccessExpression_DataFlow#()V" />
+      <node id="2280652580003145282" at="15,0,19,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="2280652580003145282" at="13,44,13,44" />
+      <scope id="2280652580003145282" at="13,0,15,0" />
+      <scope id="2280652580003145284" at="15,102,17,218" />
+      <scope id="2280652580003145282" at="15,0,19,0">
+        <var name="_context" id="2280652580003145282" />
+        <var name="operationContext" id="2280652580003145282" />
+      </scope>
+      <unit id="2280652580003145282" at="12,0,20,0" name="xjsnark.dataFlow.MemoryAccessExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:0a902ec2-2c53-4437-8026-0ad15a6a0c9f(xjsnark.dataFlow)/7495353643727825518">
+    <file name="InitMemory_DataFlow.java">
+      <node id="7495353643727825521" at="15,102,16,217" concept="1" />
+      <node id="7495353643727827054" at="16,217,17,221" concept="1" />
+      <node id="7495353643727825518" at="13,0,15,0" concept="0" trace="InitMemory_DataFlow#()V" />
+      <node id="7495353643727825518" at="15,0,19,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="7495353643727825518" at="13,32,13,32" />
+      <scope id="7495353643727825518" at="13,0,15,0" />
+      <scope id="7495353643727825520" at="15,102,17,221" />
+      <scope id="7495353643727825518" at="15,0,19,0">
+        <var name="_context" id="7495353643727825518" />
+        <var name="operationContext" id="7495353643727825518" />
+      </scope>
+      <unit id="7495353643727825518" at="12,0,20,0" name="xjsnark.dataFlow.InitMemory_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:0a902ec2-2c53-4437-8026-0ad15a6a0c9f(xjsnark.dataFlow)/7495353643727900657">
+    <file name="BoundedLoop_DataFlow.java">
+      <node id="7495353643727900660" at="15,102,16,216" concept="1" />
+      <node id="7495353643727900664" at="16,216,17,208" concept="1" />
+      <node id="7495353643727900657" at="13,0,15,0" concept="0" trace="BoundedLoop_DataFlow#()V" />
+      <node id="7495353643727900657" at="15,0,19,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="7495353643727900657" at="13,33,13,33" />
+      <scope id="7495353643727900657" at="13,0,15,0" />
+      <scope id="7495353643727900659" at="15,102,17,208" />
+      <scope id="7495353643727900657" at="15,0,19,0">
+        <var name="_context" id="7495353643727900657" />
+        <var name="operationContext" id="7495353643727900657" />
+      </scope>
+      <unit id="7495353643727900657" at="12,0,20,0" name="xjsnark.dataFlow.BoundedLoop_DataFlow" />
+    </file>
+  </root>
+</debug-info>
+

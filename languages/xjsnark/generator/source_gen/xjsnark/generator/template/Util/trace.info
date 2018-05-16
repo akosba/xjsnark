@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="7,0,10,0" name="xjsnark.generator.template.Util.QueriesGenerated" />
+    </file>
+  </root>
+</debug-info>
+
