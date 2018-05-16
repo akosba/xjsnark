@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/xjsnark/runtime/xjsnark.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/xjsnark/sandbox/xjsnark.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/xjsnark/xjsnark.mpl" folder="" />
+    </projectModules>
+  </component>
+</project>
