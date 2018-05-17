@@ -894,10 +894,11 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2qKKpuf7Ezz" role="3cqZAp" />
         <node concept="3clFbF" id="6w4Q6P5ZHXf" role="3cqZAp">
           <node concept="37vLTI" id="6w4Q6P5ZJH7" role="3clFbG">
             <node concept="Xl_RD" id="6w4Q6P5ZJI1" role="37vLTx">
-              <property role="Xl_RC" value="Entry point for the circuit. Input and witness vars/arrays/structs must be instantiated outside this method" />
+              <property role="Xl_RC" value="Entry point for the circuit. Input and witness arrays/structs must be instantiated outside this method" />
             </node>
             <node concept="2OqwBi" id="6w4Q6P5ZJqw" role="37vLTJ">
               <node concept="37vLTw" id="6w4Q6P5ZHXd" role="2Oq$k0">
