@@ -13,7 +13,7 @@ import java.math.BigInteger;
 import xjsnark.behavior.FieldRecord__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import circuit.auxTypes.UnsignedInteger;
+import backend.auxTypes.UnsignedInteger;
 
 public class Helper {
 

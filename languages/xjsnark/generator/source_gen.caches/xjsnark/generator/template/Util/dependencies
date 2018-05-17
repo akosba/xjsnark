@@ -2,7 +2,7 @@
 <dependenciesRoot>
   <dependency className="xjsnark.generator.template.Util.ConditionalScope" file="ConditionalScope.java" />
   <dependency className="xjsnark.generator.template.Util.Helper" file="Helper.java">
-    <classNode dependClassName="circuit.auxTypes.UnsignedInteger" />
+    <classNode dependClassName="backend.auxTypes.UnsignedInteger" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.math.BigInteger" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />

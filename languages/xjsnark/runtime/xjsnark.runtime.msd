@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="xjsnark.runtime" uuid="1e4d45b9-368c-4e87-8555-ad69375f82e7" moduleVersion="0" compileInMPS="true">
+<solution name="xjsnark.runtime" uuid="1e4d45b9-368c-4e87-8555-ad69375f82e7" moduleVersion="0" compileInMPS="false">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -8,6 +8,9 @@
       <sourceRoot location="lib/xjsnark_backend.jar" />
     </modelRoot>
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/lib/xjsnark_backend.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>

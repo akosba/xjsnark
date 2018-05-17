@@ -10,7 +10,8 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="qciv" ref="d75a086c-8c0a-40e5-aa41-48619e88bf42/java:circuit.config(CircuitLanguage.runtime/)" />
+    <import index="vj8y" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#1e4d45b9-368c-4e87-8555-ad69375f82e7(jetbrains.mps.lang.project.modules/module.xjsnark.runtime@project_stub)" />
+    <import index="85wc" ref="1e4d45b9-368c-4e87-8555-ad69375f82e7/java:backend.config(xjsnark.runtime/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -118,7 +119,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -1036,7 +1039,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="RCON" />
       <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="6w4Q6Pf_1VU" role="1B3o_S" />
+      <node concept="3Tm1VV" id="65efhJEdpja" role="1B3o_S" />
       <node concept="10Q1$e" id="6w4Q6Pf_24o" role="1tU5fm">
         <node concept="10Oyi0" id="6w4Q6Pf_23V" role="10Q1$1" />
       </node>
@@ -1100,14 +1103,14 @@
     </node>
     <node concept="2tJIrI" id="6w4Q6Pf_4cQ" role="jymVt" />
     <node concept="DJdLC" id="6w4Q6Pf_7Ns" role="jymVt">
-      <property role="DRO8Q" value="We use java native types for constants" />
+      <property role="DRO8Q" value="We use java native types for constants above (easier for copy-paste from java sources)" />
     </node>
-    <node concept="2tJIrI" id="6w4Q6Pf_8_2" role="jymVt" />
+    <node concept="2tJIrI" id="65efhJEhqSB" role="jymVt" />
     <node concept="DJdLC" id="6w4Q6Pf_9eo" role="jymVt">
       <property role="DRO8Q" value="To define the circuit variables, we use xjsnark parametrized types" />
     </node>
     <node concept="DJdLC" id="6w4Q6Pf_bhR" role="jymVt">
-      <property role="DRO8Q" value="private here is the native java visibility " />
+      <property role="DRO8Q" value="Note that &quot;private&quot; here is the native java visibility and is not related to what xjsnark does" />
     </node>
     <node concept="312cEg" id="6w4Q6Pf_4QU" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -1241,7 +1244,7 @@
         <node concept="3clFbH" id="6w4Q6Pf_ax_" role="3cqZAp" />
         <node concept="3SKdUt" id="6w4Q6Pf_an9" role="3cqZAp">
           <node concept="3SKdUq" id="6w4Q6Pf_anb" role="3SKWNk">
-            <property role="3SKdUp" value="convert the SBOX to xjsnark types" />
+            <property role="3SKdUp" value="convert the SBOX to xjsnark type (to make the typesystem happy when we do operations)" />
           </node>
         </node>
         <node concept="3cpWs8" id="6w4Q6Pf_afh" role="3cqZAp">
@@ -1284,6 +1287,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="6w4Q6Pf_aCM" role="3cqZAp" />
+        <node concept="3SKdUt" id="65efhJE8Ik7" role="3cqZAp">
+          <node concept="3SKdUq" id="65efhJE8Ik9" role="3SKWNk">
+            <property role="3SKdUp" value=" expand the AES key" />
+          </node>
+        </node>
         <node concept="3clFbF" id="2wcORY5dBwO" role="3cqZAp">
           <node concept="37vLTI" id="2wcORY5dBZy" role="3clFbG">
             <node concept="1rXfSq" id="2wcORY5dC1f" role="37vLTx">
@@ -1294,6 +1302,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="65efhJE8IV7" role="3cqZAp" />
         <node concept="3cpWs8" id="2wcORY5disU" role="3cqZAp">
           <node concept="3cpWsn" id="2wcORY5disX" role="3cpWs9">
             <property role="TrG5h" value="state" />
@@ -1407,7 +1416,8 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6w4Q6Pf_dIv" role="3cqZAp" />
+        <node concept="3clFbH" id="65efhJE8K05" role="3cqZAp" />
+        <node concept="3clFbH" id="65efhJE8Lba" role="3cqZAp" />
         <node concept="3clFbF" id="2wcORY5dk2w" role="3cqZAp">
           <node concept="37vLTI" id="2wcORY5dk6P" role="3clFbG">
             <node concept="1rXfSq" id="2wcORY5dk8P" role="37vLTx">
@@ -1730,7 +1740,6 @@
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2wcORY54Ys3" role="3clF47">
         <node concept="3clFbH" id="6w4Q6Pf_Psw" role="3cqZAp" />
-        <node concept="3clFbH" id="6w4Q6Pf_QDm" role="3cqZAp" />
         <node concept="3clFbH" id="6w4Q6Pf_QGN" role="3cqZAp" />
         <node concept="3cpWs8" id="1bbdoCrVZSv" role="3cqZAp">
           <node concept="3cpWsn" id="1bbdoCrVZSy" role="3cpWs9">
@@ -2673,7 +2682,7 @@
             </node>
             <node concept="3SKdUt" id="6w4Q6P2EgOO" role="3cqZAp">
               <node concept="3SKdUq" id="6w4Q6P2EgOQ" role="3SKWNk">
-                <property role="3SKdUp" value="c is a java integer, we can use the == operator" />
+                <property role="3SKdUp" value="c is a java integer, we can use the == operator. Otherwise, the eq operator should be used" />
               </node>
             </node>
             <node concept="3SKdUt" id="6w4Q6P2EhoW" role="3cqZAp">
@@ -3917,11 +3926,6 @@
       </node>
       <node concept="3jfavX" id="6w4Q6Pf$W4O" role="3jfasw">
         <node concept="3clFbS" id="6w4Q6Pf$W4P" role="3jfavY">
-          <node concept="3SKdUt" id="6w4Q6Pf_iml" role="3cqZAp">
-            <node concept="3SKdUq" id="6w4Q6Pf_imm" role="3SKWNk">
-              <property role="3SKdUp" value="expected ciphertext: &quot;3ad77bb40d7a3660a89ecaf32466ef97&quot;" />
-            </node>
-          </node>
           <node concept="1Dw8fO" id="6w4Q6Pf_iqg" role="3cqZAp">
             <node concept="3cpWsn" id="6w4Q6Pf_iqh" role="1Duv9x">
               <property role="3TUv4t" value="false" />
@@ -3958,7 +3962,7 @@
                     <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
                     <node concept="3cpWs3" id="65efhJDL5F9" role="37wK5m">
                       <node concept="Xl_RD" id="65efhJDL5HU" role="3uHU7w">
-                        <property role="Xl_RC" value="," />
+                        <property role="Xl_RC" value=" ," />
                       </node>
                       <node concept="2OqwBi" id="65efhJDL61t" role="3uHU7B">
                         <node concept="2OqwBi" id="6w4Q6Pf_jak" role="2Oq$k0">
@@ -3996,7 +4000,11 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="6w4Q6Pf_ipL" role="3cqZAp" />
+          <node concept="3SKdUt" id="17j6vqL_QdI" role="3cqZAp">
+            <node concept="3SKdUq" id="6w4Q6Pf_imm" role="3SKWNk">
+              <property role="3SKdUp" value="expected ciphertext: &quot;3ad77bb40d7a3660a89ecaf32466ef97&quot;" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -4017,21 +4025,18 @@
             <property role="3SKdUp" value="This method can be left empty, or used to set Configuration params (see examples)" />
           </node>
         </node>
-        <node concept="3clFbH" id="6w4Q6Pf_hp3" role="3cqZAp" />
-        <node concept="3SKdUt" id="6w4Q6P2n7iQ" role="3cqZAp">
-          <node concept="3SKdUq" id="6w4Q6P2n7lN" role="3SKWNk">
-            <property role="3SKdUp" value="won't gain us much for AES XOR-heavy subcircuits" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="6w4Q6P0YmIV" role="3cqZAp">
-          <node concept="37vLTI" id="6w4Q6P0YmIW" role="3clFbG">
-            <node concept="3clFbT" id="6w4Q6P0YmIX" role="37vLTx" />
-            <node concept="10M0yZ" id="6w4Q6P0YmIY" role="37vLTJ">
-              <ref role="3cqZAo" to="qciv:~Config.multivariateExpressionMinimization" resolve="multivariateExpressionMinimization" />
-              <ref role="1PxDUh" to="qciv:~Config" resolve="Config" />
+        <node concept="3clFbF" id="65efhJEhNti" role="3cqZAp">
+          <node concept="37vLTI" id="65efhJEhNRv" role="3clFbG">
+            <node concept="3clFbT" id="65efhJEhNTH" role="37vLTx">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="10M0yZ" id="65efhJEhNw5" role="37vLTJ">
+              <ref role="1PxDUh" to="85wc:~Config" resolve="Config" />
+              <ref role="3cqZAo" to="85wc:~Config.multivariateExpressionMinimization" resolve="multivariateExpressionMinimization" />
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="17j6vqJOGlt" role="3cqZAp" />
         <node concept="3clFbH" id="6w4Q6Pf_hpa" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="6w4Q6Pf$W4W" role="3clF46">

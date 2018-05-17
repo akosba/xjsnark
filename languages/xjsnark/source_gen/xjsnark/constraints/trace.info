@@ -725,30 +725,28 @@
       <node id="7553992366104096755" at="38,805,39,237" concept="4" />
       <node id="1661166907733880037" at="39,237,40,236" concept="4" />
       <node id="1661166907733880247" at="40,236,41,237" concept="4" />
-      <node id="1661166907733879681" at="41,237,42,0" concept="6" />
-      <node id="7553992366105141919" at="42,0,43,0" concept="6" />
-      <node id="7553992366104096520" at="43,0,44,50" concept="5" />
-      <node id="7553992366104093710" at="46,0,47,0" concept="7" trace="canBeChildBreakingPoint" />
+      <node id="7553992366104096520" at="41,237,42,50" concept="5" />
+      <node id="7553992366104093710" at="44,0,45,0" concept="7" trace="canBeChildBreakingPoint" />
       <node id="7553992366104093710" at="20,0,23,0" concept="0" trace="ValueOp_Constraints#()V" />
       <node id="7553992366104093710" at="30,0,33,5" concept="2" />
       <node id="7553992366104093710" at="23,0,27,0" concept="3" trace="hasOwnCanBeChildMethod#()Z" />
-      <node id="7553992366104093710" at="37,0,46,0" concept="8" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="7553992366104093710" at="37,0,44,0" concept="8" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
       <node id="7553992366104093710" at="27,0,37,0" concept="3" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
       <scope id="7553992366104093710" at="20,32,21,97" />
       <scope id="7553992366104093710" at="24,43,25,16" />
       <scope id="7553992366104093710" at="31,51,32,67" />
       <scope id="7553992366104093710" at="20,0,23,0" />
       <scope id="7553992366104093710" at="23,0,27,0" />
-      <scope id="7553992366104093710" at="28,200,35,18">
-        <var name="result" id="7553992366104093710" />
-      </scope>
-      <scope id="7553992366104093971" at="37,148,44,50">
+      <scope id="7553992366104093971" at="37,148,42,50">
         <var name="check1" id="7553992366104095241" />
         <var name="check2" id="7553992366104096758" />
         <var name="check3" id="1661166907733880038" />
         <var name="check4" id="1661166907733880248" />
       </scope>
-      <scope id="7553992366104093710" at="37,0,46,0">
+      <scope id="7553992366104093710" at="28,200,35,18">
+        <var name="result" id="7553992366104093710" />
+      </scope>
+      <scope id="7553992366104093710" at="37,0,44,0">
         <var name="childConcept" id="7553992366104093710" />
         <var name="link" id="7553992366104093710" />
         <var name="node" id="7553992366104093710" />
@@ -763,7 +761,7 @@
         <var name="operationContext" id="7553992366104093710" />
         <var name="parentNode" id="7553992366104093710" />
       </scope>
-      <unit id="7553992366104093710" at="19,0,48,0" name="xjsnark.constraints.ValueOp_Constraints" />
+      <unit id="7553992366104093710" at="19,0,46,0" name="xjsnark.constraints.ValueOp_Constraints" />
     </file>
   </root>
   <root nodeRef="r:bae2f377-1730-4c40-8a68-cde7bdcf162d(xjsnark.constraints)/8078876767577621421">

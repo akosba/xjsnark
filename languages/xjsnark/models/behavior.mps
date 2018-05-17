@@ -11,7 +11,6 @@
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module()" />
     <import index="26c9" ref="r:ac758f58-669f-4ccd-a922-880e27e69e02(xjsnark.structure)" implicit="true" />
-    <import index="qciv" ref="d75a086c-8c0a-40e5-aa41-48619e88bf42/java:circuit.config(CircuitLanguage.runtime/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -64,9 +63,6 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -216,31 +212,6 @@
               <node concept="3zrR0B" id="6w4Q6P2fjx8" role="2ShVmc">
                 <node concept="3Tqbb2" id="6w4Q6P2fjxa" role="3zrR0E">
                   <ref role="ehGHo" to="26c9:6zlb0z1MlFi" resolve="FieldRecord" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6w4Q6P2fCaT" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="6w4Q6P2fjP6" role="8Wnug">
-            <node concept="37vLTI" id="6w4Q6P2fk6V" role="3clFbG">
-              <node concept="2OqwBi" id="6w4Q6P2fkQn" role="37vLTx">
-                <node concept="10M0yZ" id="6w4Q6P2fkGg" role="2Oq$k0">
-                  <ref role="1PxDUh" to="qciv:~Config" resolve="Config" />
-                  <ref role="3cqZAo" to="qciv:~Config.FIELD_PRIME" resolve="FIELD_PRIME" />
-                </node>
-                <node concept="liA8E" id="6w4Q6P2fl4s" role="2OqNvi">
-                  <ref role="37wK5l" to="xlxw:~BigInteger.toString():java.lang.String" resolve="toString" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6w4Q6P2fjWt" role="37vLTJ">
-                <node concept="37vLTw" id="6w4Q6P2fjP4" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6w4Q6P2ffdh" resolve="n" />
-                </node>
-                <node concept="3TrcHB" id="6w4Q6PdBdXU" role="2OqNvi">
-                  <ref role="3TsBF5" to="26c9:6zlb0z1MmA$" resolve="prime" />
                 </node>
               </node>
             </node>

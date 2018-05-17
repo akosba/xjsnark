@@ -15,16 +15,13 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="26c9" ref="r:ac758f58-669f-4ccd-a922-880e27e69e02(xjsnark.structure)" />
-    <import index="4qka" ref="1e4d45b9-368c-4e87-8555-ad69375f82e7/java:circuit.auxTypes(xjsnark.runtime/)" />
-    <import index="velq" ref="1e4d45b9-368c-4e87-8555-ad69375f82e7/java:circuit.structure(xjsnark.runtime/)" />
-    <import index="kdn5" ref="1e4d45b9-368c-4e87-8555-ad69375f82e7/java:circuit.operations(xjsnark.runtime/)" />
-    <import index="f1xd" ref="1e4d45b9-368c-4e87-8555-ad69375f82e7/java:circuit.eval(xjsnark.runtime/)" />
     <import index="71td" ref="r:471b2aab-4188-4cfe-8032-4411590fc3b5(xjsnark.generator.template.Util)" />
-    <import index="wyjh" ref="r:7c54efba-7a7b-4b5d-ad20-408a7c7dc4b0(CircuitLanguage.structure)" implicit="true" />
+    <import index="hr8v" ref="1e4d45b9-368c-4e87-8555-ad69375f82e7/java:backend.auxTypes(xjsnark.runtime/)" />
+    <import index="d2nq" ref="1e4d45b9-368c-4e87-8555-ad69375f82e7/java:backend.eval(xjsnark.runtime/)" />
+    <import index="85wc" ref="1e4d45b9-368c-4e87-8555-ad69375f82e7/java:backend.config(xjsnark.runtime/)" />
+    <import index="7jix" ref="1e4d45b9-368c-4e87-8555-ad69375f82e7/java:backend.structure(xjsnark.runtime/)" />
     <import index="6ck5" ref="r:956d0a65-34b8-43f7-8adb-c037492e50b0(xjsnark.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="4ac7" ref="r:65a53259-2274-40a0-9f5f-c3bb810dfa15(CircuitLanguage.generator.template.Util)" implicit="true" />
-    <import index="4qkb" ref="d75a086c-8c0a-40e5-aa41-48619e88bf42/java:circuit.auxTypes(CircuitLanguage.runtime/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -480,13 +477,13 @@
           <property role="TrG5h" value="array" />
           <node concept="10Q1$e" id="1F6kLWsWk38" role="1tU5fm">
             <node concept="3uibUv" id="1F6kLWsWk39" role="10Q1$1">
-              <ref role="3uigEE" to="4qka:~Bit" resolve="Bit" />
+              <ref role="3uigEE" to="hr8v:~Bit" resolve="Bit" />
             </node>
           </node>
           <node concept="10QFUN" id="5RbNWZFOAol" role="33vP2m">
             <node concept="10Q1$e" id="5RbNWZFOAom" role="10QFUM">
               <node concept="3uibUv" id="5RbNWZFOCbC" role="10Q1$1">
-                <ref role="3uigEE" to="4qka:~Bit" resolve="Bit" />
+                <ref role="3uigEE" to="hr8v:~Bit" resolve="Bit" />
               </node>
               <node concept="3_AbJx" id="5RbNWZFOAoo" role="lGtFl">
                 <node concept="3_AbJw" id="5RbNWZFOAop" role="3_A0Ny">
@@ -563,12 +560,12 @@
                               </node>
                             </node>
                             <node concept="3TrcHB" id="5RbNWZFOAp9" role="2OqNvi">
-                              <ref role="3TsBF5" to="wyjh:3BesNbzZALx" resolve="bitwidth" />
+                              <ref role="3TsBF5" to="26c9:3BesNbzZALx" resolve="bitwidth" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="5RbNWZFOApa" role="37vLTx">
                             <node concept="1PxgMI" id="5RbNWZFOApb" role="2Oq$k0">
-                              <ref role="1PxNhF" to="wyjh:3BesNbzZACe" resolve="JUnsignedIntegerType" />
+                              <ref role="1PxNhF" to="26c9:3BesNbzZACe" resolve="JUnsignedIntegerType" />
                               <node concept="2OqwBi" id="5RbNWZFOApc" role="1PxMeX">
                                 <node concept="1PxgMI" id="5RbNWZFOApd" role="2Oq$k0">
                                   <ref role="1PxNhF" to="tpee:hf$_iWi" resolve="ArrayCreator" />
@@ -585,7 +582,7 @@
                               </node>
                             </node>
                             <node concept="3TrcHB" id="5RbNWZFOApi" role="2OqNvi">
-                              <ref role="3TsBF5" to="wyjh:3BesNbzZALx" resolve="bitwidth" />
+                              <ref role="3TsBF5" to="26c9:3BesNbzZALx" resolve="bitwidth" />
                             </node>
                           </node>
                         </node>
@@ -707,11 +704,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="5RbNWZFOAq1" role="10QFUP">
-              <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
-              <ref role="37wK5l" to="4qka:~Bit.createZeroArray(circuit.structure.CircuitGenerator,int[],java.lang.String...):java.lang.Object" resolve="createZeroArray" />
+              <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+              <ref role="37wK5l" to="hr8v:~Bit.createZeroArray(backend.structure.CircuitGenerator,int[],java.lang.String...):java.lang.Object" resolve="createZeroArray" />
               <node concept="2YIFZM" id="6w4Q6P7cvM$" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2ShNRf" id="5RbNWZFOAq3" role="37wK5m">
                 <node concept="3g6Rrh" id="5RbNWZFOAq4" role="2ShVmc">
@@ -870,13 +867,13 @@
           <property role="TrG5h" value="array" />
           <node concept="10Q1$e" id="1F6kLWsWkvU" role="1tU5fm">
             <node concept="3uibUv" id="6w4Q6Pe0f2K" role="10Q1$1">
-              <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+              <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
             </node>
           </node>
           <node concept="10QFUN" id="5RbNWZFO2q4" role="33vP2m">
             <node concept="10Q1$e" id="5RbNWZFO2q5" role="10QFUM">
               <node concept="3uibUv" id="6w4Q6Pe0f2M" role="10Q1$1">
-                <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+                <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
               </node>
               <node concept="3_AbJx" id="5RbNWZFO2q7" role="lGtFl">
                 <node concept="3_AbJw" id="5RbNWZFO2q8" role="3_A0Ny">
@@ -972,53 +969,6 @@
                           </node>
                           <node concept="3TrEf2" id="6w4Q6Pe0vQx" role="2OqNvi">
                             <ref role="3Tt5mk" to="26c9:6zlb0z1MBdc" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1X3_iC" id="5RbNWZFOodl" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3clFbF" id="5RbNWZFO2qv" role="8Wnug">
-                        <node concept="37vLTI" id="5RbNWZFO2qw" role="3clFbG">
-                          <node concept="2OqwBi" id="5RbNWZFO2qx" role="37vLTJ">
-                            <node concept="1PxgMI" id="5RbNWZFO2qy" role="2Oq$k0">
-                              <property role="1BlNFB" value="true" />
-                              <ref role="1PxNhF" to="wyjh:3BesNbzZACe" resolve="JUnsignedIntegerType" />
-                              <node concept="2OqwBi" id="5RbNWZFO2qz" role="1PxMeX">
-                                <node concept="37vLTw" id="5RbNWZFO2q$" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="5RbNWZFO2qi" resolve="t" />
-                                </node>
-                                <node concept="3TrEf2" id="5RbNWZFO2q_" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="tpee:f_0Q1BS" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3TrcHB" id="5RbNWZFO2qA" role="2OqNvi">
-                              <ref role="3TsBF5" to="wyjh:3BesNbzZALx" resolve="bitwidth" />
-                            </node>
-                          </node>
-                          <node concept="2OqwBi" id="5RbNWZFO2qB" role="37vLTx">
-                            <node concept="1PxgMI" id="5RbNWZFO2qC" role="2Oq$k0">
-                              <ref role="1PxNhF" to="wyjh:3BesNbzZACe" resolve="JUnsignedIntegerType" />
-                              <node concept="2OqwBi" id="5RbNWZFO2qD" role="1PxMeX">
-                                <node concept="1PxgMI" id="5RbNWZFO2qE" role="2Oq$k0">
-                                  <ref role="1PxNhF" to="tpee:hf$_iWi" resolve="ArrayCreator" />
-                                  <node concept="2OqwBi" id="5RbNWZFO2qF" role="1PxMeX">
-                                    <node concept="30H73N" id="5RbNWZFO2qG" role="2Oq$k0" />
-                                    <node concept="3TrEf2" id="5RbNWZFO2qH" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="tpee:gEShVi6" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3TrEf2" id="5RbNWZFO2qI" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="tpee:hf$_nzH" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3TrcHB" id="5RbNWZFO2qJ" role="2OqNvi">
-                              <ref role="3TsBF5" to="wyjh:3BesNbzZALx" resolve="bitwidth" />
-                            </node>
                           </node>
                         </node>
                       </node>
@@ -1139,11 +1089,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="5RbNWZFO2ru" role="10QFUP">
-              <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
-              <ref role="37wK5l" to="4qka:~FieldElement.createZeroArray(circuit.structure.CircuitGenerator,int[],java.math.BigInteger,java.lang.String...):java.lang.Object" resolve="createZeroArray" />
+              <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.createZeroArray(backend.structure.CircuitGenerator,int[],java.math.BigInteger,java.lang.String...):java.lang.Object" resolve="createZeroArray" />
               <node concept="2YIFZM" id="6w4Q6P7c$59" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2ShNRf" id="5RbNWZFO2rw" role="37wK5m">
                 <node concept="3g6Rrh" id="5RbNWZFO2rx" role="2ShVmc">
@@ -1380,13 +1330,13 @@
           <property role="TrG5h" value="array" />
           <node concept="10Q1$e" id="1F6kLWsWa75" role="1tU5fm">
             <node concept="3uibUv" id="6w4Q6Pe0AW0" role="10Q1$1">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
           </node>
           <node concept="10QFUN" id="7UGu0Hv2h7C" role="33vP2m">
             <node concept="10Q1$e" id="7UGu0Hv2hyP" role="10QFUM">
               <node concept="3uibUv" id="6w4Q6Pe0AW2" role="10Q1$1">
-                <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+                <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
               </node>
               <node concept="3_AbJx" id="7UGu0Hv2io2" role="lGtFl">
                 <node concept="3_AbJw" id="7UGu0Hv2io3" role="3_A0Ny">
@@ -1603,11 +1553,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="1F6kLWsWaqb" role="10QFUP">
-              <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.createZeroArray(circuit.structure.CircuitGenerator,int[],int,java.lang.String...):java.lang.Object" resolve="createZeroArray" />
+              <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.createZeroArray(backend.structure.CircuitGenerator,int[],int,java.lang.String...):java.lang.Object" resolve="createZeroArray" />
               <node concept="2YIFZM" id="6w4Q6P7cC8A" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2ShNRf" id="5RbNWZFKgTj" role="37wK5m">
                 <node concept="3g6Rrh" id="5RbNWZFKjgg" role="2ShVmc">
@@ -1830,13 +1780,13 @@
           <property role="TrG5h" value="array" />
           <node concept="10Q1$e" id="7UGu0HvjNKm" role="1tU5fm">
             <node concept="3uibUv" id="6w4Q6Pe7fky" role="10Q1$1">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
           </node>
           <node concept="10QFUN" id="7UGu0HvjNKo" role="33vP2m">
             <node concept="10Q1$e" id="7UGu0HvjNKp" role="10QFUM">
               <node concept="3uibUv" id="6w4Q6Pe7fk$" role="10Q1$1">
-                <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+                <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
               </node>
               <node concept="3_AbJx" id="7UGu0HvjNKr" role="lGtFl">
                 <node concept="3_AbJw" id="7UGu0HvjNKs" role="3_A0Ny">
@@ -2053,11 +2003,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="7UGu0HvjNLM" role="10QFUP">
-              <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.createZeroArray(circuit.structure.CircuitGenerator,int,int,java.lang.String...):circuit.auxTypes.UnsignedInteger[]" resolve="createZeroArray" />
+              <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.createZeroArray(backend.structure.CircuitGenerator,int,int,java.lang.String...):backend.auxTypes.UnsignedInteger[]" resolve="createZeroArray" />
               <node concept="2YIFZM" id="6w4Q6P7cIzx" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="3cmrfG" id="7UGu0HvjNLO" role="37wK5m">
                 <property role="3cmrfH" value="3" />
@@ -2409,7 +2359,7 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="72llHG1Y3Le" role="1B3o_S" />
         <node concept="3uibUv" id="6w4Q6PdTiFj" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+          <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
         </node>
       </node>
       <node concept="312cEg" id="72llHG1Y5Qi" role="jymVt">
@@ -2420,7 +2370,7 @@
         <node concept="3Tm6S6" id="72llHG1Y5Qj" role="1B3o_S" />
         <node concept="10Q1$e" id="72llHG1Y7nZ" role="1tU5fm">
           <node concept="3uibUv" id="6w4Q6PdTiCR" role="10Q1$1">
-            <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+            <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
           </node>
         </node>
       </node>
@@ -2429,7 +2379,7 @@
         <node concept="3cqZAl" id="r_GHmMcvXi" role="3clF45" />
         <node concept="3clFbS" id="r_GHmMcvXj" role="3clF47">
           <node concept="XkiVB" id="r_GHmMcvXk" role="3cqZAp">
-            <ref role="37wK5l" to="velq:~CircuitGenerator.&lt;init&gt;(java.lang.String)" resolve="CircuitGenerator" />
+            <ref role="37wK5l" to="7jix:~CircuitGenerator.&lt;init&gt;(java.lang.String)" resolve="CircuitGenerator" />
             <node concept="Xl_RD" id="r_GHmMcvXl" role="37wK5m">
               <property role="Xl_RC" value="Test_circuit" />
             </node>
@@ -2439,8 +2389,8 @@
       </node>
       <node concept="2tJIrI" id="r_GHmMcvMi" role="jymVt" />
       <node concept="3Tm1VV" id="3BesNbzYbWE" role="1B3o_S" />
-      <node concept="3uibUv" id="6w4Q6PdTiCY" role="1zkMxy">
-        <ref role="3uigEE" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
+      <node concept="3uibUv" id="17j6vqKGO2V" role="1zkMxy">
+        <ref role="3uigEE" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
       </node>
       <node concept="2tJIrI" id="3BesNbzYmme" role="jymVt" />
       <node concept="3clFb_" id="3BesNbzYnAV" role="jymVt">
@@ -2454,7 +2404,7 @@
         <node concept="3clFbS" id="3BesNbzYnAY" role="3clF47">
           <node concept="3clFbF" id="3BesNbzYnAZ" role="3cqZAp">
             <node concept="3nyPlj" id="3BesNbzYnB0" role="3clFbG">
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__defineInputs():void" resolve="__defineInputs" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__defineInputs():void" resolve="__defineInputs" />
             </node>
           </node>
           <node concept="3clFbF" id="3BesNbzYnB1" role="3cqZAp">
@@ -2479,8 +2429,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="r_GHmMcyMm" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.createInput(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.UnsignedInteger" resolve="createInput" />
+                <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.createInput(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.UnsignedInteger" resolve="createInput" />
                 <node concept="Xjq3P" id="r_GHmMcyPT" role="37wK5m" />
                 <node concept="3cmrfG" id="r_GHmMdWD6" role="37wK5m">
                   <property role="3cmrfH" value="8" />
@@ -2560,8 +2510,8 @@
           <node concept="3clFbF" id="3BesNbzYsNG" role="3cqZAp">
             <node concept="37vLTI" id="3BesNbzYsNH" role="3clFbG">
               <node concept="2YIFZM" id="r_GHmMdKwc" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.createInputArray(circuit.structure.CircuitGenerator,int,int,java.lang.String...):circuit.auxTypes.UnsignedInteger[]" resolve="createInputArray" />
+                <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.createInputArray(backend.structure.CircuitGenerator,int,int,java.lang.String...):backend.auxTypes.UnsignedInteger[]" resolve="createInputArray" />
                 <node concept="Xjq3P" id="r_GHmMdNe8" role="37wK5m" />
                 <node concept="2OqwBi" id="r_GHmMdQmv" role="37wK5m">
                   <node concept="37vLTw" id="r_GHmMdQjq" role="2Oq$k0">
@@ -2737,8 +2687,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="5qibsSHjCQS" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
-                <ref role="37wK5l" to="4qka:~FieldElement.createInput(circuit.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement" resolve="createInput" />
+                <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+                <ref role="37wK5l" to="hr8v:~FieldElement.createInput(backend.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement" resolve="createInput" />
                 <node concept="Xjq3P" id="5qibsSHjCQT" role="37wK5m" />
                 <node concept="2ShNRf" id="5qibsSHjFiZ" role="37wK5m">
                   <node concept="1pGfFk" id="5qibsSHjFwm" role="2ShVmc">
@@ -2861,8 +2811,8 @@
           <node concept="3clFbF" id="5qibsSHjCRq" role="3cqZAp">
             <node concept="37vLTI" id="5qibsSHjCRr" role="3clFbG">
               <node concept="2YIFZM" id="5qibsSHjCRs" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
-                <ref role="37wK5l" to="4qka:~FieldElement.createInputArray(circuit.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement[]" resolve="createInputArray" />
+                <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+                <ref role="37wK5l" to="hr8v:~FieldElement.createInputArray(backend.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement[]" resolve="createInputArray" />
                 <node concept="Xjq3P" id="5qibsSHjCRt" role="37wK5m" />
                 <node concept="2OqwBi" id="5qibsSHjCRu" role="37wK5m">
                   <node concept="37vLTw" id="5qibsSHjCRv" role="2Oq$k0">
@@ -3082,8 +3032,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="6w4Q6PbwdqC" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
-                <ref role="37wK5l" to="4qka:~Bit.createInput(circuit.structure.CircuitGenerator,java.lang.String...):circuit.auxTypes.Bit" resolve="createInput" />
+                <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+                <ref role="37wK5l" to="hr8v:~Bit.createInput(backend.structure.CircuitGenerator,java.lang.String...):backend.auxTypes.Bit" resolve="createInput" />
                 <node concept="Xjq3P" id="6w4Q6PbwdqD" role="37wK5m" />
               </node>
             </node>
@@ -3131,8 +3081,8 @@
           <node concept="3clFbF" id="6w4Q6Pbw8Tq" role="3cqZAp">
             <node concept="37vLTI" id="6w4Q6Pbw8Tr" role="3clFbG">
               <node concept="2YIFZM" id="6w4Q6PbwnjI" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
-                <ref role="37wK5l" to="4qka:~Bit.createInputArray(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.Bit[]" resolve="createInputArray" />
+                <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+                <ref role="37wK5l" to="hr8v:~Bit.createInputArray(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.Bit[]" resolve="createInputArray" />
                 <node concept="Xjq3P" id="6w4Q6PbwnjJ" role="37wK5m" />
                 <node concept="2OqwBi" id="6w4Q6PbwnjK" role="37wK5m">
                   <node concept="37vLTw" id="6w4Q6PbwnjL" role="2Oq$k0">
@@ -3272,7 +3222,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="72llHG1Y8YF" role="2OqNvi">
-                <ref role="37wK5l" to="4qka:~StructDefinition.__makeInput():void" resolve="__makeInput" />
+                <ref role="37wK5l" to="hr8v:~StructDefinition.__makeInput():void" resolve="__makeInput" />
               </node>
             </node>
             <node concept="1WS0z7" id="72llHG1Y8Ze" role="lGtFl">
@@ -3312,7 +3262,7 @@
                     <ref role="3cqZAo" node="72llHG1Yffa" resolve="si" />
                   </node>
                   <node concept="liA8E" id="72llHG1Ygik" role="2OqNvi">
-                    <ref role="37wK5l" to="4qka:~StructDefinition.__makeInput():void" resolve="__makeInput" />
+                    <ref role="37wK5l" to="hr8v:~StructDefinition.__makeInput():void" resolve="__makeInput" />
                   </node>
                 </node>
               </node>
@@ -3321,7 +3271,7 @@
             <node concept="3cpWsn" id="72llHG1Yffa" role="1Duv9x">
               <property role="TrG5h" value="si" />
               <node concept="3uibUv" id="6w4Q6PdTiFl" role="1tU5fm">
-                <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+                <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
               </node>
             </node>
             <node concept="37vLTw" id="72llHG1Ygbv" role="1DdaDG">
@@ -3398,7 +3348,7 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="r_GHmMcHDS" role="1B3o_S" />
         <node concept="3uibUv" id="6w4Q6PdP$L0" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+          <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
         </node>
       </node>
       <node concept="312cEg" id="6DTPir0jic3" role="jymVt">
@@ -3409,7 +3359,7 @@
         <node concept="3Tm6S6" id="6DTPir0jic4" role="1B3o_S" />
         <node concept="10Q1$e" id="6DTPir0jiEp" role="1tU5fm">
           <node concept="3uibUv" id="6w4Q6PdOK6Y" role="10Q1$1">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
@@ -3420,7 +3370,7 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="5qibsSHjSDN" role="1B3o_S" />
         <node concept="3uibUv" id="6w4Q6PdOK71" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+          <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
         </node>
       </node>
       <node concept="312cEg" id="5qibsSHjSDP" role="jymVt">
@@ -3431,7 +3381,7 @@
         <node concept="3Tm6S6" id="5qibsSHjSDQ" role="1B3o_S" />
         <node concept="10Q1$e" id="5qibsSHjSDR" role="1tU5fm">
           <node concept="3uibUv" id="6w4Q6PdOK6V" role="10Q1$1">
-            <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+            <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
           </node>
         </node>
       </node>
@@ -3443,7 +3393,7 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="72llHG1YlHd" role="1B3o_S" />
         <node concept="3uibUv" id="6w4Q6PdOK7T" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+          <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
         </node>
       </node>
       <node concept="312cEg" id="72llHG1YlHf" role="jymVt">
@@ -3454,7 +3404,7 @@
         <node concept="3Tm6S6" id="72llHG1YlHg" role="1B3o_S" />
         <node concept="10Q1$e" id="72llHG1YlHh" role="1tU5fm">
           <node concept="3uibUv" id="6w4Q6PdOK7W" role="10Q1$1">
-            <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+            <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
           </node>
         </node>
       </node>
@@ -3463,7 +3413,7 @@
         <node concept="3cqZAl" id="r_GHmMcHDW" role="3clF45" />
         <node concept="3clFbS" id="r_GHmMcHDX" role="3clF47">
           <node concept="XkiVB" id="r_GHmMcHDY" role="3cqZAp">
-            <ref role="37wK5l" to="velq:~CircuitGenerator.&lt;init&gt;(java.lang.String)" resolve="CircuitGenerator" />
+            <ref role="37wK5l" to="7jix:~CircuitGenerator.&lt;init&gt;(java.lang.String)" resolve="CircuitGenerator" />
             <node concept="Xl_RD" id="6w4Q6PdRgE3" role="37wK5m">
               <property role="Xl_RC" value="Test" />
             </node>
@@ -3482,7 +3432,7 @@
         <node concept="3clFbS" id="6DTPir0jVPe" role="3clF47">
           <node concept="3clFbF" id="6DTPir0iS0X" role="3cqZAp">
             <node concept="3nyPlj" id="6DTPir0iS0Y" role="3clFbG">
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__defineOutputs():void" resolve="__defineOutputs" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__defineOutputs():void" resolve="__defineOutputs" />
             </node>
           </node>
           <node concept="3clFbF" id="6DTPir0iS0Z" role="3cqZAp">
@@ -3527,8 +3477,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6DTPir0jgK3" role="3clFbG">
-              <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.UnsignedInteger,java.lang.String...):void" resolve="makeOutput" />
+              <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.UnsignedInteger,java.lang.String...):void" resolve="makeOutput" />
               <node concept="Xjq3P" id="6DTPir0jgK4" role="37wK5m" />
               <node concept="37vLTw" id="6DTPir0iS11" role="37wK5m">
                 <ref role="3cqZAo" node="r_GHmMcHDR" resolve="x" />
@@ -3621,8 +3571,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6DTPir0jke2" role="3clFbG">
-              <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.UnsignedInteger[],java.lang.String...):void" resolve="makeOutput" />
+              <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.UnsignedInteger[],java.lang.String...):void" resolve="makeOutput" />
               <node concept="Xjq3P" id="6DTPir0jke3" role="37wK5m" />
               <node concept="37vLTw" id="6DTPir0jkF8" role="37wK5m">
                 <ref role="3cqZAo" node="6DTPir0jic3" resolve="y" />
@@ -3687,8 +3637,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6PdRdX8" role="3clFbG">
-              <ref role="37wK5l" to="4qka:~FieldElement.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.FieldElement,java.lang.String...):void" resolve="makeOutput" />
-              <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
+              <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.FieldElement,java.lang.String...):void" resolve="makeOutput" />
               <node concept="Xjq3P" id="6w4Q6PdRdX9" role="37wK5m" />
               <node concept="37vLTw" id="6w4Q6PdRdXa" role="37wK5m">
                 <ref role="3cqZAo" node="r_GHmMcHDR" resolve="x" />
@@ -3781,8 +3731,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6PdRem7" role="3clFbG">
-              <ref role="37wK5l" to="4qka:~FieldElement.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.FieldElement[],java.lang.String...):void" resolve="makeOutput" />
-              <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
+              <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.FieldElement,java.lang.String...):void" resolve="makeOutput" />
               <node concept="Xjq3P" id="6w4Q6PdRem8" role="37wK5m" />
               <node concept="37vLTw" id="6w4Q6PdRem9" role="37wK5m">
                 <ref role="3cqZAo" node="6DTPir0jic3" resolve="y" />
@@ -3848,8 +3798,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6Pe1Fb0" role="3clFbG">
-              <ref role="37wK5l" to="4qka:~Bit.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.Bit,java.lang.String...):void" resolve="makeOutput" />
-              <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
+              <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+              <ref role="37wK5l" to="hr8v:~Bit.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.Bit,java.lang.String...):void" resolve="makeOutput" />
               <node concept="Xjq3P" id="6w4Q6Pe1Fb1" role="37wK5m" />
               <node concept="37vLTw" id="6w4Q6Pe1Fb2" role="37wK5m">
                 <ref role="3cqZAo" node="r_GHmMcHDR" resolve="x" />
@@ -3942,8 +3892,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6Pe1FA$" role="3clFbG">
-              <ref role="37wK5l" to="4qka:~Bit.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.Bit,java.lang.String...):void" resolve="makeOutput" />
-              <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
+              <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+              <ref role="37wK5l" to="hr8v:~Bit.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.Bit,java.lang.String...):void" resolve="makeOutput" />
               <node concept="Xjq3P" id="6w4Q6Pe1FA_" role="37wK5m" />
               <node concept="37vLTw" id="6w4Q6Pe1FAA" role="37wK5m">
                 <ref role="3cqZAo" node="6DTPir0jic3" resolve="y" />
@@ -3990,7 +3940,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="72llHG1YikT" role="2OqNvi">
-                <ref role="37wK5l" to="4qka:~StructDefinition.__makeOutput():void" resolve="__makeOutput" />
+                <ref role="37wK5l" to="hr8v:~StructDefinition.__makeOutput():void" resolve="__makeOutput" />
               </node>
             </node>
             <node concept="1WS0z7" id="72llHG1YikU" role="lGtFl">
@@ -4030,7 +3980,7 @@
                     <ref role="3cqZAo" node="72llHG1Yilf" resolve="si" />
                   </node>
                   <node concept="liA8E" id="72llHG1Yild" role="2OqNvi">
-                    <ref role="37wK5l" to="4qka:~StructDefinition.__makeOutput():void" resolve="__makeOutput" />
+                    <ref role="37wK5l" to="hr8v:~StructDefinition.__makeOutput():void" resolve="__makeOutput" />
                   </node>
                 </node>
               </node>
@@ -4039,7 +3989,7 @@
             <node concept="3cpWsn" id="72llHG1Yilf" role="1Duv9x">
               <property role="TrG5h" value="si" />
               <node concept="3uibUv" id="6w4Q6PdPAmK" role="1tU5fm">
-                <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+                <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
               </node>
             </node>
             <node concept="37vLTw" id="72llHG1Yilh" role="1DdaDG">
@@ -4099,8 +4049,8 @@
         <node concept="raruj" id="6DTPir0jVWj" role="lGtFl" />
       </node>
       <node concept="3Tm1VV" id="r_GHmMcHE2" role="1B3o_S" />
-      <node concept="3uibUv" id="6w4Q6PdQorb" role="1zkMxy">
-        <ref role="3uigEE" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
+      <node concept="3uibUv" id="17j6vqKGE_t" role="1zkMxy">
+        <ref role="3uigEE" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
       </node>
       <node concept="2tJIrI" id="r_GHmMcHFq" role="jymVt" />
       <node concept="2tJIrI" id="r_GHmMcHFr" role="jymVt" />
@@ -4139,7 +4089,7 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="6w4Q6Pbwtsg" role="1B3o_S" />
         <node concept="3uibUv" id="6w4Q6PdUVza" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+          <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
         </node>
       </node>
       <node concept="312cEg" id="6w4Q6Pbwtsi" role="jymVt">
@@ -4150,7 +4100,7 @@
         <node concept="3Tm6S6" id="6w4Q6Pbwtsj" role="1B3o_S" />
         <node concept="10Q1$e" id="6w4Q6Pbwtsk" role="1tU5fm">
           <node concept="3uibUv" id="6w4Q6PdUVxO" role="10Q1$1">
-            <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+            <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
           </node>
         </node>
       </node>
@@ -4160,7 +4110,7 @@
         <node concept="3cqZAl" id="6w4Q6Pbwtsp" role="3clF45" />
         <node concept="3clFbS" id="6w4Q6Pbwtsq" role="3clF47">
           <node concept="XkiVB" id="6w4Q6Pbwtsr" role="3cqZAp">
-            <ref role="37wK5l" to="velq:~CircuitGenerator.&lt;init&gt;(java.lang.String)" resolve="CircuitGenerator" />
+            <ref role="37wK5l" to="7jix:~CircuitGenerator.&lt;init&gt;(java.lang.String)" resolve="CircuitGenerator" />
             <node concept="Xl_RD" id="6w4Q6Pbwtss" role="37wK5m">
               <property role="Xl_RC" value="Test_circuit" />
             </node>
@@ -4170,8 +4120,8 @@
       </node>
       <node concept="2tJIrI" id="6w4Q6Pbwtsu" role="jymVt" />
       <node concept="3Tm1VV" id="6w4Q6Pbwtsv" role="1B3o_S" />
-      <node concept="3uibUv" id="6w4Q6PdUVzO" role="1zkMxy">
-        <ref role="3uigEE" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
+      <node concept="3uibUv" id="17j6vqKGrEb" role="1zkMxy">
+        <ref role="3uigEE" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
       </node>
       <node concept="3clFb_" id="6w4Q6Pbwtsx" role="jymVt">
         <property role="1EzhhJ" value="false" />
@@ -4184,7 +4134,7 @@
         <node concept="3clFbS" id="6w4Q6Pbwts$" role="3clF47">
           <node concept="3clFbF" id="6w4Q6Pbwts_" role="3cqZAp">
             <node concept="3nyPlj" id="6w4Q6PbwtsA" role="3clFbG">
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__defineVerifiedWitnesses():void" resolve="__defineVerifiedWitnesses" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__defineVerifiedWitnesses():void" resolve="__defineVerifiedWitnesses" />
             </node>
           </node>
           <node concept="3clFbH" id="6w4Q6PbwtsB" role="3cqZAp" />
@@ -4210,8 +4160,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="6w4Q6PbwASZ" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.createVerifiedWitness(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.UnsignedInteger" resolve="createVerifiedWitness" />
+                <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.createVerifiedWitness(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.UnsignedInteger" resolve="createVerifiedWitness" />
                 <node concept="Xjq3P" id="6w4Q6PbwAT0" role="37wK5m" />
                 <node concept="3cmrfG" id="6w4Q6PbwAT1" role="37wK5m">
                   <property role="3cmrfH" value="8" />
@@ -4291,8 +4241,8 @@
           <node concept="3clFbF" id="6w4Q6Pbwttk" role="3cqZAp">
             <node concept="37vLTI" id="6w4Q6Pbwttl" role="3clFbG">
               <node concept="2YIFZM" id="6w4Q6PbwBbE" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.createVerifiedWitnessArray(circuit.structure.CircuitGenerator,int,int,java.lang.String...):circuit.auxTypes.UnsignedInteger[]" resolve="createVerifiedWitnessArray" />
+                <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.createVerifiedWitnessArray(backend.structure.CircuitGenerator,int,int,java.lang.String...):backend.auxTypes.UnsignedInteger[]" resolve="createVerifiedWitnessArray" />
                 <node concept="Xjq3P" id="6w4Q6PbwBbF" role="37wK5m" />
                 <node concept="2OqwBi" id="6w4Q6PbwBbG" role="37wK5m">
                   <node concept="37vLTw" id="6w4Q6PbwBbH" role="2Oq$k0">
@@ -4468,8 +4418,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="6w4Q6PbwBws" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
-                <ref role="37wK5l" to="4qka:~FieldElement.createVerifiedWitness(circuit.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement" resolve="createVerifiedWitness" />
+                <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+                <ref role="37wK5l" to="hr8v:~FieldElement.createVerifiedWitness(backend.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement" resolve="createVerifiedWitness" />
                 <node concept="Xjq3P" id="6w4Q6PbwBwt" role="37wK5m" />
                 <node concept="2ShNRf" id="6w4Q6PbwBwu" role="37wK5m">
                   <node concept="1pGfFk" id="6w4Q6PbwBwv" role="2ShVmc">
@@ -4598,8 +4548,8 @@
           <node concept="3clFbF" id="6w4Q6Pbwtvn" role="3cqZAp">
             <node concept="37vLTI" id="6w4Q6Pbwtvo" role="3clFbG">
               <node concept="2YIFZM" id="6w4Q6PbwBRY" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
-                <ref role="37wK5l" to="4qka:~FieldElement.createVerifiedWitnessArray(circuit.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement[]" resolve="createVerifiedWitnessArray" />
+                <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+                <ref role="37wK5l" to="hr8v:~FieldElement.createVerifiedWitnessArray(backend.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement[]" resolve="createVerifiedWitnessArray" />
                 <node concept="Xjq3P" id="6w4Q6PbwBRZ" role="37wK5m" />
                 <node concept="2OqwBi" id="6w4Q6PbwBS0" role="37wK5m">
                   <node concept="37vLTw" id="6w4Q6PbwBS1" role="2Oq$k0">
@@ -4820,8 +4770,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="6w4Q6PbwHrb" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
-                <ref role="37wK5l" to="4qka:~Bit.createVerifiedWitness(circuit.structure.CircuitGenerator,java.lang.String...):circuit.auxTypes.Bit" resolve="createVerifiedWitness" />
+                <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+                <ref role="37wK5l" to="hr8v:~Bit.createVerifiedWitness(backend.structure.CircuitGenerator,java.lang.String...):backend.auxTypes.Bit" resolve="createVerifiedWitness" />
                 <node concept="Xjq3P" id="6w4Q6PbwHrc" role="37wK5m" />
               </node>
             </node>
@@ -4869,8 +4819,8 @@
           <node concept="3clFbF" id="6w4Q6Pbwtxf" role="3cqZAp">
             <node concept="37vLTI" id="6w4Q6Pbwtxg" role="3clFbG">
               <node concept="2YIFZM" id="6w4Q6PbwHe$" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
-                <ref role="37wK5l" to="4qka:~Bit.createVerifiedWitnessArray(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.Bit[]" resolve="createVerifiedWitnessArray" />
+                <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+                <ref role="37wK5l" to="hr8v:~Bit.createVerifiedWitnessArray(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.Bit[]" resolve="createVerifiedWitnessArray" />
                 <node concept="Xjq3P" id="6w4Q6PbwHe_" role="37wK5m" />
                 <node concept="2OqwBi" id="6w4Q6PbwHeA" role="37wK5m">
                   <node concept="37vLTw" id="6w4Q6PbwHeB" role="2Oq$k0">
@@ -5009,7 +4959,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="6w4Q6Pbwtyg" role="2OqNvi">
-                <ref role="37wK5l" to="4qka:~StructDefinition.__makeVerifiedWitness():void" resolve="__makeVerifiedWitness" />
+                <ref role="37wK5l" to="hr8v:~StructDefinition.__makeVerifiedWitness():void" resolve="__makeVerifiedWitness" />
               </node>
             </node>
             <node concept="1WS0z7" id="6w4Q6Pbwtyh" role="lGtFl">
@@ -5049,7 +4999,7 @@
                     <ref role="3cqZAo" node="6w4Q6PbwtyA" resolve="si" />
                   </node>
                   <node concept="liA8E" id="6w4Q6Pbwty$" role="2OqNvi">
-                    <ref role="37wK5l" to="4qka:~StructDefinition.__makeVerifiedWitness():void" resolve="__makeVerifiedWitness" />
+                    <ref role="37wK5l" to="hr8v:~StructDefinition.__makeVerifiedWitness():void" resolve="__makeVerifiedWitness" />
                   </node>
                 </node>
               </node>
@@ -5058,7 +5008,7 @@
             <node concept="3cpWsn" id="6w4Q6PbwtyA" role="1Duv9x">
               <property role="TrG5h" value="si" />
               <node concept="3uibUv" id="6w4Q6PdUVDV" role="1tU5fm">
-                <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+                <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
               </node>
             </node>
             <node concept="37vLTw" id="6w4Q6PbwtyC" role="1DdaDG">
@@ -5156,7 +5106,7 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="72llHG1Yntt" role="1B3o_S" />
         <node concept="3uibUv" id="72llHG1Yntu" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+          <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
         </node>
       </node>
       <node concept="312cEg" id="72llHG1Yntv" role="jymVt">
@@ -5167,7 +5117,7 @@
         <node concept="3Tm6S6" id="72llHG1Yntw" role="1B3o_S" />
         <node concept="10Q1$e" id="72llHG1Yntx" role="1tU5fm">
           <node concept="3uibUv" id="72llHG1Ynty" role="10Q1$1">
-            <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+            <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
           </node>
         </node>
       </node>
@@ -5177,7 +5127,7 @@
         <node concept="3cqZAl" id="70tVTRb$LdQ" role="3clF45" />
         <node concept="3clFbS" id="70tVTRb$LdR" role="3clF47">
           <node concept="XkiVB" id="70tVTRb$LdS" role="3cqZAp">
-            <ref role="37wK5l" to="velq:~CircuitGenerator.&lt;init&gt;(java.lang.String)" resolve="CircuitGenerator" />
+            <ref role="37wK5l" to="7jix:~CircuitGenerator.&lt;init&gt;(java.lang.String)" resolve="CircuitGenerator" />
             <node concept="Xl_RD" id="70tVTRb$LdT" role="37wK5m">
               <property role="Xl_RC" value="Test_circuit" />
             </node>
@@ -5187,8 +5137,8 @@
       </node>
       <node concept="2tJIrI" id="7eYK6MJKfJp" role="jymVt" />
       <node concept="3Tm1VV" id="70tVTRb$LdW" role="1B3o_S" />
-      <node concept="3uibUv" id="70tVTRb$LdX" role="1zkMxy">
-        <ref role="3uigEE" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
+      <node concept="3uibUv" id="17j6vqKGoH6" role="1zkMxy">
+        <ref role="3uigEE" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
       </node>
       <node concept="3clFb_" id="70tVTRb$LdZ" role="jymVt">
         <property role="1EzhhJ" value="false" />
@@ -5201,7 +5151,7 @@
         <node concept="3clFbS" id="70tVTRb$Le2" role="3clF47">
           <node concept="3clFbF" id="70tVTRb$Le3" role="3cqZAp">
             <node concept="3nyPlj" id="70tVTRb$Le4" role="3clFbG">
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__defineWitnesses():void" resolve="__defineWitnesses" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__defineWitnesses():void" resolve="__defineWitnesses" />
             </node>
           </node>
           <node concept="3clFbH" id="7eYK6MJMH7U" role="3cqZAp" />
@@ -5227,8 +5177,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="7eYK6MJHizM" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.createWitness(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.UnsignedInteger" resolve="createWitness" />
+                <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.createWitness(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.UnsignedInteger" resolve="createWitness" />
                 <node concept="Xjq3P" id="7eYK6MJHizN" role="37wK5m" />
                 <node concept="3cmrfG" id="7eYK6MJHizO" role="37wK5m">
                   <property role="3cmrfH" value="8" />
@@ -5308,8 +5258,8 @@
           <node concept="3clFbF" id="70tVTRb$LeL" role="3cqZAp">
             <node concept="37vLTI" id="70tVTRb$LeM" role="3clFbG">
               <node concept="2YIFZM" id="7eYK6MJHjgb" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.createWitnessArray(circuit.structure.CircuitGenerator,int,int,java.lang.String...):circuit.auxTypes.UnsignedInteger[]" resolve="createWitnessArray" />
+                <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.createWitnessArray(backend.structure.CircuitGenerator,int,int,java.lang.String...):backend.auxTypes.UnsignedInteger[]" resolve="createWitnessArray" />
                 <node concept="Xjq3P" id="7eYK6MJHjgc" role="37wK5m" />
                 <node concept="2OqwBi" id="7eYK6MJHjgd" role="37wK5m">
                   <node concept="37vLTw" id="7eYK6MJHjge" role="2Oq$k0">
@@ -5485,8 +5435,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="7eYK6MJHiK0" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
-                <ref role="37wK5l" to="4qka:~FieldElement.createWitness(circuit.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement" resolve="createWitness" />
+                <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+                <ref role="37wK5l" to="hr8v:~FieldElement.createWitness(backend.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement" resolve="createWitness" />
                 <node concept="Xjq3P" id="7eYK6MJHiK1" role="37wK5m" />
                 <node concept="2ShNRf" id="7eYK6MJHiK2" role="37wK5m">
                   <node concept="1pGfFk" id="7eYK6MJHiK3" role="2ShVmc">
@@ -5609,8 +5559,8 @@
           <node concept="3clFbF" id="70tVTRb$LgO" role="3cqZAp">
             <node concept="37vLTI" id="70tVTRb$LgP" role="3clFbG">
               <node concept="2YIFZM" id="7eYK6MJHiYl" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
-                <ref role="37wK5l" to="4qka:~FieldElement.createWitnessArray(circuit.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement[]" resolve="createWitnessArray" />
+                <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+                <ref role="37wK5l" to="hr8v:~FieldElement.createWitnessArray(backend.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement[]" resolve="createWitnessArray" />
                 <node concept="Xjq3P" id="7eYK6MJHiYm" role="37wK5m" />
                 <node concept="2OqwBi" id="7eYK6MJHiYn" role="37wK5m">
                   <node concept="37vLTw" id="7eYK6MJHiYo" role="2Oq$k0">
@@ -5831,8 +5781,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="6w4Q6Pbv84D" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
-                <ref role="37wK5l" to="4qka:~Bit.createWitness(circuit.structure.CircuitGenerator,java.lang.String...):circuit.auxTypes.Bit" resolve="createWitness" />
+                <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+                <ref role="37wK5l" to="hr8v:~Bit.createWitness(backend.structure.CircuitGenerator,java.lang.String...):backend.auxTypes.Bit" resolve="createWitness" />
                 <node concept="Xjq3P" id="6w4Q6Pbv84E" role="37wK5m" />
               </node>
             </node>
@@ -5880,8 +5830,8 @@
           <node concept="3clFbF" id="6w4Q6Pbw4xL" role="3cqZAp">
             <node concept="37vLTI" id="6w4Q6Pbw4xM" role="3clFbG">
               <node concept="2YIFZM" id="6w4Q6Pbw4xN" role="37vLTx">
-                <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
-                <ref role="37wK5l" to="4qka:~Bit.createWitnessArray(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.Bit[]" resolve="createWitnessArray" />
+                <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+                <ref role="37wK5l" to="hr8v:~Bit.createWitnessArray(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.Bit[]" resolve="createWitnessArray" />
                 <node concept="Xjq3P" id="6w4Q6Pbw4xO" role="37wK5m" />
                 <node concept="2OqwBi" id="6w4Q6Pbw4xP" role="37wK5m">
                   <node concept="37vLTw" id="6w4Q6Pbw4xQ" role="2Oq$k0">
@@ -6019,7 +5969,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="72llHG1Yomy" role="2OqNvi">
-                <ref role="37wK5l" to="4qka:~StructDefinition.__makeWitness():void" resolve="__makeWitness" />
+                <ref role="37wK5l" to="hr8v:~StructDefinition.__makeWitness():void" resolve="__makeWitness" />
               </node>
             </node>
             <node concept="1WS0z7" id="72llHG1Yomz" role="lGtFl">
@@ -6059,7 +6009,7 @@
                     <ref role="3cqZAo" node="72llHG1YomS" resolve="si" />
                   </node>
                   <node concept="liA8E" id="72llHG1YomQ" role="2OqNvi">
-                    <ref role="37wK5l" to="4qka:~StructDefinition.__makeWitness():void" resolve="__makeWitness" />
+                    <ref role="37wK5l" to="hr8v:~StructDefinition.__makeWitness():void" resolve="__makeWitness" />
                   </node>
                 </node>
               </node>
@@ -6068,7 +6018,7 @@
             <node concept="3cpWsn" id="72llHG1YomS" role="1Duv9x">
               <property role="TrG5h" value="si" />
               <node concept="3uibUv" id="6w4Q6PdTwSE" role="1tU5fm">
-                <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+                <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
               </node>
             </node>
             <node concept="37vLTw" id="72llHG1YomU" role="1DdaDG">
@@ -6299,7 +6249,7 @@
       <node concept="3cqZAl" id="r_GHmMcqDL" role="3clF45" />
       <node concept="3clFbS" id="r_GHmMcqDN" role="3clF47">
         <node concept="XkiVB" id="r_GHmMcqXG" role="3cqZAp">
-          <ref role="37wK5l" to="velq:~CircuitGenerator.&lt;init&gt;(java.lang.String)" resolve="CircuitGenerator" />
+          <ref role="37wK5l" to="7jix:~CircuitGenerator.&lt;init&gt;(java.lang.String)" resolve="CircuitGenerator" />
           <node concept="Xl_RD" id="4KcdYk5fmfq" role="37wK5m">
             <property role="Xl_RC" value="circuit_name" />
             <node concept="3_AbJx" id="4KcdYk5fr2M" role="lGtFl">
@@ -6355,20 +6305,20 @@
         </node>
         <node concept="3clFbF" id="6DTPir0mrxL" role="3cqZAp">
           <node concept="1rXfSq" id="6DTPir0mrxJ" role="3clFbG">
-            <ref role="37wK5l" to="velq:~CircuitGenerator.__generateCircuit():void" resolve="__generateCircuit" />
+            <ref role="37wK5l" to="7jix:~CircuitGenerator.__generateCircuit():void" resolve="__generateCircuit" />
           </node>
         </node>
         <node concept="3clFbF" id="1sdDC1o7ooc" role="3cqZAp">
           <node concept="2OqwBi" id="1sdDC1o7ooQ" role="3clFbG">
             <node concept="Xjq3P" id="1sdDC1ofBF$" role="2Oq$k0" />
             <node concept="liA8E" id="1sdDC1o7or2" role="2OqNvi">
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__evaluateSampleRun(circuit.eval.SampleRun):void" resolve="__evaluateSampleRun" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__evaluateSampleRun(backend.eval.SampleRun):void" resolve="__evaluateSampleRun" />
               <node concept="2ShNRf" id="1sdDC1o7otb" role="37wK5m">
                 <node concept="YeOm9" id="1sdDC1o7oGI" role="2ShVmc">
                   <node concept="1Y3b0j" id="1sdDC1o7oGL" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="1Y3XeK" to="f1xd:~SampleRun" resolve="SampleRun" />
-                    <ref role="37wK5l" to="f1xd:~SampleRun.&lt;init&gt;(java.lang.String,boolean)" resolve="SampleRun" />
+                    <ref role="1Y3XeK" to="d2nq:~SampleRun" resolve="SampleRun" />
+                    <ref role="37wK5l" to="d2nq:~SampleRun.&lt;init&gt;(java.lang.String,boolean)" resolve="SampleRun" />
                     <node concept="3clFb_" id="1sdDC1o8gvn" role="jymVt">
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="pre" />
@@ -6647,7 +6597,7 @@
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="3clFbF" id="42SCx96ThCE" role="8Wnug">
             <node concept="1rXfSq" id="42SCx96ThCC" role="3clFbG">
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__evalCircuit():void" resolve="__evalCircuit" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__evalCircuit():void" resolve="__evalCircuit" />
             </node>
           </node>
         </node>
@@ -6656,7 +6606,7 @@
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="3clFbF" id="42SCx96ThB8" role="8Wnug">
             <node concept="1rXfSq" id="42SCx96ThB6" role="3clFbG">
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__prepFiles():void" resolve="__prepFiles" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__prepFiles():void" resolve="__prepFiles" />
             </node>
           </node>
         </node>
@@ -7013,8 +6963,8 @@
         </node>
       </node>
     </node>
-    <node concept="3uibUv" id="6w4Q6Pe2JWW" role="1zkMxy">
-      <ref role="3uigEE" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
+    <node concept="3uibUv" id="17j6vqKEm$i" role="1zkMxy">
+      <ref role="3uigEE" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
     </node>
     <node concept="2tJIrI" id="6c6pOWT_JJm" role="jymVt">
       <node concept="2b32R4" id="3BesNbzUoGy" role="lGtFl">
@@ -7168,13 +7118,13 @@
       <node concept="37vLTG" id="r_GHmMcsIw" role="3clF46">
         <property role="TrG5h" value="evaluator" />
         <node concept="3uibUv" id="6w4Q6Pe2JX3" role="1tU5fm">
-          <ref role="3uigEE" to="f1xd:~CircuitEvaluator" resolve="CircuitEvaluator" />
+          <ref role="3uigEE" to="d2nq:~CircuitEvaluator" resolve="CircuitEvaluator" />
         </node>
       </node>
       <node concept="3clFbS" id="r_GHmMcsIy" role="3clF47">
         <node concept="3clFbF" id="5u98M4x9FyZ" role="3cqZAp">
           <node concept="1rXfSq" id="5u98M4x9FyY" role="3clFbG">
-            <ref role="37wK5l" to="velq:~CircuitGenerator.__generateRandomInput(circuit.eval.CircuitEvaluator):void" resolve="__generateRandomInput" />
+            <ref role="37wK5l" to="7jix:~CircuitGenerator.__generateRandomInput(backend.eval.CircuitEvaluator):void" resolve="__generateRandomInput" />
             <node concept="37vLTw" id="5u98M4x9FzF" role="37wK5m">
               <ref role="3cqZAo" node="r_GHmMcsIw" resolve="evaluator" />
             </node>
@@ -7233,11 +7183,11 @@
           <node concept="3clFbC" id="5RbNWZGzGZY" role="3clFbw">
             <node concept="2OqwBi" id="5RbNWZGzGZZ" role="3uHU7B">
               <node concept="2YIFZM" id="6w4Q6P7as7e" role="2Oq$k0">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
               </node>
               <node concept="liA8E" id="5RbNWZGzH01" role="2OqNvi">
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getPhase():int" resolve="__getPhase" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getPhase():int" resolve="__getPhase" />
               </node>
             </node>
             <node concept="3cmrfG" id="5RbNWZGzH02" role="3uHU7w">
@@ -7249,11 +7199,11 @@
               <node concept="2OqwBi" id="5RbNWZGzH06" role="3clFbG">
                 <node concept="2OqwBi" id="5RbNWZGzH07" role="2Oq$k0">
                   <node concept="2YIFZM" id="6w4Q6P7ash4" role="2Oq$k0">
-                    <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                    <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                    <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                    <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
                   </node>
                   <node concept="liA8E" id="5RbNWZGzH09" role="2OqNvi">
-                    <ref role="37wK5l" to="velq:~CircuitGenerator.__getRumtimeClassesList():java.util.ArrayList" resolve="__getRumtimeClassesList" />
+                    <ref role="37wK5l" to="7jix:~CircuitGenerator.__getRumtimeClassesList():java.util.ArrayList" resolve="__getRumtimeClassesList" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5RbNWZGzH0a" role="2OqNvi">
@@ -7281,9 +7231,9 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="5RbNWZG_bh3" role="1B3o_S" />
       <node concept="3uibUv" id="5RbNWZG_fSk" role="1tU5fm">
-        <ref role="3uigEE" to="4qka:~SmartMemory" resolve="SmartMemory" />
+        <ref role="3uigEE" to="hr8v:~SmartMemory" resolve="SmartMemory" />
         <node concept="3uibUv" id="5RbNWZGOls5" role="11_B2D">
-          <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+          <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           <node concept="29HgVG" id="5RbNWZGOmg_" role="lGtFl">
             <node concept="3NFfHV" id="5RbNWZGOmBC" role="3NFExx">
               <node concept="3clFbS" id="5RbNWZGOmBD" role="2VODD2">
@@ -7544,12 +7494,12 @@
           <node concept="3clFbS" id="5RbNWZGADP3" role="3clFbx">
             <node concept="3clFbF" id="5RbNWZGADP7" role="3cqZAp">
               <node concept="37vLTI" id="5RbNWZGADP8" role="3clFbG">
-                <node concept="37vLTw" id="6w4Q6Pe31Cq" role="37vLTJ">
-                  <ref role="3cqZAo" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+                <node concept="37vLTw" id="17j6vqKE$It" role="37vLTJ">
+                  <ref role="3cqZAo" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
                 </node>
                 <node concept="2ShNRf" id="5RbNWZGADQ3" role="37vLTx">
                   <node concept="1pGfFk" id="5RbNWZGADQk" role="2ShVmc">
-                    <ref role="37wK5l" to="4qka:~UnsignedInteger.&lt;init&gt;(java.math.BigInteger)" resolve="UnsignedInteger" />
+                    <ref role="37wK5l" to="hr8v:~UnsignedInteger.&lt;init&gt;(java.math.BigInteger)" resolve="UnsignedInteger" />
                     <node concept="2YIFZM" id="5RbNWZGADQm" role="37wK5m">
                       <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
                       <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
@@ -7577,11 +7527,11 @@
               <node concept="3clFbC" id="5RbNWZGADPe" role="3clFbw">
                 <node concept="2OqwBi" id="5RbNWZGADPf" role="3uHU7B">
                   <node concept="2YIFZM" id="6w4Q6P7b$l0" role="2Oq$k0">
-                    <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                    <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                    <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                    <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
                   </node>
                   <node concept="liA8E" id="5RbNWZGADPh" role="2OqNvi">
-                    <ref role="37wK5l" to="velq:~CircuitGenerator.__getPhase():int" resolve="__getPhase" />
+                    <ref role="37wK5l" to="7jix:~CircuitGenerator.__getPhase():int" resolve="__getPhase" />
                   </node>
                 </node>
                 <node concept="3cmrfG" id="5RbNWZGADPi" role="3uHU7w">
@@ -7602,7 +7552,7 @@
                       <ref role="3cqZAo" node="5RbNWZG_fWL" resolve="____mem_" />
                     </node>
                     <node concept="liA8E" id="5RbNWZH64Ii" role="2OqNvi">
-                      <ref role="37wK5l" to="4qka:~SmartMemory.incrementSize():void" resolve="incrementSize" />
+                      <ref role="37wK5l" to="hr8v:~SmartMemory.incrementSize():void" resolve="incrementSize" />
                     </node>
                   </node>
                   <node concept="1WS0z7" id="5RbNWZH635g" role="lGtFl">
@@ -8605,12 +8555,12 @@
       <node concept="3clFbS" id="5RbNWZGAJwj" role="3clF47">
         <node concept="3clFbF" id="5RbNWZGAJwk" role="3cqZAp">
           <node concept="37vLTI" id="5RbNWZGAJwl" role="3clFbG">
-            <node concept="37vLTw" id="6w4Q6Pe31Tu" role="37vLTJ">
-              <ref role="3cqZAo" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+            <node concept="37vLTw" id="17j6vqKE$bV" role="37vLTJ">
+              <ref role="3cqZAo" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
             </node>
             <node concept="2ShNRf" id="5RbNWZGAJws" role="37vLTx">
               <node concept="1pGfFk" id="5RbNWZGAJwW" role="2ShVmc">
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.&lt;init&gt;(int,java.math.BigInteger)" resolve="UnsignedInteger" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.&lt;init&gt;(int,java.math.BigInteger)" resolve="UnsignedInteger" />
                 <node concept="37vLTw" id="6w4Q6PdN5CZ" role="37wK5m">
                   <ref role="3cqZAo" node="5RbNWZG_PqZ" resolve="____indexBitwidth" />
                 </node>
@@ -8649,17 +8599,17 @@
       <node concept="3clFbS" id="5RbNWZGASRI" role="3clF47">
         <node concept="3clFbF" id="5RbNWZGASRJ" role="3cqZAp">
           <node concept="2OqwBi" id="5RbNWZGASRR" role="3clFbG">
-            <node concept="37vLTw" id="6w4Q6Pe32xR" role="2Oq$k0">
-              <ref role="3cqZAo" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+            <node concept="37vLTw" id="17j6vqKE$cp" role="2Oq$k0">
+              <ref role="3cqZAo" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
             </node>
             <node concept="liA8E" id="5RbNWZGASRS" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.assign(circuit.auxTypes.UnsignedInteger,int):void" resolve="assign" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.assign(backend.auxTypes.UnsignedInteger,int):void" resolve="assign" />
               <node concept="2OqwBi" id="5RbNWZGASRV" role="37wK5m">
                 <node concept="37vLTw" id="5RbNWZGASRU" role="2Oq$k0">
                   <ref role="3cqZAo" node="5RbNWZGASRG" resolve="e" />
                 </node>
-                <node concept="2OwXpG" id="6w4Q6Pe324Y" role="2OqNvi">
-                  <ref role="2Oxat5" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+                <node concept="2OwXpG" id="17j6vqKE$gB" role="2OqNvi">
+                  <ref role="2Oxat5" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
                 </node>
               </node>
               <node concept="37vLTw" id="6w4Q6PdN5D5" role="37wK5m">
@@ -8771,13 +8721,13 @@
               <node concept="37vLTw" id="5ObDrP8G$ki" role="2Oq$k0">
                 <ref role="3cqZAo" node="5RbNWZGNK4E" resolve="obj" />
               </node>
-              <node concept="2OwXpG" id="6w4Q6Pe321b" role="2OqNvi">
-                <ref role="2Oxat5" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+              <node concept="2OwXpG" id="17j6vqKECGr" role="2OqNvi">
+                <ref role="2Oxat5" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
               </node>
             </node>
             <node concept="2ShNRf" id="5RbNWZGADPw" role="37vLTx">
               <node concept="1pGfFk" id="5RbNWZGADQ0" role="2ShVmc">
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.&lt;init&gt;(int,java.math.BigInteger)" resolve="UnsignedInteger" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.&lt;init&gt;(int,java.math.BigInteger)" resolve="UnsignedInteger" />
                 <node concept="37vLTw" id="6w4Q6PdN5Dk" role="37wK5m">
                   <ref role="3cqZAo" node="5RbNWZG_PqZ" resolve="____indexBitwidth" />
                 </node>
@@ -8850,13 +8800,13 @@
               <node concept="37vLTw" id="5ObDrP8GHGl" role="2Oq$k0">
                 <ref role="3cqZAo" node="5ObDrP8GHGe" resolve="obj" />
               </node>
-              <node concept="2OwXpG" id="6w4Q6Pe32cb" role="2OqNvi">
-                <ref role="2Oxat5" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+              <node concept="2OwXpG" id="17j6vqKEC5$" role="2OqNvi">
+                <ref role="2Oxat5" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
               </node>
             </node>
             <node concept="2ShNRf" id="5ObDrP8GHGn" role="37vLTx">
               <node concept="1pGfFk" id="5ObDrP8GHGo" role="2ShVmc">
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.&lt;init&gt;(int)" resolve="UnsignedInteger" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.&lt;init&gt;(int)" resolve="UnsignedInteger" />
                 <node concept="37vLTw" id="6w4Q6PdN5Dt" role="37wK5m">
                   <ref role="3cqZAo" node="5RbNWZG_PqZ" resolve="____indexBitwidth" />
                 </node>
@@ -8880,7 +8830,7 @@
       </node>
       <node concept="3Tm1VV" id="5ObDrP8GDt7" role="1B3o_S" />
       <node concept="3uibUv" id="5ObDrP8GDt8" role="3clF45">
-        <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+        <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
       </node>
     </node>
     <node concept="2tJIrI" id="5ObDrP8GX1V" role="jymVt" />
@@ -8918,8 +8868,8 @@
               <node concept="37vLTw" id="5ObDrP8H0SW" role="2Oq$k0">
                 <ref role="3cqZAo" node="5ObDrP8H0SP" resolve="obj" />
               </node>
-              <node concept="2OwXpG" id="6w4Q6Pe30y8" role="2OqNvi">
-                <ref role="2Oxat5" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+              <node concept="2OwXpG" id="17j6vqKECdi" role="2OqNvi">
+                <ref role="2Oxat5" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
               </node>
             </node>
             <node concept="37vLTw" id="5ObDrP8H6dA" role="37vLTx">
@@ -8943,12 +8893,12 @@
       </node>
       <node concept="3Tm1VV" id="5ObDrP8H0T5" role="1B3o_S" />
       <node concept="3uibUv" id="5ObDrP8H0T6" role="3clF45">
-        <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+        <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
       </node>
       <node concept="37vLTG" id="5ObDrP8H5xt" role="3clF46">
         <property role="TrG5h" value="ptr" />
-        <node concept="3uibUv" id="6w4Q6Pe31kj" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+        <node concept="3uibUv" id="17j6vqKECGt" role="1tU5fm">
+          <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
         </node>
       </node>
     </node>
@@ -9075,7 +9025,7 @@
               <node concept="37vLTI" id="5RbNWZGNqN2" role="3clFbG">
                 <node concept="2ShNRf" id="5RbNWZGNqW9" role="37vLTx">
                   <node concept="1pGfFk" id="5RbNWZGNqTP" role="2ShVmc">
-                    <ref role="37wK5l" to="4qka:~SmartMemory.&lt;init&gt;(int,java.lang.Object,java.lang.Class,java.lang.Object[])" resolve="SmartMemory" />
+                    <ref role="37wK5l" to="hr8v:~SmartMemory.&lt;init&gt;(int,java.lang.Object,java.lang.Class,java.lang.Object[])" resolve="SmartMemory" />
                     <node concept="3cmrfG" id="5RbNWZGNCwB" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -9261,7 +9211,7 @@
                       </node>
                     </node>
                     <node concept="3uibUv" id="5RbNWZGO3Ki" role="1pMfVU">
-                      <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+                      <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
                       <node concept="29HgVG" id="5RbNWZHaSy4" role="lGtFl">
                         <node concept="3NFfHV" id="5RbNWZHaT1W" role="3NFExx">
                           <node concept="3clFbS" id="5RbNWZHaT1X" role="2VODD2">
@@ -9331,11 +9281,11 @@
           <node concept="3clFbC" id="5RbNWZGBlqD" role="3clFbw">
             <node concept="2OqwBi" id="5RbNWZGBlqE" role="3uHU7B">
               <node concept="2YIFZM" id="6w4Q6P7bHYP" role="2Oq$k0">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
               </node>
               <node concept="liA8E" id="5RbNWZGBlqG" role="2OqNvi">
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getPhase():int" resolve="__getPhase" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getPhase():int" resolve="__getPhase" />
               </node>
             </node>
             <node concept="3cmrfG" id="5RbNWZGBlqH" role="3uHU7w">
@@ -9348,7 +9298,7 @@
                 <node concept="37vLTI" id="5RbNWZGP62j" role="3clFbG">
                   <node concept="2ShNRf" id="5RbNWZGP62k" role="37vLTx">
                     <node concept="1pGfFk" id="5RbNWZGP62l" role="2ShVmc">
-                      <ref role="37wK5l" to="4qka:~SmartMemory.&lt;init&gt;(int,java.lang.Object,java.lang.Class,java.lang.Object[])" resolve="SmartMemory" />
+                      <ref role="37wK5l" to="hr8v:~SmartMemory.&lt;init&gt;(int,java.lang.Object,java.lang.Class,java.lang.Object[])" resolve="SmartMemory" />
                       <node concept="37vLTw" id="6w4Q6PdN5DM" role="37wK5m">
                         <ref role="3cqZAo" node="5RbNWZG_PqV" resolve="____numOfTotalObjects" />
                       </node>
@@ -9534,7 +9484,7 @@
                         </node>
                       </node>
                       <node concept="3uibUv" id="5RbNWZGP63B" role="1pMfVU">
-                        <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+                        <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
                         <node concept="29HgVG" id="5RbNWZHb0mg" role="lGtFl">
                           <node concept="3NFfHV" id="5RbNWZHb0Q8" role="3NFExx">
                             <node concept="3clFbS" id="5RbNWZHb0Q9" role="2VODD2">
@@ -9613,8 +9563,8 @@
       <property role="TrG5h" value="x" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="5RbNWZGyGa3" role="1B3o_S" />
-      <node concept="3uibUv" id="6w4Q6Pe32cd" role="1tU5fm">
-        <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+      <node concept="3uibUv" id="17j6vqKE$IG" role="1tU5fm">
+        <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
       </node>
       <node concept="2b32R4" id="5RbNWZGyGa5" role="lGtFl">
         <node concept="3JmXsc" id="5RbNWZGyGa6" role="2P8S$">
@@ -9633,7 +9583,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="5RbNWZGyGak" role="1B3o_S" />
       <node concept="3uibUv" id="6w4Q6Pe4lxU" role="1tU5fm">
-        <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+        <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
       </node>
       <node concept="2b32R4" id="5RbNWZGyGam" role="lGtFl">
         <node concept="3JmXsc" id="5RbNWZGyGan" role="2P8S$">
@@ -9682,19 +9632,19 @@
         <node concept="3clFbF" id="5RbNWZGZnOQ" role="3cqZAp">
           <node concept="37vLTI" id="5RbNWZGZqUY" role="3clFbG">
             <node concept="2OqwBi" id="5RbNWZGZr0g" role="37vLTx">
-              <node concept="37vLTw" id="6w4Q6Pe30yA" role="2Oq$k0">
-                <ref role="3cqZAo" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+              <node concept="37vLTw" id="17j6vqKECGV" role="2Oq$k0">
+                <ref role="3cqZAo" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
               </node>
               <node concept="liA8E" id="5RbNWZGZrbX" role="2OqNvi">
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.copy():circuit.auxTypes.UnsignedInteger" resolve="copy" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.copy():backend.auxTypes.UnsignedInteger" resolve="copy" />
               </node>
             </node>
             <node concept="2OqwBi" id="5RbNWZGZqcn" role="37vLTJ">
               <node concept="37vLTw" id="5RbNWZGZnOO" role="2Oq$k0">
                 <ref role="3cqZAo" node="5RbNWZGZdCL" resolve="c" />
               </node>
-              <node concept="2OwXpG" id="6w4Q6Pe31s$" role="2OqNvi">
-                <ref role="2Oxat5" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+              <node concept="2OwXpG" id="17j6vqKE$ol" role="2OqNvi">
+                <ref role="2Oxat5" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
               </node>
             </node>
           </node>
@@ -9773,9 +9723,9 @@
               <ref role="3cqZAo" node="5RbNWZG_fWL" resolve="____mem_" />
             </node>
             <node concept="liA8E" id="5RbNWZH17Fw" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~SmartMemory.read(circuit.auxTypes.UnsignedInteger):java.lang.Object" resolve="read" />
-              <node concept="37vLTw" id="6w4Q6Pe31To" role="37wK5m">
-                <ref role="3cqZAo" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+              <ref role="37wK5l" to="hr8v:~SmartMemory.read(backend.auxTypes.UnsignedInteger):java.lang.Object" resolve="read" />
+              <node concept="37vLTw" id="17j6vqKEC$w" role="37wK5m">
+                <ref role="3cqZAo" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
               </node>
             </node>
           </node>
@@ -9783,7 +9733,7 @@
       </node>
       <node concept="3Tm1VV" id="5RbNWZH0Rxw" role="1B3o_S" />
       <node concept="3uibUv" id="5RbNWZH0UMq" role="3clF45">
-        <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+        <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
         <node concept="29HgVG" id="5RbNWZH2mmF" role="lGtFl">
           <node concept="3NFfHV" id="5RbNWZH2p_z" role="3NFExx">
             <node concept="3clFbS" id="5RbNWZH2p_$" role="2VODD2">
@@ -9877,9 +9827,9 @@
               <ref role="3cqZAo" node="5RbNWZG_fWL" resolve="____mem_" />
             </node>
             <node concept="liA8E" id="5RbNWZH1RGe" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~SmartMemory.write(circuit.auxTypes.UnsignedInteger,java.lang.Object):void" resolve="write" />
-              <node concept="37vLTw" id="6w4Q6Pe31Ck" role="37wK5m">
-                <ref role="3cqZAo" to="4qka:~RuntimeStruct.ptrReference" resolve="ptrReference" />
+              <ref role="37wK5l" to="hr8v:~SmartMemory.write(backend.auxTypes.UnsignedInteger,java.lang.Object):void" resolve="write" />
+              <node concept="37vLTw" id="17j6vqKECdo" role="37wK5m">
+                <ref role="3cqZAo" to="hr8v:~RuntimeStruct.ptrReference" resolve="ptrReference" />
               </node>
               <node concept="37vLTw" id="5RbNWZH1RXf" role="37wK5m">
                 <ref role="3cqZAo" node="5RbNWZH1DIo" resolve="arg" />
@@ -9893,7 +9843,7 @@
       <node concept="37vLTG" id="5RbNWZH1DIo" role="3clF46">
         <property role="TrG5h" value="arg" />
         <node concept="3uibUv" id="5RbNWZH1DIn" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+          <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           <node concept="29HgVG" id="5RbNWZH2H8b" role="lGtFl">
             <node concept="3NFfHV" id="5RbNWZH2HkR" role="3NFExx">
               <node concept="3clFbS" id="5RbNWZH2HkS" role="2VODD2">
@@ -9982,8 +9932,8 @@
     <node concept="n94m4" id="5RbNWZGyGie" role="lGtFl">
       <ref role="n9lRv" to="26c9:5RbNWZGy0nW" resolve="RuntimeStructDefinition" />
     </node>
-    <node concept="3uibUv" id="5RbNWZGzb_7" role="1zkMxy">
-      <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+    <node concept="3uibUv" id="17j6vqKEwu$" role="1zkMxy">
+      <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
     </node>
     <node concept="17Uvod" id="5RbNWZGyGig" role="lGtFl">
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -10046,8 +9996,8 @@
       <property role="TrG5h" value="x" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="70tVTRbC0Ph" role="1B3o_S" />
-      <node concept="3uibUv" id="6w4Q6Pe5Zs9" role="1tU5fm">
-        <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+      <node concept="3uibUv" id="17j6vqKCOG2" role="1tU5fm">
+        <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
       </node>
       <node concept="2b32R4" id="1F6kLWsHCTi" role="lGtFl">
         <node concept="3JmXsc" id="1F6kLWsHCTl" role="2P8S$">
@@ -10066,8 +10016,8 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="70tVTRbC0Pk" role="1B3o_S" />
       <node concept="10Q1$e" id="70tVTRbC0Pl" role="1tU5fm">
-        <node concept="3uibUv" id="6w4Q6Pe5ZzS" role="10Q1$1">
-          <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+        <node concept="3uibUv" id="17j6vqKCQdJ" role="10Q1$1">
+          <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
         </node>
       </node>
       <node concept="2b32R4" id="1F6kLWsJcGF" role="lGtFl">
@@ -10086,8 +10036,8 @@
       <property role="TrG5h" value="s" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="72llHG1QIOJ" role="1B3o_S" />
-      <node concept="3uibUv" id="6w4Q6Pe60_F" role="1tU5fm">
-        <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+      <node concept="3uibUv" id="17j6vqKCOMv" role="1tU5fm">
+        <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
       </node>
       <node concept="2b32R4" id="1F6kLWsJdjp" role="lGtFl">
         <node concept="3JmXsc" id="1F6kLWsJdjs" role="2P8S$">
@@ -10106,8 +10056,8 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="72llHG1QRe9" role="1B3o_S" />
       <node concept="10Q1$e" id="72llHG1QS1J" role="1tU5fm">
-        <node concept="3uibUv" id="6w4Q6Pe5ZzQ" role="10Q1$1">
-          <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+        <node concept="3uibUv" id="17j6vqKCPUX" role="10Q1$1">
+          <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
         </node>
       </node>
       <node concept="2b32R4" id="1F6kLWsJdzA" role="lGtFl">
@@ -10286,11 +10236,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6PemeSH" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.createInput(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.UnsignedInteger" resolve="createInput" />
-              <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.createInput(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.UnsignedInteger" resolve="createInput" />
               <node concept="2YIFZM" id="6w4Q6PemeSI" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="3cmrfG" id="6w4Q6PemeSJ" role="37wK5m">
                 <property role="3cmrfH" value="8" />
@@ -10360,11 +10310,11 @@
         <node concept="3clFbF" id="6w4Q6PemdcY" role="3cqZAp">
           <node concept="37vLTI" id="6w4Q6PemdcZ" role="3clFbG">
             <node concept="2YIFZM" id="6w4Q6Pemf2i" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.createInputArray(circuit.structure.CircuitGenerator,int,int,java.lang.String...):circuit.auxTypes.UnsignedInteger[]" resolve="createInputArray" />
-              <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.createInputArray(backend.structure.CircuitGenerator,int,int,java.lang.String...):backend.auxTypes.UnsignedInteger[]" resolve="createInputArray" />
               <node concept="2YIFZM" id="6w4Q6Pemf2j" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2OqwBi" id="6w4Q6Pemf2k" role="37wK5m">
                 <node concept="37vLTw" id="6w4Q6Pemf2l" role="2Oq$k0">
@@ -10510,11 +10460,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6Pemfio" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~FieldElement.createInput(circuit.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement" resolve="createInput" />
-              <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
+              <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.createInput(backend.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement" resolve="createInput" />
               <node concept="2YIFZM" id="6w4Q6Pemfip" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2ShNRf" id="6w4Q6Pemfiq" role="37wK5m">
                 <node concept="1pGfFk" id="6w4Q6Pemfir" role="2ShVmc">
@@ -10627,11 +10577,11 @@
         <node concept="3clFbF" id="6w4Q6PemdeL" role="3cqZAp">
           <node concept="37vLTI" id="6w4Q6PemdeM" role="3clFbG">
             <node concept="2YIFZM" id="6w4Q6Pemftu" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~FieldElement.createInputArray(circuit.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement[]" resolve="createInputArray" />
-              <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
+              <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.createInputArray(backend.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement[]" resolve="createInputArray" />
               <node concept="2YIFZM" id="6w4Q6Pemftv" role="37wK5m">
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2OqwBi" id="6w4Q6Pemftw" role="37wK5m">
                 <node concept="37vLTw" id="6w4Q6Pemftx" role="2Oq$k0">
@@ -10822,11 +10772,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6PemfJ7" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~Bit.createInput(circuit.structure.CircuitGenerator,java.lang.String...):circuit.auxTypes.Bit" resolve="createInput" />
-              <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
+              <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+              <ref role="37wK5l" to="hr8v:~Bit.createInput(backend.structure.CircuitGenerator,java.lang.String...):backend.auxTypes.Bit" resolve="createInput" />
               <node concept="2YIFZM" id="6w4Q6PemfJ8" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
             </node>
           </node>
@@ -10883,11 +10833,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6PemfL_" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~Bit.createInputArray(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.Bit[]" resolve="createInputArray" />
-              <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
+              <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+              <ref role="37wK5l" to="hr8v:~Bit.createInputArray(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.Bit[]" resolve="createInputArray" />
               <node concept="2YIFZM" id="6w4Q6PemfLA" role="37wK5m">
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2OqwBi" id="6w4Q6PemfLB" role="37wK5m">
                 <node concept="37vLTw" id="6w4Q6PemfLC" role="2Oq$k0">
@@ -10988,7 +10938,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="6w4Q6Pemdhk" role="2OqNvi">
-                  <ref role="37wK5l" to="4qka:~StructDefinition.__makeInput():void" resolve="__makeInput" />
+                  <ref role="37wK5l" to="hr8v:~StructDefinition.__makeInput():void" resolve="__makeInput" />
                 </node>
               </node>
             </node>
@@ -11067,7 +11017,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="6w4Q6PemdhV" role="2OqNvi">
-                          <ref role="37wK5l" to="4qka:~StructDefinition.__makeInput():void" resolve="__makeInput" />
+                          <ref role="37wK5l" to="hr8v:~StructDefinition.__makeInput():void" resolve="__makeInput" />
                         </node>
                       </node>
                     </node>
@@ -11194,8 +11144,8 @@
     <node concept="n94m4" id="70tVTRbBWLx" role="lGtFl">
       <ref role="n9lRv" to="26c9:70tVTRbBljW" resolve="StructDefinition" />
     </node>
-    <node concept="3uibUv" id="6w4Q6Pe60oG" role="1zkMxy">
-      <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+    <node concept="3uibUv" id="17j6vqKBNHn" role="1zkMxy">
+      <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
     </node>
     <node concept="17Uvod" id="70tVTRbBY40" role="lGtFl">
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -11258,11 +11208,11 @@
             </node>
           </node>
           <node concept="2YIFZM" id="72llHG1Rx_R" role="3clFbG">
-            <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-            <ref role="37wK5l" to="4qka:~UnsignedInteger.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.UnsignedInteger,java.lang.String...):void" resolve="makeOutput" />
+            <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="37wK5l" to="hr8v:~UnsignedInteger.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.UnsignedInteger,java.lang.String...):void" resolve="makeOutput" />
             <node concept="2YIFZM" id="6w4Q6P7wlTp" role="37wK5m">
-              <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+              <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
             </node>
             <node concept="37vLTw" id="72llHG1RxFW" role="37wK5m">
               <ref role="3cqZAo" node="70tVTRbC0Pg" resolve="x" />
@@ -11340,11 +11290,11 @@
             </node>
           </node>
           <node concept="2YIFZM" id="72llHG1R$$M" role="3clFbG">
-            <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-            <ref role="37wK5l" to="4qka:~UnsignedInteger.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.UnsignedInteger[],java.lang.String...):void" resolve="makeOutput" />
+            <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="37wK5l" to="hr8v:~UnsignedInteger.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.UnsignedInteger[],java.lang.String...):void" resolve="makeOutput" />
             <node concept="2YIFZM" id="6w4Q6P7wlWA" role="37wK5m">
-              <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+              <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
             </node>
             <node concept="37vLTw" id="72llHG1R_7Y" role="37wK5m">
               <ref role="3cqZAo" node="70tVTRbC0Pj" resolve="y" />
@@ -11399,11 +11349,11 @@
             </node>
           </node>
           <node concept="2YIFZM" id="6w4Q6PelM1H" role="3clFbG">
-            <ref role="37wK5l" to="4qka:~FieldElement.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.FieldElement,java.lang.String...):void" resolve="makeOutput" />
-            <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
+            <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+            <ref role="37wK5l" to="hr8v:~FieldElement.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.FieldElement,java.lang.String...):void" resolve="makeOutput" />
             <node concept="2YIFZM" id="6w4Q6PelM1I" role="37wK5m">
-              <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+              <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
             </node>
             <node concept="37vLTw" id="6w4Q6PelM1J" role="37wK5m">
               <ref role="3cqZAo" node="70tVTRbC0Pg" resolve="x" />
@@ -11481,11 +11431,11 @@
             </node>
           </node>
           <node concept="2YIFZM" id="6w4Q6PelNvV" role="3clFbG">
-            <ref role="37wK5l" to="4qka:~FieldElement.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.FieldElement[],java.lang.String...):void" resolve="makeOutput" />
-            <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
+            <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+            <ref role="37wK5l" to="hr8v:~FieldElement.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.FieldElement,java.lang.String...):void" resolve="makeOutput" />
             <node concept="2YIFZM" id="6w4Q6PelNvW" role="37wK5m">
-              <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+              <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
             </node>
             <node concept="37vLTw" id="6w4Q6PelNvX" role="37wK5m">
               <ref role="3cqZAo" node="70tVTRbC0Pj" resolve="y" />
@@ -11541,11 +11491,11 @@
             </node>
           </node>
           <node concept="2YIFZM" id="6w4Q6PelZfc" role="3clFbG">
-            <ref role="37wK5l" to="4qka:~Bit.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.Bit,java.lang.String...):void" resolve="makeOutput" />
-            <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
+            <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+            <ref role="37wK5l" to="hr8v:~Bit.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.Bit,java.lang.String...):void" resolve="makeOutput" />
             <node concept="2YIFZM" id="6w4Q6PelZfd" role="37wK5m">
-              <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+              <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
             </node>
             <node concept="37vLTw" id="6w4Q6PelZfe" role="37wK5m">
               <ref role="3cqZAo" node="70tVTRbC0Pg" resolve="x" />
@@ -11623,11 +11573,11 @@
             </node>
           </node>
           <node concept="2YIFZM" id="6w4Q6PelYIX" role="3clFbG">
-            <ref role="37wK5l" to="4qka:~Bit.makeOutput(circuit.structure.CircuitGenerator,circuit.auxTypes.Bit[],java.lang.String...):void" resolve="makeOutput" />
-            <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
+            <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+            <ref role="37wK5l" to="hr8v:~Bit.makeOutput(backend.structure.CircuitGenerator,backend.auxTypes.Bit,java.lang.String...):void" resolve="makeOutput" />
             <node concept="2YIFZM" id="6w4Q6PelYIY" role="37wK5m">
-              <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-              <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+              <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+              <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
             </node>
             <node concept="37vLTw" id="6w4Q6PelYIZ" role="37wK5m">
               <ref role="3cqZAo" node="70tVTRbC0Pj" resolve="y" />
@@ -11667,7 +11617,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="72llHG1ReEH" role="2OqNvi">
-                  <ref role="37wK5l" to="4qka:~StructDefinition.__makeOutput():void" resolve="__makeOutput" />
+                  <ref role="37wK5l" to="hr8v:~StructDefinition.__makeOutput():void" resolve="__makeOutput" />
                 </node>
               </node>
             </node>
@@ -11746,7 +11696,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="72llHG1ReFk" role="2OqNvi">
-                          <ref role="37wK5l" to="4qka:~StructDefinition.__makeOutput():void" resolve="__makeOutput" />
+                          <ref role="37wK5l" to="hr8v:~StructDefinition.__makeOutput():void" resolve="__makeOutput" />
                         </node>
                       </node>
                     </node>
@@ -11889,11 +11839,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6Pema8d" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.createWitness(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.UnsignedInteger" resolve="createWitness" />
-              <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.createWitness(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.UnsignedInteger" resolve="createWitness" />
               <node concept="2YIFZM" id="6w4Q6Pema8e" role="37wK5m">
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="3cmrfG" id="6w4Q6Pema8f" role="37wK5m">
                 <property role="3cmrfH" value="8" />
@@ -11963,11 +11913,11 @@
         <node concept="3clFbF" id="6w4Q6Pem7wk" role="3cqZAp">
           <node concept="37vLTI" id="6w4Q6Pem7wl" role="3clFbG">
             <node concept="2YIFZM" id="6w4Q6PemahM" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.createWitnessArray(circuit.structure.CircuitGenerator,int,int,java.lang.String...):circuit.auxTypes.UnsignedInteger[]" resolve="createWitnessArray" />
-              <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.createWitnessArray(backend.structure.CircuitGenerator,int,int,java.lang.String...):backend.auxTypes.UnsignedInteger[]" resolve="createWitnessArray" />
               <node concept="2YIFZM" id="6w4Q6PemahN" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2OqwBi" id="6w4Q6PemahO" role="37wK5m">
                 <node concept="37vLTw" id="6w4Q6PemahP" role="2Oq$k0">
@@ -12113,11 +12063,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6PemaxT" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~FieldElement.createWitness(circuit.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement" resolve="createWitness" />
-              <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
+              <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.createWitness(backend.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement" resolve="createWitness" />
               <node concept="2YIFZM" id="6w4Q6PemaxU" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2ShNRf" id="6w4Q6PemaxV" role="37wK5m">
                 <node concept="1pGfFk" id="6w4Q6PemaxW" role="2ShVmc">
@@ -12230,11 +12180,11 @@
         <node concept="3clFbF" id="6w4Q6Pem7y7" role="3cqZAp">
           <node concept="37vLTI" id="6w4Q6Pem7y8" role="3clFbG">
             <node concept="2YIFZM" id="6w4Q6PemaH1" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~FieldElement.createWitnessArray(circuit.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement[]" resolve="createWitnessArray" />
-              <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
+              <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.createWitnessArray(backend.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement[]" resolve="createWitnessArray" />
               <node concept="2YIFZM" id="6w4Q6PemaH2" role="37wK5m">
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2OqwBi" id="6w4Q6PemaH3" role="37wK5m">
                 <node concept="37vLTw" id="6w4Q6PemaH4" role="2Oq$k0">
@@ -12425,11 +12375,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6PemaYH" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~Bit.createWitness(circuit.structure.CircuitGenerator,java.lang.String...):circuit.auxTypes.Bit" resolve="createWitness" />
-              <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
+              <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+              <ref role="37wK5l" to="hr8v:~Bit.createWitness(backend.structure.CircuitGenerator,java.lang.String...):backend.auxTypes.Bit" resolve="createWitness" />
               <node concept="2YIFZM" id="6w4Q6PemaYI" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
             </node>
           </node>
@@ -12486,11 +12436,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6Pemb1b" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~Bit.createWitnessArray(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.Bit[]" resolve="createWitnessArray" />
-              <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
+              <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+              <ref role="37wK5l" to="hr8v:~Bit.createWitnessArray(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.Bit[]" resolve="createWitnessArray" />
               <node concept="2YIFZM" id="6w4Q6Pemb1c" role="37wK5m">
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2OqwBi" id="6w4Q6Pemb1d" role="37wK5m">
                 <node concept="37vLTw" id="6w4Q6Pemb1e" role="2Oq$k0">
@@ -12591,7 +12541,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="6w4Q6Pem7$E" role="2OqNvi">
-                  <ref role="37wK5l" to="4qka:~StructDefinition.__makeWitness():void" resolve="__makeWitness" />
+                  <ref role="37wK5l" to="hr8v:~StructDefinition.__makeWitness():void" resolve="__makeWitness" />
                 </node>
               </node>
             </node>
@@ -12670,7 +12620,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="6w4Q6Pem7_h" role="2OqNvi">
-                          <ref role="37wK5l" to="4qka:~StructDefinition.__makeWitness():void" resolve="__makeWitness" />
+                          <ref role="37wK5l" to="hr8v:~StructDefinition.__makeWitness():void" resolve="__makeWitness" />
                         </node>
                       </node>
                     </node>
@@ -12816,11 +12766,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6PbxdRj" role="37vLTx">
-              <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.createVerifiedWitness(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.UnsignedInteger" resolve="createVerifiedWitness" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.createVerifiedWitness(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.UnsignedInteger" resolve="createVerifiedWitness" />
+              <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
               <node concept="2YIFZM" id="6w4Q6PbxdRk" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="3cmrfG" id="6w4Q6PbxdRl" role="37wK5m">
                 <property role="3cmrfH" value="8" />
@@ -12890,11 +12840,11 @@
         <node concept="3clFbF" id="6w4Q6Pbxc5R" role="3cqZAp">
           <node concept="37vLTI" id="6w4Q6Pbxc5S" role="3clFbG">
             <node concept="2YIFZM" id="6w4Q6Pbxe4g" role="37vLTx">
-              <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.createVerifiedWitnessArray(circuit.structure.CircuitGenerator,int,int,java.lang.String...):circuit.auxTypes.UnsignedInteger[]" resolve="createVerifiedWitnessArray" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.createVerifiedWitnessArray(backend.structure.CircuitGenerator,int,int,java.lang.String...):backend.auxTypes.UnsignedInteger[]" resolve="createVerifiedWitnessArray" />
+              <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
               <node concept="2YIFZM" id="6w4Q6Pbxe4h" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2OqwBi" id="6w4Q6Pbxe4i" role="37wK5m">
                 <node concept="37vLTw" id="6w4Q6Pbxe4j" role="2Oq$k0">
@@ -13040,11 +12990,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6PbxemA" role="37vLTx">
-              <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
-              <ref role="37wK5l" to="4qka:~FieldElement.createVerifiedWitness(circuit.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement" resolve="createVerifiedWitness" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.createVerifiedWitness(backend.structure.CircuitGenerator,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement" resolve="createVerifiedWitness" />
+              <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
               <node concept="2YIFZM" id="6w4Q6PbxemB" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2ShNRf" id="6w4Q6PbxemC" role="37wK5m">
                 <node concept="1pGfFk" id="6w4Q6PbxemD" role="2ShVmc">
@@ -13157,11 +13107,11 @@
         <node concept="3clFbF" id="6w4Q6Pbxc7E" role="3cqZAp">
           <node concept="37vLTI" id="6w4Q6Pbxc7F" role="3clFbG">
             <node concept="2YIFZM" id="6w4Q6PbxezW" role="37vLTx">
-              <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
-              <ref role="37wK5l" to="4qka:~FieldElement.createVerifiedWitnessArray(circuit.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):circuit.auxTypes.FieldElement[]" resolve="createVerifiedWitnessArray" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.createVerifiedWitnessArray(backend.structure.CircuitGenerator,int,java.math.BigInteger,java.lang.String...):backend.auxTypes.FieldElement[]" resolve="createVerifiedWitnessArray" />
+              <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
               <node concept="2YIFZM" id="6w4Q6PbxezX" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2OqwBi" id="6w4Q6PbxezY" role="37wK5m">
                 <node concept="37vLTw" id="6w4Q6PbxezZ" role="2Oq$k0">
@@ -13352,11 +13302,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6Pem1cJ" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~Bit.createVerifiedWitness(circuit.structure.CircuitGenerator,java.lang.String...):circuit.auxTypes.Bit" resolve="createVerifiedWitness" />
-              <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
+              <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+              <ref role="37wK5l" to="hr8v:~Bit.createVerifiedWitness(backend.structure.CircuitGenerator,java.lang.String...):backend.auxTypes.Bit" resolve="createVerifiedWitness" />
               <node concept="2YIFZM" id="6w4Q6Pem1cK" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
             </node>
           </node>
@@ -13413,11 +13363,11 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6w4Q6Pem153" role="37vLTx">
-              <ref role="37wK5l" to="4qka:~Bit.createVerifiedWitnessArray(circuit.structure.CircuitGenerator,int,java.lang.String...):circuit.auxTypes.Bit[]" resolve="createVerifiedWitnessArray" />
-              <ref role="1Pybhc" to="4qka:~Bit" resolve="Bit" />
+              <ref role="1Pybhc" to="hr8v:~Bit" resolve="Bit" />
+              <ref role="37wK5l" to="hr8v:~Bit.createVerifiedWitnessArray(backend.structure.CircuitGenerator,int,java.lang.String...):backend.auxTypes.Bit[]" resolve="createVerifiedWitnessArray" />
               <node concept="2YIFZM" id="6w4Q6Pem154" role="37wK5m">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="2OqwBi" id="6w4Q6Pem155" role="37wK5m">
                 <node concept="37vLTw" id="6w4Q6Pem156" role="2Oq$k0">
@@ -13518,7 +13468,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="6w4Q6Pbxcad" role="2OqNvi">
-                  <ref role="37wK5l" to="4qka:~StructDefinition.__makeVerifiedWitness():void" resolve="__makeVerifiedWitness" />
+                  <ref role="37wK5l" to="hr8v:~StructDefinition.__makeVerifiedWitness():void" resolve="__makeVerifiedWitness" />
                 </node>
               </node>
             </node>
@@ -13597,7 +13547,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="6w4Q6PbxcaO" role="2OqNvi">
-                          <ref role="37wK5l" to="4qka:~StructDefinition.__makeVerifiedWitness():void" resolve="__makeVerifiedWitness" />
+                          <ref role="37wK5l" to="hr8v:~StructDefinition.__makeVerifiedWitness():void" resolve="__makeVerifiedWitness" />
                         </node>
                       </node>
                     </node>
@@ -13733,8 +13683,8 @@
             <property role="TrG5h" value="states" />
             <node concept="3uibUv" id="2wcORY4R9hj" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-              <node concept="3uibUv" id="6w4Q6Pe5ZrV" role="11_B2D">
-                <ref role="3uigEE" to="4qka:~VariableState" resolve="VariableState" />
+              <node concept="3uibUv" id="17j6vqKCOGc" role="11_B2D">
+                <ref role="3uigEE" to="hr8v:~VariableState" resolve="VariableState" />
               </node>
             </node>
             <node concept="2ShNRf" id="2wcORY4R9Ms" role="33vP2m">
@@ -13764,7 +13714,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2wcORY4Rdud" role="2OqNvi">
-                  <ref role="37wK5l" to="4qka:~UnsignedInteger.getState():circuit.auxTypes.VariableState" resolve="getState" />
+                  <ref role="37wK5l" to="hr8v:~UnsignedInteger.getState():backend.auxTypes.VariableState" resolve="getState" />
                 </node>
               </node>
             </node>
@@ -13839,7 +13789,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="2wcORY4Rztd" role="2OqNvi">
-                      <ref role="37wK5l" to="4qka:~UnsignedInteger.getState():circuit.auxTypes.VariableState" resolve="getState" />
+                      <ref role="37wK5l" to="hr8v:~UnsignedInteger.getState():backend.auxTypes.VariableState" resolve="getState" />
                     </node>
                   </node>
                 </node>
@@ -13960,7 +13910,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2wcORY4RqJw" role="2OqNvi">
-                  <ref role="37wK5l" to="4qka:~StructDefinition.__alignAndPackAll():void" resolve="__alignAndPackAll" />
+                  <ref role="37wK5l" to="hr8v:~StructDefinition.__alignAndPackAll():void" resolve="__alignAndPackAll" />
                 </node>
               </node>
             </node>
@@ -14040,7 +13990,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="2wcORY4Rstc" role="2OqNvi">
-                          <ref role="37wK5l" to="4qka:~StructDefinition.__alignAndPackAll():void" resolve="__alignAndPackAll" />
+                          <ref role="37wK5l" to="hr8v:~StructDefinition.__alignAndPackAll():void" resolve="__alignAndPackAll" />
                         </node>
                       </node>
                     </node>
@@ -14162,7 +14112,7 @@
                   <ref role="3cqZAo" node="2wcORY4Rjcq" resolve="state" />
                 </node>
                 <node concept="liA8E" id="2wcORY4RjQT" role="2OqNvi">
-                  <ref role="37wK5l" to="4qka:~VariableState.setPackedAhead(boolean):void" resolve="setPackedAhead" />
+                  <ref role="37wK5l" to="hr8v:~VariableState.setPackedAhead(boolean):void" resolve="setPackedAhead" />
                   <node concept="3clFbT" id="2wcORY4RjTb" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -14175,7 +14125,7 @@
                   <ref role="3cqZAo" node="2wcORY4Rjcq" resolve="state" />
                 </node>
                 <node concept="liA8E" id="2wcORY4RjYY" role="2OqNvi">
-                  <ref role="37wK5l" to="4qka:~VariableState.setMustBeWithinRange(boolean):void" resolve="setMustBeWithinRange" />
+                  <ref role="37wK5l" to="hr8v:~VariableState.setMustBeWithinRange(boolean):void" resolve="setMustBeWithinRange" />
                   <node concept="3clFbT" id="2wcORY4RjZh" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -14188,7 +14138,7 @@
                   <ref role="3cqZAo" node="2wcORY4Rjcq" resolve="state" />
                 </node>
                 <node concept="liA8E" id="2wcORY4Rk5K" role="2OqNvi">
-                  <ref role="37wK5l" to="4qka:~VariableState.setConditionallySplittedAndAlignedAhead(boolean):void" resolve="setConditionallySplittedAndAlignedAhead" />
+                  <ref role="37wK5l" to="hr8v:~VariableState.setConditionallySplittedAndAlignedAhead(boolean):void" resolve="setConditionallySplittedAndAlignedAhead" />
                   <node concept="3clFbT" id="2wcORY4Rk63" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -14198,8 +14148,8 @@
           </node>
           <node concept="3cpWsn" id="2wcORY4Rjcq" role="1Duv9x">
             <property role="TrG5h" value="state" />
-            <node concept="3uibUv" id="6w4Q6Pe60_D" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~VariableState" resolve="VariableState" />
+            <node concept="3uibUv" id="17j6vqKCP0A" role="1tU5fm">
+              <ref role="3uigEE" to="hr8v:~VariableState" resolve="VariableState" />
             </node>
           </node>
           <node concept="37vLTw" id="2wcORY4RjDK" role="1DdaDG">
@@ -14236,8 +14186,8 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="2wcORY4QHQv" role="1B3o_S" />
-      <node concept="3uibUv" id="6w4Q6Pe60Hl" role="3clF45">
-        <ref role="3uigEE" to="4qka:~StructDefinition" resolve="StructDefinition" />
+      <node concept="3uibUv" id="17j6vqKCP0F" role="3clF45">
+        <ref role="3uigEE" to="hr8v:~StructDefinition" resolve="StructDefinition" />
       </node>
       <node concept="3clFbS" id="2wcORY4QHQy" role="3clF47">
         <node concept="3clFbF" id="2wcORY4QHQ$" role="3cqZAp">
@@ -14268,8 +14218,8 @@
       <node concept="3Tm1VV" id="2wcORY4QOH$" role="1B3o_S" />
       <node concept="3uibUv" id="2wcORY4RYdC" role="3clF45">
         <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-        <node concept="3uibUv" id="6w4Q6Pe5Zfk" role="11_B2D">
-          <ref role="3uigEE" to="4qka:~IAuxType" resolve="IAuxType" />
+        <node concept="3uibUv" id="17j6vqKCOMq" role="11_B2D">
+          <ref role="3uigEE" to="hr8v:~IAuxType" resolve="IAuxType" />
         </node>
       </node>
       <node concept="3clFbS" id="2wcORY4QOHC" role="3clF47">
@@ -14278,8 +14228,8 @@
             <property role="TrG5h" value="list" />
             <node concept="3uibUv" id="2wcORY4SByf" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-              <node concept="3uibUv" id="6w4Q6Pe5ZEk" role="11_B2D">
-                <ref role="3uigEE" to="4qka:~IAuxType" resolve="IAuxType" />
+              <node concept="3uibUv" id="17j6vqKCOG7" role="11_B2D">
+                <ref role="3uigEE" to="hr8v:~IAuxType" resolve="IAuxType" />
               </node>
             </node>
             <node concept="2ShNRf" id="2wcORY4SEX3" role="33vP2m">
@@ -14501,7 +14451,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="2wcORY4TkvK" role="2OqNvi">
-                      <ref role="37wK5l" to="4qka:~StructDefinition.__getBasicElements():java.util.ArrayList" resolve="__getBasicElements" />
+                      <ref role="37wK5l" to="hr8v:~StructDefinition.__getBasicElements():java.util.ArrayList" resolve="__getBasicElements" />
                     </node>
                   </node>
                 </node>
@@ -14589,7 +14539,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="2wcORY4TkEU" role="2OqNvi">
-                              <ref role="37wK5l" to="4qka:~StructDefinition.__getBasicElements():java.util.ArrayList" resolve="__getBasicElements" />
+                              <ref role="37wK5l" to="hr8v:~StructDefinition.__getBasicElements():java.util.ArrayList" resolve="__getBasicElements" />
                             </node>
                           </node>
                         </node>
@@ -14729,7 +14679,7 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="5RbNWZHVXVe" role="1B3o_S" />
         <node concept="3uibUv" id="6w4Q6Pe7res" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+          <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
         </node>
       </node>
       <node concept="3clFbW" id="5RbNWZHVXVg" role="jymVt">
@@ -15263,7 +15213,7 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="5RbNWZHNNIU" role="1B3o_S" />
         <node concept="3uibUv" id="6w4Q6Pe7mK9" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+          <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
         </node>
       </node>
       <node concept="3clFbW" id="5RbNWZHNNSM" role="jymVt">
@@ -15280,90 +15230,6 @@
                   <property role="2qtEX8" value="baseMethodDeclaration" />
                   <node concept="3$xsQk" id="5RbNWZHRALg" role="3$ytzL">
                     <node concept="3clFbS" id="5RbNWZHRALh" role="2VODD2">
-                      <node concept="1X3_iC" id="5ObDrPa46gm" role="lGtFl">
-                        <property role="3V$3am" value="statement" />
-                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                        <node concept="3clFbF" id="5RbNWZHRANZ" role="8Wnug">
-                          <node concept="3cpWs3" id="5RbNWZHNT$k" role="3clFbG">
-                            <node concept="2OqwBi" id="5RbNWZHNTFY" role="3uHU7w">
-                              <node concept="30H73N" id="5RbNWZHNTAl" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="5RbNWZHNUIq" role="2OqNvi">
-                                <ref role="3Tt5mk" to="tpee:fz7vLUn" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="5RbNWZHNT88" role="3uHU7B">
-                              <property role="Xl_RC" value="____write_" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="1X3_iC" id="5ObDrPa3sDE" role="lGtFl">
-                        <property role="3V$3am" value="statement" />
-                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                        <node concept="3clFbF" id="5ObDrPa2KNK" role="8Wnug">
-                          <node concept="1Wc70l" id="5RbNWZH5Efd" role="3clFbG">
-                            <node concept="2OqwBi" id="5RbNWZH5Hs7" role="3uHU7w">
-                              <node concept="2OqwBi" id="5RbNWZH5Gi0" role="2Oq$k0">
-                                <node concept="1PxgMI" id="5RbNWZH5FKx" role="2Oq$k0">
-                                  <ref role="1PxNhF" to="tpee:fz12cDC" resolve="FieldDeclaration" />
-                                  <node concept="2OqwBi" id="5RbNWZH5Fhc" role="1PxMeX">
-                                    <node concept="1PxgMI" id="5RbNWZH5EIj" role="2Oq$k0">
-                                      <ref role="1PxNhF" to="tpee:fz7vLUo" resolve="VariableReference" />
-                                      <node concept="37vLTw" id="5RbNWZH5EBA" role="1PxMeX">
-                                        <ref role="3cqZAo" to="4ac7:5RbNWZH5$VS" resolve="left" />
-                                      </node>
-                                    </node>
-                                    <node concept="3TrEf2" id="5RbNWZH5F$T" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="tpee:fzcqZ_w" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="1mfA1w" id="5RbNWZH5H2l" role="2OqNvi" />
-                              </node>
-                              <node concept="1mIQ4w" id="5RbNWZH5HIj" role="2OqNvi">
-                                <node concept="chp4Y" id="5RbNWZH5HRd" role="cj9EA">
-                                  <ref role="cht4Q" to="wyjh:5RbNWZGy0nW" resolve="RuntimeStructDefinition" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="1Wc70l" id="5RbNWZH5CJs" role="3uHU7B">
-                              <node concept="2OqwBi" id="5RbNWZH5BNJ" role="3uHU7B">
-                                <node concept="37vLTw" id="5RbNWZH5BLm" role="2Oq$k0">
-                                  <ref role="3cqZAo" to="4ac7:5RbNWZH5$VS" resolve="left" />
-                                </node>
-                                <node concept="1mIQ4w" id="5RbNWZH5BVU" role="2OqNvi">
-                                  <node concept="chp4Y" id="5RbNWZH5CDN" role="cj9EA">
-                                    <ref role="cht4Q" to="tpee:fz7vLUo" resolve="VariableReference" />
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="2OqwBi" id="5RbNWZH5DxQ" role="3uHU7w">
-                                <node concept="2OqwBi" id="5RbNWZH5D35" role="2Oq$k0">
-                                  <node concept="1PxgMI" id="5RbNWZH5CST" role="2Oq$k0">
-                                    <ref role="1PxNhF" to="tpee:fz7vLUo" resolve="VariableReference" />
-                                    <node concept="37vLTw" id="5RbNWZH5CNL" role="1PxMeX">
-                                      <ref role="3cqZAo" to="4ac7:5RbNWZH5$VS" resolve="left" />
-                                    </node>
-                                  </node>
-                                  <node concept="3TrEf2" id="5RbNWZH5Dld" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="tpee:fzcqZ_w" />
-                                  </node>
-                                </node>
-                                <node concept="1mIQ4w" id="5RbNWZH5DX$" role="2OqNvi">
-                                  <node concept="chp4Y" id="5RbNWZH5E4t" role="cj9EA">
-                                    <ref role="cht4Q" to="tpee:fz12cDC" resolve="FieldDeclaration" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="1X3_iC" id="5ObDrPa3sDF" role="lGtFl">
-                        <property role="3V$3am" value="statement" />
-                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                        <node concept="3clFbH" id="5ObDrPa2HiD" role="8Wnug" />
-                      </node>
                       <node concept="3clFbH" id="5ObDrPadM8A" role="3cqZAp" />
                       <node concept="3clFbH" id="5ObDrPadMsD" role="3cqZAp" />
                       <node concept="3clFbH" id="5ObDrPadMKJ" role="3cqZAp" />
@@ -15754,11 +15620,11 @@
     <node concept="3cpWsn" id="5RbNWZHcJ44" role="13RCb5">
       <property role="TrG5h" value="s" />
       <node concept="3uibUv" id="5RbNWZHcJ8F" role="1tU5fm">
-        <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+        <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
       </node>
       <node concept="2YIFZM" id="5RbNWZHcJkD" role="33vP2m">
-        <ref role="1Pybhc" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
-        <ref role="37wK5l" to="4qka:~RuntimeStruct.____createNullObject():circuit.auxTypes.RuntimeStruct" resolve="____createNullObject" />
+        <ref role="1Pybhc" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
+        <ref role="37wK5l" to="hr8v:~RuntimeStruct.____createNullObject():backend.auxTypes.RuntimeStruct" resolve="____createNullObject" />
         <node concept="raruj" id="5RbNWZHcJv0" role="lGtFl" />
         <node concept="3_AbJx" id="5RbNWZHcNwX" role="lGtFl">
           <node concept="3_AbJw" id="5RbNWZHcNwZ" role="3_A0Ny">
@@ -15880,12 +15746,12 @@
     <node concept="3cpWsn" id="5RbNWZHd2Gm" role="13RCb5">
       <property role="TrG5h" value="s" />
       <node concept="3uibUv" id="5RbNWZHd2Gn" role="1tU5fm">
-        <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+        <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
       </node>
       <node concept="2OqwBi" id="5RbNWZHfQwN" role="33vP2m">
         <node concept="2YIFZM" id="5RbNWZHd2Go" role="2Oq$k0">
-          <ref role="1Pybhc" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
-          <ref role="37wK5l" to="4qka:~RuntimeStruct.____createNullObject():circuit.auxTypes.RuntimeStruct" resolve="____createNullObject" />
+          <ref role="1Pybhc" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
+          <ref role="37wK5l" to="hr8v:~RuntimeStruct.____createNullObject():backend.auxTypes.RuntimeStruct" resolve="____createNullObject" />
           <node concept="1ZhdrF" id="5RbNWZHd3w2" role="lGtFl">
             <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700937/1144433194310" />
             <property role="2qtEX8" value="classConcept" />
@@ -15911,7 +15777,7 @@
           </node>
         </node>
         <node concept="liA8E" id="5RbNWZHfQBE" role="2OqNvi">
-          <ref role="37wK5l" to="4qka:~RuntimeStruct.____copy():circuit.auxTypes.RuntimeStruct" resolve="____copy" />
+          <ref role="37wK5l" to="hr8v:~RuntimeStruct.____copy():backend.auxTypes.RuntimeStruct" resolve="____copy" />
         </node>
         <node concept="raruj" id="5RbNWZHfQHN" role="lGtFl" />
       </node>
@@ -15964,7 +15830,7 @@
         </node>
         <node concept="10Nm6u" id="5RbNWZH7lju" role="33vP2m" />
         <node concept="3uibUv" id="5RbNWZH7l$L" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+          <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
           <node concept="29HgVG" id="5RbNWZH7lIu" role="lGtFl">
             <node concept="3NFfHV" id="5RbNWZH7lIv" role="3NFExx">
               <node concept="3clFbS" id="5RbNWZH7lIw" role="2VODD2">
@@ -16009,7 +15875,7 @@
           </node>
         </node>
         <node concept="3uibUv" id="5RbNWZH7hAI" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+          <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
           <node concept="29HgVG" id="5RbNWZH7ihg" role="lGtFl">
             <node concept="3NFfHV" id="5RbNWZH7ihh" role="3NFExx">
               <node concept="3clFbS" id="5RbNWZH7ihi" role="2VODD2">
@@ -16087,7 +15953,7 @@
           <node concept="3cpWsn" id="r_GHmMfg_s" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Pe7unU" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="r_GHmMfg_u" role="33vP2m" />
           </node>
@@ -16096,7 +15962,7 @@
           <node concept="3cpWsn" id="r_GHmMfg_w" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Pe7unS" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="r_GHmMfg_y" role="33vP2m" />
           </node>
@@ -16121,7 +15987,7 @@
               </node>
             </node>
             <node concept="liA8E" id="r_GHmMfg_H" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.andBitwise(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="andBitwise" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.andBitwise(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="andBitwise" />
               <node concept="37vLTw" id="r_GHmMfg_I" role="37wK5m">
                 <ref role="3cqZAo" node="r_GHmMfg_w" resolve="y" />
                 <node concept="29HgVG" id="r_GHmMfg_J" role="lGtFl">
@@ -16156,7 +16022,7 @@
           <node concept="3cpWsn" id="6DTPir0lX1Y" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Pe7uDF" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6DTPir0lX20" role="33vP2m" />
           </node>
@@ -16206,7 +16072,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6DTPir0lX2f" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.andBitwise(java.math.BigInteger):circuit.auxTypes.UnsignedInteger" resolve="andBitwise" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.andBitwise(java.math.BigInteger):backend.auxTypes.UnsignedInteger" resolve="andBitwise" />
               <node concept="2ShNRf" id="6DTPir0lXA$" role="37wK5m">
                 <node concept="1pGfFk" id="6DTPir0lXLB" role="2ShVmc">
                   <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
@@ -16251,7 +16117,7 @@
           <node concept="3cpWsn" id="r_GHmMfgTU" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Pe7uU5" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="r_GHmMfgTW" role="33vP2m" />
           </node>
@@ -16260,7 +16126,7 @@
           <node concept="3cpWsn" id="r_GHmMfgTY" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Pe7uVD" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="r_GHmMfgU0" role="33vP2m" />
           </node>
@@ -16285,7 +16151,7 @@
               </node>
             </node>
             <node concept="liA8E" id="r_GHmMfgUb" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.orBitwise(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="orBitwise" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.orBitwise(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="orBitwise" />
               <node concept="37vLTw" id="r_GHmMfgUc" role="37wK5m">
                 <ref role="3cqZAo" node="r_GHmMfgTY" resolve="y" />
                 <node concept="29HgVG" id="r_GHmMfgUd" role="lGtFl">
@@ -16320,7 +16186,7 @@
           <node concept="3cpWsn" id="6DTPir0lZD_" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Pe7vd0" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6DTPir0lZDB" role="33vP2m" />
           </node>
@@ -16370,7 +16236,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6DTPir0lZDW" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.orBitwise(java.math.BigInteger):circuit.auxTypes.UnsignedInteger" resolve="orBitwise" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.orBitwise(java.math.BigInteger):backend.auxTypes.UnsignedInteger" resolve="orBitwise" />
               <node concept="2ShNRf" id="6DTPir0lZDX" role="37wK5m">
                 <node concept="1pGfFk" id="6DTPir0lZDY" role="2ShVmc">
                   <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
@@ -16415,7 +16281,7 @@
           <node concept="3cpWsn" id="r_GHmMfgh9" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Pe7vtq" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="r_GHmMfghb" role="33vP2m" />
           </node>
@@ -16424,7 +16290,7 @@
           <node concept="3cpWsn" id="r_GHmMfghd" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Pe7vto" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="r_GHmMfghf" role="33vP2m" />
           </node>
@@ -16449,7 +16315,7 @@
               </node>
             </node>
             <node concept="liA8E" id="r_GHmMfghq" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.xorBitwise(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="xorBitwise" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.xorBitwise(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="xorBitwise" />
               <node concept="37vLTw" id="r_GHmMfghr" role="37wK5m">
                 <ref role="3cqZAo" node="r_GHmMfghd" resolve="y" />
                 <node concept="29HgVG" id="r_GHmMfghs" role="lGtFl">
@@ -16484,7 +16350,7 @@
           <node concept="3cpWsn" id="6DTPir0m0ns" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Peb21J" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6DTPir0m0nu" role="33vP2m" />
           </node>
@@ -16534,7 +16400,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6DTPir0m0nN" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.xorBitwise(java.math.BigInteger):circuit.auxTypes.UnsignedInteger" resolve="xorBitwise" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.xorBitwise(java.math.BigInteger):backend.auxTypes.UnsignedInteger" resolve="xorBitwise" />
               <node concept="2ShNRf" id="6DTPir0m0nO" role="37wK5m">
                 <node concept="1pGfFk" id="6DTPir0m0nP" role="2ShVmc">
                   <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
@@ -16580,7 +16446,7 @@
             <node concept="3cpWsn" id="4JdZtZI_QML" role="3cpWs9">
               <property role="TrG5h" value="x" />
               <node concept="3uibUv" id="6w4Q6Peb35S" role="1tU5fm">
-                <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+                <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
               </node>
               <node concept="10Nm6u" id="4JdZtZI_QMN" role="33vP2m" />
             </node>
@@ -16589,7 +16455,7 @@
             <node concept="3cpWsn" id="4JdZtZI_QMP" role="3cpWs9">
               <property role="TrG5h" value="y" />
               <node concept="3uibUv" id="6w4Q6Peb35U" role="1tU5fm">
-                <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+                <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
               </node>
               <node concept="10Nm6u" id="4JdZtZI_QMR" role="33vP2m" />
             </node>
@@ -16614,7 +16480,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4JdZtZI_QN2" role="2OqNvi">
-                <ref role="37wK5l" to="4qka:~UnsignedInteger.mul(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="mul" />
+                <ref role="37wK5l" to="hr8v:~UnsignedInteger.mul(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="mul" />
                 <node concept="37vLTw" id="4JdZtZI_QN3" role="37wK5m">
                   <ref role="3cqZAo" node="4JdZtZI_QMP" resolve="y" />
                   <node concept="29HgVG" id="4JdZtZI_QN4" role="lGtFl">
@@ -16651,7 +16517,7 @@
           <node concept="3cpWsn" id="r_GHmMefcx" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Peb2UQ" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="r_GHmMefcW" role="33vP2m" />
           </node>
@@ -16660,7 +16526,7 @@
           <node concept="3cpWsn" id="r_GHmMefd$" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Peb2US" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="r_GHmMefe5" role="33vP2m" />
           </node>
@@ -16685,7 +16551,7 @@
               </node>
             </node>
             <node concept="liA8E" id="r_GHmMefhN" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.add(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="add" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.add(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="add" />
               <node concept="37vLTw" id="r_GHmMefi4" role="37wK5m">
                 <ref role="3cqZAo" node="r_GHmMefd$" resolve="y" />
                 <node concept="29HgVG" id="r_GHmMefl$" role="lGtFl">
@@ -16720,7 +16586,7 @@
           <node concept="3cpWsn" id="6DTPir0lDM7" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Peb3z6" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6DTPir0lDM9" role="33vP2m" />
           </node>
@@ -16754,7 +16620,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6DTPir0lDMo" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.shiftLeft(int):circuit.auxTypes.UnsignedInteger" resolve="shiftLeft" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.shiftLeft(int):backend.auxTypes.UnsignedInteger" resolve="shiftLeft" />
               <node concept="37vLTw" id="6DTPir0lDMp" role="37wK5m">
                 <ref role="3cqZAo" node="6DTPir0lDTV" resolve="v" />
                 <node concept="29HgVG" id="6DTPir0lDMq" role="lGtFl">
@@ -16789,7 +16655,7 @@
           <node concept="3cpWsn" id="6DTPir0lEAP" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Peb3Hv" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6DTPir0lEAR" role="33vP2m" />
           </node>
@@ -16823,7 +16689,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6DTPir0lEB6" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.shiftRight(int):circuit.auxTypes.UnsignedInteger" resolve="shiftRight" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.shiftRight(int):backend.auxTypes.UnsignedInteger" resolve="shiftRight" />
               <node concept="37vLTw" id="6DTPir0lEB7" role="37wK5m">
                 <ref role="3cqZAo" node="6DTPir0lEAT" resolve="v" />
                 <node concept="29HgVG" id="6DTPir0lEB8" role="lGtFl">
@@ -17017,11 +16883,11 @@
               <node concept="3cpWsn" id="7aL4SFtuHD3" role="3cpWs9">
                 <property role="TrG5h" value="x" />
                 <node concept="3uibUv" id="6w4Q6Pe7Eu9" role="1tU5fm">
-                  <ref role="3uigEE" to="4qka:~Bit" resolve="Bit" />
+                  <ref role="3uigEE" to="hr8v:~Bit" resolve="Bit" />
                 </node>
                 <node concept="2ShNRf" id="7aL4SFtuHD5" role="33vP2m">
                   <node concept="1pGfFk" id="7aL4SFtuHD6" role="2ShVmc">
-                    <ref role="37wK5l" to="4qka:~Bit.&lt;init&gt;()" resolve="Bit" />
+                    <ref role="37wK5l" to="hr8v:~Bit.&lt;init&gt;()" resolve="Bit" />
                   </node>
                   <node concept="29HgVG" id="7aL4SFtuHD7" role="lGtFl">
                     <node concept="3NFfHV" id="7aL4SFtuHD8" role="3NFExx">
@@ -17406,7 +17272,7 @@
                       <ref role="3cqZAo" node="7aL4SFtuHD3" resolve="x" />
                     </node>
                     <node concept="liA8E" id="4KcdYk5e$Se" role="2OqNvi">
-                      <ref role="37wK5l" to="4qka:~Bit.getConstantValue():java.lang.Boolean" resolve="getConstantValue" />
+                      <ref role="37wK5l" to="hr8v:~Bit.getConstantValue():java.lang.Boolean" resolve="getConstantValue" />
                     </node>
                   </node>
                 </node>
@@ -17416,21 +17282,21 @@
                   <ref role="3cqZAo" node="7aL4SFtuHD3" resolve="x" />
                 </node>
                 <node concept="liA8E" id="4KcdYk59NQx" role="2OqNvi">
-                  <ref role="37wK5l" to="4qka:~Bit.isConstant():boolean" resolve="isConstant" />
+                  <ref role="37wK5l" to="hr8v:~Bit.isConstant():boolean" resolve="isConstant" />
                 </node>
               </node>
               <node concept="9aQIb" id="4KcdYk59NQQ" role="9aQIa">
                 <node concept="3clFbS" id="4KcdYk59NQR" role="9aQI4">
                   <node concept="3clFbF" id="5qibsSHamIU" role="3cqZAp">
                     <node concept="2YIFZM" id="5qibsSHamUL" role="3clFbG">
-                      <ref role="1Pybhc" to="4qka:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
-                      <ref role="37wK5l" to="4qka:~ConditionalScopeTracker.pushMain():void" resolve="pushMain" />
+                      <ref role="1Pybhc" to="hr8v:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
+                      <ref role="37wK5l" to="hr8v:~ConditionalScopeTracker.pushMain():void" resolve="pushMain" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="6zlb0z0FdG0" role="3cqZAp">
                     <node concept="2YIFZM" id="6zlb0z0FdRM" role="3clFbG">
-                      <ref role="1Pybhc" to="4qka:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
-                      <ref role="37wK5l" to="4qka:~ConditionalScopeTracker.push(circuit.auxTypes.Bit):void" resolve="push" />
+                      <ref role="1Pybhc" to="hr8v:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
+                      <ref role="37wK5l" to="hr8v:~ConditionalScopeTracker.push(backend.auxTypes.Bit):void" resolve="push" />
                       <node concept="37vLTw" id="6zlb0z0FdUr" role="37wK5m">
                         <ref role="3cqZAo" node="7aL4SFtuHD3" resolve="x" />
                       </node>
@@ -17460,7 +17326,7 @@
                       <node concept="3cpWsn" id="7aL4SFtuHDy" role="3cpWs9">
                         <property role="TrG5h" value="prev" />
                         <node concept="3uibUv" id="7aL4SFtuHDz" role="1tU5fm">
-                          <ref role="3uigEE" to="4qkb:~Bit" resolve="Bit" />
+                          <ref role="3uigEE" to="hr8v:~Bit" resolve="Bit" />
                         </node>
                         <node concept="37vLTw" id="7aL4SFtuHD$" role="33vP2m">
                           <ref role="3cqZAo" node="7aL4SFtuHD3" resolve="x" />
@@ -17488,19 +17354,19 @@
                   </node>
                   <node concept="3clFbF" id="5RbNWZGEpB5" role="3cqZAp">
                     <node concept="2YIFZM" id="5RbNWZGEt05" role="3clFbG">
-                      <ref role="1Pybhc" to="4qka:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
-                      <ref role="37wK5l" to="4qka:~ConditionalScopeTracker.pop():void" resolve="pop" />
+                      <ref role="1Pybhc" to="hr8v:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
+                      <ref role="37wK5l" to="hr8v:~ConditionalScopeTracker.pop():void" resolve="pop" />
                     </node>
                   </node>
                   <node concept="9aQIb" id="7aL4SFtuI5L" role="3cqZAp">
                     <node concept="3clFbS" id="7aL4SFtuI5N" role="9aQI4">
                       <node concept="3clFbF" id="6zlb0z0Fe$A" role="3cqZAp">
                         <node concept="2YIFZM" id="6zlb0z0Fe$B" role="3clFbG">
-                          <ref role="1Pybhc" to="4qka:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
-                          <ref role="37wK5l" to="4qka:~ConditionalScopeTracker.push(circuit.auxTypes.Bit):void" resolve="push" />
+                          <ref role="1Pybhc" to="hr8v:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
+                          <ref role="37wK5l" to="hr8v:~ConditionalScopeTracker.push(backend.auxTypes.Bit):void" resolve="push" />
                           <node concept="2ShNRf" id="5qibsSHamYt" role="37wK5m">
                             <node concept="1pGfFk" id="5qibsSHamYu" role="2ShVmc">
-                              <ref role="37wK5l" to="4qka:~Bit.&lt;init&gt;()" resolve="Bit" />
+                              <ref role="37wK5l" to="hr8v:~Bit.&lt;init&gt;()" resolve="Bit" />
                             </node>
                             <node concept="29HgVG" id="5qibsSHamYv" role="lGtFl">
                               <node concept="3NFfHV" id="5qibsSHamYw" role="3NFExx">
@@ -17552,8 +17418,8 @@
                       </node>
                       <node concept="3clFbF" id="6zlb0z0FeHA" role="3cqZAp">
                         <node concept="2YIFZM" id="6zlb0z0FeMh" role="3clFbG">
-                          <ref role="1Pybhc" to="4qka:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
-                          <ref role="37wK5l" to="4qka:~ConditionalScopeTracker.pop():void" resolve="pop" />
+                          <ref role="1Pybhc" to="hr8v:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
+                          <ref role="37wK5l" to="hr8v:~ConditionalScopeTracker.pop():void" resolve="pop" />
                         </node>
                       </node>
                       <node concept="3clFbH" id="6zlb0z0FeiI" role="3cqZAp" />
@@ -17576,11 +17442,11 @@
                   <node concept="3clFbH" id="7aL4SFtuHEe" role="3cqZAp" />
                   <node concept="3clFbF" id="6zlb0z0FePy" role="3cqZAp">
                     <node concept="2YIFZM" id="6zlb0z0FePz" role="3clFbG">
-                      <ref role="1Pybhc" to="4qka:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
-                      <ref role="37wK5l" to="4qka:~ConditionalScopeTracker.push(circuit.auxTypes.Bit):void" resolve="push" />
+                      <ref role="1Pybhc" to="hr8v:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
+                      <ref role="37wK5l" to="hr8v:~ConditionalScopeTracker.push(backend.auxTypes.Bit):void" resolve="push" />
                       <node concept="2ShNRf" id="5qibsSHan6h" role="37wK5m">
                         <node concept="1pGfFk" id="5qibsSHatAF" role="2ShVmc">
-                          <ref role="37wK5l" to="4qka:~Bit.&lt;init&gt;(boolean)" resolve="Bit" />
+                          <ref role="37wK5l" to="hr8v:~Bit.&lt;init&gt;(boolean)" resolve="Bit" />
                           <node concept="3clFbT" id="5qibsSHatB0" role="37wK5m">
                             <property role="3clFbU" value="true" />
                           </node>
@@ -17607,14 +17473,14 @@
                   </node>
                   <node concept="3clFbF" id="6zlb0z0FfbS" role="3cqZAp">
                     <node concept="2YIFZM" id="6zlb0z0FfbT" role="3clFbG">
-                      <ref role="1Pybhc" to="4qka:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
-                      <ref role="37wK5l" to="4qka:~ConditionalScopeTracker.pop():void" resolve="pop" />
+                      <ref role="1Pybhc" to="hr8v:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
+                      <ref role="37wK5l" to="hr8v:~ConditionalScopeTracker.pop():void" resolve="pop" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="5qibsSHatN7" role="3cqZAp">
                     <node concept="2YIFZM" id="5qibsSHatYv" role="3clFbG">
-                      <ref role="1Pybhc" to="4qka:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
-                      <ref role="37wK5l" to="4qka:~ConditionalScopeTracker.popMain():void" resolve="popMain" />
+                      <ref role="1Pybhc" to="hr8v:~ConditionalScopeTracker" resolve="ConditionalScopeTracker" />
+                      <ref role="37wK5l" to="hr8v:~ConditionalScopeTracker.popMain():void" resolve="popMain" />
                     </node>
                   </node>
                 </node>
@@ -17630,7 +17496,7 @@
                       <ref role="3cqZAo" node="7aL4SFtuHDy" resolve="prev" />
                     </node>
                     <node concept="liA8E" id="7aL4SFtuJIN" role="2OqNvi">
-                      <ref role="37wK5l" to="4qkb:~Bit.inv():circuit.auxTypes.Bit" resolve="inv" />
+                      <ref role="37wK5l" to="hr8v:~Bit.inv():backend.auxTypes.Bit" resolve="inv" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="7aL4SFtuJxo" role="37vLTJ">
@@ -18861,7 +18727,7 @@
       <node concept="gft3U" id="5qibsSHjmwa" role="1lVwrX">
         <node concept="2ShNRf" id="5qibsSHjmxJ" role="gfFT$">
           <node concept="1pGfFk" id="5qibsSHjmxK" role="2ShVmc">
-            <ref role="37wK5l" to="4qka:~UnsignedInteger.&lt;init&gt;(int,java.math.BigInteger)" resolve="UnsignedInteger" />
+            <ref role="37wK5l" to="hr8v:~UnsignedInteger.&lt;init&gt;(int,java.math.BigInteger)" resolve="UnsignedInteger" />
             <node concept="3cmrfG" id="5qibsSHjmxL" role="37wK5m">
               <property role="3cmrfH" value="1" />
               <node concept="3_AbJx" id="5qibsSHjmxM" role="lGtFl">
@@ -19632,7 +19498,7 @@
       <node concept="gft3U" id="5qibsSHjmVv" role="1lVwrX">
         <node concept="2ShNRf" id="5qibsSHjmVw" role="gfFT$">
           <node concept="1pGfFk" id="5qibsSHjmVx" role="2ShVmc">
-            <ref role="37wK5l" to="4qka:~FieldElement.&lt;init&gt;(java.math.BigInteger,java.math.BigInteger)" resolve="FieldElement" />
+            <ref role="37wK5l" to="hr8v:~FieldElement.&lt;init&gt;(java.math.BigInteger,java.math.BigInteger)" resolve="FieldElement" />
             <node concept="2ShNRf" id="5qibsSHjo6z" role="37wK5m">
               <node concept="1pGfFk" id="5qibsSHjolg" role="2ShVmc">
                 <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
@@ -19756,7 +19622,7 @@
       <node concept="gft3U" id="72llHG27HD3" role="1lVwrX">
         <node concept="2ShNRf" id="72llHG27HD4" role="gfFT$">
           <node concept="1pGfFk" id="72llHG27HD5" role="2ShVmc">
-            <ref role="37wK5l" to="4qka:~UnsignedInteger.&lt;init&gt;(int,java.math.BigInteger)" resolve="UnsignedInteger" />
+            <ref role="37wK5l" to="hr8v:~UnsignedInteger.&lt;init&gt;(int,java.math.BigInteger)" resolve="UnsignedInteger" />
             <node concept="3cmrfG" id="72llHG27HD6" role="37wK5m">
               <property role="3cmrfH" value="1" />
               <node concept="3_AbJx" id="72llHG27HD7" role="lGtFl">
@@ -19897,7 +19763,7 @@
       <node concept="gft3U" id="72llHG27Isw" role="1lVwrX">
         <node concept="2ShNRf" id="72llHG27Isx" role="gfFT$">
           <node concept="1pGfFk" id="72llHG27Isy" role="2ShVmc">
-            <ref role="37wK5l" to="4qka:~FieldElement.&lt;init&gt;(java.math.BigInteger,java.math.BigInteger)" resolve="FieldElement" />
+            <ref role="37wK5l" to="hr8v:~FieldElement.&lt;init&gt;(java.math.BigInteger,java.math.BigInteger)" resolve="FieldElement" />
             <node concept="2ShNRf" id="72llHG27Isz" role="37wK5m">
               <node concept="1pGfFk" id="72llHG27Is$" role="2ShVmc">
                 <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
@@ -20486,7 +20352,7 @@
         <node concept="3cpWsn" id="5RbNWZHtuWh" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="5RbNWZHtv6z" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+            <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
           </node>
           <node concept="10Nm6u" id="5RbNWZHtuWj" role="33vP2m" />
         </node>
@@ -20495,7 +20361,7 @@
         <node concept="3cpWsn" id="5RbNWZHtuWl" role="3cpWs9">
           <property role="TrG5h" value="y" />
           <node concept="3uibUv" id="5RbNWZHtvbb" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+            <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
           </node>
           <node concept="10Nm6u" id="5RbNWZHtuWn" role="33vP2m" />
         </node>
@@ -20520,7 +20386,7 @@
             </node>
           </node>
           <node concept="liA8E" id="5RbNWZHtuWy" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~RuntimeStruct.____assign(circuit.auxTypes.RuntimeStruct):void" resolve="____assign" />
+            <ref role="37wK5l" to="hr8v:~RuntimeStruct.____assign(backend.auxTypes.RuntimeStruct):void" resolve="____assign" />
             <node concept="37vLTw" id="5RbNWZHtuWz" role="37wK5m">
               <ref role="3cqZAo" node="5RbNWZHtuWh" resolve="x" />
               <node concept="29HgVG" id="5RbNWZHtuW$" role="lGtFl">
@@ -20554,7 +20420,7 @@
           <node concept="3cpWsn" id="6w4Q6P2tOPM" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Pe7vI1" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6w4Q6P2tOPO" role="33vP2m" />
           </node>
@@ -20563,7 +20429,7 @@
           <node concept="3cpWsn" id="6w4Q6P2tOPQ" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Pe7vI3" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6w4Q6P2tOPS" role="33vP2m" />
           </node>
@@ -20588,7 +20454,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6w4Q6P2tOQ3" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.div(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="div" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.div(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="div" />
               <node concept="37vLTw" id="6w4Q6P2tOQ4" role="37wK5m">
                 <ref role="3cqZAo" node="6w4Q6P2tOPQ" resolve="y" />
                 <node concept="29HgVG" id="6w4Q6P2tOQ5" role="lGtFl">
@@ -20629,7 +20495,7 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="5RbNWZI3wgU" role="1B3o_S" />
         <node concept="3uibUv" id="6w4Q6Pe7wEa" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+          <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
         </node>
       </node>
       <node concept="3clFbW" id="5RbNWZI3wgW" role="jymVt">
@@ -21073,8 +20939,8 @@
     <ref role="3gUMe" to="26c9:6w4Q6PdgKLq" resolve="JFieldConversion" />
     <node concept="3clFbF" id="6w4Q6PdgW9n" role="13RCb5">
       <node concept="2YIFZM" id="6w4Q6PdWtPH" role="3clFbG">
-        <ref role="37wK5l" to="4qka:~FieldElement.instantiateFrom(java.math.BigInteger,int):circuit.auxTypes.FieldElement" resolve="instantiateFrom" />
-        <ref role="1Pybhc" to="4qka:~FieldElement" resolve="FieldElement" />
+        <ref role="1Pybhc" to="hr8v:~FieldElement" resolve="FieldElement" />
+        <ref role="37wK5l" to="hr8v:~FieldElement.instantiateFrom(java.math.BigInteger,int):backend.auxTypes.FieldElement" resolve="instantiateFrom" />
         <node concept="2ShNRf" id="6w4Q6PdWtPI" role="37wK5m">
           <node concept="1pGfFk" id="6w4Q6PdWtPJ" role="2ShVmc">
             <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
@@ -21166,7 +21032,7 @@
         <node concept="3cpWsn" id="6w4Q6P6wmRp" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6Peb2il" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
@@ -21174,7 +21040,7 @@
         <node concept="3cpWsn" id="6w4Q6P6wmRs" role="3cpWs9">
           <property role="TrG5h" value="y" />
           <node concept="3uibUv" id="6w4Q6Peb2i7" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
@@ -21186,7 +21052,7 @@
               <ref role="3cqZAo" node="6w4Q6P6wmRp" resolve="x" />
             </node>
             <node concept="liA8E" id="6w4Q6P6wmRz" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.add(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="add" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.add(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="add" />
               <node concept="37vLTw" id="6w4Q6P6wmR$" role="37wK5m">
                 <ref role="3cqZAo" node="6w4Q6P6wmRs" resolve="y" />
               </node>
@@ -21202,7 +21068,7 @@
             </node>
           </node>
           <node concept="liA8E" id="6w4Q6P6wmRE" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~UnsignedInteger.copy():circuit.auxTypes.UnsignedInteger" resolve="copy" />
+            <ref role="37wK5l" to="hr8v:~UnsignedInteger.copy():backend.auxTypes.UnsignedInteger" resolve="copy" />
           </node>
           <node concept="raruj" id="6w4Q6P6wmRM" role="lGtFl" />
         </node>
@@ -21215,8 +21081,8 @@
     <ref role="3gUMe" to="26c9:7SXhc66hqcL" resolve="JUnsignedIntegerConversion" />
     <node concept="3clFbF" id="6w4Q6P37Xr8" role="13RCb5">
       <node concept="2YIFZM" id="6w4Q6P37XAW" role="3clFbG">
-        <ref role="1Pybhc" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
-        <ref role="37wK5l" to="4qka:~UnsignedInteger.instantiateFrom(int,int):circuit.auxTypes.UnsignedInteger" resolve="instantiateFrom" />
+        <ref role="1Pybhc" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
+        <ref role="37wK5l" to="hr8v:~UnsignedInteger.instantiateFrom(int,int):backend.auxTypes.UnsignedInteger" resolve="instantiateFrom" />
         <node concept="3cmrfG" id="6w4Q6P37XGz" role="37wK5m">
           <property role="3cmrfH" value="11" />
           <node concept="17Uvod" id="6w4Q6P37YP$" role="lGtFl">
@@ -21271,7 +21137,7 @@
         <node concept="3cpWsn" id="6w4Q6P6k3i$" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6Peb2_d" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
@@ -21279,7 +21145,7 @@
         <node concept="3cpWsn" id="6w4Q6P6k3iB" role="3cpWs9">
           <property role="TrG5h" value="y" />
           <node concept="3uibUv" id="6w4Q6Peb2yR" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
@@ -21291,7 +21157,7 @@
               <ref role="3cqZAo" node="6w4Q6P6k3i$" resolve="x" />
             </node>
             <node concept="liA8E" id="6w4Q6P6k3iI" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.add(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="add" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.add(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="add" />
               <node concept="37vLTw" id="6w4Q6P6k3iJ" role="37wK5m">
                 <ref role="3cqZAo" node="6w4Q6P6k3iB" resolve="y" />
               </node>
@@ -21307,7 +21173,7 @@
             </node>
           </node>
           <node concept="liA8E" id="6w4Q6P6k3iP" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~UnsignedInteger.copy(int):circuit.auxTypes.UnsignedInteger" resolve="copy" />
+            <ref role="37wK5l" to="hr8v:~UnsignedInteger.copy(int):backend.auxTypes.UnsignedInteger" resolve="copy" />
             <node concept="3cmrfG" id="6w4Q6P6k3iQ" role="37wK5m">
               <property role="3cmrfH" value="12" />
               <node concept="17Uvod" id="6w4Q6P6k3iR" role="lGtFl">
@@ -21342,7 +21208,7 @@
           <node concept="3cpWsn" id="6w4Q6P2tP6U" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Peb3g$" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6w4Q6P2tP6W" role="33vP2m" />
           </node>
@@ -21351,7 +21217,7 @@
           <node concept="3cpWsn" id="6w4Q6P2tP6Y" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Peb3gy" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6w4Q6P2tP70" role="33vP2m" />
           </node>
@@ -21376,7 +21242,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6w4Q6P2tP7b" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.mod(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="mod" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.mod(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="mod" />
               <node concept="37vLTw" id="6w4Q6P2tP7c" role="37wK5m">
                 <ref role="3cqZAo" node="6w4Q6P2tP6Y" resolve="y" />
                 <node concept="29HgVG" id="6w4Q6P2tP7d" role="lGtFl">
@@ -21410,7 +21276,7 @@
         <node concept="3cpWsn" id="5RbNWZHiCq4" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6Peb3nW" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+            <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
           </node>
         </node>
       </node>
@@ -21418,7 +21284,7 @@
         <node concept="3cpWsn" id="5RbNWZHiCE2" role="3cpWs9">
           <property role="TrG5h" value="v" />
           <node concept="3uibUv" id="5RbNWZHiCE3" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+            <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
           </node>
         </node>
       </node>
@@ -21426,7 +21292,7 @@
         <node concept="3cpWsn" id="5RbNWZHiErX" role="3cpWs9">
           <property role="TrG5h" value="r" />
           <node concept="3uibUv" id="5RbNWZHiErY" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~RuntimeStruct" resolve="RuntimeStruct" />
+            <ref role="3uigEE" to="hr8v:~RuntimeStruct" resolve="RuntimeStruct" />
           </node>
         </node>
       </node>
@@ -21463,7 +21329,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5RbNWZHiELZ" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~RuntimeStruct.____copy():circuit.auxTypes.RuntimeStruct" resolve="____copy" />
+              <ref role="37wK5l" to="hr8v:~RuntimeStruct.____copy():backend.auxTypes.RuntimeStruct" resolve="____copy" />
             </node>
             <node concept="raruj" id="5RbNWZHrtMj" role="lGtFl" />
           </node>
@@ -21487,7 +21353,7 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="5RbNWZI2tiK" role="1B3o_S" />
         <node concept="3uibUv" id="6w4Q6Peb4Ma" role="1tU5fm">
-          <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+          <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
         </node>
       </node>
       <node concept="3clFbW" id="5RbNWZI2tiM" role="jymVt">
@@ -21837,8 +21703,8 @@
         <node concept="3cpWsn" id="6w4Q6PaDy0s" role="3cpWs9">
           <property role="TrG5h" value="list" />
           <node concept="10Q1$e" id="6w4Q6PaDy0t" role="1tU5fm">
-            <node concept="3uibUv" id="6w4Q6PdZWxX" role="10Q1$1">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <node concept="3uibUv" id="17j6vqKGVSz" role="10Q1$1">
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
           </node>
         </node>
@@ -21852,14 +21718,14 @@
         <node concept="3cpWsn" id="6w4Q6PaDy0y" role="3cpWs9">
           <property role="TrG5h" value="m" />
           <node concept="3uibUv" id="6w4Q6PaDy0z" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~SmartMemory" resolve="SmartMemory" />
+            <ref role="3uigEE" to="hr8v:~SmartMemory" resolve="SmartMemory" />
             <node concept="3uibUv" id="6w4Q6PdZWuB" role="11_B2D">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
           </node>
           <node concept="2ShNRf" id="6w4Q6PaDy0_" role="33vP2m">
             <node concept="1pGfFk" id="6w4Q6PaDy0A" role="2ShVmc">
-              <ref role="37wK5l" to="4qka:~SmartMemory.&lt;init&gt;(int,java.lang.Object,java.lang.Class,java.lang.Object[])" resolve="SmartMemory" />
+              <ref role="37wK5l" to="hr8v:~SmartMemory.&lt;init&gt;(int,java.lang.Object,java.lang.Class,java.lang.Object[])" resolve="SmartMemory" />
               <node concept="3cmrfG" id="6w4Q6PaDFnf" role="37wK5m">
                 <property role="3cmrfH" value="3" />
                 <node concept="29HgVG" id="6w4Q6PaDGhy" role="lGtFl">
@@ -22075,7 +21941,7 @@
           <property role="TrG5h" value="list" />
           <node concept="10Q1$e" id="1F6kLWsrzb8" role="1tU5fm">
             <node concept="3uibUv" id="6w4Q6Pe5xFg" role="10Q1$1">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
           </node>
         </node>
@@ -22089,14 +21955,14 @@
         <node concept="3cpWsn" id="1F6kLWsryYQ" role="3cpWs9">
           <property role="TrG5h" value="m" />
           <node concept="3uibUv" id="1F6kLWsryYN" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~SmartMemory" resolve="SmartMemory" />
+            <ref role="3uigEE" to="hr8v:~SmartMemory" resolve="SmartMemory" />
             <node concept="3uibUv" id="6w4Q6Pe5xGM" role="11_B2D">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
           </node>
           <node concept="2ShNRf" id="1F6kLWsryZQ" role="33vP2m">
             <node concept="1pGfFk" id="1F6kLWsr_5E" role="2ShVmc">
-              <ref role="37wK5l" to="4qka:~SmartMemory.&lt;init&gt;(java.lang.Object[],java.lang.Class,java.lang.Object[])" resolve="SmartMemory" />
+              <ref role="37wK5l" to="hr8v:~SmartMemory.&lt;init&gt;(java.lang.Object[],java.lang.Class,java.lang.Object[])" resolve="SmartMemory" />
               <node concept="37vLTw" id="1F6kLWsr_5Z" role="37wK5m">
                 <ref role="3cqZAo" node="1F6kLWsrzb7" resolve="list" />
                 <node concept="29HgVG" id="1F6kLWsr_Zz" role="lGtFl">
@@ -22310,9 +22176,9 @@
         <node concept="3cpWsn" id="1F6kLWsGAay" role="3cpWs9">
           <property role="TrG5h" value="m" />
           <node concept="3uibUv" id="1F6kLWsGAav" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~SmartMemory" resolve="SmartMemory" />
+            <ref role="3uigEE" to="hr8v:~SmartMemory" resolve="SmartMemory" />
             <node concept="3uibUv" id="6w4Q6Pe5Anl" role="11_B2D">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
           </node>
         </node>
@@ -22321,7 +22187,7 @@
         <node concept="3cpWsn" id="1F6kLWsGAjm" role="3cpWs9">
           <property role="TrG5h" value="idx" />
           <node concept="3uibUv" id="6w4Q6Pe5Anp" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
@@ -22329,7 +22195,7 @@
         <node concept="3cpWsn" id="1F6kLWsGAbv" role="3cpWs9">
           <property role="TrG5h" value="v" />
           <node concept="3uibUv" id="6w4Q6Pe5Ann" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
           <node concept="2OqwBi" id="1F6kLWsGAcU" role="33vP2m">
             <node concept="37vLTw" id="1F6kLWsGAbV" role="2Oq$k0">
@@ -22350,7 +22216,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1F6kLWsGAhu" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~SmartMemory.read(circuit.auxTypes.UnsignedInteger):java.lang.Object" resolve="read" />
+              <ref role="37wK5l" to="hr8v:~SmartMemory.read(backend.auxTypes.UnsignedInteger):java.lang.Object" resolve="read" />
               <node concept="37vLTw" id="1F6kLWsGAke" role="37wK5m">
                 <ref role="3cqZAo" node="1F6kLWsGAjm" resolve="idx" />
                 <node concept="29HgVG" id="1F6kLWsGAkP" role="lGtFl">
@@ -22384,9 +22250,9 @@
         <node concept="3cpWsn" id="1F6kLWsGyr4" role="3cpWs9">
           <property role="TrG5h" value="m" />
           <node concept="3uibUv" id="1F6kLWsGywh" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~SmartMemory" resolve="SmartMemory" />
+            <ref role="3uigEE" to="hr8v:~SmartMemory" resolve="SmartMemory" />
             <node concept="3uibUv" id="6w4Q6Pe91Yt" role="11_B2D">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
           </node>
         </node>
@@ -22395,7 +22261,7 @@
         <node concept="3cpWsn" id="1F6kLWsGztN" role="3cpWs9">
           <property role="TrG5h" value="y" />
           <node concept="3uibUv" id="6w4Q6Pe91Yv" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
@@ -22403,7 +22269,7 @@
         <node concept="3cpWsn" id="1F6kLWsG$fF" role="3cpWs9">
           <property role="TrG5h" value="idx" />
           <node concept="3uibUv" id="6w4Q6Pe91Yx" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
@@ -22436,7 +22302,7 @@
             </node>
           </node>
           <node concept="liA8E" id="1F6kLWsGyrj" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~SmartMemory.write(circuit.auxTypes.UnsignedInteger,java.lang.Object):void" resolve="write" />
+            <ref role="37wK5l" to="hr8v:~SmartMemory.write(backend.auxTypes.UnsignedInteger,java.lang.Object):void" resolve="write" />
             <node concept="37vLTw" id="1F6kLWsG$uF" role="37wK5m">
               <ref role="3cqZAo" node="1F6kLWsG$fF" resolve="idx" />
               <node concept="29HgVG" id="1F6kLWsG$yP" role="lGtFl">
@@ -22491,7 +22357,7 @@
     <property role="3GE5qa" value="memory" />
     <ref role="3gUMe" to="26c9:1YAwn0B3ymP" resolve="MemoryType" />
     <node concept="3uibUv" id="1F6kLWsqJm6" role="13RCb5">
-      <ref role="3uigEE" to="4qka:~SmartMemory" resolve="SmartMemory" />
+      <ref role="3uigEE" to="hr8v:~SmartMemory" resolve="SmartMemory" />
       <node concept="3uibUv" id="1F6kLWsqJmf" role="11_B2D">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
         <node concept="3_AbJx" id="1F6kLWsqJmB" role="lGtFl">
@@ -22520,8 +22386,8 @@
       <node concept="3cpWs8" id="5qibsSHjra2" role="3cqZAp">
         <node concept="3cpWsn" id="5qibsSHjra3" role="3cpWs9">
           <property role="TrG5h" value="t" />
-          <node concept="3uibUv" id="6w4Q6Pe5B6k" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~IAuxType" resolve="IAuxType" />
+          <node concept="3uibUv" id="17j6vqKF_wJ" role="1tU5fm">
+            <ref role="3uigEE" to="hr8v:~IAuxType" resolve="IAuxType" />
           </node>
           <node concept="10Nm6u" id="5qibsSHjr$k" role="33vP2m" />
         </node>
@@ -22531,7 +22397,7 @@
           <property role="TrG5h" value="bits" />
           <node concept="10Q1$e" id="5qibsSHjrtf" role="1tU5fm">
             <node concept="3uibUv" id="5qibsSHjrth" role="10Q1$1">
-              <ref role="3uigEE" to="4qka:~Bit" resolve="Bit" />
+              <ref role="3uigEE" to="hr8v:~Bit" resolve="Bit" />
             </node>
           </node>
           <node concept="2OqwBi" id="5qibsSHjrvx" role="33vP2m">
@@ -22539,7 +22405,7 @@
               <ref role="3cqZAo" node="5qibsSHjra3" resolve="t" />
             </node>
             <node concept="liA8E" id="5qibsSHjrye" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~IAuxType.getBitElements():circuit.auxTypes.Bit[]" resolve="getBitElements" />
+              <ref role="37wK5l" to="hr8v:~IAuxType.getBitElements():backend.auxTypes.Bit[]" resolve="getBitElements" />
               <node concept="raruj" id="5qibsSHjr_F" role="lGtFl" />
             </node>
           </node>
@@ -22557,7 +22423,7 @@
           <node concept="3cpWsn" id="6w4Q6P2_lUi" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Pe7yzO" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6w4Q6P2_lUk" role="33vP2m" />
           </node>
@@ -22566,7 +22432,7 @@
           <node concept="3cpWsn" id="6w4Q6P2_lUm" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Pe7yzQ" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6w4Q6P2_lUo" role="33vP2m" />
           </node>
@@ -22591,7 +22457,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6w4Q6P2_lUz" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.isGreaterThan(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.Bit" resolve="isGreaterThan" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.isGreaterThan(backend.auxTypes.UnsignedInteger):backend.auxTypes.Bit" resolve="isGreaterThan" />
               <node concept="37vLTw" id="6w4Q6P2_lU$" role="37wK5m">
                 <ref role="3cqZAo" node="6w4Q6P2_lUm" resolve="y" />
                 <node concept="29HgVG" id="6w4Q6P2_lU_" role="lGtFl">
@@ -22626,7 +22492,7 @@
           <node concept="3cpWsn" id="6w4Q6P2_lUL" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Pe7yIu" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6w4Q6P2_lUN" role="33vP2m" />
           </node>
@@ -22635,7 +22501,7 @@
           <node concept="3cpWsn" id="6w4Q6P2_lUP" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Pe7yK2" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6w4Q6P2_lUR" role="33vP2m" />
           </node>
@@ -22660,7 +22526,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6w4Q6P2_lV2" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.isGreaterThanOrEquals(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.Bit" resolve="isGreaterThanOrEquals" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.isGreaterThanOrEquals(backend.auxTypes.UnsignedInteger):backend.auxTypes.Bit" resolve="isGreaterThanOrEquals" />
               <node concept="37vLTw" id="6w4Q6P2_lV3" role="37wK5m">
                 <ref role="3cqZAo" node="6w4Q6P2_lUP" resolve="y" />
                 <node concept="29HgVG" id="6w4Q6P2_lV4" role="lGtFl">
@@ -22694,8 +22560,8 @@
         <node concept="3cpWs8" id="1YAwn0AZZjd" role="3cqZAp">
           <node concept="3cpWsn" id="1YAwn0AZZje" role="3cpWs9">
             <property role="TrG5h" value="x" />
-            <node concept="3uibUv" id="6w4Q6Pe5Bcs" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+            <node concept="3uibUv" id="17j6vqKGM7Y" role="1tU5fm">
+              <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
             </node>
             <node concept="10Nm6u" id="1YAwn0AZZjz" role="33vP2m" />
           </node>
@@ -22706,7 +22572,7 @@
               <ref role="3cqZAo" node="1YAwn0AZZje" resolve="x" />
             </node>
             <node concept="liA8E" id="1YAwn0AZZtj" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~FieldElement.inv():circuit.auxTypes.FieldElement" resolve="inv" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.inv():backend.auxTypes.FieldElement" resolve="inv" />
               <node concept="raruj" id="1YAwn0AZZtK" role="lGtFl" />
             </node>
           </node>
@@ -22723,8 +22589,8 @@
         <node concept="3cpWs8" id="7aL4SFtv1dE" role="3cqZAp">
           <node concept="3cpWsn" id="7aL4SFtv1dF" role="3cpWs9">
             <property role="TrG5h" value="x" />
-            <node concept="3uibUv" id="6w4Q6Pe5BkI" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <node concept="3uibUv" id="17j6vqKGLNj" role="1tU5fm">
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="7aL4SFtv1dH" role="33vP2m" />
           </node>
@@ -22733,7 +22599,7 @@
           <node concept="3cpWsn" id="7aL4SFtv1dJ" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Pe5BkG" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="7aL4SFtv1dL" role="33vP2m" />
           </node>
@@ -22758,7 +22624,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7aL4SFtv1dW" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.isEqualTo(circuit.auxTypes.IAuxType):circuit.auxTypes.Bit" resolve="isEqualTo" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.isEqualTo(backend.auxTypes.IAuxType):backend.auxTypes.Bit" resolve="isEqualTo" />
               <node concept="37vLTw" id="7aL4SFtv1dX" role="37wK5m">
                 <ref role="3cqZAo" node="7aL4SFtv1dJ" resolve="y" />
                 <node concept="29HgVG" id="7aL4SFtv1dY" role="lGtFl">
@@ -22793,8 +22659,8 @@
         <node concept="3cpWs8" id="6zlb0z0XrLY" role="3cqZAp">
           <node concept="3cpWsn" id="6zlb0z0XrLZ" role="3cpWs9">
             <property role="TrG5h" value="x" />
-            <node concept="3uibUv" id="6w4Q6Pe5Bws" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <node concept="3uibUv" id="17j6vqKGL0x" role="1tU5fm">
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6zlb0z0XrM1" role="33vP2m" />
           </node>
@@ -22803,7 +22669,7 @@
           <node concept="3cpWsn" id="6zlb0z0XrM3" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Pe5Bwq" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="6zlb0z0XrM5" role="33vP2m" />
           </node>
@@ -22828,7 +22694,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6zlb0z0XrMg" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.isNotEqualTo(circuit.auxTypes.IAuxType):circuit.auxTypes.Bit" resolve="isNotEqualTo" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.isNotEqualTo(backend.auxTypes.IAuxType):backend.auxTypes.Bit" resolve="isNotEqualTo" />
               <node concept="37vLTw" id="6zlb0z0XrMh" role="37wK5m">
                 <ref role="3cqZAo" node="6zlb0z0XrM3" resolve="y" />
                 <node concept="29HgVG" id="6zlb0z0XrMi" role="lGtFl">
@@ -22864,7 +22730,7 @@
           <node concept="3cpWsn" id="1bbdoCs1NT2" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Pe93Dw" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="1bbdoCs1NT4" role="33vP2m" />
           </node>
@@ -22873,7 +22739,7 @@
           <node concept="3cpWsn" id="1bbdoCs1NT6" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Pe93Dy" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="1bbdoCs1NT8" role="33vP2m" />
           </node>
@@ -22898,7 +22764,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1bbdoCs1NTj" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.isLessThan(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.Bit" resolve="isLessThan" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.isLessThan(backend.auxTypes.UnsignedInteger):backend.auxTypes.Bit" resolve="isLessThan" />
               <node concept="37vLTw" id="1bbdoCs1NTk" role="37wK5m">
                 <ref role="3cqZAo" node="1bbdoCs1NT6" resolve="y" />
                 <node concept="29HgVG" id="1bbdoCs1NTl" role="lGtFl">
@@ -22933,7 +22799,7 @@
           <node concept="3cpWsn" id="1bbdoCsieCX" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6Pe93qK" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="1bbdoCsieCZ" role="33vP2m" />
           </node>
@@ -22942,7 +22808,7 @@
           <node concept="3cpWsn" id="1bbdoCsieD1" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6Pe93qM" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="1bbdoCsieD3" role="33vP2m" />
           </node>
@@ -22967,7 +22833,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1bbdoCsieDe" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.isLessThanOrEquals(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.Bit" resolve="isLessThanOrEquals" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.isLessThanOrEquals(backend.auxTypes.UnsignedInteger):backend.auxTypes.Bit" resolve="isLessThanOrEquals" />
               <node concept="37vLTw" id="1bbdoCsieDf" role="37wK5m">
                 <ref role="3cqZAo" node="1bbdoCsieD1" resolve="y" />
                 <node concept="29HgVG" id="1bbdoCsieDg" role="lGtFl">
@@ -23001,8 +22867,8 @@
         <node concept="3cpWs8" id="r_GHmMfwHb" role="3cqZAp">
           <node concept="3cpWsn" id="r_GHmMfwHc" role="3cpWs9">
             <property role="TrG5h" value="x" />
-            <node concept="3uibUv" id="6w4Q6Pe5BGU" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <node concept="3uibUv" id="17j6vqKGBpo" role="1tU5fm">
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
           </node>
         </node>
@@ -23026,7 +22892,7 @@
               </node>
             </node>
             <node concept="liA8E" id="r_GHmMfwQj" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.invBits():circuit.auxTypes.UnsignedInteger" resolve="invBits" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.invBits():backend.auxTypes.UnsignedInteger" resolve="invBits" />
             </node>
             <node concept="raruj" id="r_GHmMfwQF" role="lGtFl" />
           </node>
@@ -23043,7 +22909,7 @@
         <node concept="3cpWsn" id="2wcORY50FZM" role="3cpWs9">
           <property role="TrG5h" value="evaluator" />
           <node concept="3uibUv" id="2wcORY50FZN" role="1tU5fm">
-            <ref role="3uigEE" to="f1xd:~CircuitEvaluator" resolve="CircuitEvaluator" />
+            <ref role="3uigEE" to="d2nq:~CircuitEvaluator" resolve="CircuitEvaluator" />
           </node>
         </node>
       </node>
@@ -23059,15 +22925,15 @@
         <node concept="2OqwBi" id="2wcORY50GhE" role="3clFbG">
           <node concept="2OqwBi" id="2wcORY50G0N" role="2Oq$k0">
             <node concept="liA8E" id="2wcORY50G2X" role="2OqNvi">
-              <ref role="37wK5l" to="f1xd:~CircuitEvaluator.getPermutations():java.util.HashMap" resolve="getPermutations" />
+              <ref role="37wK5l" to="d2nq:~CircuitEvaluator.getPermutations():java.util.HashMap" resolve="getPermutations" />
             </node>
             <node concept="2OqwBi" id="2wcORY53OD1" role="2Oq$k0">
               <node concept="2YIFZM" id="6w4Q6P7cKrR" role="2Oq$k0">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="liA8E" id="2wcORY53OD3" role="2OqNvi">
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getCircuitEvaluator():circuit.eval.CircuitEvaluator" resolve="__getCircuitEvaluator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getCircuitEvaluator():backend.eval.CircuitEvaluator" resolve="__getCircuitEvaluator" />
               </node>
             </node>
           </node>
@@ -23146,7 +23012,7 @@
       <node concept="3clFbF" id="2wcORY50_m5" role="3cqZAp">
         <node concept="2ShNRf" id="2wcORY50_m3" role="3clFbG">
           <node concept="1pGfFk" id="2wcORY50_$w" role="2ShVmc">
-            <ref role="37wK5l" to="4qka:~PermutationVerifier.&lt;init&gt;(java.lang.Object[],java.lang.Object[],java.lang.String,java.lang.Class,java.lang.Object[])" resolve="PermutationVerifier" />
+            <ref role="37wK5l" to="hr8v:~PermutationVerifier.&lt;init&gt;(java.lang.Object[],java.lang.Object[],java.lang.String,java.lang.Class,java.lang.Object[])" resolve="PermutationVerifier" />
             <node concept="37vLTw" id="2wcORY50_Ae" role="37wK5m">
               <ref role="3cqZAo" node="2wcORY50_$R" resolve="a1" />
               <node concept="29HgVG" id="2wcORY50BtE" role="lGtFl">
@@ -23393,12 +23259,12 @@
       <node concept="3cpWs8" id="6vW9i19O0T$" role="3cqZAp">
         <node concept="3cpWsn" id="6vW9i19O0TB" role="3cpWs9">
           <property role="TrG5h" value="x" />
-          <node concept="3uibUv" id="6w4Q6PdYYJw" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~IAuxType" resolve="IAuxType" />
+          <node concept="3uibUv" id="17j6vqKFDC0" role="1tU5fm">
+            <ref role="3uigEE" to="hr8v:~IAuxType" resolve="IAuxType" />
           </node>
           <node concept="2ShNRf" id="6vW9i19O0VR" role="33vP2m">
             <node concept="1pGfFk" id="6vW9i19O2V9" role="2ShVmc">
-              <ref role="37wK5l" to="4qka:~FieldElement.&lt;init&gt;(java.math.BigInteger,java.math.BigInteger)" resolve="FieldElement" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.&lt;init&gt;(java.math.BigInteger,java.math.BigInteger)" resolve="FieldElement" />
               <node concept="2ShNRf" id="6vW9i19O360" role="37wK5m">
                 <node concept="1pGfFk" id="6vW9i19O3g9" role="2ShVmc">
                   <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String)" resolve="BigInteger" />
@@ -23417,37 +23283,6 @@
                                 <node concept="3zrR0B" id="6vW9i19OakC" role="2ShVmc">
                                   <node concept="3Tqbb2" id="6vW9i19OakD" role="3zrR0E">
                                     <ref role="ehGHo" to="tpee:f$Xl_Og" resolve="StringLiteral" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="1X3_iC" id="4dbxVZ8vEkL" role="lGtFl">
-                            <property role="3V$3am" value="statement" />
-                            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                            <node concept="3clFbF" id="6vW9i19OakE" role="8Wnug">
-                              <node concept="37vLTI" id="6vW9i19OakF" role="3clFbG">
-                                <node concept="2OqwBi" id="6vW9i19OakG" role="37vLTx">
-                                  <node concept="2YIFZM" id="6vW9i19OakH" role="2Oq$k0">
-                                    <ref role="1Pybhc" to="4ac7:r_GHmMeb4o" resolve="Helper" />
-                                    <ref role="37wK5l" to="4ac7:5qibsSHjckU" resolve="getModulus" />
-                                    <node concept="2OqwBi" id="6vW9i19OauL" role="37wK5m">
-                                      <node concept="30H73N" id="6vW9i19OakI" role="2Oq$k0" />
-                                      <node concept="3TrEf2" id="6vW9i19OaDs" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="wyjh:6vW9i19HlKe" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="6vW9i19OakJ" role="2OqNvi">
-                                    <ref role="37wK5l" to="xlxw:~BigInteger.toString():java.lang.String" resolve="toString" />
-                                  </node>
-                                </node>
-                                <node concept="2OqwBi" id="6vW9i19OakK" role="37vLTJ">
-                                  <node concept="37vLTw" id="6vW9i19OakL" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="6vW9i19Oak_" resolve="n" />
-                                  </node>
-                                  <node concept="3TrcHB" id="6vW9i19OakM" role="2OqNvi">
-                                    <ref role="3TsBF5" to="tpee:f$Xl_Oh" resolve="value" />
                                   </node>
                                 </node>
                               </node>
@@ -23618,7 +23453,7 @@
     <property role="3GE5qa" value="types" />
     <ref role="3gUMe" to="26c9:5u98M4xbjNn" resolve="JBooleanType" />
     <node concept="3uibUv" id="5qibsSHlekm" role="13RCb5">
-      <ref role="3uigEE" to="4qka:~Bit" resolve="Bit" />
+      <ref role="3uigEE" to="hr8v:~Bit" resolve="Bit" />
       <node concept="raruj" id="5qibsSHlekn" role="lGtFl" />
     </node>
   </node>
@@ -23627,7 +23462,7 @@
     <property role="3GE5qa" value="types" />
     <ref role="3gUMe" to="26c9:6zlb0z1MBcM" resolve="JFieldType" />
     <node concept="3uibUv" id="5qibsSHjCqo" role="13RCb5">
-      <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+      <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
       <node concept="raruj" id="5qibsSHjCqp" role="lGtFl" />
     </node>
   </node>
@@ -23636,7 +23471,7 @@
     <property role="3GE5qa" value="types" />
     <ref role="3gUMe" to="26c9:3BesNbzZACe" resolve="JUnsignedIntegerType" />
     <node concept="3uibUv" id="r_GHmMdyru" role="13RCb5">
-      <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+      <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
       <node concept="raruj" id="r_GHmMdyrz" role="lGtFl" />
     </node>
   </node>
@@ -23648,8 +23483,8 @@
       <node concept="3cpWs8" id="1YAwn0B1Sna" role="3cqZAp">
         <node concept="3cpWsn" id="1YAwn0B1Snb" role="3cpWs9">
           <property role="TrG5h" value="x" />
-          <node concept="3uibUv" id="6w4Q6PdYYc1" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~IAuxType" resolve="IAuxType" />
+          <node concept="3uibUv" id="17j6vqKG$Db" role="1tU5fm">
+            <ref role="3uigEE" to="hr8v:~IAuxType" resolve="IAuxType" />
           </node>
         </node>
       </node>
@@ -23659,7 +23494,7 @@
             <ref role="3cqZAo" node="1YAwn0B1Snb" resolve="x" />
           </node>
           <node concept="liA8E" id="1YAwn0B1Ssg" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~IAuxType.mapValue(java.math.BigInteger,circuit.eval.CircuitEvaluator):void" resolve="mapValue" />
+            <ref role="37wK5l" to="hr8v:~IAuxType.mapValue(java.math.BigInteger,backend.eval.CircuitEvaluator):void" resolve="mapValue" />
             <node concept="10M0yZ" id="1YAwn0B1Ssy" role="37wK5m">
               <ref role="1PxDUh" to="xlxw:~BigInteger" resolve="BigInteger" />
               <ref role="3cqZAo" to="xlxw:~BigInteger.ZERO" resolve="ZERO" />
@@ -23690,11 +23525,11 @@
             </node>
             <node concept="2OqwBi" id="1YAwn0B1Sw4" role="37wK5m">
               <node concept="2YIFZM" id="6w4Q6P7cL1A" role="2Oq$k0">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="liA8E" id="1YAwn0B1SEn" role="2OqNvi">
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getCircuitEvaluator():circuit.eval.CircuitEvaluator" resolve="__getCircuitEvaluator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getCircuitEvaluator():backend.eval.CircuitEvaluator" resolve="__getCircuitEvaluator" />
               </node>
             </node>
             <node concept="raruj" id="1YAwn0B36bs" role="lGtFl" />
@@ -23711,8 +23546,8 @@
       <node concept="3cpWs8" id="1YAwn0B1S9c" role="3cqZAp">
         <node concept="3cpWsn" id="1YAwn0B1S9d" role="3cpWs9">
           <property role="TrG5h" value="x" />
-          <node concept="3uibUv" id="6w4Q6PdYY1Q" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~IAuxType" resolve="IAuxType" />
+          <node concept="3uibUv" id="17j6vqKG$zh" role="1tU5fm">
+            <ref role="3uigEE" to="hr8v:~IAuxType" resolve="IAuxType" />
           </node>
         </node>
       </node>
@@ -23727,14 +23562,14 @@
               <ref role="3cqZAo" node="1YAwn0B1S9d" resolve="x" />
             </node>
             <node concept="liA8E" id="1YAwn0B1SgI" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~IAuxType.getValueFromEvaluator(circuit.eval.CircuitEvaluator):java.math.BigInteger" resolve="getValueFromEvaluator" />
+              <ref role="37wK5l" to="hr8v:~IAuxType.getValueFromEvaluator(backend.eval.CircuitEvaluator):java.math.BigInteger" resolve="getValueFromEvaluator" />
               <node concept="2OqwBi" id="1YAwn0B1Sjf" role="37wK5m">
                 <node concept="2YIFZM" id="6w4Q6P7cLfM" role="2Oq$k0">
-                  <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                  <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                  <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                  <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
                 </node>
                 <node concept="liA8E" id="1YAwn0B1SlO" role="2OqNvi">
-                  <ref role="37wK5l" to="velq:~CircuitGenerator.__getCircuitEvaluator():circuit.eval.CircuitEvaluator" resolve="__getCircuitEvaluator" />
+                  <ref role="37wK5l" to="7jix:~CircuitGenerator.__getCircuitEvaluator():backend.eval.CircuitEvaluator" resolve="__getCircuitEvaluator" />
                 </node>
               </node>
               <node concept="raruj" id="1YAwn0B36f5" role="lGtFl" />
@@ -23752,8 +23587,8 @@
       <node concept="3cpWs8" id="7eYK6MJE0sg" role="3cqZAp">
         <node concept="3cpWsn" id="7eYK6MJE0sh" role="3cpWs9">
           <property role="TrG5h" value="a1" />
-          <node concept="3uibUv" id="6w4Q6PdYXtw" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~IAuxType" resolve="IAuxType" />
+          <node concept="3uibUv" id="17j6vqKGru$" role="1tU5fm">
+            <ref role="3uigEE" to="hr8v:~IAuxType" resolve="IAuxType" />
           </node>
         </node>
       </node>
@@ -23761,7 +23596,7 @@
         <node concept="3cpWsn" id="7eYK6MJE0sJ" role="3cpWs9">
           <property role="TrG5h" value="a2" />
           <node concept="3uibUv" id="6w4Q6PdYXtu" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~IAuxType" resolve="IAuxType" />
+            <ref role="3uigEE" to="hr8v:~IAuxType" resolve="IAuxType" />
           </node>
         </node>
       </node>
@@ -23786,7 +23621,7 @@
             </node>
           </node>
           <node concept="liA8E" id="7eYK6MJE1wC" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~IAuxType.forceEqual(circuit.auxTypes.IAuxType):void" resolve="forceEqual" />
+            <ref role="37wK5l" to="hr8v:~IAuxType.forceEqual(backend.auxTypes.IAuxType):void" resolve="forceEqual" />
             <node concept="37vLTw" id="7eYK6MJE1z7" role="37wK5m">
               <ref role="3cqZAo" node="7eYK6MJE0sJ" resolve="a2" />
               <node concept="29HgVG" id="7eYK6MJE1A9" role="lGtFl">
@@ -23818,19 +23653,19 @@
       <node concept="3cpWs8" id="1bbdoCsfYza" role="3cqZAp">
         <node concept="3cpWsn" id="1bbdoCsfYzb" role="3cpWs9">
           <property role="TrG5h" value="b" />
-          <node concept="3uibUv" id="1bbdoCsfYzc" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~Bit" resolve="Bit" />
+          <node concept="3uibUv" id="17j6vqKGriz" role="1tU5fm">
+            <ref role="3uigEE" to="hr8v:~Bit" resolve="Bit" />
           </node>
         </node>
       </node>
       <node concept="3clFbF" id="1bbdoCsfYqb" role="3cqZAp">
         <node concept="2OqwBi" id="1bbdoCsfYqY" role="3clFbG">
           <node concept="2YIFZM" id="6w4Q6P7cLo_" role="2Oq$k0">
-            <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-            <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+            <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+            <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
           </node>
           <node concept="liA8E" id="1bbdoCsfYsk" role="2OqNvi">
-            <ref role="37wK5l" to="velq:~CircuitGenerator.__addOneAssertion(circuit.structure.Wire,java.lang.String...):void" resolve="__addOneAssertion" />
+            <ref role="37wK5l" to="7jix:~CircuitGenerator.__addOneAssertion(backend.structure.Wire,java.lang.String...):void" resolve="__addOneAssertion" />
             <node concept="2OqwBi" id="1bbdoCsfYA2" role="37wK5m">
               <node concept="37vLTw" id="1bbdoCsfY$Z" role="2Oq$k0">
                 <ref role="3cqZAo" node="1bbdoCsfYzb" resolve="b" />
@@ -23850,7 +23685,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="1bbdoCsfYEi" role="2OqNvi">
-                <ref role="37wK5l" to="4qka:~Bit.getWire():circuit.structure.Wire" resolve="getWire" />
+                <ref role="37wK5l" to="hr8v:~Bit.getWire():backend.structure.Wire" resolve="getWire" />
               </node>
             </node>
           </node>
@@ -23867,7 +23702,7 @@
         <node concept="3cpWsn" id="33sExp7eHtS" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6PdYUMC" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+            <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
           </node>
           <node concept="10Nm6u" id="33sExp7eHtT" role="33vP2m" />
         </node>
@@ -23876,7 +23711,7 @@
         <node concept="3cpWsn" id="33sExp7eHtV" role="3cpWs9">
           <property role="TrG5h" value="y" />
           <node concept="3uibUv" id="6w4Q6PdYUMA" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+            <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
           </node>
           <node concept="10Nm6u" id="33sExp7eHtX" role="33vP2m" />
         </node>
@@ -23907,7 +23742,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="33sExp7eHue" role="2OqNvi">
-                    <ref role="37wK5l" to="4qkb:~FieldElement.copy():circuit.auxTypes.FieldElement" resolve="copy" />
+                    <ref role="37wK5l" to="hr8v:~FieldElement.copy():backend.auxTypes.FieldElement" resolve="copy" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="33sExp7eHuo" role="37vLTJ">
@@ -23952,7 +23787,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="33sExp7eHuG" role="2OqNvi">
-                    <ref role="37wK5l" to="4qkb:~FieldElement.assign(circuit.auxTypes.FieldElement):void" resolve="assign" />
+                    <ref role="37wK5l" to="hr8v:~FieldElement.assign(backend.auxTypes.FieldElement):void" resolve="assign" />
                     <node concept="37vLTw" id="33sExp7eHuH" role="37wK5m">
                       <ref role="3cqZAo" node="33sExp7eHtS" resolve="x" />
                       <node concept="29HgVG" id="33sExp7eHuI" role="lGtFl">
@@ -24023,7 +23858,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5RbNWZFSnWg" role="2OqNvi">
-                    <ref role="37wK5l" to="4qkb:~FieldElement.copy():circuit.auxTypes.FieldElement" resolve="copy" />
+                    <ref role="37wK5l" to="hr8v:~FieldElement.copy():backend.auxTypes.FieldElement" resolve="copy" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="5RbNWZFSnWh" role="37vLTJ">
@@ -24068,7 +23903,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5RbNWZFSnW_" role="2OqNvi">
-                    <ref role="37wK5l" to="4qkb:~FieldElement.assign(circuit.auxTypes.FieldElement):void" resolve="assign" />
+                    <ref role="37wK5l" to="hr8v:~FieldElement.assign(backend.auxTypes.FieldElement):void" resolve="assign" />
                     <node concept="37vLTw" id="5RbNWZFSnWA" role="37wK5m">
                       <ref role="3cqZAo" node="33sExp7eHtS" resolve="x" />
                       <node concept="29HgVG" id="5RbNWZFSnWB" role="lGtFl">
@@ -24133,7 +23968,7 @@
             </node>
           </node>
           <node concept="liA8E" id="5RbNWZFSp46" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~FieldElement.assign(circuit.auxTypes.FieldElement):void" resolve="assign" />
+            <ref role="37wK5l" to="hr8v:~FieldElement.assign(backend.auxTypes.FieldElement):void" resolve="assign" />
             <node concept="37vLTw" id="5RbNWZFSp47" role="37wK5m">
               <ref role="3cqZAo" node="33sExp7eHtS" resolve="x" />
               <node concept="29HgVG" id="5RbNWZFSp48" role="lGtFl">
@@ -24167,7 +24002,7 @@
         <node concept="3cpWsn" id="6zlb0z0EhxL" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6PdYVHX" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
           <node concept="10Nm6u" id="6zlb0z0Ehy7" role="33vP2m" />
         </node>
@@ -24176,7 +24011,7 @@
         <node concept="3cpWsn" id="6zlb0z0Ehy$" role="3cpWs9">
           <property role="TrG5h" value="y" />
           <node concept="3uibUv" id="6w4Q6PdYVDl" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
           <node concept="10Nm6u" id="6zlb0z0EhyY" role="33vP2m" />
         </node>
@@ -24207,7 +24042,7 @@
             </node>
           </node>
           <node concept="liA8E" id="5RbNWZFSLDa" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~UnsignedInteger.assign(circuit.auxTypes.UnsignedInteger,int):void" resolve="assign" />
+            <ref role="37wK5l" to="hr8v:~UnsignedInteger.assign(backend.auxTypes.UnsignedInteger,int):void" resolve="assign" />
             <node concept="37vLTw" id="5RbNWZFSLDb" role="37wK5m">
               <ref role="3cqZAo" node="6zlb0z0EhxL" resolve="x" />
               <node concept="29HgVG" id="5RbNWZFSLDc" role="lGtFl">
@@ -24264,7 +24099,7 @@
         <node concept="3cpWsn" id="1YAwn0B3koJ" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6PdYUma" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~IAuxType" resolve="IAuxType" />
+            <ref role="3uigEE" to="hr8v:~IAuxType" resolve="IAuxType" />
           </node>
         </node>
       </node>
@@ -24297,7 +24132,7 @@
             </node>
           </node>
           <node concept="liA8E" id="1YAwn0B3koO" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~IAuxType.mapValue(java.math.BigInteger,circuit.eval.CircuitEvaluator):void" resolve="mapValue" />
+            <ref role="37wK5l" to="hr8v:~IAuxType.mapValue(java.math.BigInteger,backend.eval.CircuitEvaluator):void" resolve="mapValue" />
             <node concept="10M0yZ" id="1YAwn0B3koP" role="37wK5m">
               <ref role="1PxDUh" to="xlxw:~BigInteger" resolve="BigInteger" />
               <ref role="3cqZAo" to="xlxw:~BigInteger.ZERO" resolve="ZERO" />
@@ -24318,11 +24153,11 @@
             </node>
             <node concept="2OqwBi" id="1YAwn0B3kp2" role="37wK5m">
               <node concept="2YIFZM" id="6w4Q6P7cJOg" role="2Oq$k0">
-                <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
               </node>
               <node concept="liA8E" id="1YAwn0B3kp4" role="2OqNvi">
-                <ref role="37wK5l" to="velq:~CircuitGenerator.__getCircuitEvaluator():circuit.eval.CircuitEvaluator" resolve="__getCircuitEvaluator" />
+                <ref role="37wK5l" to="7jix:~CircuitGenerator.__getCircuitEvaluator():backend.eval.CircuitEvaluator" resolve="__getCircuitEvaluator" />
               </node>
             </node>
           </node>
@@ -24339,7 +24174,7 @@
         <node concept="3cpWsn" id="5jGq$9FQTNe" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6PdYTvs" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
           <node concept="10Nm6u" id="5jGq$9FQTNz" role="33vP2m" />
         </node>
@@ -24348,7 +24183,7 @@
         <node concept="3cpWsn" id="5jGq$9FQTUd" role="3cpWs9">
           <property role="TrG5h" value="y" />
           <node concept="3uibUv" id="6w4Q6PdYTx0" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
           <node concept="2OqwBi" id="5jGq$9FQTVH" role="33vP2m">
             <node concept="37vLTw" id="5jGq$9FQTUB" role="2Oq$k0">
@@ -24369,7 +24204,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5jGq$9FQTZQ" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.copy(int):circuit.auxTypes.UnsignedInteger" resolve="copy" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.copy(int):backend.auxTypes.UnsignedInteger" resolve="copy" />
               <node concept="3cmrfG" id="5jGq$9FQU0b" role="37wK5m">
                 <property role="3cmrfH" value="12" />
                 <node concept="3_AbJx" id="5jGq$9FQU9H" role="lGtFl">
@@ -24439,17 +24274,17 @@
       <node concept="3clFbF" id="1YAwn0B1G0B" role="3cqZAp">
         <node concept="2OqwBi" id="1YAwn0B1G1o" role="3clFbG">
           <node concept="2YIFZM" id="6w4Q6P7cKaq" role="2Oq$k0">
-            <ref role="1Pybhc" to="velq:~CircuitGenerator" resolve="CircuitGenerator" />
-            <ref role="37wK5l" to="velq:~CircuitGenerator.__getActiveCircuitGenerator():circuit.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+            <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+            <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
           </node>
           <node concept="liA8E" id="1YAwn0B1G3E" role="2OqNvi">
-            <ref role="37wK5l" to="velq:~CircuitGenerator.__specifyProverWitnessComputation(circuit.eval.Instruction):void" resolve="__specifyProverWitnessComputation" />
+            <ref role="37wK5l" to="7jix:~CircuitGenerator.__specifyProverWitnessComputation(backend.eval.Instruction):void" resolve="__specifyProverWitnessComputation" />
             <node concept="2ShNRf" id="1YAwn0B1G3Z" role="37wK5m">
               <node concept="YeOm9" id="1YAwn0B1I44" role="2ShVmc">
                 <node concept="1Y3b0j" id="1YAwn0B1I47" role="YeSDq">
                   <property role="2bfB8j" value="true" />
                   <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                  <ref role="1Y3XeK" to="f1xd:~Instruction" resolve="Instruction" />
+                  <ref role="1Y3XeK" to="d2nq:~Instruction" resolve="Instruction" />
                   <node concept="3Tm1VV" id="1YAwn0B1I48" role="1B3o_S" />
                   <node concept="3clFb_" id="1YAwn0B1I49" role="jymVt">
                     <property role="1EzhhJ" value="false" />
@@ -24461,7 +24296,7 @@
                     <node concept="37vLTG" id="1YAwn0B1I4d" role="3clF46">
                       <property role="TrG5h" value="p0" />
                       <node concept="3uibUv" id="1YAwn0B1I4e" role="1tU5fm">
-                        <ref role="3uigEE" to="f1xd:~CircuitEvaluator" resolve="CircuitEvaluator" />
+                        <ref role="3uigEE" to="d2nq:~CircuitEvaluator" resolve="CircuitEvaluator" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="1YAwn0B1I4f" role="3clF47">
@@ -24507,14 +24342,14 @@
         <node concept="3cpWsn" id="33sExp7fhfZ" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6PdY68f" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+            <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
           </node>
         </node>
       </node>
       <node concept="3clFbF" id="33sExp7fhg1" role="3cqZAp">
         <node concept="2OqwBi" id="33sExp7fhg2" role="3clFbG">
           <node concept="liA8E" id="33sExp7fhg3" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~FieldElement.copy():circuit.auxTypes.FieldElement" resolve="copy" />
+            <ref role="37wK5l" to="hr8v:~FieldElement.copy():backend.auxTypes.FieldElement" resolve="copy" />
           </node>
           <node concept="37vLTw" id="33sExp7fhgx" role="2Oq$k0">
             <ref role="3cqZAo" node="33sExp7fhfZ" resolve="x" />
@@ -24541,7 +24376,7 @@
         <node concept="3cpWsn" id="33sExp7fjcE" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6PdY6fw" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+            <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
           </node>
         </node>
       </node>
@@ -24549,7 +24384,7 @@
         <node concept="3cpWsn" id="33sExp7fjcH" role="3cpWs9">
           <property role="TrG5h" value="y" />
           <node concept="3uibUv" id="6w4Q6PdY6hQ" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~FieldElement" resolve="FieldElement" />
+            <ref role="3uigEE" to="hr8v:~FieldElement" resolve="FieldElement" />
           </node>
         </node>
       </node>
@@ -24561,7 +24396,7 @@
               <ref role="3cqZAo" node="33sExp7fjcE" resolve="x" />
             </node>
             <node concept="liA8E" id="33sExp7fjcO" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~FieldElement.add(circuit.auxTypes.FieldElement):circuit.auxTypes.FieldElement" resolve="add" />
+              <ref role="37wK5l" to="hr8v:~FieldElement.add(backend.auxTypes.FieldElement):backend.auxTypes.FieldElement" resolve="add" />
               <node concept="37vLTw" id="33sExp7fjcP" role="37wK5m">
                 <ref role="3cqZAo" node="33sExp7fjcH" resolve="y" />
               </node>
@@ -24577,7 +24412,7 @@
             </node>
           </node>
           <node concept="liA8E" id="33sExp7fjcV" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~FieldElement.copy():circuit.auxTypes.FieldElement" resolve="copy" />
+            <ref role="37wK5l" to="hr8v:~FieldElement.copy():backend.auxTypes.FieldElement" resolve="copy" />
           </node>
           <node concept="raruj" id="33sExp7fjde" role="lGtFl" />
         </node>
@@ -24605,7 +24440,7 @@
       <node concept="3clFbF" id="1bbdoCrDRPs" role="3cqZAp">
         <node concept="2ShNRf" id="1bbdoCrDTU0" role="3clFbG">
           <node concept="1pGfFk" id="1bbdoCrDWXF" role="2ShVmc">
-            <ref role="37wK5l" to="4qka:~UnsignedInteger.&lt;init&gt;(int,java.math.BigInteger)" resolve="UnsignedInteger" />
+            <ref role="37wK5l" to="hr8v:~UnsignedInteger.&lt;init&gt;(int,java.math.BigInteger)" resolve="UnsignedInteger" />
             <node concept="3cmrfG" id="1bbdoCrDXc1" role="37wK5m">
               <property role="3cmrfH" value="32" />
               <node concept="17Uvod" id="1bbdoCrDXC8" role="lGtFl">
@@ -24741,8 +24576,8 @@
         <node concept="3cpWs8" id="1bbdoCs1Izj" role="3cqZAp">
           <node concept="3cpWsn" id="1bbdoCs1Izk" role="3cpWs9">
             <property role="TrG5h" value="x" />
-            <node concept="3uibUv" id="1bbdoCs1IB8" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~Bit" resolve="Bit" />
+            <node concept="3uibUv" id="17j6vqKGLY5" role="1tU5fm">
+              <ref role="3uigEE" to="hr8v:~Bit" resolve="Bit" />
             </node>
             <node concept="10Nm6u" id="1bbdoCs1Izm" role="33vP2m" />
           </node>
@@ -24751,7 +24586,7 @@
           <node concept="3cpWsn" id="1bbdoCs1Izo" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="1bbdoCs1IDF" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~Bit" resolve="Bit" />
+              <ref role="3uigEE" to="hr8v:~Bit" resolve="Bit" />
             </node>
             <node concept="10Nm6u" id="1bbdoCs1Izq" role="33vP2m" />
           </node>
@@ -24776,7 +24611,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1bbdoCs1Iz_" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~Bit.and(circuit.auxTypes.Bit):circuit.auxTypes.Bit" resolve="and" />
+              <ref role="37wK5l" to="hr8v:~Bit.and(backend.auxTypes.Bit):backend.auxTypes.Bit" resolve="and" />
               <node concept="37vLTw" id="1bbdoCs1IzA" role="37wK5m">
                 <ref role="3cqZAo" node="1bbdoCs1Izo" resolve="y" />
                 <node concept="29HgVG" id="1bbdoCs1IzB" role="lGtFl">
@@ -24810,7 +24645,7 @@
           <node concept="3cpWsn" id="4ge3H8iREUT" role="3cpWs9">
             <property role="TrG5h" value="x" />
             <node concept="3uibUv" id="6w4Q6PdY1Tc" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="4ge3H8iREUV" role="33vP2m" />
           </node>
@@ -24819,7 +24654,7 @@
           <node concept="3cpWsn" id="4ge3H8iREUX" role="3cpWs9">
             <property role="TrG5h" value="y" />
             <node concept="3uibUv" id="6w4Q6PdY1Ta" role="1tU5fm">
-              <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+              <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
             </node>
             <node concept="10Nm6u" id="4ge3H8iREUZ" role="33vP2m" />
           </node>
@@ -24844,7 +24679,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4ge3H8iREVa" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.subtract(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="subtract" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.subtract(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="subtract" />
               <node concept="37vLTw" id="4ge3H8iREVb" role="37wK5m">
                 <ref role="3cqZAo" node="4ge3H8iREUX" resolve="y" />
                 <node concept="29HgVG" id="4ge3H8iREVc" role="lGtFl">
@@ -24945,14 +24780,14 @@
         <node concept="3cpWsn" id="6zlb0z0FYKp" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6PdY2Kt" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
       <node concept="3clFbF" id="6zlb0z0FYKE" role="3cqZAp">
         <node concept="2OqwBi" id="6zlb0z0FYLH" role="3clFbG">
           <node concept="liA8E" id="6zlb0z0FYPA" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~UnsignedInteger.copy(int):circuit.auxTypes.UnsignedInteger" resolve="copy" />
+            <ref role="37wK5l" to="hr8v:~UnsignedInteger.copy(int):backend.auxTypes.UnsignedInteger" resolve="copy" />
             <node concept="3cmrfG" id="6zlb0z0FYPR" role="37wK5m">
               <property role="3cmrfH" value="12" />
               <node concept="17Uvod" id="6zlb0z0FYX7" role="lGtFl">
@@ -25049,7 +24884,7 @@
         <node concept="3cpWsn" id="6zlb0z0GbO5" role="3cpWs9">
           <property role="TrG5h" value="x" />
           <node concept="3uibUv" id="6w4Q6PdY4dz" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
@@ -25057,7 +24892,7 @@
         <node concept="3cpWsn" id="6zlb0z0NaL6" role="3cpWs9">
           <property role="TrG5h" value="y" />
           <node concept="3uibUv" id="6w4Q6PdY4b1" role="1tU5fm">
-            <ref role="3uigEE" to="4qka:~UnsignedInteger" resolve="UnsignedInteger" />
+            <ref role="3uigEE" to="hr8v:~UnsignedInteger" resolve="UnsignedInteger" />
           </node>
         </node>
       </node>
@@ -25069,7 +24904,7 @@
               <ref role="3cqZAo" node="6zlb0z0GbO5" resolve="x" />
             </node>
             <node concept="liA8E" id="6zlb0z0NbZB" role="2OqNvi">
-              <ref role="37wK5l" to="4qka:~UnsignedInteger.add(circuit.auxTypes.UnsignedInteger):circuit.auxTypes.UnsignedInteger" resolve="add" />
+              <ref role="37wK5l" to="hr8v:~UnsignedInteger.add(backend.auxTypes.UnsignedInteger):backend.auxTypes.UnsignedInteger" resolve="add" />
               <node concept="37vLTw" id="6zlb0z0Nc34" role="37wK5m">
                 <ref role="3cqZAo" node="6zlb0z0NaL6" resolve="y" />
               </node>
@@ -25085,7 +24920,7 @@
             </node>
           </node>
           <node concept="liA8E" id="6zlb0z0Ncdo" role="2OqNvi">
-            <ref role="37wK5l" to="4qka:~UnsignedInteger.copy(int):circuit.auxTypes.UnsignedInteger" resolve="copy" />
+            <ref role="37wK5l" to="hr8v:~UnsignedInteger.copy(int):backend.auxTypes.UnsignedInteger" resolve="copy" />
             <node concept="3cmrfG" id="6zlb0z0NcdU" role="37wK5m">
               <property role="3cmrfH" value="12" />
               <node concept="17Uvod" id="7SXhc63Yi5B" role="lGtFl">
