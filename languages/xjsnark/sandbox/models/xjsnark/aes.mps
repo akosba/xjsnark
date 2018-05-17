@@ -119,9 +119,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -1109,9 +1106,6 @@
     <node concept="DJdLC" id="6w4Q6Pf_9eo" role="jymVt">
       <property role="DRO8Q" value="To define the circuit variables, we use xjsnark parametrized types" />
     </node>
-    <node concept="DJdLC" id="6w4Q6Pf_bhR" role="jymVt">
-      <property role="DRO8Q" value="Note that &quot;private&quot; here is the native java visibility and is not related to what xjsnark does" />
-    </node>
     <node concept="312cEg" id="6w4Q6Pf_4QU" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -1196,9 +1190,16 @@
         </node>
       </node>
     </node>
+    <node concept="DJdLC" id="6w4Q6Pf_bhR" role="jymVt">
+      <property role="DRO8Q" value="Note that &quot;private&quot; above is the native java visibility and is not related to what xjsnark does" />
+    </node>
+    <node concept="DJdLC" id="2qKKpueTEOJ" role="jymVt">
+      <property role="DRO8Q" value="Note also that xjsnark class variables should not be declared as final or static" />
+    </node>
     <node concept="2tJIrI" id="6w4Q6Pf$W4x" role="jymVt" />
+    <node concept="2tJIrI" id="2qKKpueTLrD" role="jymVt" />
     <node concept="DJdLC" id="6w4Q6Pf_e6D" role="jymVt">
-      <property role="DRO8Q" value="here we use a RAM, not an array, as the sBox is being accessed randomly " />
+      <property role="DRO8Q" value="here we use a RAM, not an array, as the sBox is being accessed randomly. We do initialization later. " />
     </node>
     <node concept="312cEg" id="6w4Q6Pf_cUI" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -1212,7 +1213,14 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="6w4Q6Pf_cvt" role="jymVt" />
+    <node concept="2tJIrI" id="2qKKpueTxDi" role="jymVt" />
+    <node concept="2tJIrI" id="2qKKpueTSsj" role="jymVt" />
+    <node concept="DJdLC" id="6w4Q6Pf_fs3" role="jymVt">
+      <property role="DRO8Q" value="in real contexts, the key and the plaintext are usually witnesses, but just for simplicity now" />
+    </node>
+    <node concept="DJdLC" id="6w4Q6Pf_gIa" role="jymVt">
+      <property role="DRO8Q" value="we labeled them as inputs" />
+    </node>
     <node concept="3q8xyn" id="6w4Q6Pf$W4z" role="jymVt">
       <node concept="37vLTw" id="6w4Q6Pf_6N3" role="3q8w2r">
         <ref role="3cqZAo" node="6w4Q6Pf_4QU" resolve="plaintext" />
@@ -1226,25 +1234,21 @@
         <ref role="3cqZAo" node="6w4Q6Pf_56G" resolve="ciphertext" />
       </node>
     </node>
-    <node concept="DJdLC" id="6w4Q6Pf_fs3" role="jymVt">
-      <property role="DRO8Q" value="in real contexts, the key and the plaintext are usually witnesses, but just for simplicity now" />
-    </node>
-    <node concept="DJdLC" id="6w4Q6Pf_gIa" role="jymVt">
-      <property role="DRO8Q" value="we declared them as inputs" />
-    </node>
     <node concept="zxlm7" id="6w4Q6Pf$W4_" role="jymVt" />
     <node concept="3qc$_m" id="6w4Q6Pf$W4A" role="jymVt" />
     <node concept="2tJIrI" id="6w4Q6Pf$W4B" role="jymVt" />
-    <node concept="2tJIrI" id="6w4Q6Pf$W4C" role="jymVt" />
+    <node concept="DJdLC" id="2qKKpueU63E" role="jymVt">
+      <property role="DRO8Q" value="entry point" />
+    </node>
     <node concept="3clFb_" id="6w4Q6Pf$W4D" role="jymVt">
-      <property role="TrG5h" value="program" />
+      <property role="TrG5h" value="outsource" />
       <node concept="3cqZAl" id="6w4Q6Pf$W4E" role="3clF45" />
       <node concept="3Tm1VV" id="6w4Q6Pf$W4F" role="1B3o_S" />
       <node concept="3clFbS" id="6w4Q6Pf$W4G" role="3clF47">
-        <node concept="3clFbH" id="6w4Q6Pf_ax_" role="3cqZAp" />
+        <node concept="3clFbH" id="2qKKpueTx1R" role="3cqZAp" />
         <node concept="3SKdUt" id="6w4Q6Pf_an9" role="3cqZAp">
           <node concept="3SKdUq" id="6w4Q6Pf_anb" role="3SKWNk">
-            <property role="3SKdUp" value="convert the SBOX to xjsnark type (to make the typesystem happy when we do operations)" />
+            <property role="3SKdUp" value="convert the SBOX to xjsnark type (to make the typesystem happy later)" />
           </node>
         </node>
         <node concept="3cpWs8" id="6w4Q6Pf_afh" role="3cqZAp">
@@ -1268,7 +1272,7 @@
         <node concept="3clFbH" id="6w4Q6Pf_dKo" role="3cqZAp" />
         <node concept="3SKdUt" id="6w4Q6Pf_dNI" role="3cqZAp">
           <node concept="3SKdUq" id="6w4Q6Pf_dNK" role="3SKWNk">
-            <property role="3SKdUp" value="load the random access memory. " />
+            <property role="3SKdUp" value="load the random access memory for the SBox. " />
           </node>
         </node>
         <node concept="3clFbF" id="6w4Q6PaCtv2" role="3cqZAp">
@@ -1740,7 +1744,6 @@
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2wcORY54Ys3" role="3clF47">
         <node concept="3clFbH" id="6w4Q6Pf_Psw" role="3cqZAp" />
-        <node concept="3clFbH" id="6w4Q6Pf_QGN" role="3cqZAp" />
         <node concept="3cpWs8" id="1bbdoCrVZSv" role="3cqZAp">
           <node concept="3cpWsn" id="1bbdoCrVZSy" role="3cpWs9">
             <property role="TrG5h" value="nr" />
@@ -2762,7 +2765,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="6w4Q6P2EiGF" role="3cqZAp" />
+            <node concept="3clFbH" id="2qKKpueTzMR" role="3cqZAp" />
             <node concept="3SKdUt" id="6w4Q6P2EiK2" role="3cqZAp">
               <node concept="3SKdUq" id="6w4Q6P2EiK4" role="3SKWNk">
                 <property role="3SKdUp" value="this is a runtime circuit condition" />
@@ -2831,8 +2834,8 @@
         <property role="3qc1Xj" value="8" />
       </node>
     </node>
-    <node concept="2tJIrI" id="2wcORY58wPj" role="jymVt" />
-    <node concept="2tJIrI" id="2wcORY5cdDt" role="jymVt" />
+    <node concept="2tJIrI" id="2qKKpueTbcH" role="jymVt" />
+    <node concept="2tJIrI" id="2qKKpueTcHX" role="jymVt" />
     <node concept="3clFb_" id="2wcORY5cfz0" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="shiftRows" />
@@ -3472,7 +3475,7 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="2wcORY5cl1$" role="jymVt" />
+    <node concept="2tJIrI" id="2qKKpueYO4s" role="jymVt" />
     <node concept="3clFb_" id="2wcORY58y6u" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addRoundkey" />
@@ -3651,17 +3654,19 @@
         <node concept="10Oyi0" id="2wcORY58A7u" role="1tU5fm" />
       </node>
     </node>
-    <node concept="2tJIrI" id="6w4Q6P0YkkA" role="jymVt" />
-    <node concept="2tJIrI" id="6w4Q6Pf$W4K" role="jymVt" />
-    <node concept="2tJIrI" id="6w4Q6Pf_pVu" role="jymVt" />
-    <node concept="2tJIrI" id="6w4Q6Pf_q6Q" role="jymVt" />
-    <node concept="2tJIrI" id="6w4Q6Pf_qif" role="jymVt" />
     <node concept="2tJIrI" id="6w4Q6Pf_qtD" role="jymVt" />
     <node concept="1UYk92" id="6w4Q6Pf$W4L" role="jymVt">
       <property role="3j8K$S" value="true" />
       <property role="3jfa3H" value="Sample_Run1" />
       <node concept="3jfauB" id="6w4Q6Pf$W4M" role="3jfavw">
         <node concept="3clFbS" id="6w4Q6Pf$W4N" role="3jfauw">
+          <node concept="3clFbH" id="2qKKpueS8sZ" role="3cqZAp" />
+          <node concept="3SKdUt" id="2qKKpueSFeA" role="3cqZAp">
+            <node concept="3SKdUq" id="2qKKpueSFwd" role="3SKWNk">
+              <property role="3SKdUp" value="assigning values to inputs" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="2qKKpueSEYx" role="3cqZAp" />
           <node concept="3cpWs8" id="6w4Q6P1_msG" role="3cqZAp">
             <node concept="3cpWsn" id="6w4Q6P1_msF" role="3cpWs9">
               <property role="3TUv4t" value="false" />
@@ -4022,18 +4027,7 @@
         </node>
         <node concept="3SKdUt" id="6w4Q6Pf$W51" role="3cqZAp">
           <node concept="3SKdUq" id="6w4Q6Pf$W52" role="3SKWNk">
-            <property role="3SKdUp" value="This method can be left empty, or used to set Configuration params (see examples)" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="65efhJEhNti" role="3cqZAp">
-          <node concept="37vLTI" id="65efhJEhNRv" role="3clFbG">
-            <node concept="3clFbT" id="65efhJEhNTH" role="37vLTx">
-              <property role="3clFbU" value="false" />
-            </node>
-            <node concept="10M0yZ" id="65efhJEhNw5" role="37vLTJ">
-              <ref role="1PxDUh" to="85wc:~Config" resolve="Config" />
-              <ref role="3cqZAo" to="85wc:~Config.multivariateExpressionMinimization" resolve="multivariateExpressionMinimization" />
-            </node>
+            <property role="3SKdUp" value="This method can be left empty, or used to set Configuration params (see other examples)" />
           </node>
         </node>
         <node concept="3clFbH" id="17j6vqJOGlt" role="3cqZAp" />

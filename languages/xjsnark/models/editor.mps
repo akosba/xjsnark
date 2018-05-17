@@ -107,7 +107,6 @@
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <property id="1073389446425" name="vertical" index="3EZMnw" />
-        <property id="1073389446426" name="gridLayout" index="3EZMnz" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="8709572687796959088" name="usesFoldingCondition" index="2xiA_6" />
         <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
@@ -2819,15 +2818,6 @@
       <node concept="l2Vlx" id="i0ujoc$" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="1YAwn0AYixW">
-    <ref role="1XX52x" to="26c9:1YAwn0AYixQ" resolve="AssignValue" />
-    <node concept="3EZMnI" id="1YAwn0AYCEn" role="2wV5jI">
-      <node concept="3F0ifn" id="1YAwn0AYCEp" role="3EZMnx">
-        <property role="3F0ifm" value="assign" />
-      </node>
-      <node concept="2iRfu4" id="1YAwn0AYCEq" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="5qibsSHh4t_">
     <ref role="1XX52x" to="26c9:5qibsSHh4tt" resolve="BitsOp" />
     <node concept="3F0ifn" id="5qibsSHh4tB" role="2wV5jI">
@@ -2978,26 +2968,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="5HPF48kDPXN">
-    <ref role="1XX52x" to="26c9:5HPF48kDPXH" resolve="CustomAssignmentExpression" />
-    <node concept="3EZMnI" id="fDtvWIq" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
-      <property role="3EZMnz" value="true" />
-      <node concept="3F1sOY" id="fDtvWIs" role="3EZMnx">
-        <property role="1$x2rV" value="VariableReference" />
-        <property role="1cu_pB" value="1" />
-        <ref role="1NtTu8" to="tpee:fz7vLUn" />
-        <ref role="1ERwB7" to="tpen:hokvvrM" resolve="AssignmentExpression_LeftArgument_Actions" />
-        <node concept="VPM3Z" id="hEU$Psl" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="VPM3Z" id="hEU$Pdf" role="3F10Kt">
-        <property role="VOm3f" value="true" />
-      </node>
-      <node concept="l2Vlx" id="i0v7ZTQ" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="6zlb0z1A7df">
     <ref role="1XX52x" to="26c9:6zlb0z1A6Zw" resolve="ExternalBlock" />
     <node concept="3EZMnI" id="6zlb0z1A7dh" role="2wV5jI">
@@ -3066,6 +3036,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5FV0SM9LUi5">
+    <property role="3GE5qa" value="SampleRun" />
     <ref role="1XX52x" to="26c9:5FV0SM9LUhL" resolve="PostTestBlock" />
     <node concept="3EZMnI" id="5FV0SM9LUi7" role="2wV5jI">
       <node concept="l2Vlx" id="5FV0SM9LUi8" role="2iSdaV" />
@@ -3106,6 +3077,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5FV0SM9LUgM">
+    <property role="3GE5qa" value="SampleRun" />
     <ref role="1XX52x" to="26c9:5FV0SM9LUgF" resolve="PreTestBlock" />
     <node concept="3EZMnI" id="5FV0SM9LUgU" role="2wV5jI">
       <node concept="l2Vlx" id="5FV0SM9LUgV" role="2iSdaV" />
@@ -3159,6 +3131,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5FV0SM9LUdC">
+    <property role="3GE5qa" value="SampleRun" />
     <ref role="1XX52x" to="26c9:3P8aN57Gm_N" resolve="TestBlock" />
     <node concept="3EZMnI" id="5FV0SM9LUdE" role="2wV5jI">
       <node concept="l2Vlx" id="5FV0SM9LUdF" role="2iSdaV" />

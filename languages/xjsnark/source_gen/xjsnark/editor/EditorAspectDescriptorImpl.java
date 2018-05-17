@@ -16,9 +16,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = ((SAbstractConcept) concept);
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x1fa6817026f92876L, "xjsnark.structure.AssignValue"))) {
-        return Collections.<ConceptEditor>singletonList(new AssignValue_Editor());
-      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x56922dce2d44475dL, "xjsnark.structure.BitsOp"))) {
         return Collections.<ConceptEditor>singletonList(new BitsOp_Editor());
       }
@@ -27,9 +24,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x67fc252049b55c0dL, "xjsnark.structure.ConversionBetweenTypes"))) {
         return Collections.<ConceptEditor>singletonList(new ConversionBetweenTypes_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x5b75ac4214a75f6dL, "xjsnark.structure.CustomAssignmentExpression"))) {
-        return Collections.<ConceptEditor>singletonList(new CustomAssignmentExpression_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1986fe0L, "xjsnark.structure.ExternalBlock"))) {
         return Collections.<ConceptEditor>singletonList(new ExternalBlock_Editor());

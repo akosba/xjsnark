@@ -58,11 +58,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="1YAwn0AYixQ">
-    <property role="1pbfSe" value="1184868838" />
-    <property role="TrG5h" value="AssignValue" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
   <node concept="Az7Fb" id="hhaVGVf">
     <property role="TrG5h" value="BigDecimal" />
     <property role="FLfZY" value="[0-9]+(.[0-9]+)?" />
@@ -97,11 +92,6 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4JdZtZI_W08">
-    <property role="1pbfSe" value="979746279" />
-    <property role="TrG5h" value="ConditionalIf" />
-    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
-  </node>
   <node concept="1TIwiD" id="6vW9i19HlKd">
     <property role="1pbfSe" value="1313767123" />
     <property role="TrG5h" value="ConversionBetweenTypes" />
@@ -119,11 +109,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="5HPF48kDPXH">
-    <property role="1pbfSe" value="1880951727" />
-    <property role="TrG5h" value="CustomAssignmentExpression" />
-    <ref role="1TJDcQ" to="tpee:fz7vLUm" resolve="AssignmentExpression" />
   </node>
   <node concept="1TIwiD" id="6zlb0z1A6Zw">
     <property role="1pbfSe" value="711826408" />
@@ -169,6 +154,7 @@
     <property role="1pbfSe" value="457005059" />
     <property role="TrG5h" value="PostTestBlock" />
     <property role="34LRSv" value="post {" />
+    <property role="3GE5qa" value="SampleRun" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="5FV0SM9LUhM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -181,6 +167,7 @@
     <property role="1pbfSe" value="457005129" />
     <property role="TrG5h" value="PreTestBlock" />
     <property role="34LRSv" value="pre {" />
+    <property role="3GE5qa" value="SampleRun" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="5FV0SM9LUgG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -206,6 +193,7 @@
     <property role="1pbfSe" value="2064018268" />
     <property role="TrG5h" value="TestBlock" />
     <property role="34LRSv" value="SampleRun" />
+    <property role="3GE5qa" value="SampleRun" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3P8aN57Gm_O" role="PzmwI">
       <ref role="PrY4T" to="tpee:h9ngReX" resolve="ClassifierMember" />
@@ -245,12 +233,6 @@
     <node concept="PrWs8" id="6zlb0z1JIuy" role="PzmwI">
       <ref role="PrY4T" to="tpee:1wHCnsn58oY" resolve="IBinaryLike" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="6zlb0z1IFNP">
-    <property role="1pbfSe" value="714074365" />
-    <property role="TrG5h" value="assignOp" />
-    <property role="34LRSv" value="assign" />
-    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
   </node>
   <node concept="1TIwiD" id="5u98M4xbjNn">
     <property role="1pbfSe" value="2025218040" />

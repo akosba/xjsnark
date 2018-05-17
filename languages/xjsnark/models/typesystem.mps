@@ -6474,6 +6474,7 @@
   </node>
   <node concept="312cEu" id="5ObDrPdw23i">
     <property role="TrG5h" value="OptimizationHints" />
+    <property role="3GE5qa" value="OptimizationHints" />
     <node concept="3Tm1VV" id="5ObDrPdw23j" role="1B3o_S" />
     <node concept="2tJIrI" id="5ObDrPdw2kQ" role="jymVt" />
     <node concept="2tJIrI" id="6w4Q6P0KmK2" role="jymVt" />
@@ -7212,6 +7213,7 @@
   </node>
   <node concept="18kY7G" id="5HPF48lpFsa">
     <property role="TrG5h" value="SimilarityDetection" />
+    <property role="3GE5qa" value="OptimizationHints" />
     <node concept="3clFbS" id="5HPF48lpFsb" role="18ibNy">
       <node concept="3clFbJ" id="5HPF48lpGLT" role="3cqZAp">
         <node concept="2OqwBi" id="5HPF48lpHNs" role="3clFbw">

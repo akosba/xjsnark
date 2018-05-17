@@ -965,6 +965,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5FV0SM9LUj5">
+    <property role="3GE5qa" value="SampleRun" />
     <ref role="1M2myG" to="26c9:3P8aN57Gm_N" resolve="TestBlock" />
     <node concept="nKS2y" id="5FV0SM9LUj6" role="1MLUbF">
       <node concept="3clFbS" id="5FV0SM9LUj7" role="2VODD2">
