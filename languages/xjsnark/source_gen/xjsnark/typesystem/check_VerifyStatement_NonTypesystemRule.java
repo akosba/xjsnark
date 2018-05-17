@@ -41,7 +41,7 @@ public class check_VerifyStatement_NonTypesystemRule extends AbstractNonTypesyst
   private static SNode _quotation_createNode_i313ax_b0a0a1() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xb5b6d42ff43c47ccL, 0x9ff05840fb869510L, 0x57892321212d3cd7L, "CircuitLanguage.structure.JBooleanType"), null, null, false);
+    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x57892321212d3cd7L, "xjsnark.structure.JBooleanType"), null, null, false);
     return quotedNode_1;
   }
 }

@@ -20,6 +20,8 @@
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false">d75a086c-8c0a-40e5-aa41-48619e88bf42(CircuitLanguage.runtime)</dependency>
         <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
+        <dependency reexport="false">0688d542-e2a3-492c-a31f-0e921fd6a8fb(xjsnark)</dependency>
+        <dependency reexport="false">1e4d45b9-368c-4e87-8555-ad69375f82e7(xjsnark.runtime)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -126,6 +128,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
+    <language id="0688d542-e2a3-492c-a31f-0e921fd6a8fb" fqName="xjsnark" version="-1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

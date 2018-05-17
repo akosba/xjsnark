@@ -201,13 +201,6 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
-  <node concept="13h7C7" id="5HPF48kIv53">
-    <property role="3GE5qa" value="Labels" />
-    <ref role="13h7C2" to="26c9:5HPF48kDQs_" resolve="TestWarningBlock" />
-    <node concept="13hLZK" id="5HPF48kIv54" role="13h7CW">
-      <node concept="3clFbS" id="5HPF48kIv55" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="6zlb0z1MnEy">
     <property role="3GE5qa" value="Roots" />
     <ref role="13h7C2" to="26c9:6zlb0z1MlFh" resolve="FieldDefTable" />

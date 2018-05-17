@@ -45,13 +45,13 @@ public class check_VerifyEqStatement_NonTypesystemRule extends AbstractNonTypesy
   private static SNode _quotation_createNode_opslar_b0a0a1a1() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xb5b6d42ff43c47ccL, 0x9ff05840fb869510L, 0x61502e94ebf30481L, "CircuitLanguage.structure.XjsnarkType"), null, null, false);
+    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
     return quotedNode_1;
   }
   private static SNode _quotation_createNode_opslar_b0a0a1a1_0() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xb5b6d42ff43c47ccL, 0x9ff05840fb869510L, 0x61502e94ebf30481L, "CircuitLanguage.structure.XjsnarkType"), null, null, false);
+    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
     return quotedNode_1;
   }
 }

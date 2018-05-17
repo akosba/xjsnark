@@ -91,9 +91,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3fe6a0eL, "xjsnark.structure.JUnsignedIntegerType"))) {
         return Collections.<ConceptEditor>singletonList(new JUnsignedIntegerType_Editor());
       }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x5524306caecf26dcL, "xjsnark.structure.LabeledFieldDeclaration"))) {
-        return Collections.<ConceptEditor>singletonList(new LabeledFieldDeclaration_Editor());
-      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x1fa6817027253167L, "xjsnark.structure.MemoryAccessExpression"))) {
         return Collections.<ConceptEditor>singletonList(new MemoryAccessExpression_Editor());
       }
@@ -133,9 +130,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x3d482b3147b16973L, "xjsnark.structure.TestBlock"))) {
         return Collections.<ConceptEditor>singletonList(new TestBlock_Editor());
       }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x5b75ac4214a76725L, "xjsnark.structure.TestWarningBlock"))) {
-        return Collections.<ConceptEditor>singletonList(new TestWarningBlock_Editor());
-      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0xf685d8194f3163cL, "xjsnark.structure.UnaryBitwiseNegate"))) {
         return Collections.<ConceptEditor>singletonList(new UnaryBitwiseNegate_Editor());
       }
@@ -153,9 +147,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3fc3a64L, "xjsnark.structure.WitnessBlock"))) {
         return Collections.<ConceptEditor>singletonList(new WitnessBlock_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x5b75ac4214b57113L, "xjsnark.structure.XJsnarkFieldDeclaration"))) {
-        return Collections.<ConceptEditor>singletonList(new XJsnarkFieldDeclaration_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x170da68057fdff54L, "xjsnark.structure.xFieldDeclaration"))) {
         return Collections.<ConceptEditor>singletonList(new xFieldDeclaration_Editor());

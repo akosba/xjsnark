@@ -386,16 +386,6 @@
       <ref role="PrY4T" to="tpck:19gBtYEv0ln" resolve="ImplementationPart" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5k$c6MINMrs">
-    <property role="1pbfSe" value="66279240" />
-    <property role="3GE5qa" value="Labels" />
-    <property role="TrG5h" value="LabeledFieldDeclaration" />
-    <ref role="1TJDcQ" to="tpee:fz12cDC" resolve="FieldDeclaration" />
-    <node concept="1TJgyi" id="5k$c6MINMrt" role="1TKVEl">
-      <property role="TrG5h" value="label" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3BesNbzYLfF">
     <property role="1pbfSe" value="499746589" />
     <property role="TrG5h" value="OutputBlock" />
@@ -413,25 +403,6 @@
     </node>
     <node concept="PrWs8" id="3BesNbzYLfI" role="PzmwI">
       <ref role="PrY4T" to="tpck:19gBtYEv0ln" resolve="ImplementationPart" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5HPF48kDQs_">
-    <property role="1pbfSe" value="1880953703" />
-    <property role="3GE5qa" value="Labels" />
-    <property role="TrG5h" value="TestWarningBlock" />
-    <property role="34LRSv" value="test" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5HPF48kILam" role="PzmwI">
-      <ref role="PrY4T" to="tpee:h9ngReX" resolve="ClassifierMember" />
-    </node>
-    <node concept="PrWs8" id="5HPF48kILan" role="PzmwI">
-      <ref role="PrY4T" to="tpck:19gBtYEv0ln" resolve="ImplementationPart" />
-    </node>
-    <node concept="1TJgyj" id="5HPF48kIv56" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="inputs" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="5HPF48kDPXH" resolve="CustomAssignmentExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="6w4Q6PbwoRE">
@@ -471,12 +442,6 @@
     <node concept="PrWs8" id="3BesNbzZ3DB" role="PzmwI">
       <ref role="PrY4T" to="tpck:19gBtYEv0ln" resolve="ImplementationPart" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="5HPF48kHn4j">
-    <property role="1pbfSe" value="1881873749" />
-    <property role="3GE5qa" value="Labels" />
-    <property role="TrG5h" value="XJsnarkFieldDeclaration" />
-    <ref role="1TJDcQ" to="tpee:fz12cDC" resolve="FieldDeclaration" />
   </node>
   <node concept="1TIwiD" id="6zlb0z1MlFh">
     <property role="1pbfSe" value="715032281" />
