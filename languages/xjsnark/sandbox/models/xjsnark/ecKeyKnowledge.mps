@@ -241,9 +241,22 @@
     <property role="TrG5h" value="EC_KeyKnowledge" />
     <node concept="3Tm1VV" id="2qKKpuf8meN" role="1B3o_S" />
     <node concept="DJdLC" id="2qKKpufGhSv" role="jymVt">
-      <property role="DRO8Q" value="this circuit verifies the knowledge of a secret key sk for NIST P 256 curve" />
+      <property role="DRO8Q" value="This circuit verifies the knowledge of a secret key sk for NIST P 256 curve public key pk" />
     </node>
-    <node concept="2tJIrI" id="2qKKpufGlqJ" role="jymVt" />
+    <node concept="DJdLC" id="2qKKpugiElG" role="jymVt">
+      <property role="DRO8Q" value="Note that this code works in a different field than the native SNARK field, which will lead" />
+    </node>
+    <node concept="DJdLC" id="2qKKpugiJHU" role="jymVt">
+      <property role="DRO8Q" value="to a complex circuit. xjsnark tries to reduce the overhead of programming such applications" />
+    </node>
+    <node concept="2tJIrI" id="2qKKpugiDUT" role="jymVt" />
+    <node concept="DJdLC" id="2qKKpugiM5k" role="jymVt">
+      <property role="DRO8Q" value="Declare the circuit variables:" />
+    </node>
+    <node concept="2tJIrI" id="2qKKpugiLD_" role="jymVt" />
+    <node concept="DJdLC" id="2qKKpugiBTT" role="jymVt">
+      <property role="DRO8Q" value="Use xjsnark parametrized field types (See FieldDefTable)" />
+    </node>
     <node concept="DJdLC" id="2qKKpufKiWV" role="jymVt">
       <property role="DRO8Q" value="public is just the java access modifier" />
     </node>
@@ -267,6 +280,7 @@
         <ref role="2D7PX4" node="2qKKpuf8m4A" resolve="p256" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2qKKpugiD3M" role="jymVt" />
     <node concept="DJdLC" id="2qKKpufKkDk" role="jymVt">
       <property role="DRO8Q" value="we denote that this is a private witness below" />
     </node>
@@ -310,7 +324,7 @@
         <node concept="3clFbH" id="2qKKpuf8ocK" role="3cqZAp" />
         <node concept="3SKdUt" id="2qKKpuf8PG2" role="3cqZAp">
           <node concept="3SKdUq" id="2qKKpuf8PG4" role="3SKWNk">
-            <property role="3SKdUp" value="generator point" />
+            <property role="3SKdUp" value="EC generator point" />
           </node>
         </node>
         <node concept="3cpWs8" id="2qKKpuf8Cjr" role="3cqZAp">
