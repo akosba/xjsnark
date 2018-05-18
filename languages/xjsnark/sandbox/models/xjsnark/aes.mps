@@ -3931,6 +3931,20 @@
       </node>
       <node concept="3jfavX" id="6w4Q6Pf$W4O" role="3jfasw">
         <node concept="3clFbS" id="6w4Q6Pf$W4P" role="3jfavY">
+          <node concept="3clFbF" id="2qKKpug94At" role="3cqZAp">
+            <node concept="2OqwBi" id="2qKKpug94Au" role="3clFbG">
+              <node concept="10M0yZ" id="2qKKpug94Av" role="2Oq$k0">
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              </node>
+              <node concept="liA8E" id="2qKKpug94Aw" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="2qKKpug94KS" role="37wK5m">
+                  <property role="Xl_RC" value="Circuit Output: " />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="1Dw8fO" id="6w4Q6Pf_iqg" role="3cqZAp">
             <node concept="3cpWsn" id="6w4Q6Pf_iqh" role="1Duv9x">
               <property role="3TUv4t" value="false" />
@@ -4005,6 +4019,21 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="2qKKpug95_U" role="3cqZAp">
+            <node concept="2OqwBi" id="2qKKpug95_V" role="3clFbG">
+              <node concept="10M0yZ" id="2qKKpug95_W" role="2Oq$k0">
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              </node>
+              <node concept="liA8E" id="2qKKpug95_X" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="2qKKpug95_Y" role="37wK5m">
+                  <property role="Xl_RC" value="Expected Output: 0x3ad77bb40d7a3660a89ecaf32466ef97" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="2qKKpug95u4" role="3cqZAp" />
           <node concept="3SKdUt" id="17j6vqL_QdI" role="3cqZAp">
             <node concept="3SKdUq" id="6w4Q6Pf_imm" role="3SKWNk">
               <property role="3SKdUp" value="expected ciphertext: &quot;3ad77bb40d7a3660a89ecaf32466ef97&quot;" />

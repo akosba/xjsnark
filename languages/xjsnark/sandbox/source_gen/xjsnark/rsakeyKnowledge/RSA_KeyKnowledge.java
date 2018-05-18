@@ -30,7 +30,8 @@ public class RSA_KeyKnowledge extends CircuitGenerator {
         q.mapValue(new BigInteger("d966a96decaad14b86f2372d228c5ac955ebe9410f88dd77c2a26d40549a9ddaf2c03476ed1725d0e5b42cf89d1ee1ca367dcfbd8febb2d7d8431e92c441ae3900394391b1ca9bb02eb3b4e69418d2e8099be805e28e1024965897a181872581dd3e46dfa6069fab969064b885528c1217973f58876bc4823a78ca204c97d653", 16), CircuitGenerator.__getActiveCircuitGenerator().__getCircuitEvaluator());
       }
       public void post() {
-        // no output expected. We just want to see that the assertions will go through 
+        // no output expected. We just want to see that the assertions will go through.  
+        // Any changes to the numbers above should result into failed assertions 
       }
 
     });
@@ -102,12 +103,12 @@ public class RSA_KeyKnowledge extends CircuitGenerator {
 
   }
   public void outsource() {
-    // Entry point for the circuit. Input and witness arrays/structs must be instantiated outside this method 
 
+    // Checking Validity 
     // if we multiply p*q directly, we will get a 1024-bit integer 
     // therefore we just promote one of them to the higher bitwidth type, using uint_2048(p) 
     modulus.forceEqual(UnsignedInteger.instantiateFrom(2048, p).mul(q));
-    // casting can be used as well, but its editing is a bit tricky in this environment 
+    // casting can be done as well, but its editing is bit tricky in this environment 
 
     // In the background, xjsnark checks conditions on p and q, and verifies the equality efficiently 
   }

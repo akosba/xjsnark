@@ -145,7 +145,7 @@ public class SHA256 extends CircuitGenerator {
         UnsignedInteger s1 = rotateRight(e.copy(32), 6).xorBitwise(rotateRight(e.copy(32), 11)).xorBitwise(rotateRight(e.copy(32), 25)).copy(32);
         UnsignedInteger ch = e.andBitwise(f).xorBitwise(e.invBits().andBitwise(g)).copy(32);
         // the uint_32(.) call is to convert from java type to xjsnark type 
-        UnsignedInteger t1 = h.add(s1).add(ch).add(UnsignedInteger.instantiateFrom(32, K_CONST[j])).add(words[j]).copy(32);
+        UnsignedInteger t1 = h.add(s1).add(ch).add(UnsignedInteger.instantiateFrom(32, SHA256.K_CONST[j])).add(words[j]).copy(32);
         
         h.assign(g, 32);;
         
