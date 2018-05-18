@@ -1518,6 +1518,9 @@ public class QueriesGenerated {
   public static SNode sourceNodeQuery_7553992366089880579(final SourceSubstituteMacroNodeContext _context) {
     return _context.getNode();
   }
+  public static SNode sourceNodeQuery_2787941026033068876(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x26b0c1978f544467L, 0x26b0c1978f544469L, "argument"));
+  }
   public static Iterable<SNode> sourceNodesQuery_4165393367774624205(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3ec6ba5L, 0x39ce7332e3ec73a9L, "inputs"));
   }
@@ -2148,7 +2151,8 @@ public class QueriesGenerated {
   }
   public static SNode insertMacro_Query_7495353643822079346(final TemplateQueryContextWithMacro _context) {
     SNode n = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, "jetbrains.mps.baseLanguage.structure.StringLiteral")));
-    SPropertyOperations.set(n, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), Helper.getModulus(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x6804d86d4d430c5aL, 0x6804d86d4d430c5bL, "jType"))).toString());
+    SPropertyOperations.set(n, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), FieldRecord__BehaviorDescriptor.getValue_id6zlb0z1MmQE.invoke(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x6804d86d4d430c5aL, 0x6804d86d4d430c5bL, "jType")), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, "xjsnark.structure.JFieldType")), MetaAdapterFactory.getReferenceLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, 0x68d52c08c1ca734cL, "fieldRec"))).toString());
+
     return n;
   }
   public static SNode insertMacro_Query_7495353643766784062(final TemplateQueryContextWithMacro _context) {

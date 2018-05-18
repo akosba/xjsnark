@@ -2140,7 +2140,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6zlb0z1A6VF" role="3EZMnx">
-        <property role="3F0ifm" value="and" />
+        <property role="3F0ifm" value="AND" />
         <ref role="1k5W1q" to="tpen:hF$iUjy" resolve="Operator" />
         <node concept="VechU" id="6zlb0z1A6VG" role="3F10Kt">
           <property role="Vb096" value="blue" />
@@ -2190,7 +2190,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6zlb0z1ynaa" role="3EZMnx">
-        <property role="3F0ifm" value="eq" />
+        <property role="3F0ifm" value="EQ" />
         <ref role="1k5W1q" to="tpen:hF$iUjy" resolve="Operator" />
         <node concept="VechU" id="6zlb0z1$i4a" role="3F10Kt">
           <property role="Vb096" value="blue" />
@@ -2251,7 +2251,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6zlb0z1A6Xb" role="3EZMnx">
-        <property role="3F0ifm" value="neq" />
+        <property role="3F0ifm" value="NEQ" />
         <ref role="1k5W1q" to="tpen:hF$iUjy" resolve="Operator" />
         <node concept="VechU" id="6zlb0z1A6Xc" role="3F10Kt">
           <property role="Vb096" value="blue" />
@@ -2286,7 +2286,7 @@
     <ref role="1XX52x" to="26c9:6zlb0z1wECl" resolve="JNotExpression" />
     <node concept="3EZMnI" id="6zlb0z1xxAS" role="2wV5jI">
       <node concept="3F0ifn" id="6zlb0z1xxB2" role="3EZMnx">
-        <property role="3F0ifm" value="not" />
+        <property role="3F0ifm" value="NOT" />
         <ref role="1k5W1q" to="tpen:hF$iUjy" resolve="Operator" />
         <node concept="VechU" id="6zlb0z1A6Zt" role="3F10Kt">
           <property role="Vb096" value="blue" />
@@ -2318,7 +2318,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6zlb0z1A6Wr" role="3EZMnx">
-        <property role="3F0ifm" value="or" />
+        <property role="3F0ifm" value="OR" />
         <ref role="1k5W1q" to="tpen:hF$iUjy" resolve="Operator" />
         <node concept="VechU" id="6zlb0z1A6Ws" role="3F10Kt">
           <property role="Vb096" value="blue" />
@@ -3226,6 +3226,35 @@
       <node concept="VechU" id="6zlb0z1Jyl0" role="3F10Kt">
         <property role="Vb096" value="DARK_GREEN" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2qKKpufl4Nh">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="26c9:2qKKpufl4hB" resolve="JBooleanConversion" />
+    <node concept="3EZMnI" id="2qKKpufl4Pq" role="2wV5jI">
+      <node concept="3F1sOY" id="2qKKpufl4Pr" role="3EZMnx">
+        <ref role="1NtTu8" to="26c9:2qKKpufl4hC" />
+      </node>
+      <node concept="3F0ifn" id="2qKKpufl4Ps" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="2qKKpufl4Pt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="2qKKpufl4Pu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="2qKKpufl4Pv" role="3EZMnx">
+        <ref role="1NtTu8" to="26c9:2qKKpufl4hD" />
+      </node>
+      <node concept="3F0ifn" id="2qKKpufl4Pw" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="2qKKpufl4Px" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="2qKKpufl4Py" role="3F10Kt" />
+      </node>
+      <node concept="2iRfu4" id="2qKKpufl4Pz" role="2iSdaV" />
     </node>
   </node>
 </model>

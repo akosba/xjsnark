@@ -80,7 +80,7 @@ public class JOrExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_4i737_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "or");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "OR");
     editorCell.setCellId("Constant_4i737_c0");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_Operator(style, editorCell);

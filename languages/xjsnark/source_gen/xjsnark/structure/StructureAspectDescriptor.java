@@ -22,15 +22,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptInitEmptyMemory = new ConceptDescriptorBuilder("xjsnark.structure.InitEmptyMemory", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x6804d86d4aa4dbc1L)).super_("jetbrains.mps.baseLanguage.structure.Expression").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).parents("jetbrains.mps.baseLanguage.structure.Expression").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).childDescriptors(new ConceptDescriptorBuilder.Link(7495353643766700994L, "type", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL), false, false, false), new ConceptDescriptorBuilder.Link(7495353643766703236L, "argLength", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL), false, false, false)).children(new String[]{"type", "argLength"}, new boolean[]{false, false}).alias("INIT_EMPTY_RAM", "Initialize empty random access smart memory ").create();
   /*package*/ final ConceptDescriptor myConceptInitMemory = new ConceptDescriptorBuilder("xjsnark.structure.InitMemory", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x1fa68170270e2608L)).super_("jetbrains.mps.baseLanguage.structure.Expression").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).parents("jetbrains.mps.baseLanguage.structure.Expression").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).childDescriptors(new ConceptDescriptorBuilder.Link(1929320883460933539L, "type", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL), false, false, false), new ConceptDescriptorBuilder.Link(2280652580001293834L, "argArray", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL), false, false, false)).children(new String[]{"type", "argArray"}, new boolean[]{false, false}).alias("INIT_RAM", "Initialize a random access smart memory from an existing array").create();
   /*package*/ final ConceptDescriptor myConceptInputBlock = new ConceptDescriptorBuilder("xjsnark.structure.InputBlock", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3ec6ba5L)).super_("xjsnark.structure.LabelBlock").super_(MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x6804d86d49d0931fL)).parents("xjsnark.structure.LabelBlock", "jetbrains.mps.baseLanguage.structure.ClassifierMember", "jetbrains.mps.lang.core.structure.ImplementationPart").parentIds(MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x6804d86d49d0931fL), MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x112574373bdL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x12509ddfaa7c0557L)).childDescriptors(new ConceptDescriptorBuilder.Link(4165393367773770665L, "inputs", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c77f1e98L), true, true, false)).children(new String[]{"inputs"}, new boolean[]{true}).alias("inputs", "").create();
-  /*package*/ final ConceptDescriptor myConceptJAndExpression = new ConceptDescriptorBuilder("xjsnark.structure.JAndExpression", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829874L)).super_("jetbrains.mps.baseLanguage.structure.BinaryOperation").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).parents("jetbrains.mps.baseLanguage.structure.BinaryOperation").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).alias("and", "jsnark equals").create();
+  /*package*/ final ConceptDescriptor myConceptJAndExpression = new ConceptDescriptorBuilder("xjsnark.structure.JAndExpression", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829874L)).super_("jetbrains.mps.baseLanguage.structure.BinaryOperation").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).parents("jetbrains.mps.baseLanguage.structure.BinaryOperation").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).alias("AND", "").create();
+  /*package*/ final ConceptDescriptor myConceptJBooleanConversion = new ConceptDescriptorBuilder("xjsnark.structure.JBooleanConversion", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x26b0c1978f544467L)).super_("jetbrains.mps.baseLanguage.structure.Expression").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).parents("jetbrains.mps.baseLanguage.structure.Expression").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).childDescriptors(new ConceptDescriptorBuilder.Link(2787941026031223912L, "jType", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x57892321212d3cd7L), false, false, false), new ConceptDescriptorBuilder.Link(2787941026031223913L, "argument", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL), false, false, false)).children(new String[]{"jType", "argument"}, new boolean[]{false, false}).alias("bit", "").create();
   /*package*/ final ConceptDescriptor myConceptJBooleanType = new ConceptDescriptorBuilder("xjsnark.structure.JBooleanType", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x57892321212d3cd7L)).super_("xjsnark.structure.XjsnarkType").super_(MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L)).parents("xjsnark.structure.XjsnarkType").parentIds(MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L)).alias("bit", "").create();
-  /*package*/ final ConceptDescriptor myConceptJEqualsExpression = new ConceptDescriptorBuilder("xjsnark.structure.JEqualsExpression", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L)).super_("jetbrains.mps.baseLanguage.structure.BinaryOperation").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).parents("jetbrains.mps.baseLanguage.structure.BinaryOperation").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).alias("eq", "jsnark equals").create();
+  /*package*/ final ConceptDescriptor myConceptJEqualsExpression = new ConceptDescriptorBuilder("xjsnark.structure.JEqualsExpression", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L)).super_("jetbrains.mps.baseLanguage.structure.BinaryOperation").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).parents("jetbrains.mps.baseLanguage.structure.BinaryOperation").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).alias("EQ", "jsnark equals").create();
   /*package*/ final ConceptDescriptor myConceptJFieldConversion = new ConceptDescriptorBuilder("xjsnark.structure.JFieldConversion", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x6804d86d4d430c5aL)).super_("jetbrains.mps.baseLanguage.structure.Expression").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).parents("jetbrains.mps.baseLanguage.structure.Expression").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).childDescriptors(new ConceptDescriptorBuilder.Link(7495353643810622555L, "jType", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L), false, false, false), new ConceptDescriptorBuilder.Link(7495353643810622556L, "argument", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL), false, false, false)).children(new String[]{"jType", "argument"}, new boolean[]{false, false}).alias("F_", "").create();
   /*package*/ final ConceptDescriptor myConceptJFieldType = new ConceptDescriptorBuilder("xjsnark.structure.JFieldType", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L)).super_("xjsnark.structure.XjsnarkType").super_(MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L)).parents("xjsnark.structure.XjsnarkType").parentIds(MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(7553992366106506060L, "fieldRec", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1c95ad2L), false)).references("fieldRec").alias("F_", "").create();
   /*package*/ final ConceptDescriptor myConceptJIntegerConstant = new ConceptDescriptorBuilder("xjsnark.structure.JIntegerConstant", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ec0554f2L)).super_("jetbrains.mps.baseLanguage.structure.IntegerLiteral").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1129778b846L)).parents("jetbrains.mps.baseLanguage.structure.IntegerLiteral", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1129778b846L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x19796fa16a19888bL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(7012155836965672432L, "value")).properties("value").alias("jint", "jint").create();
-  /*package*/ final ConceptDescriptor myConceptJNotEqualsExpression = new ConceptDescriptorBuilder("xjsnark.structure.JNotEqualsExpression", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L)).super_("jetbrains.mps.baseLanguage.structure.BinaryOperation").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).parents("jetbrains.mps.baseLanguage.structure.BinaryOperation").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).alias("neq", "jsnark not equals").create();
-  /*package*/ final ConceptDescriptor myConceptJNotExpression = new ConceptDescriptorBuilder("xjsnark.structure.JNotExpression", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c182aa15L)).super_("jetbrains.mps.baseLanguage.structure.Expression").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).parents("jetbrains.mps.baseLanguage.structure.Expression", "jetbrains.mps.baseLanguage.structure.IBinaryLike").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL), MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x182da1771714863eL)).childDescriptors(new ConceptDescriptorBuilder.Link(1081516765348L, "expression", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL), false, false, false)).children(new String[]{"expression"}, new boolean[]{false}).alias("not", "").create();
-  /*package*/ final ConceptDescriptor myConceptJOrExpression = new ConceptDescriptorBuilder("xjsnark.structure.JOrExpression", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829875L)).super_("jetbrains.mps.baseLanguage.structure.BinaryOperation").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).parents("jetbrains.mps.baseLanguage.structure.BinaryOperation").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).alias("or", "jsnark equals").create();
+  /*package*/ final ConceptDescriptor myConceptJNotEqualsExpression = new ConceptDescriptorBuilder("xjsnark.structure.JNotEqualsExpression", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L)).super_("jetbrains.mps.baseLanguage.structure.BinaryOperation").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).parents("jetbrains.mps.baseLanguage.structure.BinaryOperation").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).alias("NEQ", "jsnark not equals").create();
+  /*package*/ final ConceptDescriptor myConceptJNotExpression = new ConceptDescriptorBuilder("xjsnark.structure.JNotExpression", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c182aa15L)).super_("jetbrains.mps.baseLanguage.structure.Expression").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).parents("jetbrains.mps.baseLanguage.structure.Expression", "jetbrains.mps.baseLanguage.structure.IBinaryLike").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL), MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x182da1771714863eL)).childDescriptors(new ConceptDescriptorBuilder.Link(1081516765348L, "expression", MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL), false, false, false)).children(new String[]{"expression"}, new boolean[]{false}).alias("NOT", "").create();
+  /*package*/ final ConceptDescriptor myConceptJOrExpression = new ConceptDescriptorBuilder("xjsnark.structure.JOrExpression", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829875L)).super_("jetbrains.mps.baseLanguage.structure.BinaryOperation").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).parents("jetbrains.mps.baseLanguage.structure.BinaryOperation").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL)).alias("OR", "").create();
   /*package*/ final ConceptDescriptor myConceptJUnsignedBigIntegerDecimalConstant = new ConceptDescriptorBuilder("xjsnark.structure.JUnsignedBigIntegerDecimalConstant", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x7cfe1585af18da2eL)).super_("xjsnark.structure.JUnsignedBigIntegerLiteral").super_(MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x7cfe1585af18d4f2L)).parents("xjsnark.structure.JUnsignedBigIntegerLiteral").parentIds(MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x7cfe1585af18d4f2L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(9006659968700045902L, "value")).properties("value").create();
   /*package*/ final ConceptDescriptor myConceptJUnsignedBigIntegerHexConstant = new ConceptDescriptorBuilder("xjsnark.structure.JUnsignedBigIntegerHexConstant", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x7cfe1585af18e156L)).super_("xjsnark.structure.JUnsignedBigIntegerLiteral").super_(MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x7cfe1585af18d4f2L)).parents("xjsnark.structure.JUnsignedBigIntegerLiteral").parentIds(MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x7cfe1585af18d4f2L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(9006659968700047703L, "value")).properties("value").create();
   /*package*/ final ConceptDescriptor myConceptJUnsignedBigIntegerLiteral = new ConceptDescriptorBuilder("xjsnark.structure.JUnsignedBigIntegerLiteral", MetaIdFactory.conceptId(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x7cfe1585af18d4f2L)).super_("jetbrains.mps.baseLanguage.structure.Expression").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).parents("jetbrains.mps.baseLanguage.structure.Expression").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).abstract_().create();
@@ -61,13 +62,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBitsOp, myConceptBoundedLoop, myConceptConversionBetweenTypes, myConceptExternalBlock, myConceptFieldDefTable, myConceptFieldInverseOp, myConceptFieldRecord, myConceptInitEmptyMemory, myConceptInitMemory, myConceptInputBlock, myConceptJAndExpression, myConceptJBooleanType, myConceptJEqualsExpression, myConceptJFieldConversion, myConceptJFieldType, myConceptJIntegerConstant, myConceptJNotEqualsExpression, myConceptJNotExpression, myConceptJOrExpression, myConceptJUnsignedBigIntegerDecimalConstant, myConceptJUnsignedBigIntegerHexConstant, myConceptJUnsignedBigIntegerLiteral, myConceptJUnsignedIntegerConversion, myConceptJUnsignedIntegerType, myConceptLabelBlock, myConceptMemoryAccessExpression, myConceptMemoryType, myConceptMultiLineCommentClassMember, myConceptOutputBlock, myConceptPermutationResolver, myConceptPermutationVerifier, myConceptPostTestBlock, myConceptPreTestBlock, myConceptProgramDefinition, myConceptRuntimeStructDefinition, myConceptSingleLineCommentClassMember, myConceptStructDefinition, myConceptTestBlock, myConceptUnaryBitwiseNegate, myConceptValueOp, myConceptVerifiedWitnessBlock, myConceptVerifyEqStatement, myConceptVerifyStatement, myConceptWitnessBlock, myConceptXjsnarkType, myConceptxFieldDeclaration);
+    return Arrays.asList(myConceptBitsOp, myConceptBoundedLoop, myConceptConversionBetweenTypes, myConceptExternalBlock, myConceptFieldDefTable, myConceptFieldInverseOp, myConceptFieldRecord, myConceptInitEmptyMemory, myConceptInitMemory, myConceptInputBlock, myConceptJAndExpression, myConceptJBooleanConversion, myConceptJBooleanType, myConceptJEqualsExpression, myConceptJFieldConversion, myConceptJFieldType, myConceptJIntegerConstant, myConceptJNotEqualsExpression, myConceptJNotExpression, myConceptJOrExpression, myConceptJUnsignedBigIntegerDecimalConstant, myConceptJUnsignedBigIntegerHexConstant, myConceptJUnsignedBigIntegerLiteral, myConceptJUnsignedIntegerConversion, myConceptJUnsignedIntegerType, myConceptLabelBlock, myConceptMemoryAccessExpression, myConceptMemoryType, myConceptMultiLineCommentClassMember, myConceptOutputBlock, myConceptPermutationResolver, myConceptPermutationVerifier, myConceptPostTestBlock, myConceptPreTestBlock, myConceptProgramDefinition, myConceptRuntimeStructDefinition, myConceptSingleLineCommentClassMember, myConceptStructDefinition, myConceptTestBlock, myConceptUnaryBitwiseNegate, myConceptValueOp, myConceptVerifiedWitnessBlock, myConceptVerifyEqStatement, myConceptVerifyStatement, myConceptWitnessBlock, myConceptXjsnarkType, myConceptxFieldDeclaration);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0yb, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0zb, conceptFqName)) {
       case 0:
         return myConceptBitsOp;
       case 1:
@@ -91,78 +92,80 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 10:
         return myConceptJAndExpression;
       case 11:
-        return myConceptJBooleanType;
+        return myConceptJBooleanConversion;
       case 12:
-        return myConceptJEqualsExpression;
+        return myConceptJBooleanType;
       case 13:
-        return myConceptJFieldConversion;
+        return myConceptJEqualsExpression;
       case 14:
-        return myConceptJFieldType;
+        return myConceptJFieldConversion;
       case 15:
-        return myConceptJIntegerConstant;
+        return myConceptJFieldType;
       case 16:
-        return myConceptJNotEqualsExpression;
+        return myConceptJIntegerConstant;
       case 17:
-        return myConceptJNotExpression;
+        return myConceptJNotEqualsExpression;
       case 18:
-        return myConceptJOrExpression;
+        return myConceptJNotExpression;
       case 19:
-        return myConceptJUnsignedBigIntegerDecimalConstant;
+        return myConceptJOrExpression;
       case 20:
-        return myConceptJUnsignedBigIntegerHexConstant;
+        return myConceptJUnsignedBigIntegerDecimalConstant;
       case 21:
-        return myConceptJUnsignedBigIntegerLiteral;
+        return myConceptJUnsignedBigIntegerHexConstant;
       case 22:
-        return myConceptJUnsignedIntegerConversion;
+        return myConceptJUnsignedBigIntegerLiteral;
       case 23:
-        return myConceptJUnsignedIntegerType;
+        return myConceptJUnsignedIntegerConversion;
       case 24:
-        return myConceptLabelBlock;
+        return myConceptJUnsignedIntegerType;
       case 25:
-        return myConceptMemoryAccessExpression;
+        return myConceptLabelBlock;
       case 26:
-        return myConceptMemoryType;
+        return myConceptMemoryAccessExpression;
       case 27:
-        return myConceptMultiLineCommentClassMember;
+        return myConceptMemoryType;
       case 28:
-        return myConceptOutputBlock;
+        return myConceptMultiLineCommentClassMember;
       case 29:
-        return myConceptPermutationResolver;
+        return myConceptOutputBlock;
       case 30:
-        return myConceptPermutationVerifier;
+        return myConceptPermutationResolver;
       case 31:
-        return myConceptPostTestBlock;
+        return myConceptPermutationVerifier;
       case 32:
-        return myConceptPreTestBlock;
+        return myConceptPostTestBlock;
       case 33:
-        return myConceptProgramDefinition;
+        return myConceptPreTestBlock;
       case 34:
-        return myConceptRuntimeStructDefinition;
+        return myConceptProgramDefinition;
       case 35:
-        return myConceptSingleLineCommentClassMember;
+        return myConceptRuntimeStructDefinition;
       case 36:
-        return myConceptStructDefinition;
+        return myConceptSingleLineCommentClassMember;
       case 37:
-        return myConceptTestBlock;
+        return myConceptStructDefinition;
       case 38:
-        return myConceptUnaryBitwiseNegate;
+        return myConceptTestBlock;
       case 39:
-        return myConceptValueOp;
+        return myConceptUnaryBitwiseNegate;
       case 40:
-        return myConceptVerifiedWitnessBlock;
+        return myConceptValueOp;
       case 41:
-        return myConceptVerifyEqStatement;
+        return myConceptVerifiedWitnessBlock;
       case 42:
-        return myConceptVerifyStatement;
+        return myConceptVerifyEqStatement;
       case 43:
-        return myConceptWitnessBlock;
+        return myConceptVerifyStatement;
       case 44:
-        return myConceptXjsnarkType;
+        return myConceptWitnessBlock;
       case 45:
+        return myConceptXjsnarkType;
+      case 46:
         return myConceptxFieldDeclaration;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0yb = new String[]{"xjsnark.structure.BitsOp", "xjsnark.structure.BoundedLoop", "xjsnark.structure.ConversionBetweenTypes", "xjsnark.structure.ExternalBlock", "xjsnark.structure.FieldDefTable", "xjsnark.structure.FieldInverseOp", "xjsnark.structure.FieldRecord", "xjsnark.structure.InitEmptyMemory", "xjsnark.structure.InitMemory", "xjsnark.structure.InputBlock", "xjsnark.structure.JAndExpression", "xjsnark.structure.JBooleanType", "xjsnark.structure.JEqualsExpression", "xjsnark.structure.JFieldConversion", "xjsnark.structure.JFieldType", "xjsnark.structure.JIntegerConstant", "xjsnark.structure.JNotEqualsExpression", "xjsnark.structure.JNotExpression", "xjsnark.structure.JOrExpression", "xjsnark.structure.JUnsignedBigIntegerDecimalConstant", "xjsnark.structure.JUnsignedBigIntegerHexConstant", "xjsnark.structure.JUnsignedBigIntegerLiteral", "xjsnark.structure.JUnsignedIntegerConversion", "xjsnark.structure.JUnsignedIntegerType", "xjsnark.structure.LabelBlock", "xjsnark.structure.MemoryAccessExpression", "xjsnark.structure.MemoryType", "xjsnark.structure.MultiLineCommentClassMember", "xjsnark.structure.OutputBlock", "xjsnark.structure.PermutationResolver", "xjsnark.structure.PermutationVerifier", "xjsnark.structure.PostTestBlock", "xjsnark.structure.PreTestBlock", "xjsnark.structure.ProgramDefinition", "xjsnark.structure.RuntimeStructDefinition", "xjsnark.structure.SingleLineCommentClassMember", "xjsnark.structure.StructDefinition", "xjsnark.structure.TestBlock", "xjsnark.structure.UnaryBitwiseNegate", "xjsnark.structure.ValueOp", "xjsnark.structure.VerifiedWitnessBlock", "xjsnark.structure.VerifyEqStatement", "xjsnark.structure.VerifyStatement", "xjsnark.structure.WitnessBlock", "xjsnark.structure.XjsnarkType", "xjsnark.structure.xFieldDeclaration"};
+  private static String[] stringSwitchCases_1htk8d_a0a0zb = new String[]{"xjsnark.structure.BitsOp", "xjsnark.structure.BoundedLoop", "xjsnark.structure.ConversionBetweenTypes", "xjsnark.structure.ExternalBlock", "xjsnark.structure.FieldDefTable", "xjsnark.structure.FieldInverseOp", "xjsnark.structure.FieldRecord", "xjsnark.structure.InitEmptyMemory", "xjsnark.structure.InitMemory", "xjsnark.structure.InputBlock", "xjsnark.structure.JAndExpression", "xjsnark.structure.JBooleanConversion", "xjsnark.structure.JBooleanType", "xjsnark.structure.JEqualsExpression", "xjsnark.structure.JFieldConversion", "xjsnark.structure.JFieldType", "xjsnark.structure.JIntegerConstant", "xjsnark.structure.JNotEqualsExpression", "xjsnark.structure.JNotExpression", "xjsnark.structure.JOrExpression", "xjsnark.structure.JUnsignedBigIntegerDecimalConstant", "xjsnark.structure.JUnsignedBigIntegerHexConstant", "xjsnark.structure.JUnsignedBigIntegerLiteral", "xjsnark.structure.JUnsignedIntegerConversion", "xjsnark.structure.JUnsignedIntegerType", "xjsnark.structure.LabelBlock", "xjsnark.structure.MemoryAccessExpression", "xjsnark.structure.MemoryType", "xjsnark.structure.MultiLineCommentClassMember", "xjsnark.structure.OutputBlock", "xjsnark.structure.PermutationResolver", "xjsnark.structure.PermutationVerifier", "xjsnark.structure.PostTestBlock", "xjsnark.structure.PreTestBlock", "xjsnark.structure.ProgramDefinition", "xjsnark.structure.RuntimeStructDefinition", "xjsnark.structure.SingleLineCommentClassMember", "xjsnark.structure.StructDefinition", "xjsnark.structure.TestBlock", "xjsnark.structure.UnaryBitwiseNegate", "xjsnark.structure.ValueOp", "xjsnark.structure.VerifiedWitnessBlock", "xjsnark.structure.VerifyEqStatement", "xjsnark.structure.VerifyStatement", "xjsnark.structure.WitnessBlock", "xjsnark.structure.XjsnarkType", "xjsnark.structure.xFieldDeclaration"};
 }

@@ -32,7 +32,7 @@ public class JNotExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_i1oiyd_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "not");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "NOT");
     editorCell.setCellId("Constant_i1oiyd_a0");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_Operator(style, editorCell);

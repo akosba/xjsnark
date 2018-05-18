@@ -80,7 +80,7 @@ public class JAndExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_nbgj3n_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "and");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "AND");
     editorCell.setCellId("Constant_nbgj3n_c0");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_Operator(style, editorCell);

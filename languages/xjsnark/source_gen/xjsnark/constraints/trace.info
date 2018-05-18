@@ -12,7 +12,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="9,0,71,0" name="xjsnark.constraints.ConstraintsAspectDescriptor" />
+      <unit at="9,0,74,0" name="xjsnark.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:bae2f377-1730-4c40-8a68-cde7bdcf162d(xjsnark.constraints)/1929320883467089265">
@@ -289,6 +289,52 @@
         <var name="operationContext" id="2280652580002804445" />
       </scope>
       <unit id="2280652580002804445" at="13,0,36,0" name="xjsnark.constraints.MemoryAccessExpression_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:bae2f377-1730-4c40-8a68-cde7bdcf162d(xjsnark.constraints)/2787941026031226452">
+    <file name="JBooleanConversion_Constraints.java">
+      <node id="2787941026031226452" at="16,43,17,97" concept="9" />
+      <node id="2787941026031226452" at="20,43,21,16" concept="5" />
+      <node id="2787941026031226452" at="24,200,25,96" concept="4" />
+      <node id="2787941026031226452" at="25,96,26,0" concept="6" />
+      <node id="2787941026031226452" at="27,51,28,67" concept="1" />
+      <node id="2787941026031226452" at="29,5,30,0" concept="6" />
+      <node id="2787941026031226452" at="30,0,31,18" concept="5" />
+      <node id="2787941026031226854" at="34,357,35,18" concept="5" />
+      <node id="2787941026031226865" at="36,5,37,382" concept="5" />
+      <node id="2787941026031226452" at="39,0,40,0" concept="7" trace="canBeChildBreakingPoint" />
+      <node id="2787941026031226452" at="16,0,19,0" concept="0" trace="JBooleanConversion_Constraints#()V" />
+      <node id="2787941026031226452" at="26,0,29,5" concept="2" />
+      <node id="2787941026031226852" at="33,148,36,5" concept="2" />
+      <node id="2787941026031226452" at="19,0,23,0" concept="3" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="2787941026031226452" at="33,0,39,0" concept="8" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="2787941026031226452" at="23,0,33,0" concept="3" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="2787941026031226452" at="16,43,17,97" />
+      <scope id="2787941026031226452" at="20,43,21,16" />
+      <scope id="2787941026031226452" at="27,51,28,67" />
+      <scope id="2787941026031226853" at="34,357,35,18" />
+      <scope id="2787941026031226452" at="16,0,19,0" />
+      <scope id="2787941026031226452" at="19,0,23,0" />
+      <scope id="2787941026031226812" at="33,148,37,382" />
+      <scope id="2787941026031226452" at="33,0,39,0">
+        <var name="childConcept" id="2787941026031226452" />
+        <var name="link" id="2787941026031226452" />
+        <var name="node" id="2787941026031226452" />
+        <var name="operationContext" id="2787941026031226452" />
+        <var name="parentNode" id="2787941026031226452" />
+      </scope>
+      <scope id="2787941026031226452" at="24,200,31,18">
+        <var name="result" id="2787941026031226452" />
+      </scope>
+      <scope id="2787941026031226452" at="23,0,33,0">
+        <var name="checkingNodeContext" id="2787941026031226452" />
+        <var name="childConcept" id="2787941026031226452" />
+        <var name="link" id="2787941026031226452" />
+        <var name="node" id="2787941026031226452" />
+        <var name="operationContext" id="2787941026031226452" />
+        <var name="parentNode" id="2787941026031226452" />
+      </scope>
+      <unit id="2787941026031226452" at="15,0,41,0" name="xjsnark.constraints.JBooleanConversion_Constraints" />
     </file>
   </root>
   <root nodeRef="r:bae2f377-1730-4c40-8a68-cde7bdcf162d(xjsnark.constraints)/3132145998311733265">

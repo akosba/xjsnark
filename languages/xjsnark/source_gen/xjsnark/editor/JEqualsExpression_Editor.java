@@ -81,7 +81,7 @@ public class JEqualsExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_uj3ik5_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "eq");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "EQ");
     editorCell.setCellId("Constant_uj3ik5_c0");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_Operator(style, editorCell);

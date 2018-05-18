@@ -225,6 +225,7 @@
     <classNode dependClassName="xjsnark.typesystem.typeof_InitMemory_InferenceRule" />
     <classNode dependClassName="xjsnark.typesystem.typeof_IntegerConstant_InferenceRule" />
     <classNode dependClassName="xjsnark.typesystem.typeof_JAndExpression_InferenceRule" />
+    <classNode dependClassName="xjsnark.typesystem.typeof_JBooleanConversion_InferenceRule" />
     <classNode dependClassName="xjsnark.typesystem.typeof_JEqualsExpression_InferenceRule" />
     <classNode dependClassName="xjsnark.typesystem.typeof_JFieldConversion_InferenceRule" />
     <classNode dependClassName="xjsnark.typesystem.typeof_JIntegerConstant_InferenceRule" />
@@ -447,6 +448,20 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="xjsnark.typesystem.typeof_JBooleanConversion_InferenceRule" file="typeof_JBooleanConversion_InferenceRule.java">
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>

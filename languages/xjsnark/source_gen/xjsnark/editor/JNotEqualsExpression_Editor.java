@@ -80,7 +80,7 @@ public class JNotEqualsExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_n5mvrq_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "neq");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "NEQ");
     editorCell.setCellId("Constant_n5mvrq_c0");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_Operator(style, editorCell);

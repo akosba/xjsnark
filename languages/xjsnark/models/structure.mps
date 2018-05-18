@@ -672,9 +672,8 @@
   <node concept="1TIwiD" id="6zlb0z1wDxO">
     <property role="1pbfSe" value="710395004" />
     <property role="TrG5h" value="JAndExpression" />
-    <property role="R4oN_" value="jsnark equals" />
     <property role="3GE5qa" value="ops" />
-    <property role="34LRSv" value="and" />
+    <property role="34LRSv" value="AND" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
   </node>
   <node concept="1TIwiD" id="4JdZtZIAYwB">
@@ -682,14 +681,14 @@
     <property role="TrG5h" value="JEqualsExpression" />
     <property role="R4oN_" value="jsnark equals" />
     <property role="3GE5qa" value="ops" />
-    <property role="34LRSv" value="eq" />
+    <property role="34LRSv" value="EQ" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
   </node>
   <node concept="1TIwiD" id="7aL4SFttuq2">
     <property role="1pbfSe" value="1344731660" />
     <property role="TrG5h" value="JNotEqualsExpression" />
     <property role="R4oN_" value="jsnark not equals" />
-    <property role="34LRSv" value="neq" />
+    <property role="34LRSv" value="NEQ" />
     <property role="3GE5qa" value="ops" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
   </node>
@@ -697,7 +696,7 @@
     <property role="1pbfSe" value="710399517" />
     <property role="3GE5qa" value="ops" />
     <property role="TrG5h" value="JNotExpression" />
-    <property role="34LRSv" value="not" />
+    <property role="34LRSv" value="NOT" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="fJfr32$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -712,9 +711,8 @@
   <node concept="1TIwiD" id="6zlb0z1wDxP">
     <property role="1pbfSe" value="710395005" />
     <property role="TrG5h" value="JOrExpression" />
-    <property role="R4oN_" value="jsnark equals" />
     <property role="3GE5qa" value="ops" />
-    <property role="34LRSv" value="or" />
+    <property role="34LRSv" value="OR" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
   </node>
   <node concept="1TIwiD" id="XCno6kWLoW">
@@ -773,6 +771,25 @@
       <property role="20kJfa" value="id" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2qKKpufl4hB">
+    <property role="1pbfSe" value="1241184770" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="JBooleanConversion" />
+    <property role="34LRSv" value="bit" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="2qKKpufl4hC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="jType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5u98M4xbjNn" resolve="JBooleanType" />
+    </node>
+    <node concept="1TJgyj" id="2qKKpufl4hD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="argument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
 </model>

@@ -49,6 +49,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829874L, "xjsnark.structure.JAndExpression"))) {
         return Collections.<ConceptEditor>singletonList(new JAndExpression_Editor());
       }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x26b0c1978f544467L, "xjsnark.structure.JBooleanConversion"))) {
+        return Collections.<ConceptEditor>singletonList(new JBooleanConversion_Editor());
+      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x57892321212d3cd7L, "xjsnark.structure.JBooleanType"))) {
         return Collections.<ConceptEditor>singletonList(new JBooleanType_Editor());
       }
