@@ -28,7 +28,7 @@ This is an early release that could contain issues and inconsistencies. The proj
 
 More detailed instructions and editing hints will be added incrementally about how to define your own circuit, running outputs on libsnark and about other features.
 
-### Examples included in this release
+### Examples included 
 (Note that the code is viewable through the framework after checking out the project, and not through the github interface)
 
 - SHA 256 
@@ -36,4 +36,4 @@ More detailed instructions and editing hints will be added incrementally about h
 - Secret Key Knowledge for RSA
 - Secret Key Knowledge for ECDSA (P-256 Curve)
 
-Please stay tuned for more updates and examples. To apply any updates automatically, VCS-> Update Project can be used.
+Please stay tuned for more updates and examples. To apply any updates automatically, VCS-> Update Project from the MPS framework.
