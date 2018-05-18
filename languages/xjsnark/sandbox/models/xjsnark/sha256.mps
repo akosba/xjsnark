@@ -10,8 +10,6 @@
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="85wc" ref="1e4d45b9-368c-4e87-8555-ad69375f82e7/java:backend.config(xjsnark.runtime/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -19,7 +17,6 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1179360813171" name="jetbrains.mps.baseLanguage.structure.HexIntegerLiteral" flags="nn" index="2nou5x">
         <property id="1179360856892" name="value" index="2noCCI" />
       </concept>
@@ -1710,63 +1707,6 @@
           <node concept="3SKdUt" id="2qKKpug4SvB" role="3cqZAp">
             <node concept="3SKdUq" id="5RbNWZF9dFy" role="3SKWNk">
               <property role="3SKdUp" value="expected digest: ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad" />
-            </node>
-          </node>
-          <node concept="1Dw8fO" id="2qKKpug4SAe" role="3cqZAp">
-            <node concept="3clFbS" id="2qKKpug4SAg" role="2LFqv$">
-              <node concept="3clFbF" id="2qKKpug4Tce" role="3cqZAp">
-                <node concept="2OqwBi" id="2qKKpug4Tfy" role="3clFbG">
-                  <node concept="10M0yZ" id="2qKKpug4Tcd" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                  </node>
-                  <node concept="liA8E" id="2qKKpug4TiK" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="2OqwBi" id="2qKKpug4TQn" role="37wK5m">
-                      <node concept="2OqwBi" id="2qKKpug4TJm" role="2Oq$k0">
-                        <node concept="AH0OO" id="2qKKpug4TEI" role="2Oq$k0">
-                          <node concept="37vLTw" id="2qKKpug4THM" role="AHEQo">
-                            <ref role="3cqZAo" node="2qKKpug4SAh" resolve="i" />
-                          </node>
-                          <node concept="37vLTw" id="2qKKpug4Tpp" role="AHHXb">
-                            <ref role="3cqZAo" node="2qKKpug3UPb" resolve="digest" />
-                          </node>
-                        </node>
-                        <node concept="2Ds8w2" id="2qKKpug4TMD" role="2OqNvi" />
-                      </node>
-                      <node concept="liA8E" id="2qKKpug4TXR" role="2OqNvi">
-                        <ref role="37wK5l" to="xlxw:~BigInteger.toString(int):java.lang.String" resolve="toString" />
-                        <node concept="3cmrfG" id="2qKKpug4U2l" role="37wK5m">
-                          <property role="3cmrfH" value="16" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="2qKKpug4SAh" role="1Duv9x">
-              <property role="TrG5h" value="i" />
-              <node concept="10Oyi0" id="2qKKpug4SBP" role="1tU5fm" />
-              <node concept="3cmrfG" id="2qKKpug4SDh" role="33vP2m">
-                <property role="3cmrfH" value="0" />
-              </node>
-            </node>
-            <node concept="3eOVzh" id="2qKKpug4SKG" role="1Dwp0S">
-              <node concept="2OqwBi" id="2qKKpug4SRY" role="3uHU7w">
-                <node concept="37vLTw" id="2qKKpug4SMQ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2qKKpug3UPb" resolve="digest" />
-                </node>
-                <node concept="1Rwk04" id="2qKKpug4SVv" role="2OqNvi" />
-              </node>
-              <node concept="37vLTw" id="2qKKpug4SEW" role="3uHU7B">
-                <ref role="3cqZAo" node="2qKKpug4SAh" resolve="i" />
-              </node>
-            </node>
-            <node concept="3uNrnE" id="2qKKpug4T6V" role="1Dwrff">
-              <node concept="37vLTw" id="2qKKpug4T6X" role="2$L3a6">
-                <ref role="3cqZAo" node="2qKKpug4SAh" resolve="i" />
-              </node>
             </node>
           </node>
         </node>
