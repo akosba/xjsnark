@@ -331,13 +331,13 @@
     <property role="TrG5h" value="SortingVerification" />
     <node concept="3Tm1VV" id="2qKKpugm6Pa" role="1B3o_S" />
     <node concept="DJdLC" id="2qKKpugm7sd" role="jymVt">
-      <property role="DRO8Q" value="Instead of writing actual sorting code a programmer can use non-determinism to handle sorting outside" />
+      <property role="DRO8Q" value="Instead of writing actual sorting code, a programmer can use non-determinism to handle sorting outside" />
     </node>
     <node concept="DJdLC" id="2qKKpugm9As" role="jymVt">
-      <property role="DRO8Q" value="the circuit, and then just verifies the result in the circuit. This can be much more efficient than just implementing" />
+      <property role="DRO8Q" value="the circuit, and then just verify the result in the circuit. This can be much more efficient than just implementing" />
     </node>
     <node concept="DJdLC" id="2qKKpugmbrD" role="jymVt">
-      <property role="DRO8Q" value="a sorting algorithm inside a snark circuit. A Merge sort code handling the same size below will be much slower" />
+      <property role="DRO8Q" value="a sorting algorithm inside a zk-SNARK circuit. A Merge sort code handling the same size below will be much slower" />
     </node>
     <node concept="2tJIrI" id="2qKKpugn73d" role="jymVt" />
     <node concept="2tJIrI" id="2qKKpugm6Pc" role="jymVt" />
@@ -786,6 +786,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="2qKKpugmILk" role="3cqZAp" />
+        <node concept="3SKdUt" id="2qKKpugpm7M" role="3cqZAp">
+          <node concept="3SKdUq" id="2qKKpugpmvi" role="3SKWNk">
+            <property role="3SKdUp" value="The part that is actually in the circuit" />
+          </node>
+        </node>
         <node concept="2H3G7l" id="2qKKpugmF7d" role="3cqZAp">
           <node concept="3qc1$W" id="2qKKpugmFoI" role="2H3G7d">
             <property role="3qc1Xj" value="16" />
