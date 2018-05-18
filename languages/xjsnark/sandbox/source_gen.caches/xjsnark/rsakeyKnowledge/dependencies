@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="xjsnark.rsakeyKnowledge.RSA_KeyKnowledge" file="RSA_KeyKnowledge.java">
+    <classNode dependClassName="backend.auxTypes.UnsignedInteger" />
+    <classNode dependClassName="backend.eval.CircuitEvaluator" />
+    <classNode dependClassName="backend.eval.SampleRun" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.math.BigInteger" />
+    <classNode extendsClassName="backend.structure.CircuitGenerator" />
+  </dependency>
+</dependenciesRoot>
+

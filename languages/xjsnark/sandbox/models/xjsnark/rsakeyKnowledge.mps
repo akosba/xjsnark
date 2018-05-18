@@ -225,11 +225,6 @@
       <node concept="3cqZAl" id="2qKKpuf7uBB" role="3clF45" />
       <node concept="3Tm1VV" id="2qKKpuf7uBC" role="1B3o_S" />
       <node concept="3clFbS" id="2qKKpuf7uBD" role="3clF47">
-        <node concept="3SKdUt" id="2qKKpuf7uBE" role="3cqZAp">
-          <node concept="3SKdUq" id="2qKKpuf7uBF" role="3SKWNk">
-            <property role="3SKdUp" value="Entry point for the circuit. Input and witness arrays/structs must be instantiated outside this method" />
-          </node>
-        </node>
         <node concept="3clFbH" id="2qKKpuf7zjq" role="3cqZAp" />
         <node concept="3SKdUt" id="2qKKpuf80GG" role="3cqZAp">
           <node concept="3SKdUq" id="2qKKpuf80GI" role="3SKWNk">
@@ -266,7 +261,7 @@
         </node>
         <node concept="3SKdUt" id="2qKKpuf7z_6" role="3cqZAp">
           <node concept="3SKdUq" id="2qKKpuf7z_8" role="3SKWNk">
-            <property role="3SKdUp" value="casting can be used as well, but its editing is a bit tricky in this environment" />
+            <property role="3SKdUp" value="casting can be done as well, but its editing is bit tricky in this environment" />
           </node>
         </node>
         <node concept="3clFbH" id="2qKKpuf7PI9" role="3cqZAp" />
@@ -359,7 +354,12 @@
         <node concept="3clFbS" id="2qKKpuf7uBM" role="3jfavY">
           <node concept="3SKdUt" id="2qKKpuf7S5m" role="3cqZAp">
             <node concept="3SKdUq" id="2qKKpuf7S5n" role="3SKWNk">
-              <property role="3SKdUp" value="no output expected. We just want to see that the assertions will go through" />
+              <property role="3SKdUp" value="no output expected. We just want to see that the assertions will go through. " />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="2qKKpuf878l" role="3cqZAp">
+            <node concept="3SKdUq" id="2qKKpuf878n" role="3SKWNk">
+              <property role="3SKdUp" value="Any changes to the numbers above should result into failed assertions" />
             </node>
           </node>
         </node>
