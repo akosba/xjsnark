@@ -17,6 +17,15 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
+  <dependency className="xjsnark.typesystem.FieldTableChecks_NonTypesystemRule" file="FieldTableChecks_NonTypesystemRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
+  </dependency>
   <dependency className="xjsnark.typesystem.IntegerLiteralToShort_SubstituteTypeRule" file="IntegerLiteralToShort_SubstituteTypeRule.java">
     <classNode dependClassName="java.lang.Short" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
@@ -201,6 +210,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode dependClassName="xjsnark.typesystem.FieldNameRestrictions_NonTypesystemRule" />
+    <classNode dependClassName="xjsnark.typesystem.FieldTableChecks_NonTypesystemRule" />
     <classNode dependClassName="xjsnark.typesystem.IntegerLiteralToShort_SubstituteTypeRule" />
     <classNode dependClassName="xjsnark.typesystem.JBooleanAsBoolean_InequationReplacementRule" />
     <classNode dependClassName="xjsnark.typesystem.JTypeRules_InequationReplacementRule" />

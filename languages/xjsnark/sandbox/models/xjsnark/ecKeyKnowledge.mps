@@ -158,7 +158,6 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -229,14 +228,6 @@
     </language>
   </registry>
   <node concept="2D77rp" id="2qKKpuf8m4z">
-    <node concept="2D77rq" id="2qKKpuf8m4$" role="2D75qn">
-      <property role="2D74mG" value="21888242871839275222246405745257275088548364400416034343698204186575808495617" />
-      <property role="TrG5h" value="p" />
-    </node>
-    <node concept="2D77rq" id="2qKKpuf8m4_" role="2D75qn">
-      <property role="2D74mG" value="257" />
-      <property role="TrG5h" value="swifft" />
-    </node>
     <node concept="2D77rq" id="2qKKpuf8m4A" role="2D75qn">
       <property role="2D74mG" value="115792089210356248762697446949407573530086143415290314195533631308867097853951" />
       <property role="TrG5h" value="p256" />
@@ -253,19 +244,15 @@
       <property role="DRO8Q" value="this circuit verifies the knowledge of a secret key sk for NIST P 256 curve" />
     </node>
     <node concept="2tJIrI" id="2qKKpufGlqJ" role="jymVt" />
-    <node concept="2tJIrI" id="2qKKpufGoR8" role="jymVt" />
-    <node concept="DJdLC" id="2qKKpufGpva" role="jymVt">
-      <property role="DRO8Q" value="ignore the warnings from the underlying framework. We take care of assignments for I/O, witnesses in the background" />
-    </node>
-    <node concept="DJdLC" id="2qKKpufGrkZ" role="jymVt">
-      <property role="DRO8Q" value="warnings can be disabled by changing the java visibility" />
+    <node concept="DJdLC" id="2qKKpufKiWV" role="jymVt">
+      <property role="DRO8Q" value="public is just the java access modifier" />
     </node>
     <node concept="312cEg" id="2qKKpuf8nlm" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="pk_x" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2qKKpufGoOt" role="1B3o_S" />
+      <node concept="3Tm1VV" id="2qKKpufKl__" role="1B3o_S" />
       <node concept="2D7PWU" id="2qKKpuf8nhu" role="1tU5fm">
         <ref role="2D7PX4" node="2qKKpuf8m4A" resolve="p256" />
       </node>
@@ -275,17 +262,20 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="pk_y" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2qKKpufGoKW" role="1B3o_S" />
+      <node concept="3Tm1VV" id="2qKKpufKlDt" role="1B3o_S" />
       <node concept="2D7PWU" id="2qKKpuf8nuq" role="1tU5fm">
         <ref role="2D7PX4" node="2qKKpuf8m4A" resolve="p256" />
       </node>
+    </node>
+    <node concept="DJdLC" id="2qKKpufKkDk" role="jymVt">
+      <property role="DRO8Q" value="we denote that this is a private witness below" />
     </node>
     <node concept="312cEg" id="2qKKpuf8BFS" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="sk" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2qKKpufGoFi" role="1B3o_S" />
+      <node concept="3Tm1VV" id="2qKKpufKlGZ" role="1B3o_S" />
       <node concept="3qc1$W" id="2qKKpuf8BzS" role="1tU5fm">
         <property role="3qc1Xj" value="256" />
       </node>
@@ -300,12 +290,15 @@
         <ref role="3cqZAo" node="2qKKpuf8nxy" resolve="pk_y" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2qKKpufKmgC" role="jymVt" />
     <node concept="3qdm3p" id="2qKKpuf8meU" role="jymVt" />
+    <node concept="2tJIrI" id="2qKKpufKlOn" role="jymVt" />
     <node concept="zxlm7" id="2qKKpuf8meV" role="jymVt">
       <node concept="37vLTw" id="2qKKpuf8BT0" role="zxlm6">
         <ref role="3cqZAo" node="2qKKpuf8BFS" resolve="sk" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2qKKpufKmIB" role="jymVt" />
     <node concept="3qc$_m" id="2qKKpuf8meW" role="jymVt" />
     <node concept="2tJIrI" id="2qKKpuf8meX" role="jymVt" />
     <node concept="2tJIrI" id="2qKKpuf8meY" role="jymVt" />
@@ -314,11 +307,6 @@
       <node concept="3cqZAl" id="2qKKpuf8mf0" role="3clF45" />
       <node concept="3Tm1VV" id="2qKKpuf8mf1" role="1B3o_S" />
       <node concept="3clFbS" id="2qKKpuf8mf2" role="3clF47">
-        <node concept="3SKdUt" id="2qKKpuf8mf3" role="3cqZAp">
-          <node concept="3SKdUq" id="2qKKpuf8mf4" role="3SKWNk">
-            <property role="3SKdUp" value="Entry point for the circuit. Input and witness arrays/structs must be instantiated outside this method" />
-          </node>
-        </node>
         <node concept="3clFbH" id="2qKKpuf8ocK" role="3cqZAp" />
         <node concept="3SKdUt" id="2qKKpuf8PG2" role="3cqZAp">
           <node concept="3SKdUq" id="2qKKpuf8PG4" role="3SKWNk">
@@ -358,9 +346,10 @@
           </node>
         </node>
         <node concept="3clFbH" id="2qKKpuf8D76" role="3cqZAp" />
+        <node concept="3clFbH" id="2qKKpufKsWT" role="3cqZAp" />
         <node concept="3cpWs8" id="2qKKpuf8LRz" role="3cqZAp">
           <node concept="3cpWsn" id="2qKKpuf8LRA" role="3cpWs9">
-            <property role="TrG5h" value="tab" />
+            <property role="TrG5h" value="table" />
             <node concept="10Q1$e" id="2qKKpuf8N_$" role="1tU5fm">
               <node concept="10Q1$e" id="2qKKpuf8LUY" role="10Q1$1">
                 <node concept="2D7PWU" id="2qKKpuf8LRx" role="10Q1$1">
@@ -401,7 +390,7 @@
                   <property role="3cmrfH" value="0" />
                 </node>
                 <node concept="37vLTw" id="2qKKpuf8MHr" role="AHHXb">
-                  <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="tab" />
+                  <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="table" />
                 </node>
               </node>
             </node>
@@ -421,7 +410,7 @@
                   <property role="3cmrfH" value="0" />
                 </node>
                 <node concept="37vLTw" id="2qKKpuf8MZM" role="AHHXb">
-                  <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="tab" />
+                  <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="table" />
                 </node>
               </node>
             </node>
@@ -440,17 +429,34 @@
         </node>
         <node concept="3SKdUt" id="2qKKpufJ3By" role="3cqZAp">
           <node concept="3SKdUq" id="2qKKpufJ3B$" role="3SKWNk">
-            <property role="3SKdUp" value="constants being splitted into multiple wires in the circuit." />
+            <property role="3SKdUp" value="constants being heavily splitted into multiple wires in the circuit." />
           </node>
         </node>
         <node concept="3SKdUt" id="2qKKpufGwHK" role="3cqZAp">
           <node concept="3SKdUq" id="2qKKpufGwHM" role="3SKWNk">
-            <property role="3SKdUp" value="This can be replaced by independent faster java code computing constants (and just doing assignments in the end)" />
+            <property role="3SKdUp" value="This can be replaced by independent faster native java code computing constants, and just doing assignments " />
           </node>
         </node>
-        <node concept="3SKdUt" id="2qKKpufJ89R" role="3cqZAp">
+        <node concept="3SKdUt" id="2qKKpufUlic" role="3cqZAp">
+          <node concept="3SKdUq" id="2qKKpufUlid" role="3SKWNk">
+            <property role="3SKdUp" value="in the end" />
+          </node>
           <node concept="3SKdUq" id="2qKKpufJ89T" role="3SKWNk">
-            <property role="3SKdUp" value="but left for testing purposes." />
+            <property role="3SKdUp" value="but this was left for testing purposes." />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2qKKpufMSuo" role="3cqZAp">
+          <node concept="2OqwBi" id="2qKKpufMSKx" role="3clFbG">
+            <node concept="10M0yZ" id="2qKKpufMSun" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2qKKpufMSO_" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="2qKKpufMSQo" role="37wK5m">
+                <property role="Xl_RC" value="Precomputing constants (might take time in this version -- see note in the code).. " />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1Dw8fO" id="2qKKpuf8OLW" role="3cqZAp">
@@ -473,7 +479,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="2qKKpufddBY" role="AHHXb">
-                        <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="tab" />
+                        <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="table" />
                       </node>
                     </node>
                   </node>
@@ -491,7 +497,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="2qKKpufddZC" role="AHHXb">
-                        <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="tab" />
+                        <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="table" />
                       </node>
                     </node>
                   </node>
@@ -501,7 +507,7 @@
                     <ref role="3cqZAo" node="2qKKpuf8OLZ" resolve="i" />
                   </node>
                   <node concept="37vLTw" id="2qKKpufddjT" role="AHHXb">
-                    <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="tab" />
+                    <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="table" />
                   </node>
                 </node>
               </node>
@@ -529,21 +535,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2qKKpuf8LNG" role="3cqZAp" />
-        <node concept="3cpWs8" id="2qKKpuff7fJ" role="3cqZAp">
-          <node concept="3cpWsn" id="2qKKpuff7fM" role="3cpWs9">
-            <property role="TrG5h" value="skBits" />
-            <node concept="10Q1$e" id="2qKKpuff7n8" role="1tU5fm">
-              <node concept="1QD1ZQ" id="2qKKpuff7fH" role="10Q1$1" />
-            </node>
-            <node concept="2OqwBi" id="2qKKpuff7AE" role="33vP2m">
-              <node concept="37vLTw" id="2qKKpuff7A8" role="2Oq$k0">
-                <ref role="3cqZAo" node="2qKKpuf8BFS" resolve="sk" />
-              </node>
-              <node concept="1VPAEj" id="2qKKpuff7CX" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2qKKpufJ9sI" role="3cqZAp" />
         <node concept="3SKdUt" id="2qKKpufJ8TX" role="3cqZAp">
           <node concept="3SKdUq" id="2qKKpufJ8TZ" role="3SKWNk">
             <property role="3SKdUp" value="a boolean to keep track when it's safe to apply the addition formula of affine points" />
@@ -610,7 +601,7 @@
                                 <ref role="3cqZAo" node="2qKKpuff7NZ" resolve="i" />
                               </node>
                               <node concept="37vLTw" id="2qKKpuf$P6R" role="AHHXb">
-                                <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="tab" />
+                                <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="table" />
                               </node>
                             </node>
                           </node>
@@ -623,7 +614,7 @@
                                 <ref role="3cqZAo" node="2qKKpuff7NZ" resolve="i" />
                               </node>
                               <node concept="37vLTw" id="2qKKpuf$P6W" role="AHHXb">
-                                <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="tab" />
+                                <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="table" />
                               </node>
                             </node>
                           </node>
@@ -693,7 +684,7 @@
                                 <ref role="3cqZAo" node="2qKKpuff7NZ" resolve="i" />
                               </node>
                               <node concept="37vLTw" id="2qKKpuf$PW_" role="AHHXb">
-                                <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="tab" />
+                                <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="table" />
                               </node>
                             </node>
                           </node>
@@ -713,7 +704,7 @@
                                 <ref role="3cqZAo" node="2qKKpuff7NZ" resolve="i" />
                               </node>
                               <node concept="37vLTw" id="2qKKpuf$PWH" role="AHHXb">
-                                <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="tab" />
+                                <ref role="3cqZAo" node="2qKKpuf8LRA" resolve="table" />
                               </node>
                             </node>
                           </node>
@@ -727,8 +718,11 @@
                 <node concept="37vLTw" id="2qKKpuff9k1" role="AHEQo">
                   <ref role="3cqZAo" node="2qKKpuff7NZ" resolve="i" />
                 </node>
-                <node concept="37vLTw" id="2qKKpuff9f2" role="AHHXb">
-                  <ref role="3cqZAo" node="2qKKpuff7fM" resolve="skBits" />
+                <node concept="2OqwBi" id="2qKKpufKvdz" role="AHHXb">
+                  <node concept="37vLTw" id="2qKKpufKvcT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2qKKpuf8BFS" resolve="sk" />
+                  </node>
+                  <node concept="1VPAEj" id="2qKKpufKvg1" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -741,11 +735,8 @@
             </node>
           </node>
           <node concept="3eOVzh" id="2qKKpuff856" role="1Dwp0S">
-            <node concept="2OqwBi" id="2qKKpuff8bF" role="3uHU7w">
-              <node concept="37vLTw" id="2qKKpuff87d" role="2Oq$k0">
-                <ref role="3cqZAo" node="2qKKpuff7fM" resolve="skBits" />
-              </node>
-              <node concept="1Rwk04" id="2qKKpuff8fQ" role="2OqNvi" />
+            <node concept="3cmrfG" id="2qKKpufKw0W" role="3uHU7w">
+              <property role="3cmrfH" value="256" />
             </node>
             <node concept="37vLTw" id="2qKKpuff7Y5" role="3uHU7B">
               <ref role="3cqZAo" node="2qKKpuff7NZ" resolve="i" />
@@ -757,7 +748,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2qKKpufGd_V" role="3cqZAp" />
         <node concept="3s6pcg" id="2qKKpufGe8D" role="3cqZAp">
           <node concept="37vLTw" id="2qKKpufGvyn" role="3s6pch">
             <ref role="3cqZAo" node="2qKKpufGtLY" resolve="p_x" />
@@ -1043,6 +1033,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2qKKpufMYY5" role="3cqZAp" />
         <node concept="3cpWs6" id="2qKKpuf8Tg_" role="3cqZAp">
           <node concept="2ShNRf" id="2qKKpuf8Tm4" role="3cqZAk">
             <node concept="3g6Rrh" id="2qKKpuf8Twl" role="2ShVmc">
@@ -1079,8 +1070,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2qKKpuf8GhY" role="jymVt" />
-    <node concept="2tJIrI" id="2qKKpuf8Eq1" role="jymVt" />
-    <node concept="2tJIrI" id="2qKKpuf8mf6" role="jymVt" />
     <node concept="1UYk92" id="2qKKpuf8mf7" role="jymVt">
       <property role="3j8K$S" value="true" />
       <property role="3jfa3H" value="Sample_Run1" />
@@ -1152,7 +1141,7 @@
         <node concept="3clFbS" id="2qKKpuf8mfb" role="3jfavY">
           <node concept="3SKdUt" id="2qKKpufIWxq" role="3cqZAp">
             <node concept="3SKdUq" id="2qKKpufIWxr" role="3SKWNk">
-              <property role="3SKdUp" value=" no failed assertions are expected" />
+              <property role="3SKdUp" value=" No outputs to print. No failed assertions are expected" />
             </node>
           </node>
           <node concept="3clFbF" id="2qKKpufJ71x" role="3cqZAp">
@@ -1164,7 +1153,7 @@
               <node concept="liA8E" id="2qKKpufJ77E" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="Xl_RD" id="2qKKpufJ79t" role="37wK5m">
-                  <property role="Xl_RC" value="If no failed assertions appear, everything should be OK for this circuit." />
+                  <property role="Xl_RC" value="If no failed assertions appear, everything looks to be OK for this circuit." />
                 </node>
               </node>
             </node>

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="xjsnark.ecKeyKnowledge.EC_KeyKnowledge" file="EC_KeyKnowledge.java">
-    <classNode dependClassName="backend.auxTypes.Bit" />
-    <classNode dependClassName="backend.auxTypes.ConditionalScopeTracker" />
-    <classNode dependClassName="backend.auxTypes.FieldElement" />
+  <dependency className="xjsnark.sha256.SHA256" file="SHA256.java">
     <classNode dependClassName="backend.auxTypes.UnsignedInteger" />
     <classNode dependClassName="backend.config.Config" />
     <classNode dependClassName="backend.eval.CircuitEvaluator" />

@@ -823,6 +823,21 @@
         <node concept="Xl_RD" id="6w4Q6P8lpRo" role="2BsfMF">
           <property role="Xl_RC" value="external" />
         </node>
+        <node concept="Xl_RD" id="2qKKpufN0wy" role="2BsfMF">
+          <property role="Xl_RC" value="EQ" />
+        </node>
+        <node concept="Xl_RD" id="2qKKpufN0DA" role="2BsfMF">
+          <property role="Xl_RC" value="AND" />
+        </node>
+        <node concept="Xl_RD" id="2qKKpufN0R3" role="2BsfMF">
+          <property role="Xl_RC" value="OR" />
+        </node>
+        <node concept="Xl_RD" id="2qKKpufN10Z" role="2BsfMF">
+          <property role="Xl_RC" value="NOT" />
+        </node>
+        <node concept="Xl_RD" id="2qKKpufN1as" role="2BsfMF">
+          <property role="Xl_RC" value="NEQ" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6w4Q6P8ddKV" role="jymVt" />
@@ -10233,6 +10248,14 @@
     <node concept="1YaCAy" id="2qKKpufs3NJ" role="1YuTPh">
       <property role="TrG5h" value="jBooleanConversion" />
       <ref role="1YaFvo" to="26c9:2qKKpufl4hB" resolve="JBooleanConversion" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2qKKpufUtHP">
+    <property role="TrG5h" value="FieldTableChecks" />
+    <node concept="3clFbS" id="2qKKpufUtHQ" role="18ibNy" />
+    <node concept="1YaCAy" id="2qKKpufUtSQ" role="1YuTPh">
+      <property role="TrG5h" value="fieldRecord" />
+      <ref role="1YaFvo" to="26c9:6zlb0z1MlFi" resolve="FieldRecord" />
     </node>
   </node>
 </model>

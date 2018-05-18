@@ -6,7 +6,7 @@ package xjsnark.typesystem;
 public class KeywordChecker {
 
   private static String[] reservedPrefix = {"uint_", "F_", "sint_"};
-  private static String[] reservedExact = {"bit", "external"};
+  private static String[] reservedExact = {"bit", "external", "EQ", "AND", "OR", "NOT", "NEQ"};
 
   public static boolean checkAgainstKeywords(String name) {
     if (name == null || name.equals("")) {

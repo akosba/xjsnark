@@ -118,6 +118,10 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
     {
+      NonTypesystemRule_Runtime nonTypesystemRule = new FieldTableChecks_NonTypesystemRule();
+      this.myNonTypesystemRules.add(nonTypesystemRule);
+    }
+    {
       NonTypesystemRule_Runtime nonTypesystemRule = new LabelingConditions_NonTypesystemRule();
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
@@ -212,32 +216,12 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     {
       OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
         {
-          this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a94a0();
-          this.myOperationConcept = MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0xf685d8194f3163cL, "xjsnark.structure.UnaryBitwiseNegate");
-          this.myTypeIsExact = false;
-          this.myIsStrong = false;
-          this.myRuleModelId = "r:9ab9fec9-ed9e-4d25-890a-7574633bec2e(xjsnark.typesystem)";
-          this.myRuleNodeId = "1110240119278016140";
-        }
-        public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
-          return _quotation_createNode_3ist9o_a0a1a0a0a0a0xb0a();
-        }
-        @Override
-        public void reportConflict(IRuleConflictWarningProducer producer) {
-          producer.produceWarning(myRuleModelId, myRuleNodeId);
-        }
-      };
-      this.myOverloadedOperationsTypesProviders.add(provider);
-    }
-    {
-      OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
-        {
           this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a05a0();
           this.myOperationConcept = MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0xf685d8194f3163cL, "xjsnark.structure.UnaryBitwiseNegate");
           this.myTypeIsExact = false;
           this.myIsStrong = false;
           this.myRuleModelId = "r:9ab9fec9-ed9e-4d25-890a-7574633bec2e(xjsnark.typesystem)";
-          this.myRuleNodeId = "1110240119278086719";
+          this.myRuleNodeId = "1110240119278016140";
         }
         public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
           return _quotation_createNode_3ist9o_a0a1a0a0a0a0yb0a();
@@ -253,6 +237,26 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
         {
           this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a15a0();
+          this.myOperationConcept = MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0xf685d8194f3163cL, "xjsnark.structure.UnaryBitwiseNegate");
+          this.myTypeIsExact = false;
+          this.myIsStrong = false;
+          this.myRuleModelId = "r:9ab9fec9-ed9e-4d25-890a-7574633bec2e(xjsnark.typesystem)";
+          this.myRuleNodeId = "1110240119278086719";
+        }
+        public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
+          return _quotation_createNode_3ist9o_a0a1a0a0a0a0zb0a();
+        }
+        @Override
+        public void reportConflict(IRuleConflictWarningProducer producer) {
+          producer.produceWarning(myRuleModelId, myRuleNodeId);
+        }
+      };
+      this.myOverloadedOperationsTypesProviders.add(provider);
+    }
+    {
+      OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
+        {
+          this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a25a0();
           this.myOperationConcept = MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0xf685d8194f3163cL, "xjsnark.structure.UnaryBitwiseNegate");
           this.myTypeIsExact = false;
           this.myIsStrong = false;
@@ -278,7 +282,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     {
       OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
         {
-          this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a25a0();
+          this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a35a0();
           this.myOperationConcept = MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0xf685d8194f3163cL, "xjsnark.structure.UnaryBitwiseNegate");
           this.myTypeIsExact = false;
           this.myIsStrong = false;
@@ -304,7 +308,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     {
       OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
         {
-          this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a35a0();
+          this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a45a0();
           this.myOperationConcept = MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c182aa15L, "xjsnark.structure.JNotExpression");
           this.myTypeIsExact = false;
           this.myIsStrong = false;
@@ -812,34 +816,28 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return quotedNode_1;
     }
   }
-  private static SNode _quotation_createNode_3ist9o_a0a0a0a0a0a0a94a0() {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d22479L, "jetbrains.mps.baseLanguage.structure.IntegerType"), null, null, false);
-    return quotedNode_1;
-  }
-  private static SNode _quotation_createNode_3ist9o_a0a1a0a0a0a0xb0a() {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d22479L, "jetbrains.mps.baseLanguage.structure.IntegerType"), null, null, false);
-    return quotedNode_1;
-  }
   private static SNode _quotation_createNode_3ist9o_a0a0a0a0a0a0a05a0() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL, "jetbrains.mps.baseLanguage.structure.StringType"), null, null, false);
+    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d22479L, "jetbrains.mps.baseLanguage.structure.IntegerType"), null, null, false);
     return quotedNode_1;
   }
   private static SNode _quotation_createNode_3ist9o_a0a1a0a0a0a0yb0a() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL, "jetbrains.mps.baseLanguage.structure.StringType"), null, null, false);
+    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d22479L, "jetbrains.mps.baseLanguage.structure.IntegerType"), null, null, false);
     return quotedNode_1;
   }
   private static SNode _quotation_createNode_3ist9o_a0a0a0a0a0a0a15a0() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
+    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL, "jetbrains.mps.baseLanguage.structure.StringType"), null, null, false);
+    return quotedNode_1;
+  }
+  private static SNode _quotation_createNode_3ist9o_a0a1a0a0a0a0zb0a() {
+    PersistenceFacade facade = PersistenceFacade.getInstance();
+    SNode quotedNode_1 = null;
+    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL, "jetbrains.mps.baseLanguage.structure.StringType"), null, null, false);
     return quotedNode_1;
   }
   private static SNode _quotation_createNode_3ist9o_a0a0a0a0a0a0a25a0() {
@@ -849,6 +847,12 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     return quotedNode_1;
   }
   private static SNode _quotation_createNode_3ist9o_a0a0a0a0a0a0a35a0() {
+    PersistenceFacade facade = PersistenceFacade.getInstance();
+    SNode quotedNode_1 = null;
+    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
+    return quotedNode_1;
+  }
+  private static SNode _quotation_createNode_3ist9o_a0a0a0a0a0a0a45a0() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
     quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);

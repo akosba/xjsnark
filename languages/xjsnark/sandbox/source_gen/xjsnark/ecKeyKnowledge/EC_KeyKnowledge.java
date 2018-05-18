@@ -28,12 +28,13 @@ public class EC_KeyKnowledge extends CircuitGenerator {
     __generateCircuit();
     this.__evaluateSampleRun(new SampleRun("Sample_Run1", true) {
       public void pre() {
-        // (a3a27c5332acd8e6a15fab4135e21c7ade4230168df103809abc995244bbd092, 134866b732f47928ba02efb9f1905d3c1525e221b43015d5c97ed93eeb5d543)\n 
         pk_x.mapValue(new BigInteger("a3a27c5332acd8e6a15fab4135e21c7ade4230168df103809abc995244bbd092", 16), CircuitGenerator.__getActiveCircuitGenerator().__getCircuitEvaluator());
         pk_y.mapValue(new BigInteger("134866b732f47928ba02efb9f1905d3c1525e221b43015d5c97ed93eeb5d543", 16), CircuitGenerator.__getActiveCircuitGenerator().__getCircuitEvaluator());
         sk.mapValue(new BigInteger("89552050406086998614610183528124098025137729044603000209903360664612891430799"), CircuitGenerator.__getActiveCircuitGenerator().__getCircuitEvaluator());
       }
       public void post() {
+        //  No outputs to print. No failed assertions are expected 
+        System.out.println("If no failed assertions appear, everything looks to be OK for this circuit.");
       }
 
     });
@@ -48,9 +49,9 @@ public class EC_KeyKnowledge extends CircuitGenerator {
     sk = new UnsignedInteger(256, new BigInteger("0"));
   }
 
-  private FieldElement pk_x;
-  private FieldElement pk_y;
-  private UnsignedInteger sk;
+  public FieldElement pk_x;
+  public FieldElement pk_y;
+  public UnsignedInteger sk;
 
   @Override
   public void __defineInputs() {
@@ -105,41 +106,44 @@ public class EC_KeyKnowledge extends CircuitGenerator {
 
   }
   public void outsource() {
-    // Entry point for the circuit. Input and witness arrays/structs must be instantiated outside this method 
 
-    // generator 
+    // generator point 
     FieldElement base_x = FieldElement.instantiateFrom(new BigInteger("115792089210356248762697446949407573530086143415290314195533631308867097853951"), "48439561293906451759052585252797914202762949526041747995844080717082404635286").copy();
     FieldElement base_y = FieldElement.instantiateFrom(new BigInteger("115792089210356248762697446949407573530086143415290314195533631308867097853951"), "36134250956749795798585127919587881956611106672985015071877198253568414405109").copy();
 
-    FieldElement[][] tab = (FieldElement[][]) FieldElement.createZeroArray(CircuitGenerator.__getActiveCircuitGenerator(), new int[]{256, 2}, new BigInteger("115792089210356248762697446949407573530086143415290314195533631308867097853951"));
-    
-    tab[0][0].assign(base_x);;
-    
-    tab[0][1].assign(base_y);;
 
-    // This part is going to be  operating on constants in the circuit 
-    // This won't add constraints, but might take time initially as BigInteger operations are expensive 
-    // this can be replaced by independent java code computing constants 
+    FieldElement[][] table = (FieldElement[][]) FieldElement.createZeroArray(CircuitGenerator.__getActiveCircuitGenerator(), new int[]{256, 2}, new BigInteger("115792089210356248762697446949407573530086143415290314195533631308867097853951"));
+    
+    table[0][0].assign(base_x);;
+    
+    table[0][1].assign(base_y);;
+
+    // The next loop is for preprocessing, and will be operating on constants in the circuit 
+    // This won't add any constraints, but might take time initially as BigInteger operations are expensive due to  
+    // constants being heavily splitted into multiple wires in the circuit. 
+    // This can be replaced by independent faster native java code computing constants, and just doing assignments  
+    // in the end but this was left for testing purposes. 
+    System.out.println("Precomputing constants (might take time in this version -- see note in the code).. ");
     for (int i = 1; i < 256; i++) {
-      tab[i] = doublePoint(tab[i - 1][0].copy(), tab[i - 1][1].copy());
+      table[i] = doublePoint(table[i - 1][0].copy(), table[i - 1][1].copy());
     }
 
-    Bit[] skBits = sk.getBitElements();
+    // a boolean to keep track when it's safe to apply the addition formula of affine points 
     Bit init = Bit.instantiateFrom(false).copy();
 
     FieldElement p_x = new FieldElement(new BigInteger("115792089210356248762697446949407573530086143415290314195533631308867097853951"), new BigInteger("0"));
     FieldElement p_y = new FieldElement(new BigInteger("115792089210356248762697446949407573530086143415290314195533631308867097853951"), new BigInteger("0"));
 
-    for (int i = 0; i < skBits.length; i++) {
+    for (int i = 0; i < 256; i++) {
       {
-        Bit bit_a0v0q = skBits[i].copy();
-        if (bit_a0v0q.isConstant()) {
-          if (bit_a0v0q.getConstantValue()) {
+        Bit bit_a0y0s = sk.getBitElements()[i].copy();
+        if (bit_a0y0s.isConstant()) {
+          if (bit_a0y0s.getConstantValue()) {
             {
-              Bit bit_a0a0a1a0a12a61 = init.copy();
-              if (bit_a0a0a1a0a12a61.isConstant()) {
-                if (bit_a0a0a1a0a12a61.getConstantValue()) {
-                  FieldElement[] r = addPoints(p_x.copy(), p_y.copy(), tab[i][0].copy(), tab[i][1].copy());
+              Bit bit_a0a0a1a0a42a81 = init.copy();
+              if (bit_a0a0a1a0a42a81.isConstant()) {
+                if (bit_a0a0a1a0a42a81.getConstantValue()) {
+                  FieldElement[] r = addPoints(p_x.copy(), p_y.copy(), table[i][0].copy(), table[i][1].copy());
                   
                   p_x.assign(r[0]);;
                   
@@ -147,15 +151,15 @@ public class EC_KeyKnowledge extends CircuitGenerator {
                 } else {
                   init = Bit.instantiateFrom(true);
                   
-                  p_x.assign(tab[i][0]);;
+                  p_x.assign(table[i][0]);;
                   
-                  p_y.assign(tab[i][1]);;
+                  p_y.assign(table[i][1]);;
 
                 }
               } else {
                 ConditionalScopeTracker.pushMain();
-                ConditionalScopeTracker.push(bit_a0a0a1a0a12a61);
-                FieldElement[] r = addPoints(p_x.copy(), p_y.copy(), tab[i][0].copy(), tab[i][1].copy());
+                ConditionalScopeTracker.push(bit_a0a0a1a0a42a81);
+                FieldElement[] r = addPoints(p_x.copy(), p_y.copy(), table[i][0].copy(), table[i][1].copy());
                 
                 p_x.assign(r[0]);;
                 
@@ -167,9 +171,9 @@ public class EC_KeyKnowledge extends CircuitGenerator {
 
                 init = Bit.instantiateFrom(true);
                 
-                p_x.assign(tab[i][0]);;
+                p_x.assign(table[i][0]);;
                 
-                p_y.assign(tab[i][1]);;
+                p_y.assign(table[i][1]);;
                 ConditionalScopeTracker.pop();
                 ConditionalScopeTracker.popMain();
               }
@@ -180,12 +184,12 @@ public class EC_KeyKnowledge extends CircuitGenerator {
           }
         } else {
           ConditionalScopeTracker.pushMain();
-          ConditionalScopeTracker.push(bit_a0v0q);
+          ConditionalScopeTracker.push(bit_a0y0s);
           {
-            Bit bit_a0a0v0q = init.copy();
-            if (bit_a0a0v0q.isConstant()) {
-              if (bit_a0a0v0q.getConstantValue()) {
-                FieldElement[] r = addPoints(p_x.copy(), p_y.copy(), tab[i][0].copy(), tab[i][1].copy());
+            Bit bit_a0a0y0s = init.copy();
+            if (bit_a0a0y0s.isConstant()) {
+              if (bit_a0a0y0s.getConstantValue()) {
+                FieldElement[] r = addPoints(p_x.copy(), p_y.copy(), table[i][0].copy(), table[i][1].copy());
                 
                 p_x.assign(r[0]);;
                 
@@ -193,15 +197,15 @@ public class EC_KeyKnowledge extends CircuitGenerator {
               } else {
                 init = Bit.instantiateFrom(true);
                 
-                p_x.assign(tab[i][0]);;
+                p_x.assign(table[i][0]);;
                 
-                p_y.assign(tab[i][1]);;
+                p_y.assign(table[i][1]);;
 
               }
             } else {
               ConditionalScopeTracker.pushMain();
-              ConditionalScopeTracker.push(bit_a0a0v0q);
-              FieldElement[] r = addPoints(p_x.copy(), p_y.copy(), tab[i][0].copy(), tab[i][1].copy());
+              ConditionalScopeTracker.push(bit_a0a0y0s);
+              FieldElement[] r = addPoints(p_x.copy(), p_y.copy(), table[i][0].copy(), table[i][1].copy());
               
               p_x.assign(r[0]);;
               
@@ -213,9 +217,9 @@ public class EC_KeyKnowledge extends CircuitGenerator {
 
               init = Bit.instantiateFrom(true);
               
-              p_x.assign(tab[i][0]);;
+              p_x.assign(table[i][0]);;
               
-              p_y.assign(tab[i][1]);;
+              p_y.assign(table[i][1]);;
               ConditionalScopeTracker.pop();
               ConditionalScopeTracker.popMain();
             }
@@ -232,7 +236,6 @@ public class EC_KeyKnowledge extends CircuitGenerator {
 
       }
     }
-
     p_x.forceEqual(pk_x);
     p_y.forceEqual(pk_y);
   }
@@ -246,6 +249,7 @@ public class EC_KeyKnowledge extends CircuitGenerator {
     FieldElement lambda = (FieldElement.instantiateFrom(new BigInteger("115792089210356248762697446949407573530086143415290314195533631308867097853951"), 3).mul(x1).mul(x1).add(FieldElement.instantiateFrom(new BigInteger("115792089210356248762697446949407573530086143415290314195533631308867097853951"), -3))).mul((FieldElement.instantiateFrom(new BigInteger("115792089210356248762697446949407573530086143415290314195533631308867097853951"), 2).mul(y1)).inv()).copy();
     FieldElement xr = lambda.mul(lambda).subtract(x1.mul(FieldElement.instantiateFrom(new BigInteger("115792089210356248762697446949407573530086143415290314195533631308867097853951"), 2))).copy();
     FieldElement yr = lambda.mul((x1.subtract(xr))).subtract(y1).copy();
+
     return new FieldElement[]{xr.copy(), yr.copy()};
   }
 

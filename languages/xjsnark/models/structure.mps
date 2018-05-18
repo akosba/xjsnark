@@ -60,7 +60,7 @@
   </registry>
   <node concept="Az7Fb" id="hhaVGVf">
     <property role="TrG5h" value="BigDecimal" />
-    <property role="FLfZY" value="[0-9]+(.[0-9]+)?" />
+    <property role="FLfZY" value="[0-9]+" />
   </node>
   <node concept="1TIwiD" id="5qibsSHh4tt">
     <property role="1pbfSe" value="2083097301" />
