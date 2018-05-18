@@ -31,9 +31,10 @@ More detailed instructions and editing hints will be added incrementally about h
 ### Examples included 
 (Note that the code is viewable through the framework after checking out the project, and not through the github interface)
 
-- SHA 256 
-- AES 128
+- SHA-256 
+- AES-128
 - Secret Key Knowledge for RSA
-- Secret Key Knowledge for ECDSA (P-256 Curve)
+- Secret Key Knowledge for ECDSA (P-256 Curve).  
+- Sorting verification using permutation verifier
 
-Please stay tuned for more updates and examples. To apply any updates automatically, VCS-> Update Project from the MPS framework.
+Please stay tuned for more updates and examples. To apply any updates automatically: apply VCS-> Update Project from the MPS framework.
