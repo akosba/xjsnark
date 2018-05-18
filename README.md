@@ -13,8 +13,6 @@ This is an early release that could contain issues and inconsistencies. The proj
  
 ### Getting started
 
-(Please stay tuned for more detailed instructions)
-
 - Install MPS 3.3.5: https://confluence.jetbrains.com/display/MPS/Download+MPS+3.3.5
 (Consistency with future versions not guaranteed, so updating to higher versions might require some migration effort). With respect to the operating system, I think xjsnark should work on all the operating system versions in the above link (Both Ubuntu and Windows were tried). However, if running the output circuits on libsnark is desired, then any libsnark environment constraints will apply.
 
