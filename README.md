@@ -18,7 +18,7 @@ This is an early release that could contain issues and inconsistencies. The proj
 - Install MPS 3.3.5: https://confluence.jetbrains.com/display/MPS/Download+MPS+3.3.5
 (Consistency with future versions not guaranteed, so updating to higher versions might require some migration effort). With respect to the operating system, I think xjsnark should work on all the operating system versions in the above link (Both Ubuntu and Windows were tried). However, if running the output circuits on libsnark is desired, then any libsnark environment constraints will apply.
 
-- Open MPS. Go to (VCS ->) Check out from Version Control, and provide a link to this repo. This will install the project in a directory (both xjsnark's front end and the back end jar). Open the .mps file in the directory.
+- Open MPS. Go to (VCS ->) Check out from Version Control, and provide a link to this repo. This will install the project in a directory (both xjsnark's front end and the back end jar). Open the directory that contains the .mps files.
 
 - To view the project files, you might need to press alt + 1. Under xjsnark in the left bar, three directories should appear. 1) xjsnark: that's the language extension files, e.g. structure, typesystem, code generation rules, ..etc. 2) xjsnark.runtime: this is where we link xjsnark's back end, and 3) xjnsark.sandbox which we developed the example circuits in. 
 
