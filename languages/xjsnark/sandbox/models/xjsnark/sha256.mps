@@ -543,7 +543,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2qKKpug4bHf" role="3cqZAp" />
+        <node concept="3clFbH" id="2qKKpugsM2Z" role="3cqZAp" />
         <node concept="1Dw8fO" id="XCno6kZ2p_" role="3cqZAp">
           <node concept="3cpWsn" id="XCno6kZ2pA" role="1Duv9x">
             <property role="3TUv4t" value="false" />
@@ -1736,6 +1736,35 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="1t1EHTMeHQY" role="3cqZAp" />
+        <node concept="3SKdUt" id="1t1EHTMguy$" role="3cqZAp">
+          <node concept="3SKdUq" id="1t1EHTMguyA" role="3SKWNk">
+            <property role="3SKdUp" value="Num of threads could be set higher based on the machine specs. Setting it too high will lead to faster timeouts" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1t1EHTMeHBz" role="3cqZAp">
+          <node concept="37vLTI" id="1t1EHTMeHKr" role="3clFbG">
+            <node concept="3cmrfG" id="1t1EHTMeHNo" role="37vLTx">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="10M0yZ" id="1t1EHTMeHBy" role="37vLTJ">
+              <ref role="1PxDUh" to="85wc:~Config" resolve="Config" />
+              <ref role="3cqZAo" to="85wc:~Config.arithOptimizerNumThreads" resolve="arithOptimizerNumThreads" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1t1EHTMeHYG" role="3cqZAp">
+          <node concept="37vLTI" id="1t1EHTMeI8k" role="3clFbG">
+            <node concept="10M0yZ" id="1t1EHTMeHYF" role="37vLTJ">
+              <ref role="1PxDUh" to="85wc:~Config" resolve="Config" />
+              <ref role="3cqZAo" to="85wc:~Config.arithOptimizerTimeoutPerProblemMilliSec" resolve="arithOptimizerTimeoutPerProblemMilliSec" />
+            </node>
+            <node concept="3cmrfG" id="1t1EHTMeIbA" role="37vLTx">
+              <property role="3cmrfH" value="20000" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1t1EHTMeH_T" role="3cqZAp" />
         <node concept="3clFbH" id="2qKKpug4Ub0" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="2qKKpug3QNC" role="3clF46">
