@@ -72,6 +72,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -763,8 +764,18 @@
                 <node concept="3clFbF" id="72llHG24Ta2" role="3cqZAp">
                   <node concept="37vLTI" id="72llHG24Td8" role="3clFbG">
                     <node concept="AH0OO" id="72llHG24TfV" role="37vLTx">
-                      <node concept="37vLTw" id="72llHG24Th1" role="AHEQo">
-                        <ref role="3cqZAo" node="XCno6kZ2r9" resolve="j" />
+                      <node concept="3cpWs3" id="7exrx8QasJy" role="AHEQo">
+                        <node concept="17qRlL" id="7exrx8QasTN" role="3uHU7w">
+                          <node concept="3cmrfG" id="7exrx8QasU3" role="3uHU7w">
+                            <property role="3cmrfH" value="16" />
+                          </node>
+                          <node concept="37vLTw" id="7exrx8QasJM" role="3uHU7B">
+                            <ref role="3cqZAo" node="XCno6kZ2pA" resolve="i" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="72llHG24Th1" role="3uHU7B">
+                          <ref role="3cqZAo" node="XCno6kZ2r9" resolve="j" />
+                        </node>
                       </node>
                       <node concept="37vLTw" id="2qKKpug44jp" role="AHHXb">
                         <ref role="3cqZAo" node="2qKKpug3TCx" resolve="preimage" />

@@ -145,6 +145,8 @@
     <property role="1pbfSe" value="1443834715" />
     <property role="TrG5h" value="MultiLineCommentClassMember" />
     <property role="34LRSv" value="/*" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6w4Q6P1UZKT" role="PzmwI">
       <ref role="PrY4T" to="tpee:h9ngReX" resolve="ClassifierMember" />
@@ -719,7 +721,7 @@
     <property role="1pbfSe" value="1537510467" />
     <property role="TrG5h" value="UnaryBitwiseNegate" />
     <property role="34LRSv" value="~" />
-    <property role="R4oN_" value="unary bitwise not" />
+    <property role="R4oN_" value="xjsnark unary bitwise not" />
     <property role="3GE5qa" value="ops" />
     <ref role="1TJDcQ" to="tpee:i2$Kv9D" resolve="AbstractUnaryNumberOperation" />
   </node>
