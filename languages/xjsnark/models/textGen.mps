@@ -22,6 +22,7 @@
       </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
+      <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
         <child id="1237305790512" name="value" index="lb14g" />
       </concept>
@@ -66,6 +67,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="lc7rE" id="7MHE_1fD0w4" role="3cqZAp">
+          <node concept="l8MVK" id="7MHE_1fD0$3" role="lcghm" />
         </node>
       </node>
     </node>
