@@ -49,8 +49,8 @@ The sandbox solution contains the examples listed above, each in a separate modu
 
 - To run an example program in the sandbox solution, right click on the Program file, e.g. AES128, and do Run Class 'AES128' (this step also builds the code if there are any changes).  If a program is expected to exceed the default heap size, the maximum heap size can be increased in (Run->Edit Configurations..), using the -Xmx option. Another approach for very large circuits is also described below.
 
-- Usability hints: To invoke the editor auto-completion when editing the code/writing applications, ctrl-space can be useful. To import a class from a library that is not visible, ctrl-R (while checking the non-project module box) can help.  
-While generating a circuit,  the Run console can be kept open to keep track of the xjsnark's printing messages.  The Run window can be opened by Alt+4, and can be switched to floating mode from its top right. 
+- Usability hints: To invoke the editor auto-completion when editing the code/writing applications, ctrl+space can be useful. To import a class from a library that is not visible, ctrl+r (while checking the non-project module box) can help.  
+While generating a circuit,  the Run console can be kept open to keep track of the xjsnark's printing messages.  The Run window can be opened by alt+4, and can be switched to floating mode from its top right. 
 (More hints will be provided soon)
 
 - **Defining a sample run**: the input values to the Program can be set using xJsnark's SampleRun construct, which is available in all the example Programs. You can define more than one SampleRun, but each should have a unique name. The SampleRun also enables to have code to be executed after the circuit evaluation, which is helpful for tests (See the PourCircuit example).
@@ -62,7 +62,7 @@ While generating a circuit,  the Run console can be kept open to keep track of t
     Config.outputFilesPath = ""; // set the path of the output circuit
 ```
 
-Note: To paste the above two lines or java code into the MPS framework, right click in the editor -> paste as java statements (or java class content if the copied code xappears outside methods).
+Note: To paste the above two lines or java code into the MPS framework, right click in the editor -> paste as java statements (or java class content if the copied code appears outside methods). If the Config class is not visible, use ctrl+r as mentioned before.
 
 More detailed instructions and editing hints will be added incrementally about how to define your own circuit, and set other configurations.
 
@@ -71,6 +71,17 @@ More detailed instructions and editing hints will be added incrementally about h
 - Install and build  [jsnark](https://github.com/akosba/jsnark). jsnark has a snapshot of an earlier version of libsnark, for which we developed an interface.  Note that the produced executable is single-threaded. The makefile could be modified to make it multi-threaded.
 
 - Use the executable interface  ``run_libsnark`` that appears in ``jsnark/libsnark/src/interface`` to run libsnark on the circuit. The executable takes two arguments: the arithmetic circuit file path, and a sample input path.
+
+### Field Configuration
+
+By default, xJsnark circuits use the scalar field corresponding to the [bn128 curve](https://github.com/akosba/libsnark/blob/fde8599fc047e9d681ee8f8325913c76de389b55/src/algebra/curves/bn128/bn128_init.cpp) (as in the case of jsnark default configuration). Note that if the default finite field is not used, i.e. other curves are used, the jsnark-libsnark interface will need to be modified as well.
+
+To update the field configuration, the following can be done in the main method of the xjsnark program:
+```java
+    Config.setFiniteFieldModulus(new BigInteger(".."));
+```
+Note: To paste java code into the MPS framework, right click in the editor -> paste as java statements (or java class content if the copied code appears outside methods). If the Config class is not visible, use ctrl+r as mentioned before.
+
 
 ### Generating circuits on a different platform
 
