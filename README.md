@@ -70,7 +70,7 @@ More detailed instructions and editing hints will be added incrementally about h
 
 - Install and build  [jsnark](https://github.com/akosba/jsnark). jsnark has a snapshot of an earlier version of libsnark, for which we developed an interface.  Note that the produced executable is single-threaded. The makefile could be modified to make it multi-threaded.
 
-- Use the executable interface  ``run_libsnark`` that appears in ``jsnark/libsnark/src/interface`` to run libsnark on the circuit. The executable takes two arguments: the arithmetic circuit file path, and a sample input path.
+- Use the executable interface  ``run_ppzksnark`` that appears in ``jsnark/libsnark/build/libsnark/jsnark_interface`` to run libsnark on the circuit. The executable takes two arguments: the arithmetic circuit file path, and a sample input path.
 
 ### Field Configuration
 
