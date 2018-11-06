@@ -16972,6 +16972,42 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="4s5rUgWcrza" role="3cqZAp">
+              <node concept="3cpWsn" id="4s5rUgWcrzd" role="3cpWs9">
+                <property role="TrG5h" value="c" />
+                <node concept="10P_77" id="4s5rUgWcrz8" role="1tU5fm" />
+                <node concept="2OqwBi" id="4s5rUgWcwU6" role="33vP2m">
+                  <node concept="2YIFZM" id="4s5rUgWcwS$" role="2Oq$k0">
+                    <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
+                    <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
+                  </node>
+                  <node concept="liA8E" id="4s5rUgWczRU" role="2OqNvi">
+                    <ref role="37wK5l" to="7jix:~CircuitGenerator.__checkConstantState(backend.auxTypes.Bit):boolean" resolve="__checkConstantState" />
+                    <node concept="37vLTw" id="4s5rUgWczXs" role="37wK5m">
+                      <ref role="3cqZAo" node="7aL4SFtuHD3" resolve="x" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="17Uvod" id="4s5rUgWc_I_" role="lGtFl">
+                  <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                  <property role="2qtEX9" value="name" />
+                  <node concept="3zFVjK" id="4s5rUgWc_IA" role="3zH0cK">
+                    <node concept="3clFbS" id="4s5rUgWc_IB" role="2VODD2">
+                      <node concept="3cpWs6" id="4s5rUgWc_TC" role="3cqZAp">
+                        <node concept="2OqwBi" id="4s5rUgWc_TD" role="3cqZAk">
+                          <node concept="1iwH7S" id="4s5rUgWc_TE" role="2Oq$k0" />
+                          <node concept="2piZGk" id="4s5rUgWc_TF" role="2OqNvi">
+                            <node concept="Xl_RD" id="4s5rUgWc_TG" role="2piZGb">
+                              <property role="Xl_RC" value="c" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="4KcdYk59Nxg" role="3cqZAp">
               <node concept="3clFbS" id="4KcdYk59Nxi" role="3clFbx">
                 <node concept="3clFbJ" id="4KcdYk5dhd1" role="3cqZAp">
@@ -17277,13 +17313,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="4KcdYk59NJt" role="3clFbw">
-                <node concept="37vLTw" id="4KcdYk59NGq" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7aL4SFtuHD3" resolve="x" />
-                </node>
-                <node concept="liA8E" id="4KcdYk59NQx" role="2OqNvi">
-                  <ref role="37wK5l" to="hr8v:~Bit.isConstant():boolean" resolve="isConstant" />
-                </node>
+              <node concept="37vLTw" id="4s5rUgWc$S4" role="3clFbw">
+                <ref role="3cqZAo" node="4s5rUgWcrzd" resolve="c" />
               </node>
               <node concept="9aQIb" id="4KcdYk59NQQ" role="9aQIa">
                 <node concept="3clFbS" id="4KcdYk59NQR" role="9aQI4">
