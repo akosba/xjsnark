@@ -68,13 +68,13 @@ More detailed instructions and editing hints will be added incrementally about h
 
 ### Running xJsnark output circuits on libsnark
 
-- Install and build  [jsnark](https://github.com/akosba/jsnark). jsnark has a snapshot of an earlier version of libsnark, for which we developed an interface.  Note that the produced executable is single-threaded. The makefile could be modified to make it multi-threaded.
+- Install and build  [jsnark](https://github.com/akosba/jsnark). jsnark has an interface to libsnark that can be used to run the cryptographic algorithms on xJsnark output circuits.  Note that the produced executable is single-threaded. The CMakeLists [file](https://github.com/akosba/libsnark/blob/5aec0646a26c7dc41b70195b744659e67abf3554/CMakeLists.txt) could be modified to make it multi-threaded.
 
-- Use the executable interface  ``run_ppzksnark`` that appears in ``jsnark/libsnark/build/libsnark/jsnark_interface`` to run libsnark on the circuit. The executable takes two arguments: the arithmetic circuit file path, and a sample input path.
+- Use the executable interface  ``run_ppzksnark`` that appears in ``jsnark/libsnark/build/libsnark/jsnark_interface`` to run libsnark algorithms on the circuit. The executable currently allows to run the proof systems ``r1cs_ppzksnark`` (default) and ``r1cs_gg_ppzksnark`` implemented in libsnark. To run the first, the executable just takes two arguments: the arithmetic circuit file path, and a sample input file path. To run the ``r1cs_gg_ppzksnark`` proof system [Gro16], the first argument should be ``gg``, followed by the arithmetic circuit file path, and the sample input file path. 
 
 ### Field Configuration
 
-By default, xJsnark circuits use the scalar field corresponding to the [bn128 curve](https://github.com/akosba/libsnark/blob/fde8599fc047e9d681ee8f8325913c76de389b55/src/algebra/curves/bn128/bn128_init.cpp) (as in the case of jsnark default configuration). Note that if the default finite field is not used, i.e. other curves are used, the jsnark-libsnark interface will need to be modified as well.
+By default, xJsnark circuits use the scalar field corresponding to the [bn128 curve](https://github.com/scipr-lab/libff/blob/04094606d6e90f4d6a2d6a9d32a3a5a660b67bd4/libff/algebra/curves/bn128/bn128_init.cpp) (as in the case of jsnark default configuration). Note that if the default finite field is not used, i.e. other curves are used, the jsnark-libsnark interface will need to be modified as well.
 
 To update the field configuration, the following can be done in the main method of the xjsnark program:
 ```java
@@ -87,11 +87,11 @@ Note: To paste java code into the MPS framework, right click in the editor -> pa
 
 - In some cases, it might be preferable to generate the circuit on another platform (different from the development environment), or the circuit might be too large to generate on the machine running the MPS Framework. In that case, the programmer can just use the MPS framework to transform the xJsnark code to java files (as illustrated earlier), and use the java files only with the back end jar available in   ``xJsnark\languages\xjsnark\runtime\lib`` to generate the circuit on another machine.
 
--  As an example, if external circuit generation is desired, the following can be done:
+-  As an example, if external circuit generation is desired, the following can be done in the other system:
 	- Create a new directory ``gen``, with two subdirectories ``src`` and ``bin``.
 	- Copy the back end jar ``xjsnark_backend.jar`` to the gen directory.
 	- Copy the generated java files to the above ``src`` directory while preserving the package structure. For example, if the java files are defined to be in the ``xjsnark.sha256`` package, then the java files can appear under ``gen/src/xjsnark/sha256/``.
-	- In the gen directory, compile the java files with the back end jar in the classpath. (Note that it's possible to modify the main method of the generated file before compiling to use updated configurations, e.g. changing number of threads/timeouts or a size parameter, or updating the output path. No need to get back to use the framework for the simple task.):
+	- In the ``gen`` directory, compile the java files with the back end jar in the classpath. (Note that it's possible to modify the main method of the generated file before compiling to use updated configurations, e.g. changing number of threads/timeouts or a size parameter, or updating the output path. No need to get back to use the framework for the simple task.):
 	```
 	javac -d bin  -cp xjsnark_backend.jar $(find ./* | grep ".java$")
 	```
