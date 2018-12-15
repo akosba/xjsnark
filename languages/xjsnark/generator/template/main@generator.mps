@@ -18401,8 +18401,8 @@
           </node>
         </node>
       </node>
-      <node concept="j$656" id="3T_soRCYXDL" role="1lVwrX">
-        <ref role="v9R2y" node="33sExp7eGBo" resolve="reduce_AssignmentExpression_JField" />
+      <node concept="j$656" id="6Z7pPp15S$x" role="1lVwrX">
+        <ref role="v9R2y" node="3T_soRCZ2aj" resolve="reduce_AssignmentExpression_JBoolean" />
       </node>
     </node>
     <node concept="3aamgX" id="5qibsSHjqOl" role="3acgRq">

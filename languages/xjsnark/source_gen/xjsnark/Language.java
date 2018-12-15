@@ -18,6 +18,7 @@ import jetbrains.mps.lang.dataFlow.framework.AbstractDataFlowAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import xjsnark.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
 import xjsnark.typesystem.TypesystemDescriptor;
 
@@ -65,6 +66,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return (T) new xjsnark.structure.StructureAspectDescriptor();
+    }
+    if (aspectClass == TextGenAspectDescriptor.class) {
+      return (T) new xjsnark.textGen.TextGenAspectDescriptor();
     }
     if (aspectClass == IHelginsDescriptor.class) {
       return (T) new TypesystemDescriptor();

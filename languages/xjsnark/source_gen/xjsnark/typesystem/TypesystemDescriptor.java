@@ -16,12 +16,12 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.typesystem.inference.SubtypingManager;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.typesystem.runtime.OverloadedOperationsTypesProvider;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.smodel.SReference;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class TypesystemDescriptor extends BaseHelginsDescriptor {
   public TypesystemDescriptor() {
@@ -177,23 +177,19 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       InequationReplacementRule_Runtime eliminationRule = new JTypeRules_InequationReplacementRule();
       this.myInequationReplacementRules.add(eliminationRule);
     }
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_f(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbced3b82aL, "jetbrains.mps.baseLanguage.structure.LessThanExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_f(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10c8d53a915L, "jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_b(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d19ec0c2fL, "jetbrains.mps.baseLanguage.structure.BinaryBitwiseOperation")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_g(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbced3b82aL, "jetbrains.mps.baseLanguage.structure.LessThanExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_g(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10c8d53a915L, "jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xff2bbc13daL, "jetbrains.mps.baseLanguage.structure.DivExpression")));
     this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_b(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7f5L, "jetbrains.mps.baseLanguage.structure.MinusExpression")));
     this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_b(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7fbL, "jetbrains.mps.baseLanguage.structure.PlusExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x12094ea9f7dL, "jetbrains.mps.baseLanguage.structure.BinaryCompareOperation")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b210L, "jetbrains.mps.baseLanguage.structure.EqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf9e20e303fL, "jetbrains.mps.baseLanguage.structure.NotEqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L, "xjsnark.structure.JEqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L, "xjsnark.structure.JNotEqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_f(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x12094ea9f7dL, "jetbrains.mps.baseLanguage.structure.BinaryCompareOperation")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_f(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b210L, "jetbrains.mps.baseLanguage.structure.EqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_f(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf9e20e303fL, "jetbrains.mps.baseLanguage.structure.NotEqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_f(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L, "xjsnark.structure.JEqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_f(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L, "xjsnark.structure.JNotEqualsExpression")));
     this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_a(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfe476b758fL, "jetbrains.mps.baseLanguage.structure.MulExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d19ec0c2fL, "jetbrains.mps.baseLanguage.structure.BinaryBitwiseOperation")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e_0(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x12094ea9f7dL, "jetbrains.mps.baseLanguage.structure.BinaryCompareOperation")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e_0(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b210L, "jetbrains.mps.baseLanguage.structure.EqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e_0(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf9e20e303fL, "jetbrains.mps.baseLanguage.structure.NotEqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L, "xjsnark.structure.JEqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_e_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L, "xjsnark.structure.JNotEqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_d(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L, "xjsnark.structure.JEqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_d(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L, "xjsnark.structure.JNotEqualsExpression")));
     this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_a_0(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d19ec0c2fL, "jetbrains.mps.baseLanguage.structure.BinaryBitwiseOperation")));
     this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_a_0(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xff2bbc13daL, "jetbrains.mps.baseLanguage.structure.DivExpression")));
     this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_a_0(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7f5L, "jetbrains.mps.baseLanguage.structure.MinusExpression")));
@@ -203,15 +199,15 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_b_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L, "xjsnark.structure.JEqualsExpression")));
     this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_b_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L, "xjsnark.structure.JNotEqualsExpression")));
     this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_b_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829875L, "xjsnark.structure.JOrExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829874L, "xjsnark.structure.JAndExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L, "xjsnark.structure.JEqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L, "xjsnark.structure.JNotEqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829875L, "xjsnark.structure.JOrExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_d(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829874L, "xjsnark.structure.JAndExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_d(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829874L, "xjsnark.structure.JAndExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_d(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L, "xjsnark.structure.JEqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_d(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L, "xjsnark.structure.JNotEqualsExpression")));
-    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c_1(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfe476b758fL, "jetbrains.mps.baseLanguage.structure.MulExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829874L, "xjsnark.structure.JAndExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L, "xjsnark.structure.JEqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L, "xjsnark.structure.JNotEqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829875L, "xjsnark.structure.JOrExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_d_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829874L, "xjsnark.structure.JAndExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_d_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1829874L, "xjsnark.structure.JAndExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_d_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x4bcdfddfee9be827L, "xjsnark.structure.JEqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_d_0(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x72b1138add75e682L, "xjsnark.structure.JNotEqualsExpression")));
+    this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_c_0(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfe476b758fL, "jetbrains.mps.baseLanguage.structure.MulExpression")));
     this.myOverloadedOperationsTypesProviders.add(new TypesystemDescriptor.CustomOverloadedOperationsTypesProvider_b_1(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d19ec0c2fL, "jetbrains.mps.baseLanguage.structure.BinaryBitwiseOperation")));
     {
       OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
@@ -283,11 +279,11 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
         {
           this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a35a0();
-          this.myOperationConcept = MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0xf685d8194f3163cL, "xjsnark.structure.UnaryBitwiseNegate");
+          this.myOperationConcept = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x6fea7de6103549b1L, "jetbrains.mps.baseLanguage.structure.UnaryMinus");
           this.myTypeIsExact = false;
           this.myIsStrong = false;
           this.myRuleModelId = "r:9ab9fec9-ed9e-4d25-890a-7574633bec2e(xjsnark.typesystem)";
-          this.myRuleNodeId = "6238098797406568556";
+          this.myRuleNodeId = "4603518930150587678";
         }
         public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
           int b1 = SPropertyOperations.getInteger(SNodeOperations.as(leftOperandType, MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3fe6a0eL, "xjsnark.structure.JUnsignedIntegerType")), MetaAdapterFactory.getProperty(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3fe6a0eL, 0x39ce7332e3fe6c61L, "bitwidth"));
@@ -296,7 +292,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
           return result;
         }
         public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-          return false;
+          return SNodeOperations.isInstanceOf(leftOperandType, MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3fe6a0eL, "xjsnark.structure.JUnsignedIntegerType"));
         }
         @Override
         public void reportConflict(IRuleConflictWarningProducer producer) {
@@ -309,6 +305,31 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
         {
           this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a45a0();
+          this.myOperationConcept = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x6fea7de6103549b1L, "jetbrains.mps.baseLanguage.structure.UnaryMinus");
+          this.myTypeIsExact = false;
+          this.myIsStrong = false;
+          this.myRuleModelId = "r:9ab9fec9-ed9e-4d25-890a-7574633bec2e(xjsnark.typesystem)";
+          this.myRuleNodeId = "4603518930150596480";
+        }
+        public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
+          SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, "xjsnark.structure.JFieldType")));
+          SLinkOperations.setTarget(result, MetaAdapterFactory.getReferenceLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, 0x68d52c08c1ca734cL, "fieldRec"), SLinkOperations.getTarget(SNodeOperations.as(leftOperandType, MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, "xjsnark.structure.JFieldType")), MetaAdapterFactory.getReferenceLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, 0x68d52c08c1ca734cL, "fieldRec")));
+          return result;
+        }
+        public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
+          return SNodeOperations.isInstanceOf(leftOperandType, MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, "xjsnark.structure.JFieldType"));
+        }
+        @Override
+        public void reportConflict(IRuleConflictWarningProducer producer) {
+          producer.produceWarning(myRuleModelId, myRuleNodeId);
+        }
+      };
+      this.myOverloadedOperationsTypesProviders.add(provider);
+    }
+    {
+      OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
+        {
+          this.myOperandType = _quotation_createNode_3ist9o_a0a0a0a0a0a0a55a0();
           this.myOperationConcept = MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c182aa15L, "xjsnark.structure.JNotExpression");
           this.myTypeIsExact = false;
           this.myIsStrong = false;
@@ -330,8 +351,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myOverloadedOperationsTypesProviders.add(provider);
     }
   }
-  public static class CustomOverloadedOperationsTypesProvider_f extends OverloadedOperationsTypesProvider {
-    public CustomOverloadedOperationsTypesProvider_f(SAbstractConcept concept) {
+  public static class CustomOverloadedOperationsTypesProvider_g extends OverloadedOperationsTypesProvider {
+    public CustomOverloadedOperationsTypesProvider_g(SAbstractConcept concept) {
       this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a1();
       this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a1();
       this.myOperationConcept = concept;
@@ -367,10 +388,49 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return quotedNode_1;
     }
   }
-  public static class CustomOverloadedOperationsTypesProvider_b extends OverloadedOperationsTypesProvider {
-    public CustomOverloadedOperationsTypesProvider_b(SAbstractConcept concept) {
+  public static class CustomOverloadedOperationsTypesProvider_e extends OverloadedOperationsTypesProvider {
+    public CustomOverloadedOperationsTypesProvider_e(SAbstractConcept concept) {
       this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a2();
       this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a2();
+      this.myOperationConcept = concept;
+      this.myLeftTypeIsExact = false;
+      this.myRightTypeIsExact = false;
+      this.myRightIsStrong = false;
+      this.myLeftIsStrong = false;
+      this.myRuleModelId = "r:9ab9fec9-ed9e-4d25-890a-7574633bec2e(xjsnark.typesystem)";
+      this.myRuleNodeId = "4603518930146926094";
+    }
+    public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
+      SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, "xjsnark.structure.JFieldType")));
+      SLinkOperations.setTarget(result, MetaAdapterFactory.getReferenceLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, 0x68d52c08c1ca734cL, "fieldRec"), SLinkOperations.getTarget(SNodeOperations.as(rightOperandType, MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, "xjsnark.structure.JFieldType")), MetaAdapterFactory.getReferenceLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, 0x68d52c08c1ca734cL, "fieldRec")));
+      return result;
+
+    }
+    public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
+      boolean case1 = SNodeOperations.isInstanceOf(leftOperandType, MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, "xjsnark.structure.JFieldType")) && SNodeOperations.isInstanceOf(rightOperandType, MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, "xjsnark.structure.JFieldType")) && SLinkOperations.getTarget(SNodeOperations.as(leftOperandType, MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, "xjsnark.structure.JFieldType")), MetaAdapterFactory.getReferenceLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, 0x68d52c08c1ca734cL, "fieldRec")) == SLinkOperations.getTarget(SNodeOperations.as(rightOperandType, MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, "xjsnark.structure.JFieldType")), MetaAdapterFactory.getReferenceLink(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x68d52c08c1ca7332L, 0x68d52c08c1ca734cL, "fieldRec"));
+      return case1;
+    }
+    @Override
+    public void reportConflict(IRuleConflictWarningProducer producer) {
+      producer.produceWarning(myRuleModelId, myRuleNodeId);
+    }
+    private static SNode _quotation_createNode_3ist9o_a0a0a2() {
+      PersistenceFacade facade = PersistenceFacade.getInstance();
+      SNode quotedNode_1 = null;
+      quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
+      return quotedNode_1;
+    }
+    private static SNode _quotation_createNode_3ist9o_a0b0a2() {
+      PersistenceFacade facade = PersistenceFacade.getInstance();
+      SNode quotedNode_1 = null;
+      quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
+      return quotedNode_1;
+    }
+  }
+  public static class CustomOverloadedOperationsTypesProvider_b extends OverloadedOperationsTypesProvider {
+    public CustomOverloadedOperationsTypesProvider_b(SAbstractConcept concept) {
+      this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a3();
+      this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a3();
       this.myOperationConcept = concept;
       this.myLeftTypeIsExact = false;
       this.myRightTypeIsExact = false;
@@ -400,23 +460,23 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     public void reportConflict(IRuleConflictWarningProducer producer) {
       producer.produceWarning(myRuleModelId, myRuleNodeId);
     }
-    private static SNode _quotation_createNode_3ist9o_a0a0a2() {
+    private static SNode _quotation_createNode_3ist9o_a0a0a3() {
       PersistenceFacade facade = PersistenceFacade.getInstance();
       SNode quotedNode_1 = null;
       quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_3ist9o_a0b0a2() {
+    private static SNode _quotation_createNode_3ist9o_a0b0a3() {
       PersistenceFacade facade = PersistenceFacade.getInstance();
       SNode quotedNode_1 = null;
       quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
       return quotedNode_1;
     }
   }
-  public static class CustomOverloadedOperationsTypesProvider_e extends OverloadedOperationsTypesProvider {
-    public CustomOverloadedOperationsTypesProvider_e(SAbstractConcept concept) {
-      this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a3();
-      this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a3();
+  public static class CustomOverloadedOperationsTypesProvider_f extends OverloadedOperationsTypesProvider {
+    public CustomOverloadedOperationsTypesProvider_f(SAbstractConcept concept) {
+      this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a4();
+      this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a4();
       this.myOperationConcept = concept;
       this.myLeftTypeIsExact = false;
       this.myRightTypeIsExact = false;
@@ -436,13 +496,13 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     public void reportConflict(IRuleConflictWarningProducer producer) {
       producer.produceWarning(myRuleModelId, myRuleNodeId);
     }
-    private static SNode _quotation_createNode_3ist9o_a0a0a3() {
+    private static SNode _quotation_createNode_3ist9o_a0a0a4() {
       PersistenceFacade facade = PersistenceFacade.getInstance();
       SNode quotedNode_1 = null;
       quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_3ist9o_a0b0a3() {
+    private static SNode _quotation_createNode_3ist9o_a0b0a4() {
       PersistenceFacade facade = PersistenceFacade.getInstance();
       SNode quotedNode_1 = null;
       quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
@@ -451,8 +511,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
   }
   public static class CustomOverloadedOperationsTypesProvider_a extends OverloadedOperationsTypesProvider {
     public CustomOverloadedOperationsTypesProvider_a(SAbstractConcept concept) {
-      this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a4();
-      this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a4();
+      this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a5();
+      this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a5();
       this.myOperationConcept = concept;
       this.myLeftTypeIsExact = false;
       this.myRightTypeIsExact = false;
@@ -484,46 +544,6 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     public void reportConflict(IRuleConflictWarningProducer producer) {
       producer.produceWarning(myRuleModelId, myRuleNodeId);
     }
-    private static SNode _quotation_createNode_3ist9o_a0a0a4() {
-      PersistenceFacade facade = PersistenceFacade.getInstance();
-      SNode quotedNode_1 = null;
-      quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
-      return quotedNode_1;
-    }
-    private static SNode _quotation_createNode_3ist9o_a0b0a4() {
-      PersistenceFacade facade = PersistenceFacade.getInstance();
-      SNode quotedNode_1 = null;
-      quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
-      return quotedNode_1;
-    }
-  }
-  public static class CustomOverloadedOperationsTypesProvider_c extends OverloadedOperationsTypesProvider {
-    public CustomOverloadedOperationsTypesProvider_c(SAbstractConcept concept) {
-      this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a5();
-      this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a5();
-      this.myOperationConcept = concept;
-      this.myLeftTypeIsExact = false;
-      this.myRightTypeIsExact = false;
-      this.myRightIsStrong = false;
-      this.myLeftIsStrong = false;
-      this.myRuleModelId = "r:9ab9fec9-ed9e-4d25-890a-7574633bec2e(xjsnark.typesystem)";
-      this.myRuleNodeId = "6238098797406568519";
-    }
-    public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
-
-      int b1 = SPropertyOperations.getInteger(SNodeOperations.as(leftOperandType, MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3fe6a0eL, "xjsnark.structure.JUnsignedIntegerType")), MetaAdapterFactory.getProperty(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3fe6a0eL, 0x39ce7332e3fe6c61L, "bitwidth"));
-      SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3fe6a0eL, "xjsnark.structure.JUnsignedIntegerType")));
-      SPropertyOperations.set(result, MetaAdapterFactory.getProperty(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x39ce7332e3fe6a0eL, 0x39ce7332e3fe6c61L, "bitwidth"), "" + (b1));
-      return result;
-    }
-    public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-
-      return false;
-    }
-    @Override
-    public void reportConflict(IRuleConflictWarningProducer producer) {
-      producer.produceWarning(myRuleModelId, myRuleNodeId);
-    }
     private static SNode _quotation_createNode_3ist9o_a0a0a5() {
       PersistenceFacade facade = PersistenceFacade.getInstance();
       SNode quotedNode_1 = null;
@@ -533,12 +553,12 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     private static SNode _quotation_createNode_3ist9o_a0b0a5() {
       PersistenceFacade facade = PersistenceFacade.getInstance();
       SNode quotedNode_1 = null;
-      quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d22479L, "jetbrains.mps.baseLanguage.structure.IntegerType"), null, null, false);
+      quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
       return quotedNode_1;
     }
   }
-  public static class CustomOverloadedOperationsTypesProvider_e_0 extends OverloadedOperationsTypesProvider {
-    public CustomOverloadedOperationsTypesProvider_e_0(SAbstractConcept concept) {
+  public static class CustomOverloadedOperationsTypesProvider_d extends OverloadedOperationsTypesProvider {
+    public CustomOverloadedOperationsTypesProvider_d(SAbstractConcept concept) {
       this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a6();
       this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a6();
       this.myOperationConcept = concept;
@@ -650,8 +670,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return quotedNode_1;
     }
   }
-  public static class CustomOverloadedOperationsTypesProvider_c_0 extends OverloadedOperationsTypesProvider {
-    public CustomOverloadedOperationsTypesProvider_c_0(SAbstractConcept concept) {
+  public static class CustomOverloadedOperationsTypesProvider_c extends OverloadedOperationsTypesProvider {
+    public CustomOverloadedOperationsTypesProvider_c(SAbstractConcept concept) {
       this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a9();
       this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a9();
       this.myOperationConcept = concept;
@@ -686,8 +706,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return quotedNode_1;
     }
   }
-  public static class CustomOverloadedOperationsTypesProvider_d extends OverloadedOperationsTypesProvider {
-    public CustomOverloadedOperationsTypesProvider_d(SAbstractConcept concept) {
+  public static class CustomOverloadedOperationsTypesProvider_d_0 extends OverloadedOperationsTypesProvider {
+    public CustomOverloadedOperationsTypesProvider_d_0(SAbstractConcept concept) {
       this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a01();
       this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a01();
       this.myOperationConcept = concept;
@@ -722,8 +742,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return quotedNode_1;
     }
   }
-  public static class CustomOverloadedOperationsTypesProvider_c_1 extends OverloadedOperationsTypesProvider {
-    public CustomOverloadedOperationsTypesProvider_c_1(SAbstractConcept concept) {
+  public static class CustomOverloadedOperationsTypesProvider_c_0 extends OverloadedOperationsTypesProvider {
+    public CustomOverloadedOperationsTypesProvider_c_0(SAbstractConcept concept) {
       this.myLeftOperandType = _quotation_createNode_3ist9o_a0a0a11();
       this.myRightOperandType = _quotation_createNode_3ist9o_a0b0a11();
       this.myOperationConcept = concept;
@@ -853,6 +873,12 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     return quotedNode_1;
   }
   private static SNode _quotation_createNode_3ist9o_a0a0a0a0a0a0a45a0() {
+    PersistenceFacade facade = PersistenceFacade.getInstance();
+    SNode quotedNode_1 = null;
+    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);
+    return quotedNode_1;
+  }
+  private static SNode _quotation_createNode_3ist9o_a0a0a0a0a0a0a55a0() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
     quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x688d542e2a3492cL, 0xa31f0e921fd6a8fbL, 0x61502e94ebf30481L, "xjsnark.structure.XjsnarkType"), null, null, false);

@@ -15,7 +15,7 @@ import jetbrains.mps.baseLanguage.scopes.MembersPopulatingContext;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class MultiLineCommentClassMember_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements ClassifierMember_BehaviorDescriptor {
+public abstract class MultiLineCommentClassMember_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements ClassifierMember_BehaviorDescriptor {
   public boolean virtual_canBeInterfaceMember_2949815620938109095(SConcept __thisConcept__) {
     return DefaultValuesHolder.defaultValue(Boolean.TYPE);
   }

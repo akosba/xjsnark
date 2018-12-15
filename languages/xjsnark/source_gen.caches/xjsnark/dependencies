@@ -23,10 +23,12 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
     <classNode dependClassName="xjsnark.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="xjsnark.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="xjsnark.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="xjsnark.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="xjsnark.textGen.TextGenAspectDescriptor" />
     <classNode dependClassName="xjsnark.typesystem.TypesystemDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>
