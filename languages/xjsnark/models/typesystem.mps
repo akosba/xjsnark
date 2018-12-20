@@ -5868,7 +5868,7 @@
                   <property role="1BlNFB" value="true" />
                   <ref role="1PxNhF" to="26c9:3BesNbzZACe" resolve="JUnsignedIntegerType" />
                   <node concept="1YBJjd" id="65gbDjG20BO" role="1PxMeX">
-                    <ref role="1YBMHb" node="65gbDjG1YTl" resolve="xjsnarkType" />
+                    <ref role="1YBMHb" node="65gbDjG1YTl" resolve="xjsnarkType2" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="6w4Q6PdCBh9" role="2OqNvi">
@@ -5892,7 +5892,7 @@
               <node concept="3clFbS" id="65gbDjG217B" role="9aQI4">
                 <node concept="2MkqsV" id="65gbDjG218D" role="3cqZAp">
                   <node concept="Xl_RD" id="65gbDjG2199" role="2MkJ7o">
-                    <property role="Xl_RC" value="Inconsitent Bitwidth" />
+                    <property role="Xl_RC" value="Inconsistent Bitwidth" />
                   </node>
                   <node concept="2OqwBi" id="7NY5omJ5q9n" role="2OEOjV">
                     <node concept="3622Ei" id="7NY5omJ5q3C" role="2Oq$k0" />
@@ -5908,7 +5908,7 @@
         <node concept="1Wc70l" id="65gbDjG1ZIi" role="3clFbw">
           <node concept="2OqwBi" id="65gbDjG1ZOz" role="3uHU7w">
             <node concept="1YBJjd" id="65gbDjG1ZKx" role="2Oq$k0">
-              <ref role="1YBMHb" node="65gbDjG1YTl" resolve="xjsnarkType" />
+              <ref role="1YBMHb" node="65gbDjG1YTl" resolve="xjsnarkType2" />
             </node>
             <node concept="1mIQ4w" id="65gbDjG201p" role="2OqNvi">
               <node concept="chp4Y" id="6w4Q6PdC$v6" role="cj9EA">
@@ -5927,6 +5927,73 @@
             </node>
           </node>
         </node>
+        <node concept="3eNFk2" id="5FA6xiQUBht" role="3eNLev">
+          <node concept="3clFbS" id="5FA6xiQUBhv" role="3eOfB_">
+            <node concept="3clFbJ" id="5FA6xiQUGgV" role="3cqZAp">
+              <node concept="3y3z36" id="5FA6xiQUIEx" role="3clFbw">
+                <node concept="2OqwBi" id="5FA6xiQUGTs" role="3uHU7B">
+                  <node concept="1PxgMI" id="5FA6xiQUGy5" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
+                    <ref role="1PxNhF" to="26c9:6zlb0z1MBcM" resolve="JFieldType" />
+                    <node concept="1YBJjd" id="5FA6xiQUGjD" role="1PxMeX">
+                      <ref role="1YBMHb" node="65gbDjG1YT8" resolve="xjsnarkType" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="5FA6xiQUHcT" role="2OqNvi">
+                    <ref role="3Tt5mk" to="26c9:6zlb0z1MBdc" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="5FA6xiQUI1L" role="3uHU7w">
+                  <node concept="1PxgMI" id="5FA6xiQUHB4" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
+                    <ref role="1PxNhF" to="26c9:6zlb0z1MBcM" resolve="JFieldType" />
+                    <node concept="1YBJjd" id="5FA6xiQUHt1" role="1PxMeX">
+                      <ref role="1YBMHb" node="65gbDjG1YTl" resolve="xjsnarkType2" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="5FA6xiQUItv" role="2OqNvi">
+                    <ref role="3Tt5mk" to="26c9:6zlb0z1MBdc" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="5FA6xiQUGgX" role="3clFbx">
+                <node concept="2MkqsV" id="5FA6xiQUIRS" role="3cqZAp">
+                  <node concept="Xl_RD" id="5FA6xiQUIRT" role="2MkJ7o">
+                    <property role="Xl_RC" value="Inconsistent Field Identifier" />
+                  </node>
+                  <node concept="2OqwBi" id="5FA6xiQUIRU" role="2OEOjV">
+                    <node concept="3622Ei" id="5FA6xiQUIRV" role="2Oq$k0" />
+                    <node concept="liA8E" id="5FA6xiQUIRW" role="2OqNvi">
+                      <ref role="37wK5l" to="u78q:~EquationInfo.getNodeWithError():org.jetbrains.mps.openapi.model.SNode" resolve="getNodeWithError" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="5FA6xiQUFQ3" role="3eO9$A">
+            <node concept="2OqwBi" id="5FA6xiQUFQ4" role="3uHU7w">
+              <node concept="1YBJjd" id="5FA6xiQUFQ5" role="2Oq$k0">
+                <ref role="1YBMHb" node="65gbDjG1YTl" resolve="xjsnarkType2" />
+              </node>
+              <node concept="1mIQ4w" id="5FA6xiQUFQ6" role="2OqNvi">
+                <node concept="chp4Y" id="5FA6xiQUG6v" role="cj9EA">
+                  <ref role="cht4Q" to="26c9:6zlb0z1MBcM" resolve="JFieldType" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5FA6xiQUFQ8" role="3uHU7B">
+              <node concept="1YBJjd" id="5FA6xiQUFQ9" role="2Oq$k0">
+                <ref role="1YBMHb" node="65gbDjG1YT8" resolve="xjsnarkType" />
+              </node>
+              <node concept="1mIQ4w" id="5FA6xiQUFQa" role="2OqNvi">
+                <node concept="chp4Y" id="5FA6xiQUFW3" role="cj9EA">
+                  <ref role="cht4Q" to="26c9:6zlb0z1MBcM" resolve="JFieldType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3eNFk2" id="7NY5omJcdrz" role="3eNLev">
           <node concept="3clFbS" id="7NY5omJcdr$" role="3eOfB_" />
           <node concept="2OqwBi" id="7NY5omJcjpN" role="3eO9$A">
@@ -5940,7 +6007,7 @@
               <node concept="25Kdxt" id="7NY5omJcjEU" role="2Zo12j">
                 <node concept="2OqwBi" id="7NY5omJcjJn" role="25KhWn">
                   <node concept="1YBJjd" id="7NY5omJcjFO" role="2Oq$k0">
-                    <ref role="1YBMHb" node="65gbDjG1YTl" resolve="xjsnarkType" />
+                    <ref role="1YBMHb" node="65gbDjG1YTl" resolve="xjsnarkType2" />
                   </node>
                   <node concept="2yIwOk" id="7NY5omJcjZ_" role="2OqNvi" />
                 </node>
@@ -5966,7 +6033,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="65gbDjG1YTl" role="35pZ6h">
-      <property role="TrG5h" value="xjsnarkType" />
+      <property role="TrG5h" value="xjsnarkType2" />
       <ref role="1YaFvo" to="26c9:65gbDjFWKi1" resolve="XjsnarkType" />
     </node>
     <node concept="1YaCAy" id="65gbDjG1YT8" role="1YuTPh">
