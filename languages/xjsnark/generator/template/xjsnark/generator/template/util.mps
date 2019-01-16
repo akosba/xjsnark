@@ -1031,7 +1031,7 @@
     <node concept="2tJIrI" id="6zlb0z0FVOf" role="jymVt" />
     <node concept="2tJIrI" id="6zlb0z0FVTb" role="jymVt" />
     <node concept="2YIFZL" id="6zlb0z0FCOR" role="jymVt">
-      <property role="TrG5h" value="isInitializerForJField" />
+      <property role="TrG5h" value="isInitializerForJFieldOrJBoolean" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -2113,7 +2113,7 @@
     </node>
     <node concept="2tJIrI" id="6w4Q6P6pIbc" role="jymVt" />
     <node concept="2YIFZL" id="6w4Q6P6pINw" role="jymVt">
-      <property role="TrG5h" value="isJFieldForArrayCreators" />
+      <property role="TrG5h" value="isJFieldOrJBooleanForArrayCreators" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -2349,7 +2349,7 @@
     <node concept="2tJIrI" id="6w4Q6P6jLDn" role="jymVt" />
     <node concept="2tJIrI" id="6w4Q6P6jLUQ" role="jymVt" />
     <node concept="2YIFZL" id="33sExp7ffI0" role="jymVt">
-      <property role="TrG5h" value="isJFieldArgument" />
+      <property role="TrG5h" value="isJFieldOrJBooleanArgument" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />

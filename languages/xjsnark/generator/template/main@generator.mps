@@ -468,8 +468,8 @@
     </language>
   </registry>
   <node concept="13MO4I" id="1F6kLWsWjI6">
-    <property role="TrG5h" value="reduce_ArrayCreatorBoolean" />
-    <property role="3GE5qa" value="ArrayCreatorReplacement" />
+    <property role="TrG5h" value="reduce_ArrayCreatorJBoolean" />
+    <property role="3GE5qa" value="arrayCreators" />
     <ref role="3gUMe" to="tpee:gEShNN5" resolve="GenericNewExpression" />
     <node concept="3clFbS" id="1F6kLWsWk2Y" role="13RCb5">
       <node concept="3cpWs8" id="1F6kLWsWk36" role="3cqZAp">
@@ -858,8 +858,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="1F6kLWsWjXG">
-    <property role="TrG5h" value="reduce_ArrayCreatorField" />
-    <property role="3GE5qa" value="ArrayCreatorReplacement" />
+    <property role="TrG5h" value="reduce_ArrayCreatorJField" />
+    <property role="3GE5qa" value="arrayCreators" />
     <ref role="3gUMe" to="tpee:gEShNN5" resolve="GenericNewExpression" />
     <node concept="3clFbS" id="1F6kLWsWkvI" role="13RCb5">
       <node concept="3cpWs8" id="1F6kLWsWkvS" role="3cqZAp">
@@ -1321,8 +1321,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="1F6kLWsW9Sm">
-    <property role="TrG5h" value="reduce_ArrayCreatorUnsignedInteger" />
-    <property role="3GE5qa" value="ArrayCreatorReplacement" />
+    <property role="TrG5h" value="reduce_ArrayCreatorJUnsignedInteger" />
+    <property role="3GE5qa" value="arrayCreators" />
     <ref role="3gUMe" to="tpee:gEShNN5" resolve="GenericNewExpression" />
     <node concept="3clFbS" id="1F6kLWsW9YQ" role="13RCb5">
       <node concept="3cpWs8" id="1F6kLWsW9YT" role="3cqZAp">
@@ -1771,8 +1771,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="7UGu0HvjNKi">
-    <property role="TrG5h" value="reduce_ArrayCreatorUnsignedInteger2" />
-    <property role="3GE5qa" value="ArrayCreatorReplacement" />
+    <property role="TrG5h" value="reduce_ArrayCreatorJUnsignedInteger2" />
+    <property role="3GE5qa" value="arrayCreators" />
     <ref role="3gUMe" to="tpee:gEShNN5" resolve="GenericNewExpression" />
     <node concept="3clFbS" id="7UGu0HvjNKj" role="13RCb5">
       <node concept="3cpWs8" id="7UGu0HvjNKk" role="3cqZAp">
@@ -15945,7 +15945,7 @@
   </node>
   <node concept="13MO4I" id="r_GHmMfgzD">
     <property role="TrG5h" value="reduce_BitwiseAndExpression" />
-    <property role="3GE5qa" value="UnisgnedIntOperations" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:hOpVHS1" resolve="BitwiseAndExpression" />
     <node concept="9aQIb" id="r_GHmMfg_p" role="13RCb5">
       <node concept="3clFbS" id="r_GHmMfg_q" role="9aQI4">
@@ -16014,7 +16014,7 @@
   </node>
   <node concept="13MO4I" id="6DTPir0lWR0">
     <property role="TrG5h" value="reduce_BitwiseAndExpressionWithInteger" />
-    <property role="3GE5qa" value="UnisgnedIntOperations" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:hOpVHS1" resolve="BitwiseAndExpression" />
     <node concept="9aQIb" id="6DTPir0lX1V" role="13RCb5">
       <node concept="3clFbS" id="6DTPir0lX1W" role="9aQI4">
@@ -16109,7 +16109,7 @@
   </node>
   <node concept="13MO4I" id="r_GHmMfgNg">
     <property role="TrG5h" value="reduce_BitwiseOrExpression" />
-    <property role="3GE5qa" value="UnisgnedIntOperations" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:hOpVOpi" resolve="BitwiseOrExpression" />
     <node concept="9aQIb" id="r_GHmMfgTR" role="13RCb5">
       <node concept="3clFbS" id="r_GHmMfgTS" role="9aQI4">
@@ -16178,7 +16178,7 @@
   </node>
   <node concept="13MO4I" id="6DTPir0lZkW">
     <property role="TrG5h" value="reduce_BitwiseOrExpressionWithInteger" />
-    <property role="3GE5qa" value="UnisgnedIntOperations" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:hOpVOpi" resolve="BitwiseOrExpression" />
     <node concept="9aQIb" id="6DTPir0lZDy" role="13RCb5">
       <node concept="3clFbS" id="6DTPir0lZDz" role="9aQI4">
@@ -16273,7 +16273,7 @@
   </node>
   <node concept="13MO4I" id="r_GHmMfgfl">
     <property role="TrG5h" value="reduce_BitwiseXorExpression" />
-    <property role="3GE5qa" value="UnisgnedIntOperations" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:hOpVQAF" resolve="BitwiseXorExpression" />
     <node concept="9aQIb" id="r_GHmMfgh6" role="13RCb5">
       <node concept="3clFbS" id="r_GHmMfgh7" role="9aQI4">
@@ -16342,7 +16342,7 @@
   </node>
   <node concept="13MO4I" id="6DTPir0m0hm">
     <property role="TrG5h" value="reduce_BitwiseXorExpressionWithInteger" />
-    <property role="3GE5qa" value="UnisgnedIntOperations" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:hOpVQAF" resolve="BitwiseXorExpression" />
     <node concept="9aQIb" id="6DTPir0m0np" role="13RCb5">
       <node concept="3clFbS" id="6DTPir0m0nq" role="9aQI4">
@@ -16437,7 +16437,7 @@
   </node>
   <node concept="13MO4I" id="4JdZtZI_Q2k">
     <property role="TrG5h" value="reduce_MulExpression" />
-    <property role="3GE5qa" value="UnisgnedIntOperations" />
+    <property role="3GE5qa" value="CommonOperators" />
     <ref role="3gUMe" to="tpee:fT7qRmf" resolve="MulExpression" />
     <node concept="3clFbS" id="4JdZtZI_Q7B" role="13RCb5">
       <node concept="9aQIb" id="4JdZtZI_QMG" role="3cqZAp">
@@ -16509,7 +16509,7 @@
   </node>
   <node concept="13MO4I" id="r_GHmMeeNb">
     <property role="TrG5h" value="reduce_PlusExpression" />
-    <property role="3GE5qa" value="UnisgnedIntOperations" />
+    <property role="3GE5qa" value="CommonOperators" />
     <ref role="3gUMe" to="tpee:fzcpWvV" resolve="PlusExpression" />
     <node concept="9aQIb" id="r_GHmMefa7" role="13RCb5">
       <node concept="3clFbS" id="r_GHmMefa8" role="9aQI4">
@@ -16578,7 +16578,7 @@
   </node>
   <node concept="13MO4I" id="6DTPir0lDGG">
     <property role="TrG5h" value="reduce_ShiftLeftExpression" />
-    <property role="3GE5qa" value="UnisgnedIntOperations" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:hPGRDYT" resolve="ShiftLeftExpression" />
     <node concept="9aQIb" id="6DTPir0lDM4" role="13RCb5">
       <node concept="3clFbS" id="6DTPir0lDM5" role="9aQI4">
@@ -16647,7 +16647,7 @@
   </node>
   <node concept="13MO4I" id="6DTPir0lEjU">
     <property role="TrG5h" value="reduce_ShiftRightExpression" />
-    <property role="3GE5qa" value="UnisgnedIntOperations" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:hPGS57v" resolve="ShiftRightExpression" />
     <node concept="9aQIb" id="6DTPir0lEAM" role="13RCb5">
       <node concept="3clFbS" id="6DTPir0lEAN" role="9aQI4">
@@ -17977,7 +17977,7 @@
   </node>
   <node concept="bUwia" id="6jbzUkk0i4Y">
     <property role="TrG5h" value="main" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="Main" />
     <node concept="3lhOvk" id="6c6pOWTyuID" role="3lj3bC">
       <ref role="3lhOvi" node="6c6pOWTyuLG" resolve="map_ProgramDefinition" />
       <ref role="30HIoZ" to="26c9:6jbzUkk0jsV" resolve="ProgramDefinition" />
@@ -18941,7 +18941,7 @@
   </node>
   <node concept="bUwia" id="6zlb0z13ICB">
     <property role="TrG5h" value="main2" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="Main" />
     <node concept="3aamgX" id="1F6kLWsOoGg" role="3acgRq">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
@@ -19193,7 +19193,7 @@
         </node>
       </node>
       <node concept="j$656" id="7UGu0Hvo2Mk" role="1lVwrX">
-        <ref role="v9R2y" node="1F6kLWsW9Sm" resolve="reduce_ArrayCreatorUnsignedInteger" />
+        <ref role="v9R2y" node="1F6kLWsW9Sm" resolve="reduce_ArrayCreatorJUnsignedInteger" />
       </node>
     </node>
     <node concept="3aamgX" id="1F6kLWsWhY$" role="3acgRq">
@@ -19309,7 +19309,7 @@
         </node>
       </node>
       <node concept="j$656" id="1F6kLWsWjI8" role="1lVwrX">
-        <ref role="v9R2y" node="1F6kLWsWjI6" resolve="reduce_ArrayCreatorBoolean" />
+        <ref role="v9R2y" node="1F6kLWsWjI6" resolve="reduce_ArrayCreatorJBoolean" />
       </node>
     </node>
     <node concept="3aamgX" id="1F6kLWsWinx" role="3acgRq">
@@ -19425,7 +19425,7 @@
         </node>
       </node>
       <node concept="j$656" id="1F6kLWsWjXI" role="1lVwrX">
-        <ref role="v9R2y" node="1F6kLWsWjXG" resolve="reduce_ArrayCreatorField" />
+        <ref role="v9R2y" node="1F6kLWsWjXG" resolve="reduce_ArrayCreatorJField" />
       </node>
     </node>
     <node concept="3aamgX" id="6zlb0z0FFAQ" role="3acgRq">
@@ -19443,7 +19443,7 @@
         </node>
       </node>
       <node concept="j$656" id="6zlb0z0FYIa" role="1lVwrX">
-        <ref role="v9R2y" node="6zlb0z0FYI8" resolve="reduce_UnsignedInt_Argument" />
+        <ref role="v9R2y" node="6zlb0z0FYI8" resolve="reduce_UnsignedIntArgument" />
       </node>
     </node>
     <node concept="3aamgX" id="6zlb0z0FCwR" role="3acgRq">
@@ -19461,7 +19461,7 @@
         </node>
       </node>
       <node concept="j$656" id="6zlb0z0FYGA" role="1lVwrX">
-        <ref role="v9R2y" node="6zlb0z0FYG$" resolve="reduce_UnsignedInt_AsInitializer" />
+        <ref role="v9R2y" node="6zlb0z0FYG$" resolve="reduce_UnsignedIntAsInitializer" />
       </node>
     </node>
     <node concept="3aamgX" id="6w4Q6P6k07P" role="3acgRq">
@@ -19513,14 +19513,14 @@
           <node concept="3clFbF" id="33sExp7flG1" role="3cqZAp">
             <node concept="2YIFZM" id="33sExp7flWS" role="3clFbG">
               <ref role="1Pybhc" to="71td:r_GHmMeb4o" resolve="Helper" />
-              <ref role="37wK5l" to="71td:33sExp7ffI0" resolve="isJFieldArgument" />
+              <ref role="37wK5l" to="71td:33sExp7ffI0" resolve="isJFieldOrJBooleanArgument" />
               <node concept="30H73N" id="33sExp7flWT" role="37wK5m" />
             </node>
           </node>
         </node>
       </node>
       <node concept="j$656" id="33sExp7fm4e" role="1lVwrX">
-        <ref role="v9R2y" node="33sExp7fhfW" resolve="reduce_Field_Argument" />
+        <ref role="v9R2y" node="33sExp7fhfW" resolve="reduce_JFieldOrJBooleanArgument" />
       </node>
     </node>
     <node concept="3aamgX" id="33sExp7flG5" role="3acgRq">
@@ -19531,14 +19531,14 @@
           <node concept="3clFbF" id="33sExp7flG8" role="3cqZAp">
             <node concept="2YIFZM" id="33sExp7fm1Z" role="3clFbG">
               <ref role="1Pybhc" to="71td:r_GHmMeb4o" resolve="Helper" />
-              <ref role="37wK5l" to="71td:6zlb0z0FCOR" resolve="isInitializerForJField" />
+              <ref role="37wK5l" to="71td:6zlb0z0FCOR" resolve="isInitializerForJFieldOrJBoolean" />
               <node concept="30H73N" id="33sExp7fm20" role="37wK5m" />
             </node>
           </node>
         </node>
       </node>
       <node concept="j$656" id="33sExp7fm5y" role="1lVwrX">
-        <ref role="v9R2y" node="33sExp7fjcB" resolve="reduce_Field_AsInitializer" />
+        <ref role="v9R2y" node="33sExp7fjcB" resolve="reduce_JFieldOrJBooleanAsInitializer" />
       </node>
     </node>
     <node concept="3aamgX" id="6w4Q6P6pGzd" role="3acgRq">
@@ -19549,14 +19549,14 @@
           <node concept="3clFbF" id="6w4Q6P6pGzg" role="3cqZAp">
             <node concept="2YIFZM" id="6w4Q6P6wkQ3" role="3clFbG">
               <ref role="1Pybhc" to="71td:r_GHmMeb4o" resolve="Helper" />
-              <ref role="37wK5l" to="71td:6w4Q6P6pINw" resolve="isJFieldForArrayCreators" />
+              <ref role="37wK5l" to="71td:6w4Q6P6pINw" resolve="isJFieldOrJBooleanForArrayCreators" />
               <node concept="30H73N" id="6w4Q6P6wkQ4" role="37wK5m" />
             </node>
           </node>
         </node>
       </node>
       <node concept="j$656" id="6w4Q6P6xDnv" role="1lVwrX">
-        <ref role="v9R2y" node="6w4Q6P6wmRm" resolve="reduce_JFieldForArrayCreator" />
+        <ref role="v9R2y" node="6w4Q6P6wmRm" resolve="reduce_JFieldOrJBooleanForArrayCreator" />
       </node>
     </node>
     <node concept="3aamgX" id="5qibsSHjmIc" role="3acgRq">
@@ -20297,7 +20297,7 @@
   </node>
   <node concept="bUwia" id="4ge3H8iIi8c">
     <property role="TrG5h" value="main3" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="Main" />
     <node concept="3aamgX" id="1bbdoCqIepE" role="3acgRq">
       <ref role="30HIoZ" to="26c9:1bbdoCqDWd3" resolve="BoundedLoop" />
       <node concept="j$656" id="1bbdoCqIesp" role="1lVwrX">
@@ -20428,7 +20428,7 @@
   </node>
   <node concept="13MO4I" id="5RbNWZHttow">
     <property role="TrG5h" value="reduce_AssignmentExpression_runtimeStruct" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="RuntimeStructs" />
     <ref role="3gUMe" to="tpee:fz7vLUm" resolve="AssignmentExpression" />
     <node concept="3clFbS" id="5RbNWZHtuWe" role="13RCb5">
       <node concept="3cpWs8" id="5RbNWZHtuWg" role="3cqZAp">
@@ -20495,7 +20495,7 @@
   </node>
   <node concept="13MO4I" id="6w4Q6P2tNcX">
     <property role="TrG5h" value="reduce_DivExpression" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="CommonOperators" />
     <ref role="3gUMe" to="tpee:fWFJ1fq" resolve="DivExpression" />
     <node concept="9aQIb" id="6w4Q6P2tOPJ" role="13RCb5">
       <node concept="3clFbS" id="6w4Q6P2tOPK" role="9aQI4">
@@ -20564,7 +20564,7 @@
   </node>
   <node concept="13MO4I" id="5RbNWZI3vsm">
     <property role="TrG5h" value="reduce_DotExpression_RuntimeStructField" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="RuntimeStructs" />
     <ref role="3gUMe" to="tpee:hqOqwz4" resolve="DotExpression" />
     <node concept="312cEu" id="5RbNWZI3wgQ" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -21018,7 +21018,7 @@
   </node>
   <node concept="13MO4I" id="6w4Q6PdgW9m">
     <property role="TrG5h" value="reduce_JFieldConversion" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="typeConversions" />
     <ref role="3gUMe" to="26c9:6w4Q6PdgKLq" resolve="JFieldConversion" />
     <node concept="3clFbF" id="6w4Q6PdgW9n" role="13RCb5">
       <node concept="2YIFZM" id="6w4Q6PdWtPH" role="3clFbG">
@@ -21117,8 +21117,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="6w4Q6P6wmRm">
-    <property role="TrG5h" value="reduce_JFieldForArrayCreator" />
-    <property role="3GE5qa" value="main" />
+    <property role="TrG5h" value="reduce_JFieldOrJBooleanForArrayCreator" />
+    <property role="3GE5qa" value="arrayCreators" />
     <ref role="3gUMe" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="3clFbS" id="6w4Q6P6wmRn" role="13RCb5">
       <node concept="3cpWs8" id="6w4Q6P6wmRo" role="3cqZAp">
@@ -21170,7 +21170,7 @@
   </node>
   <node concept="13MO4I" id="6w4Q6P37X3m">
     <property role="TrG5h" value="reduce_JUnsignedIntegerConversion" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="typeConversions" />
     <ref role="3gUMe" to="26c9:7SXhc66hqcL" resolve="JUnsignedIntegerConversion" />
     <node concept="3clFbF" id="6w4Q6P37Xr8" role="13RCb5">
       <node concept="2YIFZM" id="6w4Q6P37XAW" role="3clFbG">
@@ -21223,7 +21223,7 @@
   </node>
   <node concept="13MO4I" id="6w4Q6P6k2G_">
     <property role="TrG5h" value="reduce_JUnsignedIntegerForArrayCreator" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="arrayCreators" />
     <ref role="3gUMe" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="3clFbS" id="6w4Q6P6k3ix" role="13RCb5">
       <node concept="3cpWs8" id="6w4Q6P6k3iz" role="3cqZAp">
@@ -21293,7 +21293,7 @@
   </node>
   <node concept="13MO4I" id="6w4Q6P2tNj2">
     <property role="TrG5h" value="reduce_RemExpression" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:gMdk9FO" resolve="RemExpression" />
     <node concept="9aQIb" id="6w4Q6P2tP6R" role="13RCb5">
       <node concept="3clFbS" id="6w4Q6P2tP6S" role="9aQI4">
@@ -21362,7 +21362,7 @@
   </node>
   <node concept="13MO4I" id="5RbNWZHho5J">
     <property role="TrG5h" value="reduce_RuntimeStructExpression" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="RuntimeStructs" />
     <ref role="3gUMe" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="3clFbS" id="5RbNWZHiCoT" role="13RCb5">
       <node concept="3cpWs8" id="5RbNWZHiCq3" role="3cqZAp">
@@ -21432,7 +21432,7 @@
   </node>
   <node concept="13MO4I" id="5RbNWZI2rcx">
     <property role="TrG5h" value="reduce_VariableReference_RuntimeStructField" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="RuntimeStructs" />
     <ref role="3gUMe" to="tpee:fz7vLUo" resolve="VariableReference" />
     <node concept="312cEu" id="5RbNWZI2tiG" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -22473,7 +22473,7 @@
   </node>
   <node concept="13MO4I" id="5qibsSHjr80">
     <property role="TrG5h" value="reduce_BitsOp" />
-    <property role="3GE5qa" value="ops" />
+    <property role="3GE5qa" value="CommonOperators" />
     <ref role="3gUMe" to="26c9:5qibsSHh4tt" resolve="BitsOp" />
     <node concept="3clFbS" id="5qibsSHjr85" role="13RCb5">
       <node concept="3cpWs8" id="5qibsSHjra2" role="3cqZAp">
@@ -22508,7 +22508,7 @@
   </node>
   <node concept="13MO4I" id="6w4Q6P2_lUe">
     <property role="TrG5h" value="reduce_GreaterThanExpression" />
-    <property role="3GE5qa" value="ops" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:fJeOSZf" resolve="GreaterThanExpression" />
     <node concept="9aQIb" id="6w4Q6P2_lUf" role="13RCb5">
       <node concept="3clFbS" id="6w4Q6P2_lUg" role="9aQI4">
@@ -22577,7 +22577,7 @@
   </node>
   <node concept="13MO4I" id="6w4Q6P2_lUH">
     <property role="TrG5h" value="reduce_GreaterThanOrEqualsExpression" />
-    <property role="3GE5qa" value="ops" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:gMd3UKG" resolve="GreaterThanOrEqualsExpression" />
     <node concept="9aQIb" id="6w4Q6P2_lUI" role="13RCb5">
       <node concept="3clFbS" id="6w4Q6P2_lUJ" role="9aQI4">
@@ -22646,7 +22646,7 @@
   </node>
   <node concept="13MO4I" id="1YAwn0AYj3s">
     <property role="TrG5h" value="reduce_InverseOp" />
-    <property role="3GE5qa" value="ops" />
+    <property role="3GE5qa" value="JFieldOperators" />
     <ref role="3gUMe" to="26c9:1YAwn0APCn6" resolve="FieldInverseOp" />
     <node concept="9aQIb" id="1YAwn0AYjRb" role="13RCb5">
       <node concept="3clFbS" id="1YAwn0AYjRc" role="9aQI4">
@@ -22675,7 +22675,7 @@
   </node>
   <node concept="13MO4I" id="7aL4SFtv10h">
     <property role="TrG5h" value="reduce_JEqualsExpression" />
-    <property role="3GE5qa" value="ops" />
+    <property role="3GE5qa" value="CommonOperators" />
     <ref role="3gUMe" to="26c9:4JdZtZIAYwB" resolve="JEqualsExpression" />
     <node concept="9aQIb" id="7aL4SFtv10m" role="13RCb5">
       <node concept="3clFbS" id="7aL4SFtv10n" role="9aQI4">
@@ -22745,7 +22745,7 @@
   </node>
   <node concept="13MO4I" id="6zlb0z0XrLV">
     <property role="TrG5h" value="reduce_JNotEqualsExpression" />
-    <property role="3GE5qa" value="ops" />
+    <property role="3GE5qa" value="CommonOperators" />
     <ref role="3gUMe" to="26c9:7aL4SFttuq2" resolve="JNotEqualsExpression" />
     <node concept="9aQIb" id="6zlb0z0XrLW" role="13RCb5">
       <node concept="3clFbS" id="6zlb0z0XrLX" role="9aQI4">
@@ -22815,7 +22815,7 @@
   </node>
   <node concept="13MO4I" id="1bbdoCs1NMw">
     <property role="TrG5h" value="reduce_LessThanExpression" />
-    <property role="3GE5qa" value="ops" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:fJeOVwE" resolve="LessThanExpression" />
     <node concept="9aQIb" id="1bbdoCs1NSZ" role="13RCb5">
       <node concept="3clFbS" id="1bbdoCs1NT0" role="9aQI4">
@@ -22884,7 +22884,7 @@
   </node>
   <node concept="13MO4I" id="1bbdoCsiexX">
     <property role="TrG5h" value="reduce_LessThanOrEqualsExpression" />
-    <property role="3GE5qa" value="ops" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:gMdkU$l" resolve="LessThanOrEqualsExpression" />
     <node concept="9aQIb" id="1bbdoCsieCU" role="13RCb5">
       <node concept="3clFbS" id="1bbdoCsieCV" role="9aQI4">
@@ -22953,7 +22953,7 @@
   </node>
   <node concept="13MO4I" id="r_GHmMfwFz">
     <property role="TrG5h" value="reduce_UnaryBitwiseNegate" />
-    <property role="3GE5qa" value="ops" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="26c9:XCno6kWLoW" resolve="UnaryBitwiseNegate" />
     <node concept="9aQIb" id="r_GHmMfwGY" role="13RCb5">
       <node concept="3clFbS" id="r_GHmMfwGZ" role="9aQI4">
@@ -23345,7 +23345,7 @@
   </node>
   <node concept="13MO4I" id="6vW9i19O020">
     <property role="TrG5h" value="reduce_ConversionBetweenTypes" />
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="typeConversions" />
     <ref role="3gUMe" to="26c9:6vW9i19HlKd" resolve="ConversionBetweenTypes" />
     <node concept="3clFbS" id="6vW9i19O0d1" role="13RCb5">
       <node concept="3clFbH" id="6vW9i19O0d3" role="3cqZAp" />
@@ -23789,6 +23789,7 @@
   </node>
   <node concept="13MO4I" id="33sExp7eGBo">
     <property role="TrG5h" value="reduce_AssignmentExpression_JField" />
+    <property role="3GE5qa" value="assignmentExpressions" />
     <ref role="3gUMe" to="tpee:fz7vLUm" resolve="AssignmentExpression" />
     <node concept="3clFbS" id="33sExp7eHtP" role="13RCb5">
       <node concept="3cpWs8" id="33sExp7eHtR" role="3cqZAp">
@@ -24089,6 +24090,7 @@
   </node>
   <node concept="13MO4I" id="6zlb0z0DWEO">
     <property role="TrG5h" value="reduce_AssignmentExpression_JUnsignedInteger" />
+    <property role="3GE5qa" value="assignmentExpressions" />
     <ref role="3gUMe" to="tpee:fz7vLUm" resolve="AssignmentExpression" />
     <node concept="3clFbS" id="6zlb0z0EhxC" role="13RCb5">
       <node concept="3cpWs8" id="6zlb0z0EhxK" role="3cqZAp">
@@ -24186,6 +24188,7 @@
   </node>
   <node concept="13MO4I" id="1YAwn0B3jRy">
     <property role="TrG5h" value="reduce_AssignmentExpression_VAL_OP" />
+    <property role="3GE5qa" value="assignmentExpressions" />
     <ref role="3gUMe" to="tpee:fz7vLUm" resolve="AssignmentExpression" />
     <node concept="3clFbS" id="1YAwn0B3koF" role="13RCb5">
       <node concept="3cpWs8" id="1YAwn0B3koI" role="3cqZAp">
@@ -24261,6 +24264,7 @@
   </node>
   <node concept="13MO4I" id="5jGq$9FQTGC">
     <property role="TrG5h" value="reduce_CastExpression" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:f_0QFTa" resolve="CastExpression" />
     <node concept="3clFbS" id="5jGq$9FQTN6" role="13RCb5">
       <node concept="3cpWs8" id="5jGq$9FQTNd" role="3cqZAp">
@@ -24362,6 +24366,7 @@
   </node>
   <node concept="13MO4I" id="1YAwn0B1G03">
     <property role="TrG5h" value="reduce_ExternalBlock" />
+    <property role="3GE5qa" value="external" />
     <ref role="3gUMe" to="26c9:6zlb0z1A6Zw" resolve="ExternalBlock" />
     <node concept="3clFbS" id="1YAwn0B1G08" role="13RCb5">
       <node concept="3clFbF" id="1YAwn0B1G0B" role="3cqZAp">
@@ -24428,7 +24433,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="33sExp7fhfW">
-    <property role="TrG5h" value="reduce_Field_Argument" />
+    <property role="TrG5h" value="reduce_JFieldOrJBooleanArgument" />
+    <property role="3GE5qa" value="methodArguments" />
     <ref role="3gUMe" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="3clFbS" id="33sExp7fhfX" role="13RCb5">
       <node concept="3cpWs8" id="33sExp7fhfY" role="3cqZAp">
@@ -24462,7 +24468,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="33sExp7fjcB">
-    <property role="TrG5h" value="reduce_Field_AsInitializer" />
+    <property role="TrG5h" value="reduce_JFieldOrJBooleanAsInitializer" />
+    <property role="3GE5qa" value="initializers" />
     <ref role="3gUMe" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="3clFbS" id="33sExp7fjcC" role="13RCb5">
       <node concept="3cpWs8" id="33sExp7fjcD" role="3cqZAp">
@@ -24515,6 +24522,7 @@
   </node>
   <node concept="13MO4I" id="1bbdoCrDR_T">
     <property role="TrG5h" value="reduce_IntegerExpression_ToUnint" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="3clFbS" id="1bbdoCrDRBe" role="13RCb5">
       <node concept="3cpWs8" id="1bbdoCrDRPl" role="3cqZAp">
@@ -24663,6 +24671,7 @@
   </node>
   <node concept="13MO4I" id="1bbdoCs1Iwh">
     <property role="TrG5h" value="reduce_JAndExpression" />
+    <property role="3GE5qa" value="JBooleanOperators" />
     <ref role="3gUMe" to="26c9:6zlb0z1wDxO" resolve="JAndExpression" />
     <node concept="9aQIb" id="1bbdoCs1Izh" role="13RCb5">
       <node concept="3clFbS" id="1bbdoCs1Izi" role="9aQI4">
@@ -24731,6 +24740,7 @@
   </node>
   <node concept="13MO4I" id="4ge3H8iRETb">
     <property role="TrG5h" value="reduce_MinusExpression" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:fzcpWvP" resolve="MinusExpression" />
     <node concept="9aQIb" id="4ge3H8iREUQ" role="13RCb5">
       <node concept="3clFbS" id="4ge3H8iREUR" role="9aQI4">
@@ -24799,6 +24809,7 @@
   </node>
   <node concept="13MO4I" id="1F6kLWsVqsK">
     <property role="TrG5h" value="reduce_UninitializedFieldDeclarationToInitialized" />
+    <property role="3GE5qa" value="initializers" />
     <ref role="3gUMe" to="tpee:fz12cDC" resolve="FieldDeclaration" />
     <node concept="312cEu" id="1F6kLWsVqRS" role="13RCb5">
       <property role="TrG5h" value="Dummy" />
@@ -24866,7 +24877,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="6zlb0z0FYI8">
-    <property role="TrG5h" value="reduce_UnsignedInt_Argument" />
+    <property role="TrG5h" value="reduce_UnsignedIntArgument" />
+    <property role="3GE5qa" value="methodArguments" />
     <ref role="3gUMe" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="3clFbS" id="6zlb0z0FYKg" role="13RCb5">
       <node concept="3cpWs8" id="6zlb0z0FYKo" role="3cqZAp">
@@ -24970,7 +24982,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="6zlb0z0FYG$">
-    <property role="TrG5h" value="reduce_UnsignedInt_AsInitializer" />
+    <property role="TrG5h" value="reduce_UnsignedIntAsInitializer" />
+    <property role="3GE5qa" value="initializers" />
     <ref role="3gUMe" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="3clFbS" id="6zlb0z0FYJM" role="13RCb5">
       <node concept="3cpWs8" id="6zlb0z0GbO4" role="3cqZAp">
@@ -25080,7 +25093,7 @@
   </node>
   <node concept="13MO4I" id="2qKKpufs5GJ">
     <property role="TrG5h" value="reduce_JBooleanConversion" />
-    <property role="3GE5qa" value="main" />
+    <property role="3GE5qa" value="typeConversions" />
     <ref role="3gUMe" to="26c9:2qKKpufl4hB" resolve="JBooleanConversion" />
     <node concept="3clFbF" id="2qKKpufs5GK" role="13RCb5">
       <node concept="2YIFZM" id="2qKKpufs5GL" role="3clFbG">
@@ -25109,6 +25122,7 @@
   </node>
   <node concept="13MO4I" id="3ZyZ1eknqcj">
     <property role="TrG5h" value="reduce_JORExpression" />
+    <property role="3GE5qa" value="JBooleanOperators" />
     <ref role="3gUMe" to="26c9:6zlb0z1wDxP" resolve="JOrExpression" />
     <node concept="9aQIb" id="3ZyZ1eknqck" role="13RCb5">
       <node concept="3clFbS" id="3ZyZ1eknqcl" role="9aQI4">
@@ -25177,6 +25191,7 @@
   </node>
   <node concept="13MO4I" id="3ZyZ1eknrr2">
     <property role="TrG5h" value="reduce_JNotExpression" />
+    <property role="3GE5qa" value="JBooleanOperators" />
     <ref role="3gUMe" to="26c9:6zlb0z1wECl" resolve="JNotExpression" />
     <node concept="9aQIb" id="3ZyZ1eknrr3" role="13RCb5">
       <node concept="3clFbS" id="3ZyZ1eknrr4" role="9aQI4">
@@ -25219,7 +25234,7 @@
   </node>
   <node concept="13MO4I" id="3ZyZ1ekqqBg">
     <property role="TrG5h" value="reduce_UnaryMinus" />
-    <property role="3GE5qa" value="ops" />
+    <property role="3GE5qa" value="JUnisgnedIntOperations" />
     <ref role="3gUMe" to="tpee:6ZEvuogdkAL" resolve="UnaryMinus" />
     <node concept="9aQIb" id="3ZyZ1ekqqBh" role="13RCb5">
       <node concept="3clFbS" id="3ZyZ1ekqqBi" role="9aQI4">
@@ -25261,6 +25276,7 @@
   </node>
   <node concept="13MO4I" id="3T_soRCZ2aj">
     <property role="TrG5h" value="reduce_AssignmentExpression_JBoolean" />
+    <property role="3GE5qa" value="assignmentExpressions" />
     <ref role="3gUMe" to="tpee:fz7vLUm" resolve="AssignmentExpression" />
     <node concept="3clFbS" id="3T_soRCZ2ak" role="13RCb5">
       <node concept="3cpWs8" id="3T_soRCZ2al" role="3cqZAp">
