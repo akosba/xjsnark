@@ -37,7 +37,7 @@ After checking out and opening the project using the MPS framework,
 	- **xjsnark.runtime**: This is where we link xjsnark's back end. 
 	- **xjnsark.sandbox**: This where we developed the example circuits in. 
 
-- Rebuild the language extension. Right-click on xjsnark -> Rebuild. 
+- Rebuild the language extension (the icon marked with 'L'). Right-click on xjsnark -> Rebuild Language. 
 
 ### Running and generating an example circuit
 
