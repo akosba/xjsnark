@@ -433,7 +433,7 @@
       <node concept="3cqZAl" id="2qKKpugm6Pn" role="3clF45" />
       <node concept="3Tm1VV" id="2qKKpugm6Po" role="1B3o_S" />
       <node concept="3clFbS" id="2qKKpugm6Pp" role="3clF47">
-        <node concept="3clFbH" id="2qKKpugmluD" role="3cqZAp" />
+        <node concept="3clFbH" id="18zTa4dwlQ_" role="3cqZAp" />
         <node concept="3SKdUt" id="2qKKpugmlwL" role="3cqZAp">
           <node concept="3SKdUq" id="2qKKpugmlwN" role="3SKWNk">
             <property role="3SKdUp" value="Use the external code block to compute outside the circuit (More on its usage later in documentation)" />
@@ -805,7 +805,8 @@
             <property role="Xl_RC" value="p1" />
           </node>
         </node>
-        <node concept="3clFbH" id="$CbJFdU5N2" role="3cqZAp" />
+        <node concept="3clFbH" id="18zTa4dvprq" role="3cqZAp" />
+        <node concept="3clFbH" id="18zTa4dvpP7" role="3cqZAp" />
         <node concept="1Dw8fO" id="1bbdoCsekDx" role="3cqZAp">
           <node concept="3clFbS" id="1bbdoCsekDz" role="2LFqv$">
             <node concept="2DKZvD" id="2qKKpugmGeo" role="3cqZAp">
@@ -1027,6 +1028,519 @@
         <property role="TrG5h" value="args" />
         <node concept="10Q1$e" id="2qKKpugm6PE" role="1tU5fm">
           <node concept="17QB3L" id="2qKKpugm6PF" role="10Q1$1" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1KMFyu" id="18zTa4duLkL">
+    <property role="IEkAT" value="false" />
+    <property role="1EXbeo" value="true" />
+    <property role="2bfB8j" value="true" />
+    <property role="1sVAO0" value="false" />
+    <property role="TrG5h" value="SortingVerification2" />
+    <node concept="DJdLC" id="18zTa4duMwx" role="jymVt">
+      <property role="DRO8Q" value="This example just differs in the permutation hint. Now, it's not needed to give a permutation hint to the verify permutation call" />
+    </node>
+    <node concept="DJdLC" id="18zTa4dvlRW" role="jymVt">
+      <property role="DRO8Q" value="This adds overhead in the backend, but does not affect the circuit." />
+    </node>
+    <node concept="3Tm1VV" id="18zTa4duLkM" role="1B3o_S" />
+    <node concept="2tJIrI" id="18zTa4duLkR" role="jymVt" />
+    <node concept="Wx3nA" id="18zTa4duLkS" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="SIZE" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="18zTa4duLkT" role="1B3o_S" />
+      <node concept="10Oyi0" id="18zTa4duLkU" role="1tU5fm" />
+      <node concept="3cmrfG" id="18zTa4duLkV" role="33vP2m">
+        <property role="3cmrfH" value="1024" />
+      </node>
+    </node>
+    <node concept="312cEg" id="18zTa4duLkW" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="unsortedArray" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="18zTa4duLkX" role="1B3o_S" />
+      <node concept="10Q1$e" id="18zTa4duLkY" role="1tU5fm">
+        <node concept="3qc1$W" id="18zTa4duLkZ" role="10Q1$1">
+          <property role="3qc1Xj" value="16" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="18zTa4duLl0" role="33vP2m">
+        <node concept="3$_iS1" id="18zTa4duLl1" role="2ShVmc">
+          <node concept="3$GHV9" id="18zTa4duLl2" role="3$GQph">
+            <node concept="37vLTw" id="18zTa4duLpj" role="3$I4v7">
+              <ref role="3cqZAo" node="18zTa4duLkS" resolve="SIZE" />
+            </node>
+          </node>
+          <node concept="3qc1$W" id="18zTa4duLl3" role="3$_nBY">
+            <property role="3qc1Xj" value="16" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="18zTa4duLl4" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="sortedArray" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="18zTa4duLl5" role="1B3o_S" />
+      <node concept="10Q1$e" id="18zTa4duLl6" role="1tU5fm">
+        <node concept="3qc1$W" id="18zTa4duLl7" role="10Q1$1">
+          <property role="3qc1Xj" value="16" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="18zTa4duLl8" role="33vP2m">
+        <node concept="3$_iS1" id="18zTa4duLl9" role="2ShVmc">
+          <node concept="3$GHV9" id="18zTa4duLla" role="3$GQph">
+            <node concept="37vLTw" id="18zTa4duLpo" role="3$I4v7">
+              <ref role="3cqZAo" node="18zTa4duLkS" resolve="SIZE" />
+            </node>
+          </node>
+          <node concept="3qc1$W" id="18zTa4duLlb" role="3$_nBY">
+            <property role="3qc1Xj" value="16" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="18zTa4duLlc" role="jymVt" />
+    <node concept="2tJIrI" id="18zTa4duLld" role="jymVt" />
+    <node concept="3q8xyn" id="18zTa4duLle" role="jymVt">
+      <node concept="37vLTw" id="18zTa4duLlf" role="3q8w2r">
+        <ref role="3cqZAo" node="18zTa4duLkW" resolve="unsortedArray" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="18zTa4duLlg" role="jymVt" />
+    <node concept="zxlm7" id="18zTa4duLlh" role="jymVt" />
+    <node concept="2tJIrI" id="18zTa4duLli" role="jymVt" />
+    <node concept="DJdLC" id="18zTa4duLlj" role="jymVt">
+      <property role="DRO8Q" value="The reason we do not have to assert the range of the sortedArray in this context is that we verify later" />
+    </node>
+    <node concept="DJdLC" id="18zTa4duLlk" role="jymVt">
+      <property role="DRO8Q" value="that its elements are a permutation of another *publicly* known values, and also our verify_permutation" />
+    </node>
+    <node concept="DJdLC" id="18zTa4duLll" role="jymVt">
+      <property role="DRO8Q" value="opcode will make sure anyway that its input from the other side match the type [more on that later]" />
+    </node>
+    <node concept="3qc$_m" id="18zTa4duLlm" role="jymVt">
+      <node concept="37vLTw" id="18zTa4duLln" role="3qc$_n">
+        <ref role="3cqZAo" node="18zTa4duLl4" resolve="sortedArray" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="18zTa4duLlo" role="jymVt" />
+    <node concept="3qdm3p" id="18zTa4duLlp" role="jymVt" />
+    <node concept="2tJIrI" id="18zTa4duLlq" role="jymVt" />
+    <node concept="2tJIrI" id="18zTa4duLlr" role="jymVt" />
+    <node concept="3clFb_" id="18zTa4duLls" role="jymVt">
+      <property role="TrG5h" value="outsource" />
+      <node concept="3cqZAl" id="18zTa4duLlt" role="3clF45" />
+      <node concept="3Tm1VV" id="18zTa4duLlu" role="1B3o_S" />
+      <node concept="3clFbS" id="18zTa4duLlv" role="3clF47">
+        <node concept="3clFbH" id="18zTa4duLlw" role="3cqZAp" />
+        <node concept="3SKdUt" id="18zTa4duLlx" role="3cqZAp">
+          <node concept="3SKdUq" id="18zTa4duLly" role="3SKWNk">
+            <property role="3SKdUp" value="Use the external code block to compute outside the circuit (More on its usage later in documentation)" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="18zTa4duLlz" role="3cqZAp">
+          <node concept="3SKdUq" id="18zTa4duLl$" role="3SKWNk">
+            <property role="3SKdUp" value="The values this block reads from the circuit are the latest values assigned to the variables it relies on, " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="18zTa4duLl_" role="3cqZAp">
+          <node concept="3SKdUq" id="18zTa4duLlA" role="3SKWNk">
+            <property role="3SKdUp" value="therefore, care is sometimes needed. The following case is simple though." />
+          </node>
+        </node>
+        <node concept="2DjkfC" id="18zTa4duLlB" role="3cqZAp">
+          <node concept="3clFbS" id="18zTa4duLlC" role="9aQI4">
+            <node concept="3clFbH" id="18zTa4duLlD" role="3cqZAp" />
+            <node concept="3cpWs8" id="18zTa4duLlE" role="3cqZAp">
+              <node concept="3cpWsn" id="18zTa4duLlF" role="3cpWs9">
+                <property role="TrG5h" value="values" />
+                <node concept="10Q1$e" id="18zTa4duLlG" role="1tU5fm">
+                  <node concept="3uibUv" id="18zTa4duLlH" role="10Q1$1">
+                    <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="18zTa4duLlI" role="33vP2m">
+                  <node concept="3$_iS1" id="18zTa4duLlJ" role="2ShVmc">
+                    <node concept="3$GHV9" id="18zTa4duLlK" role="3$GQph">
+                      <node concept="37vLTw" id="18zTa4duLpt" role="3$I4v7">
+                        <ref role="3cqZAo" node="18zTa4duLkS" resolve="SIZE" />
+                      </node>
+                    </node>
+                    <node concept="3uibUv" id="18zTa4duLlL" role="3$_nBY">
+                      <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="18zTa4duLlM" role="3cqZAp">
+              <node concept="3SKdUq" id="18zTa4duLlN" role="3SKWNk">
+                <property role="3SKdUp" value="read the value from the circuit" />
+              </node>
+            </node>
+            <node concept="1Dw8fO" id="18zTa4duLlO" role="3cqZAp">
+              <node concept="3clFbS" id="18zTa4duLlP" role="2LFqv$">
+                <node concept="3clFbF" id="18zTa4duLlQ" role="3cqZAp">
+                  <node concept="37vLTI" id="18zTa4duLlR" role="3clFbG">
+                    <node concept="AH0OO" id="18zTa4duLlS" role="37vLTJ">
+                      <node concept="37vLTw" id="18zTa4duLlT" role="AHEQo">
+                        <ref role="3cqZAo" node="18zTa4duLm0" resolve="i" />
+                      </node>
+                      <node concept="37vLTw" id="18zTa4duLlU" role="AHHXb">
+                        <ref role="3cqZAo" node="18zTa4duLlF" resolve="values" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="18zTa4duLlV" role="37vLTx">
+                      <node concept="AH0OO" id="18zTa4duLlW" role="2Oq$k0">
+                        <node concept="37vLTw" id="18zTa4duLlX" role="AHEQo">
+                          <ref role="3cqZAo" node="18zTa4duLm0" resolve="i" />
+                        </node>
+                        <node concept="37vLTw" id="18zTa4duLlY" role="AHHXb">
+                          <ref role="3cqZAo" node="18zTa4duLkW" resolve="unsortedArray" />
+                        </node>
+                      </node>
+                      <node concept="2Ds8w2" id="18zTa4duLlZ" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="18zTa4duLm0" role="1Duv9x">
+                <property role="TrG5h" value="i" />
+                <node concept="10Oyi0" id="18zTa4duLm1" role="1tU5fm" />
+                <node concept="3cmrfG" id="18zTa4duLm2" role="33vP2m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+              <node concept="3eOVzh" id="18zTa4duLm3" role="1Dwp0S">
+                <node concept="37vLTw" id="18zTa4duLpy" role="3uHU7w">
+                  <ref role="3cqZAo" node="18zTa4duLkS" resolve="SIZE" />
+                </node>
+                <node concept="37vLTw" id="18zTa4duLm4" role="3uHU7B">
+                  <ref role="3cqZAo" node="18zTa4duLm0" resolve="i" />
+                </node>
+              </node>
+              <node concept="3uNrnE" id="18zTa4duLm5" role="1Dwrff">
+                <node concept="37vLTw" id="18zTa4duLm6" role="2$L3a6">
+                  <ref role="3cqZAo" node="18zTa4duLm0" resolve="i" />
+                </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="18zTa4duLna" role="3cqZAp">
+              <node concept="3SKdUq" id="18zTa4duLnb" role="3SKWNk">
+                <property role="3SKdUp" value="sort the array itself" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="18zTa4duLnc" role="3cqZAp">
+              <node concept="2YIFZM" id="18zTa4duLnd" role="3clFbG">
+                <ref role="37wK5l" to="33ny:~Arrays.sort(java.lang.Object[]):void" resolve="sort" />
+                <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+                <node concept="37vLTw" id="18zTa4duLne" role="37wK5m">
+                  <ref role="3cqZAo" node="18zTa4duLlF" resolve="values" />
+                </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="18zTa4duLnf" role="3cqZAp">
+              <node concept="3SKdUq" id="18zTa4duLng" role="3SKWNk">
+                <property role="3SKdUp" value="assign the sorted values to our witnesses" />
+              </node>
+            </node>
+            <node concept="1Dw8fO" id="18zTa4duLnh" role="3cqZAp">
+              <node concept="3cpWsn" id="18zTa4duLni" role="1Duv9x">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="i" />
+                <node concept="10Oyi0" id="18zTa4duLnj" role="1tU5fm" />
+                <node concept="3cmrfG" id="18zTa4duLnk" role="33vP2m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+              <node concept="3eOVzh" id="18zTa4duLnl" role="1Dwp0S">
+                <node concept="37vLTw" id="18zTa4duLnm" role="3uHU7B">
+                  <ref role="3cqZAo" node="18zTa4duLni" resolve="i" />
+                </node>
+                <node concept="37vLTw" id="18zTa4duLpV" role="3uHU7w">
+                  <ref role="3cqZAo" node="18zTa4duLkS" resolve="SIZE" />
+                </node>
+              </node>
+              <node concept="3uNrnE" id="18zTa4duLnn" role="1Dwrff">
+                <node concept="37vLTw" id="18zTa4duLno" role="2$L3a6">
+                  <ref role="3cqZAo" node="18zTa4duLni" resolve="i" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="18zTa4duLnp" role="2LFqv$">
+                <node concept="3clFbF" id="18zTa4duLnq" role="3cqZAp">
+                  <node concept="37vLTI" id="18zTa4duLnr" role="3clFbG">
+                    <node concept="AH0OO" id="18zTa4duLns" role="37vLTx">
+                      <node concept="37vLTw" id="18zTa4duLnt" role="AHEQo">
+                        <ref role="3cqZAo" node="18zTa4duLni" resolve="i" />
+                      </node>
+                      <node concept="37vLTw" id="18zTa4duLnu" role="AHHXb">
+                        <ref role="3cqZAo" node="18zTa4duLlF" resolve="values" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="18zTa4duLnv" role="37vLTJ">
+                      <node concept="AH0OO" id="18zTa4duLnw" role="2Oq$k0">
+                        <node concept="37vLTw" id="18zTa4duLnx" role="AHEQo">
+                          <ref role="3cqZAo" node="18zTa4duLni" resolve="i" />
+                        </node>
+                        <node concept="37vLTw" id="18zTa4duLny" role="AHHXb">
+                          <ref role="3cqZAo" node="18zTa4duLl4" resolve="sortedArray" />
+                        </node>
+                      </node>
+                      <node concept="2Ds8w2" id="18zTa4duLnz" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="18zTa4duLn$" role="3cqZAp" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="18zTa4duLnE" role="3cqZAp" />
+        <node concept="3SKdUt" id="18zTa4duLnF" role="3cqZAp">
+          <node concept="3SKdUq" id="18zTa4duLnG" role="3SKWNk">
+            <property role="3SKdUp" value="The part that is actually in the circuit" />
+          </node>
+        </node>
+        <node concept="2H3G7l" id="18zTa4duLnH" role="3cqZAp">
+          <node concept="3qc1$W" id="18zTa4duLnI" role="2H3G7d">
+            <property role="3qc1Xj" value="16" />
+          </node>
+          <node concept="37vLTw" id="18zTa4duLnJ" role="2H3G7c">
+            <ref role="3cqZAo" node="18zTa4duLkW" resolve="unsortedArray" />
+          </node>
+          <node concept="37vLTw" id="18zTa4duLnK" role="2H3G79">
+            <ref role="3cqZAo" node="18zTa4duLl4" resolve="sortedArray" />
+          </node>
+          <node concept="Xl_RD" id="18zTa4duLnL" role="2H3G75" />
+        </node>
+        <node concept="3clFbH" id="18zTa4duLnM" role="3cqZAp" />
+        <node concept="1Dw8fO" id="18zTa4duLnN" role="3cqZAp">
+          <node concept="3clFbS" id="18zTa4duLnO" role="2LFqv$">
+            <node concept="2DKZvD" id="18zTa4duLnP" role="3cqZAp">
+              <node concept="2dkUwp" id="18zTa4duLnQ" role="2DKX1R">
+                <node concept="AH0OO" id="18zTa4duLnR" role="3uHU7w">
+                  <node concept="3cpWs3" id="18zTa4duLnS" role="AHEQo">
+                    <node concept="3cmrfG" id="18zTa4duLnT" role="3uHU7w">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                    <node concept="37vLTw" id="18zTa4duLnU" role="3uHU7B">
+                      <ref role="3cqZAo" node="18zTa4duLnZ" resolve="i" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="18zTa4duLnV" role="AHHXb">
+                    <ref role="3cqZAo" node="18zTa4duLl4" resolve="sortedArray" />
+                  </node>
+                </node>
+                <node concept="AH0OO" id="18zTa4duLnW" role="3uHU7B">
+                  <node concept="37vLTw" id="18zTa4duLnX" role="AHEQo">
+                    <ref role="3cqZAo" node="18zTa4duLnZ" resolve="i" />
+                  </node>
+                  <node concept="37vLTw" id="18zTa4duLnY" role="AHHXb">
+                    <ref role="3cqZAo" node="18zTa4duLl4" resolve="sortedArray" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="18zTa4duLnZ" role="1Duv9x">
+            <property role="TrG5h" value="i" />
+            <node concept="10Oyi0" id="18zTa4duLo0" role="1tU5fm" />
+            <node concept="3cmrfG" id="18zTa4duLo1" role="33vP2m">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+          <node concept="3eOVzh" id="18zTa4duLo2" role="1Dwp0S">
+            <node concept="37vLTw" id="18zTa4duLo3" role="3uHU7B">
+              <ref role="3cqZAo" node="18zTa4duLnZ" resolve="i" />
+            </node>
+            <node concept="3cpWsd" id="18zTa4duLo4" role="3uHU7w">
+              <node concept="3cmrfG" id="18zTa4duLo5" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="37vLTw" id="18zTa4duLq0" role="3uHU7B">
+                <ref role="3cqZAo" node="18zTa4duLkS" resolve="SIZE" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uNrnE" id="18zTa4duLo6" role="1Dwrff">
+            <node concept="37vLTw" id="18zTa4duLo7" role="2$L3a6">
+              <ref role="3cqZAo" node="18zTa4duLnZ" resolve="i" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="18zTa4duLo8" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="18zTa4duLo9" role="jymVt" />
+    <node concept="2tJIrI" id="18zTa4duLoa" role="jymVt" />
+    <node concept="1UYk92" id="18zTa4duLob" role="jymVt">
+      <property role="3j8K$S" value="true" />
+      <property role="3jfa3H" value="Sample_Run1" />
+      <node concept="3jfauB" id="18zTa4duLoc" role="3jfavw">
+        <node concept="3clFbS" id="18zTa4duLod" role="3jfauw">
+          <node concept="3SKdUt" id="18zTa4duLoe" role="3cqZAp">
+            <node concept="3SKdUq" id="18zTa4duLof" role="3SKWNk">
+              <property role="3SKdUp" value="assign random values to input" />
+            </node>
+          </node>
+          <node concept="1Dw8fO" id="18zTa4duLog" role="3cqZAp">
+            <node concept="3cpWsn" id="18zTa4duLoh" role="1Duv9x">
+              <property role="TrG5h" value="i" />
+              <node concept="10Oyi0" id="18zTa4duLoi" role="1tU5fm" />
+              <node concept="3cmrfG" id="18zTa4duLoj" role="33vP2m">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="18zTa4duLok" role="2LFqv$">
+              <node concept="3clFbF" id="18zTa4duLol" role="3cqZAp">
+                <node concept="37vLTI" id="18zTa4duLom" role="3clFbG">
+                  <node concept="2OqwBi" id="18zTa4duLon" role="37vLTJ">
+                    <node concept="AH0OO" id="18zTa4duLoo" role="2Oq$k0">
+                      <node concept="37vLTw" id="18zTa4duLop" role="AHEQo">
+                        <ref role="3cqZAo" node="18zTa4duLoh" resolve="i" />
+                      </node>
+                      <node concept="37vLTw" id="18zTa4duLoq" role="AHHXb">
+                        <ref role="3cqZAo" node="18zTa4duLkW" resolve="unsortedArray" />
+                      </node>
+                    </node>
+                    <node concept="2Ds8w2" id="18zTa4duLor" role="2OqNvi" />
+                  </node>
+                  <node concept="2YIFZM" id="18zTa4duLos" role="37vLTx">
+                    <ref role="37wK5l" to="562q:~Util.nextRandomBigInteger(int):java.math.BigInteger" resolve="nextRandomBigInteger" />
+                    <ref role="1Pybhc" to="562q:~Util" resolve="Util" />
+                    <node concept="3cmrfG" id="18zTa4duLot" role="37wK5m">
+                      <property role="3cmrfH" value="16" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3eOVzh" id="18zTa4duLou" role="1Dwp0S">
+              <node concept="37vLTw" id="18zTa4duLov" role="3uHU7B">
+                <ref role="3cqZAo" node="18zTa4duLoh" resolve="i" />
+              </node>
+              <node concept="37vLTw" id="18zTa4duLq5" role="3uHU7w">
+                <ref role="3cqZAo" node="18zTa4duLkS" resolve="SIZE" />
+              </node>
+            </node>
+            <node concept="3uNrnE" id="18zTa4duLow" role="1Dwrff">
+              <node concept="37vLTw" id="18zTa4duLox" role="2$L3a6">
+                <ref role="3cqZAo" node="18zTa4duLoh" resolve="i" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3jfavX" id="18zTa4duLoy" role="3jfasw">
+        <node concept="3clFbS" id="18zTa4duLoz" role="3jfavY">
+          <node concept="3SKdUt" id="18zTa4duLo$" role="3cqZAp">
+            <node concept="3SKdUq" id="18zTa4duLo_" role="3SKWNk">
+              <property role="3SKdUp" value=" elements should be sorted. If sorting in the external block is done wrong, failed assertions will appear" />
+            </node>
+          </node>
+          <node concept="1Dw8fO" id="18zTa4duLoA" role="3cqZAp">
+            <node concept="3cpWsn" id="18zTa4duLoB" role="1Duv9x">
+              <property role="TrG5h" value="i" />
+              <node concept="10Oyi0" id="18zTa4duLoC" role="1tU5fm" />
+              <node concept="3cmrfG" id="18zTa4duLoD" role="33vP2m">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="18zTa4duLoE" role="2LFqv$">
+              <node concept="3clFbF" id="18zTa4duLoF" role="3cqZAp">
+                <node concept="2OqwBi" id="18zTa4duLoG" role="3clFbG">
+                  <node concept="10M0yZ" id="18zTa4duLoH" role="2Oq$k0">
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                  </node>
+                  <node concept="liA8E" id="18zTa4duLoI" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="3cpWs3" id="18zTa4duLoJ" role="37wK5m">
+                      <node concept="2OqwBi" id="18zTa4duLoK" role="3uHU7w">
+                        <node concept="AH0OO" id="18zTa4duLoL" role="2Oq$k0">
+                          <node concept="37vLTw" id="18zTa4duLoM" role="AHEQo">
+                            <ref role="3cqZAo" node="18zTa4duLoB" resolve="i" />
+                          </node>
+                          <node concept="37vLTw" id="18zTa4duLoN" role="AHHXb">
+                            <ref role="3cqZAo" node="18zTa4duLl4" resolve="sortedArray" />
+                          </node>
+                        </node>
+                        <node concept="2Ds8w2" id="18zTa4duLoO" role="2OqNvi" />
+                      </node>
+                      <node concept="3cpWs3" id="18zTa4duLoP" role="3uHU7B">
+                        <node concept="3cpWs3" id="18zTa4duLoQ" role="3uHU7B">
+                          <node concept="Xl_RD" id="18zTa4duLoR" role="3uHU7B">
+                            <property role="Xl_RC" value="Element at " />
+                          </node>
+                          <node concept="37vLTw" id="18zTa4duLoS" role="3uHU7w">
+                            <ref role="3cqZAo" node="18zTa4duLoB" resolve="i" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="18zTa4duLoT" role="3uHU7w">
+                          <property role="Xl_RC" value=" &gt; " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3eOVzh" id="18zTa4duLoU" role="1Dwp0S">
+              <node concept="37vLTw" id="18zTa4duLoV" role="3uHU7B">
+                <ref role="3cqZAo" node="18zTa4duLoB" resolve="i" />
+              </node>
+              <node concept="37vLTw" id="18zTa4duLqd" role="3uHU7w">
+                <ref role="3cqZAo" node="18zTa4duLkS" resolve="SIZE" />
+              </node>
+            </node>
+            <node concept="3uNrnE" id="18zTa4duLoW" role="1Dwrff">
+              <node concept="37vLTw" id="18zTa4duLoX" role="2$L3a6">
+                <ref role="3cqZAo" node="18zTa4duLoB" resolve="i" />
+              </node>
+            </node>
+          </node>
+          <node concept="3SKdUt" id="18zTa4duLoY" role="3cqZAp">
+            <node concept="3SKdUq" id="18zTa4duLoZ" role="3SKWNk">
+              <property role="3SKdUp" value="disable the print statement above, and" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="18zTa4duLp0" role="3cqZAp">
+            <node concept="3SKdUq" id="18zTa4duLp1" role="3SKWNk">
+              <property role="3SKdUp" value="try comment the Arrays.sort(values) or assign other values: Failed assertions should appeaar." />
+            </node>
+          </node>
+          <node concept="3clFbH" id="18zTa4duLp2" role="3cqZAp" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="18zTa4duLp3" role="jymVt" />
+    <node concept="2tJIrI" id="18zTa4duLp4" role="jymVt" />
+    <node concept="2YIFZL" id="18zTa4duLp5" role="jymVt">
+      <property role="TrG5h" value="main" />
+      <node concept="3cqZAl" id="18zTa4duLp6" role="3clF45" />
+      <node concept="3Tm1VV" id="18zTa4duLp7" role="1B3o_S" />
+      <node concept="3clFbS" id="18zTa4duLp8" role="3clF47">
+        <node concept="3SKdUt" id="18zTa4duLp9" role="3cqZAp">
+          <node concept="3SKdUq" id="18zTa4duLpa" role="3SKWNk">
+            <property role="3SKdUp" value="This is the java main method. Its purpose is to make the Progam runnable in the environment" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="18zTa4duLpb" role="3cqZAp">
+          <node concept="3SKdUq" id="18zTa4duLpc" role="3SKWNk">
+            <property role="3SKdUp" value="This method can be left empty, or used to set Configuration params (see examples)" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="18zTa4duLpd" role="3clF46">
+        <property role="TrG5h" value="args" />
+        <node concept="10Q1$e" id="18zTa4duLpe" role="1tU5fm">
+          <node concept="17QB3L" id="18zTa4duLpf" role="10Q1$1" />
         </node>
       </node>
     </node>

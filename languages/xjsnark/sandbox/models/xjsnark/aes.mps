@@ -1196,8 +1196,7 @@
     <node concept="DJdLC" id="2qKKpueTEOJ" role="jymVt">
       <property role="DRO8Q" value="Note also that xjsnark class variables should not be declared as final or static" />
     </node>
-    <node concept="2tJIrI" id="6w4Q6Pf$W4x" role="jymVt" />
-    <node concept="2tJIrI" id="2qKKpueTLrD" role="jymVt" />
+    <node concept="2tJIrI" id="18zTa4dYQAq" role="jymVt" />
     <node concept="DJdLC" id="6w4Q6Pf_e6D" role="jymVt">
       <property role="DRO8Q" value="here we use a RAM, not an array, as the sBox is being accessed randomly. We do initialization later. " />
     </node>
@@ -1213,13 +1212,12 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="2qKKpueTxDi" role="jymVt" />
-    <node concept="2tJIrI" id="2qKKpueTSsj" role="jymVt" />
+    <node concept="2tJIrI" id="2qKKpugrtZs" role="jymVt" />
     <node concept="DJdLC" id="6w4Q6Pf_fs3" role="jymVt">
-      <property role="DRO8Q" value="in real contexts, the key and the plaintext are usually witnesses, but just for simplicity now" />
+      <property role="DRO8Q" value="in real contexts, the key and the plaintext are usually witnesses (and should appear under witnesses_AssertRange)" />
     </node>
-    <node concept="DJdLC" id="6w4Q6Pf_gIa" role="jymVt">
-      <property role="DRO8Q" value="we labeled them as inputs" />
+    <node concept="DJdLC" id="18zTa4dYHy8" role="jymVt">
+      <property role="DRO8Q" value=", but just for simplicity now, they are labeled as inputs" />
     </node>
     <node concept="3q8xyn" id="6w4Q6Pf$W4z" role="jymVt">
       <node concept="37vLTw" id="6w4Q6Pf_6N3" role="3q8w2r">
@@ -1420,8 +1418,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="65efhJE8K05" role="3cqZAp" />
-        <node concept="3clFbH" id="65efhJE8Lba" role="3cqZAp" />
         <node concept="3clFbF" id="2wcORY5dk2w" role="3cqZAp">
           <node concept="37vLTI" id="2wcORY5dk6P" role="3clFbG">
             <node concept="1rXfSq" id="2wcORY5dk8P" role="37vLTx">
@@ -1732,7 +1728,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6w4Q6Pf_aex" role="3cqZAp" />
       </node>
     </node>
     <node concept="2tJIrI" id="6w4Q6Pf$W4J" role="jymVt" />
@@ -2172,6 +2167,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="18zTa4dYWC0" role="3cqZAp" />
         <node concept="3cpWs8" id="2wcORY57XPR" role="3cqZAp">
           <node concept="3cpWsn" id="2wcORY57XPU" role="3cpWs9">
             <property role="TrG5h" value="idx" />
@@ -2181,7 +2177,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2wcORY57YHC" role="3cqZAp" />
         <node concept="1Dw8fO" id="2wcORY57YqE" role="3cqZAp">
           <node concept="3clFbS" id="2wcORY57YqG" role="2LFqv$">
             <node concept="1Dw8fO" id="2wcORY582f3" role="3cqZAp">
@@ -3476,6 +3471,8 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2qKKpueYO4s" role="jymVt" />
+    <node concept="2tJIrI" id="18zTa4dYYBK" role="jymVt" />
+    <node concept="2tJIrI" id="18zTa4dZ09c" role="jymVt" />
     <node concept="3clFb_" id="2wcORY58y6u" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addRoundkey" />
@@ -3666,7 +3663,6 @@
               <property role="3SKdUp" value="assigning values to inputs" />
             </node>
           </node>
-          <node concept="3clFbH" id="2qKKpueSEYx" role="3cqZAp" />
           <node concept="3cpWs8" id="6w4Q6P1_msG" role="3cqZAp">
             <node concept="3cpWsn" id="6w4Q6P1_msF" role="3cpWs9">
               <property role="3TUv4t" value="false" />
@@ -4059,8 +4055,6 @@
             <property role="3SKdUp" value="This method can be left empty, or used to set Configuration params (see other examples)" />
           </node>
         </node>
-        <node concept="3clFbH" id="17j6vqJOGlt" role="3cqZAp" />
-        <node concept="3clFbH" id="6w4Q6Pf_hpa" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="6w4Q6Pf$W4W" role="3clF46">
         <property role="TrG5h" value="args" />

@@ -193,7 +193,6 @@
         <child id="2787941026031223913" name="argument" index="2DT8nY" />
         <child id="2787941026031223912" name="jType" index="2DT8nZ" />
       </concept>
-      <concept id="2280652579997648326" name="xjsnark.structure.FieldInverseOp" flags="ng" index="Ts0iQ" />
       <concept id="6555837584709755947" name="xjsnark.structure.PreTestBlock" flags="ng" index="3jfauB">
         <child id="6555837584709755948" name="statements" index="3jfauw" />
       </concept>
@@ -223,18 +222,8 @@
       <concept id="6238098797407520605" name="xjsnark.structure.BitsOp" flags="ng" index="1VPAEj" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -242,14 +231,6 @@
     <node concept="2D77rq" id="2qKKpuf8m4A" role="2D75qn">
       <property role="2D74mG" value="115792089210356248762697446949407573530086143415290314195533631308867097853951" />
       <property role="TrG5h" value="p256" />
-    </node>
-    <node concept="2D77rq" id="2qKKpugtpOU" role="2D75qn">
-      <property role="TrG5h" value="swifft" />
-      <property role="2D74mG" value="257" />
-    </node>
-    <node concept="2D77rq" id="2qKKpugtpRx" role="2D75qn">
-      <property role="TrG5h" value="native" />
-      <property role="2D74mG" value="21888242871839275222246405745257275088548364400416034343698204186575808495617" />
     </node>
   </node>
   <node concept="1KMFyu" id="2qKKpuf8meM">
@@ -300,7 +281,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2qKKpugiD3M" role="jymVt" />
-    <node concept="2tJIrI" id="2qKKpugsDah" role="jymVt" />
     <node concept="DJdLC" id="2qKKpufKkDk" role="jymVt">
       <property role="DRO8Q" value="we denote that this is a private witness below" />
     </node>
@@ -326,6 +306,15 @@
     <node concept="2tJIrI" id="2qKKpufKmgC" role="jymVt" />
     <node concept="3qdm3p" id="2qKKpuf8meU" role="jymVt" />
     <node concept="2tJIrI" id="2qKKpufKlOn" role="jymVt" />
+    <node concept="DJdLC" id="2qKKpuf7xo7" role="jymVt">
+      <property role="DRO8Q" value="Here we want to verify the ranges of the wires representing sk so that the prover does not cheat using " />
+    </node>
+    <node concept="DJdLC" id="5tgzV4FBcMd" role="jymVt">
+      <property role="DRO8Q" value="arithmetic overflows. " />
+    </node>
+    <node concept="DJdLC" id="2qKKpuf7xv1" role="jymVt">
+      <property role="DRO8Q" value="Use this block to label witnesses if not sure whether range checks are needed or not." />
+    </node>
     <node concept="zxlm7" id="2qKKpuf8meV" role="jymVt">
       <node concept="37vLTw" id="2qKKpuf8BT0" role="zxlm6">
         <ref role="3cqZAo" node="2qKKpuf8BFS" resolve="sk" />
@@ -601,7 +590,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2qKKpufGttW" role="3cqZAp" />
+        <node concept="3clFbH" id="1t1EHTMeCpj" role="3cqZAp" />
         <node concept="1Dw8fO" id="2qKKpuff7NW" role="3cqZAp">
           <node concept="3clFbS" id="2qKKpuff7NY" role="2LFqv$">
             <node concept="3clFbJ" id="2qKKpuff9cr" role="3cqZAp">
@@ -799,6 +788,9 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2qKKpuf8mf5" role="jymVt" />
+    <node concept="DJdLC" id="2d34WELgAAy" role="jymVt">
+      <property role="DRO8Q" value="adds two EC points (Affine Coordinates)" />
+    </node>
     <node concept="3clFb_" id="2qKKpuf8EMe" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addPoints" />
@@ -806,43 +798,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2qKKpuf8EMh" role="3clF47">
-        <node concept="1X3_iC" id="3ZyZ1ekjHeF" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="2qKKpuf8Hkr" role="8Wnug">
-            <node concept="3cpWsn" id="2qKKpuf8Hku" role="3cpWs9">
-              <property role="TrG5h" value="lambda" />
-              <node concept="2D7PWU" id="2qKKpuf8Hkq" role="1tU5fm">
-                <ref role="2D7PX4" node="2qKKpuf8m4A" resolve="p256" />
-              </node>
-              <node concept="17qRlL" id="2qKKpuf8If4" role="33vP2m">
-                <node concept="2OqwBi" id="2qKKpuf8IuK" role="3uHU7w">
-                  <node concept="1eOMI4" id="2qKKpuf8Ij1" role="2Oq$k0">
-                    <node concept="3cpWsd" id="2qKKpuf8Iri" role="1eOMHV">
-                      <node concept="37vLTw" id="2qKKpuf8Is$" role="3uHU7w">
-                        <ref role="3cqZAo" node="2qKKpuf8G_m" resolve="x1" />
-                      </node>
-                      <node concept="37vLTw" id="2qKKpuf8Ipu" role="3uHU7B">
-                        <ref role="3cqZAo" node="2qKKpuf8H0J" resolve="x2" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Ts0iQ" id="2qKKpuf8Ixf" role="2OqNvi" />
-                </node>
-                <node concept="1eOMI4" id="2qKKpuf8HV0" role="3uHU7B">
-                  <node concept="3cpWsd" id="2qKKpuf8I5r" role="1eOMHV">
-                    <node concept="37vLTw" id="2qKKpuf8IcJ" role="3uHU7w">
-                      <ref role="3cqZAo" node="2qKKpuf8GRA" resolve="y1" />
-                    </node>
-                    <node concept="37vLTw" id="2qKKpuf8IaQ" role="3uHU7B">
-                      <ref role="3cqZAo" node="2qKKpuf8H8l" resolve="y2" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="3ZyZ1ekjGS5" role="3cqZAp">
           <node concept="3cpWsn" id="3ZyZ1ekjGS6" role="3cpWs9">
             <property role="TrG5h" value="lambda" />
@@ -1096,7 +1051,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2qKKpufMYY5" role="3cqZAp" />
         <node concept="3cpWs6" id="2qKKpuf8Tg_" role="3cqZAp">
           <node concept="2ShNRf" id="2qKKpuf8Tm4" role="3cqZAk">
             <node concept="3g6Rrh" id="2qKKpuf8Twl" role="2ShVmc">
