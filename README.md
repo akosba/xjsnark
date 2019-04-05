@@ -12,7 +12,7 @@ This table includes a list of the examples that are currently available in the r
 
 | Example ([previews](https://github.com/akosba/xjsnark/tree/master/code_previews#code-previews)) | Description | Number of constraints |
 | ----- | --- | --- |
-| [Sudoku 9x9](https://github.com/akosba/xjsnark/tree/master/code_previews#sudoku-9x9)  | This example shows how to write an efficient circuit proving the knowledge of a valid 9x9 sudoku puzzle solution, using built-in permutation verification and constraints on native field elements. | 729 |
+| [Sudoku 9x9](https://github.com/akosba/xjsnark/tree/master/code_previews#sudoku-9x9)  | This example shows how to write an efficient circuit proving the knowledge of a valid 9x9 sudoku puzzle solution, using built-in permutation verification and constraints on native field elements. | 756 |
 | [SHA-256 (Unpadded)](https://github.com/akosba/xjsnark/tree/master/code_previews/README.md#sha-256-unpadded) |  High-level implementation of SHA-256 which is compiled to an optimized circuit similar to the one produced by manual/low-level libraries, as in [jsnark](https://github.com/akosba/jsnark). | 25538 | 
 | [AES 128](https://github.com/akosba/xjsnark/tree/master/code_previews/README.md#aes-128) |  This example applies an improved technique for S-Box implementation in the back end. The reported cost is for encrypting 1 block and includes the cost of the key expansion | 14240 |
 | [RSA Secret Key Knowledge](https://github.com/akosba/xjsnark/tree/master/code_previews/README.md#rsa-secret-key-knowledge)  |  This example illustrates the native long integer types and the underlying efficient long integer checks. The reported cost assumes a key size of 2048. | 2578 |
@@ -86,7 +86,7 @@ Note: To paste java code into the MPS framework, right click in the editor -> pa
 
 ### Debugging Circuits
 
-To trace the intermediate values of xJsnark variables/expressions, you could use the log instruction ``log(<expression>, "message")``. To view the values of the logged expressions, ``Config.debugVerbose`` will need to be enabled in the main method.
+To trace the intermediate values of xJsnark variables/expressions, you could use the log instruction ``log(<expression>, "message")``. To view the values of the logged expressions, ``Config.debugVerbose`` will need to be enabled in the main method. (To import the Config class when it is not visible, you could use using ctrl+r, while checking the non-project module box).
 
 ### Generating circuits on a different platform
 
