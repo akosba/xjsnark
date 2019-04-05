@@ -2,22 +2,24 @@
 
 This is a high-level framework for developing applications for zk-SNARKs. [xJsnark](http://www.cs.umd.edu/~akosba/papers/xjsnark.pdf) aims at bridging the gap between high-level programming and performance. It provides a collection of front end features that enables programmers to write zk-SNARK circuits in a higher level way than before (especially for cryptographic applications).  On the other side, xjsnark's back end uses several techniques to reduce the cost of the output circuits, which could finally get to the cost of manually-developed circuits for some applications.
 
-xJsnark's front end is currently developed as a java extension on top of Jetbrains MPS V 3.3.5 (Installation instructions below). Using this framework enabled to have assistive customizable IDE features for our purposes, but users might need to get familiar to editing in this environment in the beginning. In the future, we will also consider extending the back end of our circuit generation to other front ends. xjsnark's back end code have not been released yet. It's just released as a jar with class files in this repo. 
+xJsnark's front end is currently developed as a java extension on top of Jetbrains MPS V 3.3.5 (Installation instructions below). Using this framework enabled to have assistive customizable IDE features for our purposes, but users might need to get familiar to editing in this environment in the beginning. In the future, we will also consider extending the back end of our circuit generation to other front ends. xJsnark's back end code have not been released yet. It's just released as a jar with class files in this repo. 
 
 At this point, xJsnark produces circuits using the same format as [jsnark](https://github.com/akosba/jsnark), which are transformed to r1cs constraints using the jsnark-libsnark interface (See guidelines below about how to run xJsnark circuits on libsnark).
 
 ### Examples included 
 
-This is a list of the examples included in this release. Note that the code is viewable through the framework after checking out the project. The code of some of these examples, like the ZeroCash pour circuit, or RSA can be found in the [online full version of the paper](http://www.cs.umd.edu/~akosba/papers/xjsnark.pdf), with minor differences.
+This table includes a list of the examples that are currently available in the repository, with the current number of gates and links to code previews. Please note that the code is editable through the framework after checking out the project. Also, the front end has some updates compared to the examples presented in the paper, so please refer to the most recent version of the examples and the comments within the code, when using the framework.
 
-- **SHA-256**: High-level implementation of SHA-256 that is compiled to an optimized circuit that is similar to the one produced by manual/low-level libraries, as in [jsnark](https://github.com/akosba/jsnark).
-- **AES-128**: This example applies an improved technique for S-Box implementation in the back end. See the paper for details.
-- **Secret Key Knowledge for RSA**: This example illustrates the native long integer types.
-- **Secret Key Knowledge for ECDSA (NIST P-256 Curve)**: This example illustrates the customizable finite field types. Check FieldDefTable for the field definition. Note that the complexity of the code does not change when the field is different from the field that the zk-SNARK circuit uses. 
-- **Sorting verification using permutation verifier**: This example illustrates how to use the external code blocks for non-determinism (setting the values of the external witnesses provided by the prover), and the usage of the permutation verification native instruction which could enable writing more optimized circuits for some applications, like sorting, or pointer chasing.
-- **ZeroCash Pour Circuit**: High-level implementation of the Pour circuit in the [ZeroCash](http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf) paper, that results into an optimized circuit. The code can also be found in the appendix [here](http://www.cs.umd.edu/~akosba/papers/xjsnark.pdf). 
+| Example ([previews](https://github.com/akosba/xjsnark/tree/master/code_previews#code-previews)) | Description | Number of constraints |
+| ----- | --- | --- |
+| [Sudoku 9x9](https://github.com/akosba/xjsnark/tree/master/code_previews#sudoku-9x9)  | This example shows how to write an efficient circuit proving the knowledge of a valid 9x9 sudoku puzzle solution, using built-in permutation verification and constraints on native field elements. | 729 |
+| [SHA-256 (Unpadded)](https://github.com/akosba/xjsnark/blob/master/code_previews/readme.md#sha-256-unpadded) |  High-level implementation of SHA-256 which is compiled to an optimized circuit similar to the one produced by manual/low-level libraries, as in [jsnark](https://github.com/akosba/jsnark). | 25538 | 
+| [AES 128](https://github.com/akosba/xjsnark/blob/master/code_previews/readme.md#aes-128) |  This example applies an improved technique for S-Box implementation in the back end. The reported cost is for encrypting 1 block and includes the cost of the key expansion | 14240 |
+| [RSA Secret Key Knowledge](https://github.com/akosba/xjsnark/blob/master/code_previews/readme.md#rsa-secret-key-knowledge)  |  This example illustrates the native long integer types and the underlying efficient long integer checks. The reported cost assumes a key size of 2048. | 2578 |
+| [EC Secret Key Knowledge](https://github.com/akosba/xjsnark/blob/master/code_previews/readme.md#ec-secret-key-knowledge)| This example illustrates the customizable non-native finite field types. You can check FieldDefTable for the field definition. Note that the complexity of the code does not change when the field is different from the field that the zk-SNARK circuit uses. This example proves the knowledge of a secret key for an ECDSA public key using the Nist P-256 curve.  | 687228 |
+| [Sorting](https://github.com/akosba/xjsnark/blob/master/code_previews/readme.md#sorting)  | This example illustrates how to use the external code blocks for non-determinism (setting the values of the external witnesses provided by the prover), and the usage of the permutation verification native instruction which could enable writing more optimized circuits for some applications, like sorting, or pointer chasing. The reported cost is for sorting an array of 1024 16-bit unsigned integers.  | 29166 |
+| [ZeroCash Pour Circuit](https://github.com/akosba/xjsnark/blob/master/code_previews/readme.md#zerocash-pour-circuit)| High-level implementation of the Pour circuit in the [ZeroCash](http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf) paper, that results into an optimized circuit similar to the manually-optimized circuit. The number of constraints reported assumes a height of 64 for the Merkle trees. | 3814991 |
 
-Please stay tuned for more updates and examples. 
  
 ## Getting started 
  
@@ -82,6 +84,9 @@ To update the field configuration, the following can be done in the main method 
 ```
 Note: To paste java code into the MPS framework, right click in the editor -> paste as java statements (or java class content if the copied code appears outside methods). If the Config class is not visible, use ctrl+r as mentioned before.
 
+### Debugging Circuits
+
+To trace the intermediate values of xJsnark variables/expressions, you could use the log instruction ``log(<expression>, "message")``. To view the values of the logged expressions, ``Config.debugVerbose`` will need to be enabled in the main method.
 
 ### Generating circuits on a different platform
 
