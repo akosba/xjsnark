@@ -1,6 +1,6 @@
 # Code Previews
 
-For illustration purposes, this file includes snapshots from the examples currently implemented in the framework. The ``sample_generated_code`` directory shows the intermediate java files auto-generated after processing the example code shown below.
+For illustration purposes, this file includes snapshots from the examples currently implemented in the framework. The ``sample_generated_intermediate_code`` directory shows the intermediate java files auto-generated after processing the example code shown below.
 
 # Examples
 - [Sudoku 9x9](https://github.com/akosba/xjsnark/tree/master/code_previews#sudoku-9x9)
