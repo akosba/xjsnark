@@ -104,9 +104,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -245,7 +243,7 @@
     <node concept="312cEg" id="18zTa4d4Hyx" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="problem" />
+      <property role="TrG5h" value="puzzle" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="18zTa4d4Hre" role="1B3o_S" />
       <node concept="10Q1$e" id="18zTa4d4HtC" role="1tU5fm">
@@ -306,14 +304,15 @@
     </node>
     <node concept="2tJIrI" id="18zTa4d4ItK" role="jymVt" />
     <node concept="DJdLC" id="18zTa4d4HOd" role="jymVt">
-      <property role="DRO8Q" value="The problem matrix specifies the puzzle. The empty positions have a zero value. The prover is only allowed " />
+      <property role="DRO8Q" value="The puzzle matrix specifies the sudoku puzzle. The empty positions in the puzzle matrix have a zero value. " />
     </node>
-    <node concept="DJdLC" id="18zTa4dvMIm" role="jymVt">
-      <property role="DRO8Q" value="to replace the zero entries" />
+    <node concept="DJdLC" id="6rAc_GD9sFi" role="jymVt">
+      <property role="DRO8Q" value="The prover is only allowed to replace the zero entries." />
     </node>
+    <node concept="2tJIrI" id="6rAc_GD9uoK" role="jymVt" />
     <node concept="3q8xyn" id="18zTa4d4FrH" role="jymVt">
       <node concept="37vLTw" id="18zTa4d4HIg" role="3q8w2r">
-        <ref role="3cqZAo" node="18zTa4d4Hyx" resolve="problem" />
+        <ref role="3cqZAo" node="18zTa4d4Hyx" resolve="puzzle" />
       </node>
     </node>
     <node concept="2tJIrI" id="18zTa4d4IjV" role="jymVt" />
@@ -336,7 +335,7 @@
       <node concept="3clFbS" id="18zTa4d4FrQ" role="3clF47">
         <node concept="3SKdUt" id="18zTa4d4Kn3" role="3cqZAp">
           <node concept="3SKdUq" id="18zTa4d4Kn5" role="3SKWNk">
-            <property role="3SKdUp" value="first verify that the non-zero entries in the &quot;problem&quot; matrix are the same in the &quot;solution&quot; matrix" />
+            <property role="3SKdUp" value="first verify that the non-zero entries in the puzzle matrix are the same in the solution matrix" />
           </node>
         </node>
         <node concept="1Dw8fO" id="18zTa4d4Lfs" role="3cqZAp">
@@ -345,7 +344,7 @@
               <node concept="3clFbS" id="18zTa4d4LE$" role="2LFqv$">
                 <node concept="3SKdUt" id="18zTa4d4OiH" role="3cqZAp">
                   <node concept="3SKdUq" id="18zTa4d4OiJ" role="3SKWNk">
-                    <property role="3SKdUp" value="if problem[i][j] is not zero, then solution[i][j] must have the same value" />
+                    <property role="3SKdUp" value="if puzzle[i][j] is not zero, then solution[i][j] must have the same value" />
                   </node>
                 </node>
                 <node concept="veHTS" id="18zTa4dgQS4" role="3cqZAp">
@@ -372,7 +371,7 @@
                           <ref role="3cqZAo" node="18zTa4d4Lfv" resolve="i" />
                         </node>
                         <node concept="37vLTw" id="18zTa4dh1Ma" role="AHHXb">
-                          <ref role="3cqZAo" node="18zTa4d4Hyx" resolve="problem" />
+                          <ref role="3cqZAo" node="18zTa4d4Hyx" resolve="puzzle" />
                         </node>
                       </node>
                     </node>
@@ -386,7 +385,7 @@
                         <ref role="3cqZAo" node="18zTa4d4Lfv" resolve="i" />
                       </node>
                       <node concept="37vLTw" id="18zTa4dh1RZ" role="AHHXb">
-                        <ref role="3cqZAo" node="18zTa4d4Hyx" resolve="problem" />
+                        <ref role="3cqZAo" node="18zTa4d4Hyx" resolve="puzzle" />
                       </node>
                     </node>
                   </node>
@@ -446,7 +445,12 @@
         <node concept="3clFbH" id="6rAc_GCpoBB" role="3cqZAp" />
         <node concept="3SKdUt" id="18zTa4dw1R9" role="3cqZAp">
           <node concept="3SKdUq" id="18zTa4dw1Rb" role="3SKWNk">
-            <property role="3SKdUp" value="second, check that there are no repetitions in any row, column, or subsquare" />
+            <property role="3SKdUp" value="second, check that the prover only used valid values " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6rAc_GD9vvp" role="3cqZAp">
+          <node concept="3SKdUq" id="6rAc_GD9vvq" role="3SKWNk">
+            <property role="3SKdUp" value="and that there are no repetitions in any row, column, or subsquare" />
           </node>
         </node>
         <node concept="3cpWs8" id="18zTa4d4PbO" role="3cqZAp">
@@ -880,8 +884,6 @@
         <node concept="10Oyi0" id="18zTa4dqdWX" role="1tU5fm" />
       </node>
     </node>
-    <node concept="2tJIrI" id="18zTa4dpXNk" role="jymVt" />
-    <node concept="2tJIrI" id="18zTa4d4FrU" role="jymVt" />
     <node concept="2tJIrI" id="18zTa4dw9fX" role="jymVt" />
     <node concept="1UYk92" id="18zTa4d4FrV" role="jymVt">
       <property role="3j8K$S" value="true" />
@@ -890,7 +892,7 @@
         <node concept="3clFbS" id="18zTa4d4FrX" role="3jfauw">
           <node concept="3SKdUt" id="18zTa4d550t" role="3cqZAp">
             <node concept="3SKdUq" id="18zTa4d550v" role="3SKWNk">
-              <property role="3SKdUp" value="A simple problem with many possible solutions, just for testing" />
+              <property role="3SKdUp" value="A simple puzzle with many possible solutions, just for testing" />
             </node>
           </node>
           <node concept="3clFbH" id="18zTa4d54Yw" role="3cqZAp" />
@@ -1006,7 +1008,7 @@
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="18zTa4d56JZ" role="AHHXb">
-                                  <ref role="3cqZAo" node="18zTa4d4Hyx" resolve="problem" />
+                                  <ref role="3cqZAo" node="18zTa4d4Hyx" resolve="puzzle" />
                                 </node>
                               </node>
                             </node>
@@ -1110,7 +1112,7 @@
                                 </node>
                                 <node concept="AH0OO" id="18zTa4d5br0" role="AHHXb">
                                   <node concept="37vLTw" id="18zTa4d5br2" role="AHHXb">
-                                    <ref role="3cqZAo" node="18zTa4d4Hyx" resolve="problem" />
+                                    <ref role="3cqZAo" node="18zTa4d4Hyx" resolve="puzzle" />
                                   </node>
                                   <node concept="3cpWs3" id="18zTa4drzkq" role="AHEQo">
                                     <node concept="FJ1c_" id="18zTa4drzz4" role="3uHU7w">
@@ -1300,9 +1302,7 @@
         </node>
         <node concept="3clFbF" id="18zTa4dtHFn" role="3cqZAp">
           <node concept="37vLTI" id="18zTa4dtHJO" role="3clFbG">
-            <node concept="3clFbT" id="18zTa4dtHLY" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
+            <node concept="3clFbT" id="18zTa4dtHLY" role="37vLTx" />
             <node concept="10M0yZ" id="18zTa4dtHFm" role="37vLTJ">
               <ref role="1PxDUh" to="85wc:~Config" resolve="Config" />
               <ref role="3cqZAo" to="85wc:~Config.inputVerbose" resolve="inputVerbose" />
@@ -1311,9 +1311,7 @@
         </node>
         <node concept="3clFbF" id="18zTa4dO5GF" role="3cqZAp">
           <node concept="37vLTI" id="18zTa4dO5OU" role="3clFbG">
-            <node concept="3clFbT" id="18zTa4dO5QE" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
+            <node concept="3clFbT" id="18zTa4dO5QE" role="37vLTx" />
             <node concept="10M0yZ" id="18zTa4dO5GE" role="37vLTJ">
               <ref role="1PxDUh" to="85wc:~Config" resolve="Config" />
               <ref role="3cqZAo" to="85wc:~Config.debugVerbose" resolve="debugVerbose" />
