@@ -1,0 +1,1 @@
+This directory contains a sample of the intermediate java files generated after transforming the input user code. (See [Code Previews](https://github.com/akosba/xjsnark/blob/master/code_previews/README.md) for the code examples). 
