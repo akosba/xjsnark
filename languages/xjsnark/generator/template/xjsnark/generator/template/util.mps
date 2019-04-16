@@ -668,6 +668,37 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="7OFUa2xDidk" role="jymVt" />
+    <node concept="2YIFZL" id="7OFUa2xDhAo" role="jymVt">
+      <property role="TrG5h" value="isLiteralTypedAsBoolean" />
+      <node concept="10P_77" id="7OFUa2xDhAp" role="3clF45" />
+      <node concept="3Tm1VV" id="7OFUa2xDhAq" role="1B3o_S" />
+      <node concept="3clFbS" id="7OFUa2xDhAr" role="3clF47">
+        <node concept="3clFbF" id="7OFUa2xDhAs" role="3cqZAp">
+          <node concept="3y3z36" id="7OFUa2xDhAt" role="3clFbG">
+            <node concept="10Nm6u" id="7OFUa2xDhAu" role="3uHU7w" />
+            <node concept="1UaxmW" id="7OFUa2xDhAv" role="3uHU7B">
+              <node concept="2OqwBi" id="7OFUa2xDhAw" role="1Ub_4B">
+                <node concept="37vLTw" id="7OFUa2xDhAx" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7OFUa2xDhA$" resolve="node" />
+                </node>
+                <node concept="3JvlWi" id="7OFUa2xDhAy" role="2OqNvi" />
+              </node>
+              <node concept="1YaCAy" id="7OFUa2xDhAz" role="1Ub_4A">
+                <property role="TrG5h" value="jBooleanType" />
+                <ref role="1YaFvo" to="26c9:5u98M4xbjNn" resolve="JBooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7OFUa2xDhA$" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7OFUa2xDhA_" role="1tU5fm">
+          <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="5qibsSHjb4u" role="jymVt" />
     <node concept="2YIFZL" id="5qibsSHjckU" role="jymVt">
       <property role="TrG5h" value="getModulus" />

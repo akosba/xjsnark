@@ -652,7 +652,7 @@
               </node>
               <node concept="3SKdUt" id="6EgVhTBYd2M" role="3cqZAp">
                 <node concept="3SKdUq" id="6EgVhTBYd2O" role="3SKWNk">
-                  <property role="3SKdUp" value="only three-dimensional arrays are supported at this point" />
+                  <property role="3SKdUp" value="only three-dimensional arrays are supported at this point for primitive types" />
                 </node>
               </node>
               <node concept="3clFbJ" id="6EgVhTBQYf$" role="3cqZAp">
@@ -672,6 +672,18 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="2dkUwp" id="6EgVhTBQYSp" role="3clFbw">
+                  <node concept="37vLTw" id="6EgVhTBQYiF" role="3uHU7B">
+                    <ref role="3cqZAo" node="6EgVhTBQTcw" resolve="i" />
+                  </node>
+                  <node concept="3cmrfG" id="6EgVhTBQYrc" role="3uHU7w">
+                    <property role="3cmrfH" value="3" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="7OFUa2zazqY" role="3cqZAp">
+                <node concept="3clFbS" id="7OFUa2zazr0" role="3clFbx">
                   <node concept="3clFbJ" id="6w4Q6P9Orp1" role="3cqZAp">
                     <node concept="3clFbS" id="6w4Q6P9Orp2" role="3clFbx">
                       <node concept="3cpWs6" id="6w4Q6P9Orp3" role="3cqZAp" />
@@ -685,12 +697,12 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2dkUwp" id="6EgVhTBQYSp" role="3clFbw">
-                  <node concept="37vLTw" id="6EgVhTBQYiF" role="3uHU7B">
-                    <ref role="3cqZAo" node="6EgVhTBQTcw" resolve="i" />
+                <node concept="2dkUwp" id="7OFUa2zaz_c" role="3clFbw">
+                  <node concept="3cmrfG" id="7OFUa2zaz_t" role="3uHU7w">
+                    <property role="3cmrfH" value="1" />
                   </node>
-                  <node concept="3cmrfG" id="6EgVhTBQYrc" role="3uHU7w">
-                    <property role="3cmrfH" value="3" />
+                  <node concept="37vLTw" id="7OFUa2zazsM" role="3uHU7B">
+                    <ref role="3cqZAo" node="6EgVhTBQTcw" resolve="i" />
                   </node>
                 </node>
               </node>
@@ -711,7 +723,7 @@
           </node>
           <node concept="2MkqsV" id="6w4Q6P9Ouly" role="3cqZAp">
             <node concept="Xl_RD" id="6w4Q6P9Oulz" role="2MkJ7o">
-              <property role="Xl_RC" value="Variable reference type not supported/allowed to be labelled" />
+              <property role="Xl_RC" value="Variable reference type not supported/allowed to be labelled. \n Only up to three dimensional arrays of primtive xjsnark types and single dimension arrays \n of structs are supported for labeling at this point. This applies to internal struct elements as well when labeling. " />
             </node>
             <node concept="1YBJjd" id="6w4Q6P9Ouwj" role="2OEOjV">
               <ref role="1YBMHb" node="6w4Q6P9O6Ky" resolve="variableReference" />
