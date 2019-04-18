@@ -12396,5 +12396,285 @@
       <ref role="1YaFvo" to="tpee:fzclF8n" resolve="IfStatement" />
     </node>
   </node>
+  <node concept="18kY7G" id="2HQrZDN_$EE">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="EqualsExpressionwWithXJsnarkTypes" />
+    <node concept="3clFbS" id="2HQrZDN_$EF" role="18ibNy">
+      <node concept="3clFbJ" id="2HQrZDN_B78" role="3cqZAp">
+        <node concept="22lmx$" id="2HQrZDN_C2v" role="3clFbw">
+          <node concept="2OqwBi" id="2HQrZDN_BL3" role="3uHU7B">
+            <node concept="2OqwBi" id="2HQrZDN_BzI" role="2Oq$k0">
+              <node concept="2OqwBi" id="2HQrZDN_Bdb" role="2Oq$k0">
+                <node concept="1YBJjd" id="2HQrZDN_B9Q" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2HQrZDN_$T3" resolve="equalsExpression" />
+                </node>
+                <node concept="3TrEf2" id="2HQrZDN_Br0" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:fJuHU4s" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="2HQrZDN_BFQ" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="2HQrZDN_BRN" role="2OqNvi">
+              <node concept="chp4Y" id="2HQrZDN_BTa" role="cj9EA">
+                <ref role="cht4Q" to="26c9:65gbDjFWKi1" resolve="XjsnarkType" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2HQrZDN_C7f" role="3uHU7w">
+            <node concept="2OqwBi" id="2HQrZDN_C7g" role="2Oq$k0">
+              <node concept="2OqwBi" id="2HQrZDN_C7h" role="2Oq$k0">
+                <node concept="1YBJjd" id="2HQrZDN_C7i" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2HQrZDN_$T3" resolve="equalsExpression" />
+                </node>
+                <node concept="3TrEf2" id="2HQrZDN_Cx9" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:fJuHU4r" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="2HQrZDN_C7k" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="2HQrZDN_C7l" role="2OqNvi">
+              <node concept="chp4Y" id="2HQrZDN_C7m" role="cj9EA">
+                <ref role="cht4Q" to="26c9:65gbDjFWKi1" resolve="XjsnarkType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="2HQrZDN_B7a" role="3clFbx">
+          <node concept="a7r0C" id="2HQrZDN_CEX" role="3cqZAp">
+            <node concept="Xl_RD" id="2HQrZDN_CJN" role="a7wSD">
+              <property role="Xl_RC" value="Cannot use == for comparing xJsnark types. Use the EQ operator." />
+            </node>
+            <node concept="1YBJjd" id="2HQrZDN_CHO" role="2OEOjV">
+              <ref role="1YBMHb" node="2HQrZDN_$T3" resolve="equalsExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2HQrZDN_$T3" role="1YuTPh">
+      <property role="TrG5h" value="equalsExpression" />
+      <ref role="1YaFvo" to="tpee:fzclF8g" resolve="EqualsExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2HQrZDN_Dau">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="NotEqualsExpressionwWithXJsnarkTypes" />
+    <node concept="3clFbS" id="2HQrZDN_Dav" role="18ibNy">
+      <node concept="3clFbJ" id="2HQrZDN_Daw" role="3cqZAp">
+        <node concept="22lmx$" id="2HQrZDN_Dax" role="3clFbw">
+          <node concept="2OqwBi" id="2HQrZDN_Day" role="3uHU7B">
+            <node concept="2OqwBi" id="2HQrZDN_Daz" role="2Oq$k0">
+              <node concept="2OqwBi" id="2HQrZDN_Da$" role="2Oq$k0">
+                <node concept="1YBJjd" id="2HQrZDN_Da_" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2HQrZDN_DaQ" resolve="notEqualsExpression" />
+                </node>
+                <node concept="3TrEf2" id="2HQrZDN_DaA" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:fJuHU4s" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="2HQrZDN_DaB" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="2HQrZDN_DaC" role="2OqNvi">
+              <node concept="chp4Y" id="2HQrZDN_DaD" role="cj9EA">
+                <ref role="cht4Q" to="26c9:65gbDjFWKi1" resolve="XjsnarkType" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2HQrZDN_DaE" role="3uHU7w">
+            <node concept="2OqwBi" id="2HQrZDN_DaF" role="2Oq$k0">
+              <node concept="2OqwBi" id="2HQrZDN_DaG" role="2Oq$k0">
+                <node concept="1YBJjd" id="2HQrZDN_DaH" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2HQrZDN_DaQ" resolve="notEqualsExpression" />
+                </node>
+                <node concept="3TrEf2" id="2HQrZDN_DaI" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:fJuHU4r" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="2HQrZDN_DaJ" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="2HQrZDN_DaK" role="2OqNvi">
+              <node concept="chp4Y" id="2HQrZDN_DaL" role="cj9EA">
+                <ref role="cht4Q" to="26c9:65gbDjFWKi1" resolve="XjsnarkType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="2HQrZDN_DaM" role="3clFbx">
+          <node concept="a7r0C" id="2HQrZDN_DaN" role="3cqZAp">
+            <node concept="Xl_RD" id="2HQrZDN_DaO" role="a7wSD">
+              <property role="Xl_RC" value="Cannot use != for comparing xJsnark types. Use the NEQ operator." />
+            </node>
+            <node concept="1YBJjd" id="2HQrZDN_DaP" role="2OEOjV">
+              <ref role="1YBMHb" node="2HQrZDN_DaQ" resolve="notEqualsExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2HQrZDN_DaQ" role="1YuTPh">
+      <property role="TrG5h" value="notEqualsExpression" />
+      <ref role="1YaFvo" to="tpee:fBy3z0Z" resolve="NotEqualsExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2HQrZDNIy0l">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="ORExpressionwWithJBooleanTypes" />
+    <node concept="3clFbS" id="2HQrZDNIy0m" role="18ibNy">
+      <node concept="3clFbJ" id="2HQrZDNIy0n" role="3cqZAp">
+        <node concept="22lmx$" id="2HQrZDNIy0o" role="3clFbw">
+          <node concept="2OqwBi" id="2HQrZDNIy0p" role="3uHU7B">
+            <node concept="2OqwBi" id="2HQrZDNIy0q" role="2Oq$k0">
+              <node concept="2OqwBi" id="2HQrZDNIy0r" role="2Oq$k0">
+                <node concept="1YBJjd" id="2HQrZDNIy0s" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2HQrZDNIy0H" resolve="orExpression" />
+                </node>
+                <node concept="3TrEf2" id="2HQrZDNIy0t" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:fJuHU4s" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="2HQrZDNIy0u" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="2HQrZDNIy0v" role="2OqNvi">
+              <node concept="chp4Y" id="2HQrZDNIylM" role="cj9EA">
+                <ref role="cht4Q" to="26c9:5u98M4xbjNn" resolve="JBooleanType" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2HQrZDNIy0x" role="3uHU7w">
+            <node concept="2OqwBi" id="2HQrZDNIy0y" role="2Oq$k0">
+              <node concept="2OqwBi" id="2HQrZDNIy0z" role="2Oq$k0">
+                <node concept="1YBJjd" id="2HQrZDNIy0$" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2HQrZDNIy0H" resolve="orExpression" />
+                </node>
+                <node concept="3TrEf2" id="2HQrZDNIy0_" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:fJuHU4r" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="2HQrZDNIy0A" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="2HQrZDNIy0B" role="2OqNvi">
+              <node concept="chp4Y" id="2HQrZDNIyph" role="cj9EA">
+                <ref role="cht4Q" to="26c9:5u98M4xbjNn" resolve="JBooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="2HQrZDNIy0D" role="3clFbx">
+          <node concept="a7r0C" id="2HQrZDNIy0E" role="3cqZAp">
+            <node concept="Xl_RD" id="2HQrZDNIy0F" role="a7wSD">
+              <property role="Xl_RC" value="Use OR instead of || for xJsnark bit (boolean) types." />
+            </node>
+            <node concept="1YBJjd" id="2HQrZDNIy0G" role="2OEOjV">
+              <ref role="1YBMHb" node="2HQrZDNIy0H" resolve="orExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2HQrZDNIy0H" role="1YuTPh">
+      <property role="TrG5h" value="orExpression" />
+      <ref role="1YaFvo" to="tpee:fI2lmyv" resolve="OrExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2HQrZDNIyMW">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="ANDExpressionwWithJBooleanTypes" />
+    <node concept="3clFbS" id="2HQrZDNIyMX" role="18ibNy">
+      <node concept="3clFbJ" id="2HQrZDNIyMY" role="3cqZAp">
+        <node concept="22lmx$" id="2HQrZDNIyMZ" role="3clFbw">
+          <node concept="2OqwBi" id="2HQrZDNIyN0" role="3uHU7B">
+            <node concept="2OqwBi" id="2HQrZDNIyN1" role="2Oq$k0">
+              <node concept="2OqwBi" id="2HQrZDNIyN2" role="2Oq$k0">
+                <node concept="1YBJjd" id="2HQrZDNIyN3" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2HQrZDNIyNk" resolve="andExpression" />
+                </node>
+                <node concept="3TrEf2" id="2HQrZDNIyN4" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:fJuHU4s" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="2HQrZDNIyN5" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="2HQrZDNIyN6" role="2OqNvi">
+              <node concept="chp4Y" id="2HQrZDNIyN7" role="cj9EA">
+                <ref role="cht4Q" to="26c9:5u98M4xbjNn" resolve="JBooleanType" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2HQrZDNIyN8" role="3uHU7w">
+            <node concept="2OqwBi" id="2HQrZDNIyN9" role="2Oq$k0">
+              <node concept="2OqwBi" id="2HQrZDNIyNa" role="2Oq$k0">
+                <node concept="1YBJjd" id="2HQrZDNIyNb" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2HQrZDNIyNk" resolve="andExpression" />
+                </node>
+                <node concept="3TrEf2" id="2HQrZDNIyNc" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:fJuHU4r" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="2HQrZDNIyNd" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="2HQrZDNIyNe" role="2OqNvi">
+              <node concept="chp4Y" id="2HQrZDNIyNf" role="cj9EA">
+                <ref role="cht4Q" to="26c9:5u98M4xbjNn" resolve="JBooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="2HQrZDNIyNg" role="3clFbx">
+          <node concept="a7r0C" id="2HQrZDNIyNh" role="3cqZAp">
+            <node concept="Xl_RD" id="2HQrZDNIyNi" role="a7wSD">
+              <property role="Xl_RC" value="Use AND instead of &amp;&amp; for xJsnark bit (boolean) types." />
+            </node>
+            <node concept="1YBJjd" id="2HQrZDNIyNj" role="2OEOjV">
+              <ref role="1YBMHb" node="2HQrZDNIyNk" resolve="andExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2HQrZDNIyNk" role="1YuTPh">
+      <property role="TrG5h" value="andExpression" />
+      <ref role="1YaFvo" to="tpee:fHWc73I" resolve="AndExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2HQrZDNIzop">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="NotExpressionwWithJBooleanType" />
+    <node concept="3clFbS" id="2HQrZDNIzoq" role="18ibNy">
+      <node concept="3clFbJ" id="2HQrZDNIzor" role="3cqZAp">
+        <node concept="2OqwBi" id="2HQrZDNIzot" role="3clFbw">
+          <node concept="2OqwBi" id="2HQrZDNIzou" role="2Oq$k0">
+            <node concept="2OqwBi" id="2HQrZDNIzov" role="2Oq$k0">
+              <node concept="1YBJjd" id="2HQrZDNIzow" role="2Oq$k0">
+                <ref role="1YBMHb" node="2HQrZDNIzoL" resolve="notExpression" />
+              </node>
+              <node concept="3TrEf2" id="2HQrZDNI$Cr" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fJfr32$" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="2HQrZDNIzoy" role="2OqNvi" />
+          </node>
+          <node concept="1mIQ4w" id="2HQrZDNIzoz" role="2OqNvi">
+            <node concept="chp4Y" id="2HQrZDNIzo$" role="cj9EA">
+              <ref role="cht4Q" to="26c9:5u98M4xbjNn" resolve="JBooleanType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="2HQrZDNIzoH" role="3clFbx">
+          <node concept="a7r0C" id="2HQrZDNIzoI" role="3cqZAp">
+            <node concept="Xl_RD" id="2HQrZDNIzoJ" role="a7wSD">
+              <property role="Xl_RC" value="Use NOT instead of ! for xJsnark bit (boolean) types." />
+            </node>
+            <node concept="1YBJjd" id="2HQrZDNIzoK" role="2OEOjV">
+              <ref role="1YBMHb" node="2HQrZDNIzoL" resolve="notExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2HQrZDNIzoL" role="1YuTPh">
+      <property role="TrG5h" value="notExpression" />
+      <ref role="1YaFvo" to="tpee:fJfqX4d" resolve="NotExpression" />
+    </node>
+  </node>
 </model>
 
