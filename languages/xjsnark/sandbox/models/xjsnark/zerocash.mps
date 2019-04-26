@@ -1320,7 +1320,7 @@
         <node concept="3clFbH" id="72llHG25s7U" role="3cqZAp" />
         <node concept="3SKdUt" id="72llHG27a$Y" role="3cqZAp">
           <node concept="3SKdUq" id="72llHG27a_0" role="3SKWNk">
-            <property role="3SKdUp" value="verify the knowedlge of the secret keys" />
+            <property role="3SKdUp" value="verify the knowledge of the secret keys" />
           </node>
         </node>
         <node concept="3clFbF" id="72llHG27aDf" role="3cqZAp">
@@ -1821,10 +1821,14 @@
         <node concept="3clFbH" id="7exrx8Qcmza" role="3cqZAp" />
         <node concept="3SKdUt" id="72llHG290QM" role="3cqZAp">
           <node concept="3SKdUq" id="72llHG290QO" role="3SKWNk">
-            <property role="3SKdUp" value="verifying there are no overflows (the positivity of the values is guaranteed by the backend)" />
+            <property role="3SKdUp" value="Verifying that there are no overflows. Adding two uint_64 variables directly could overflow mod 2^64" />
           </node>
         </node>
-        <node concept="3clFbH" id="7exrx8Qcrow" role="3cqZAp" />
+        <node concept="3SKdUt" id="7HhDHXGnsUc" role="3cqZAp">
+          <node concept="3SKdUq" id="7HhDHXGnsUe" role="3SKWNk">
+            <property role="3SKdUp" value="To detect an overflow, we do the check in a larger range" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="7exrx8Qcsbj" role="3cqZAp">
           <node concept="3cpWsn" id="7exrx8Qcsbm" role="3cpWs9">
             <property role="TrG5h" value="sum" />

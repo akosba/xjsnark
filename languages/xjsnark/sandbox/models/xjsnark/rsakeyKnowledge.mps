@@ -197,7 +197,6 @@
       <property role="DRO8Q" value="** The reason for declaring them as public just to avoid a warning in the underlying framework about unassigned private fields" />
     </node>
     <node concept="2tJIrI" id="2qKKpuf7uBv" role="jymVt" />
-    <node concept="2tJIrI" id="2qKKpuf7$wo" role="jymVt" />
     <node concept="DJdLC" id="2qKKpuf7$FL" role="jymVt">
       <property role="DRO8Q" value="now define what's input/output or witnesses that have or have not to be checked" />
     </node>
@@ -209,10 +208,13 @@
     <node concept="3qdm3p" id="2qKKpuf7uBx" role="jymVt" />
     <node concept="2tJIrI" id="2qKKpuf7xik" role="jymVt" />
     <node concept="DJdLC" id="2qKKpuf7xo7" role="jymVt">
-      <property role="DRO8Q" value="Here we want to verify the ranges of p and q so that the prover does not cheat" />
+      <property role="DRO8Q" value="Here we want to verify the ranges of the wires representing p and q so that the prover does not cheat using " />
+    </node>
+    <node concept="DJdLC" id="5tgzV4FBcMd" role="jymVt">
+      <property role="DRO8Q" value="arithmetic overflows. " />
     </node>
     <node concept="DJdLC" id="2qKKpuf7xv1" role="jymVt">
-      <property role="DRO8Q" value="use this block to label witnesses if not sure whether range checks are needed or not." />
+      <property role="DRO8Q" value="Use this block to label witnesses if not sure whether range checks are needed or not." />
     </node>
     <node concept="zxlm7" id="2qKKpuf7uBy" role="jymVt">
       <node concept="37vLTw" id="2qKKpuf7x6d" role="zxlm6">
@@ -222,16 +224,15 @@
         <ref role="3cqZAo" node="6w4Q6PbPB1V" resolve="q" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5tgzV4FBdZE" role="jymVt" />
     <node concept="3qc$_m" id="2qKKpuf7uBz" role="jymVt" />
-    <node concept="2tJIrI" id="2qKKpuf7uB$" role="jymVt" />
-    <node concept="2tJIrI" id="2qKKpuf7x9H" role="jymVt" />
     <node concept="2tJIrI" id="2qKKpuf7uB_" role="jymVt" />
     <node concept="3clFb_" id="2qKKpuf7uBA" role="jymVt">
       <property role="TrG5h" value="outsource" />
       <node concept="3cqZAl" id="2qKKpuf7uBB" role="3clF45" />
       <node concept="3Tm1VV" id="2qKKpuf7uBC" role="1B3o_S" />
       <node concept="3clFbS" id="2qKKpuf7uBD" role="3clF47">
-        <node concept="3clFbH" id="2qKKpuf7zjq" role="3cqZAp" />
+        <node concept="3clFbH" id="18zTa4dXFub" role="3cqZAp" />
         <node concept="3SKdUt" id="2qKKpuf80GG" role="3cqZAp">
           <node concept="3SKdUq" id="2qKKpuf80GI" role="3SKWNk">
             <property role="3SKdUp" value="Checking Validity" />
@@ -287,7 +288,7 @@
         <node concept="3clFbS" id="2qKKpuf7uBK" role="3jfauw">
           <node concept="3SKdUt" id="6w4Q6PbQvDy" role="3cqZAp">
             <node concept="3SKdUq" id="6w4Q6PbQvD$" role="3SKWNk">
-              <property role="3SKdUp" value="USE JAVA BigInteger to set values" />
+              <property role="3SKdUp" value="Use Java BigInteger to set values" />
             </node>
           </node>
           <node concept="3clFbF" id="6w4Q6PbQxsW" role="3cqZAp">
@@ -403,7 +404,6 @@
             <property role="3SKdUp" value="This method can be left empty, or used to set Configuration params (see examples)" />
           </node>
         </node>
-        <node concept="3clFbH" id="1t1EHTMkIMA" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="2qKKpuf7uBT" role="3clF46">
         <property role="TrG5h" value="args" />

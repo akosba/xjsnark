@@ -306,15 +306,6 @@
     <node concept="2tJIrI" id="2qKKpufKmgC" role="jymVt" />
     <node concept="3qdm3p" id="2qKKpuf8meU" role="jymVt" />
     <node concept="2tJIrI" id="2qKKpufKlOn" role="jymVt" />
-    <node concept="DJdLC" id="2qKKpuf7xo7" role="jymVt">
-      <property role="DRO8Q" value="Here we want to verify the ranges of the wires representing sk so that the prover does not cheat using " />
-    </node>
-    <node concept="DJdLC" id="5tgzV4FBcMd" role="jymVt">
-      <property role="DRO8Q" value="arithmetic overflows. " />
-    </node>
-    <node concept="DJdLC" id="2qKKpuf7xv1" role="jymVt">
-      <property role="DRO8Q" value="Use this block to label witnesses if not sure whether range checks are needed or not." />
-    </node>
     <node concept="zxlm7" id="2qKKpuf8meV" role="jymVt">
       <node concept="37vLTw" id="2qKKpuf8BT0" role="zxlm6">
         <ref role="3cqZAo" node="2qKKpuf8BFS" resolve="sk" />

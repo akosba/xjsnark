@@ -12398,7 +12398,7 @@
   </node>
   <node concept="18kY7G" id="2HQrZDN_$EE">
     <property role="3GE5qa" value="Warnings" />
-    <property role="TrG5h" value="EqualsExpressionwWithXJsnarkTypes" />
+    <property role="TrG5h" value="EqualsExpressionWithXJsnarkTypes" />
     <node concept="3clFbS" id="2HQrZDN_$EF" role="18ibNy">
       <node concept="3clFbJ" id="2HQrZDN_B78" role="3cqZAp">
         <node concept="22lmx$" id="2HQrZDN_C2v" role="3clFbw">
@@ -12458,7 +12458,7 @@
   </node>
   <node concept="18kY7G" id="2HQrZDN_Dau">
     <property role="3GE5qa" value="Warnings" />
-    <property role="TrG5h" value="NotEqualsExpressionwWithXJsnarkTypes" />
+    <property role="TrG5h" value="NotEqualsExpressionWithXJsnarkTypes" />
     <node concept="3clFbS" id="2HQrZDN_Dav" role="18ibNy">
       <node concept="3clFbJ" id="2HQrZDN_Daw" role="3cqZAp">
         <node concept="22lmx$" id="2HQrZDN_Dax" role="3clFbw">
@@ -12518,7 +12518,7 @@
   </node>
   <node concept="18kY7G" id="2HQrZDNIy0l">
     <property role="3GE5qa" value="Warnings" />
-    <property role="TrG5h" value="ORExpressionwWithJBooleanTypes" />
+    <property role="TrG5h" value="ORExpressionWithJBooleanTypes" />
     <node concept="3clFbS" id="2HQrZDNIy0m" role="18ibNy">
       <node concept="3clFbJ" id="2HQrZDNIy0n" role="3cqZAp">
         <node concept="22lmx$" id="2HQrZDNIy0o" role="3clFbw">
@@ -12638,7 +12638,7 @@
   </node>
   <node concept="18kY7G" id="2HQrZDNIzop">
     <property role="3GE5qa" value="Warnings" />
-    <property role="TrG5h" value="NotExpressionwWithJBooleanType" />
+    <property role="TrG5h" value="NotExpressionWithJBooleanTypes" />
     <node concept="3clFbS" id="2HQrZDNIzoq" role="18ibNy">
       <node concept="3clFbJ" id="2HQrZDNIzor" role="3cqZAp">
         <node concept="2OqwBi" id="2HQrZDNIzot" role="3clFbw">
@@ -12674,6 +12674,24 @@
     <node concept="1YaCAy" id="2HQrZDNIzoL" role="1YuTPh">
       <property role="TrG5h" value="notExpression" />
       <ref role="1YaFvo" to="tpee:fJfqX4d" resolve="NotExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7HhDHXFFnjf">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="WitnessVariablesWithNoAssertRange" />
+    <node concept="3clFbS" id="7HhDHXFFnjg" role="18ibNy">
+      <node concept="a7r0C" id="7HhDHXFXjTs" role="3cqZAp">
+        <node concept="1YBJjd" id="7HhDHXFXjW$" role="2OEOjV">
+          <ref role="1YBMHb" node="7HhDHXFFnxC" resolve="witnessBlock" />
+        </node>
+        <node concept="Xl_RD" id="7HhDHXFXjUE" role="a7wSD">
+          <property role="Xl_RC" value="In most cases, witnesses should be defined in the witnesses_AssertRange block to enforce type rules and prevent any possibility for cheating. \nDon't use this block without being sure that the prover cannot cheat.\nIn many cases, it is likely cheap to do the witness range assertions compared to the circuit overhead, unless the witness variables are too many.\nAn example of when this block can be used can be found in the sorting example, where the witnesses were verified to be a permutation of *valid* values already (using a native instruction)." />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7HhDHXFFnxC" role="1YuTPh">
+      <property role="TrG5h" value="witnessBlock" />
+      <ref role="1YaFvo" to="26c9:3BesNbzZ3D$" resolve="WitnessBlock" />
     </node>
   </node>
 </model>
