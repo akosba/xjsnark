@@ -33,7 +33,8 @@ This example illustrates the usage of native finite field types/constraints and 
  This example illustrates how to use the external code blocks for non-determinism (setting the values of the external witnesses provided by the prover), and the usage of the permutation verification native instruction which could enable writing more optimized circuits for some applications, like sorting, or pointer chasing.
 ![alt text](examples_snapshots/sorting.png)
 ## ZeroCash Pour Circuit
-High-level implementation of the Pour circuit in the [ZeroCash](http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf) paper, that results into an optimized circuit similar to the manually-optimized circuit.High-level implementation of the Pour circuit in the [ZeroCash](http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf) paper, that results into an optimized circuit similar to the manually-optimized circuit. 
+High-level implementation of the Pour circuit in the [ZeroCash](http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf) paper, that results into an optimized circuit similar to the manually-optimized circuit.
+
 ### Helper Classes
 These are structures that are used within the Pour circuit. Each structure can only have xJsnark types, and can have methods. However, inheritance and polymorphism are not supported for xJsnark's structs.
 #### Coin Information
