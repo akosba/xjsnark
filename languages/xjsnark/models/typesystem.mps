@@ -387,6 +387,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -12692,6 +12693,75 @@
     <node concept="1YaCAy" id="7HhDHXFFnxC" role="1YuTPh">
       <property role="TrG5h" value="witnessBlock" />
       <ref role="1YaFvo" to="26c9:3BesNbzZ3D$" resolve="WitnessBlock" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6Tv3n5wDzSP">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="xJsnarkStaticFieldInitialization1" />
+    <node concept="3clFbS" id="6Tv3n5wDzSQ" role="18ibNy">
+      <node concept="3clFbJ" id="6Tv3n5wD$GQ" role="3cqZAp">
+        <node concept="1Wc70l" id="6Tv3n5wDCSH" role="3clFbw">
+          <node concept="2OqwBi" id="6Tv3n5wDEuc" role="3uHU7w">
+            <node concept="2OqwBi" id="6Tv3n5wDDei" role="2Oq$k0">
+              <node concept="1YBJjd" id="6Tv3n5wDD1M" role="2Oq$k0">
+                <ref role="1YBMHb" node="6Tv3n5wD$zr" resolve="staticFieldDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="6Tv3n5wDE3l" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fz3vP1I" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6Tv3n5wDEK4" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="6Tv3n5wDClD" role="3uHU7B">
+            <node concept="2OqwBi" id="6Tv3n5wD_2s" role="2Oq$k0">
+              <node concept="1YBJjd" id="6Tv3n5wD$Ra" role="2Oq$k0">
+                <ref role="1YBMHb" node="6Tv3n5wD$zr" resolve="staticFieldDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="6Tv3n5wDBV5" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="6Tv3n5wDC_3" role="2OqNvi">
+              <node concept="chp4Y" id="6Tv3n5wDCAS" role="cj9EA">
+                <ref role="cht4Q" to="26c9:65gbDjFWKi1" resolve="XjsnarkType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6Tv3n5wD$GS" role="3clFbx">
+          <node concept="a7r0C" id="6Tv3n5wDEUu" role="3cqZAp">
+            <node concept="Xl_RD" id="6Tv3n5wDF05" role="a7wSD">
+              <property role="Xl_RC" value="Initialization for static members that have xJsnark types should be done within code that is reachable from outsource() to avoid issues.\n For example, you could group all static member initialization into one (static) method, and call it in outsource()." />
+            </node>
+            <node concept="1YBJjd" id="6Tv3n5wDEY8" role="2OEOjV">
+              <ref role="1YBMHb" node="6Tv3n5wD$zr" resolve="staticFieldDeclaration" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="6Tv3n5wDGCt" role="3cqZAp" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6Tv3n5wD$zr" role="1YuTPh">
+      <property role="TrG5h" value="staticFieldDeclaration" />
+      <ref role="1YaFvo" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6Tv3n5wPFff">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="xJsnarkStaticFieldInitialization2" />
+    <node concept="3clFbS" id="6Tv3n5wPFfg" role="18ibNy">
+      <node concept="Dpp1Q" id="6Tv3n5wPGDW" role="3cqZAp">
+        <node concept="Xl_RD" id="6Tv3n5wPGIf" role="Dpw9R">
+          <property role="Xl_RC" value="Note that any circuit logic or initialization of static members that have xJsnark types should not be done within static initialization blocks." />
+        </node>
+        <node concept="1YBJjd" id="6Tv3n5wPGGK" role="2OEOjV">
+          <ref role="1YBMHb" node="6Tv3n5wPFfz" resolve="staticInitializer" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6Tv3n5wPFfz" role="1YuTPh">
+      <property role="TrG5h" value="staticInitializer" />
+      <ref role="1YaFvo" to="tpee:hLPe0et" resolve="StaticInitializer" />
     </node>
   </node>
 </model>
