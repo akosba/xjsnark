@@ -185,14 +185,19 @@
       <concept id="7553992366106506034" name="xjsnark.structure.JFieldType" flags="ig" index="2D7PWU">
         <reference id="7553992366106506060" name="fieldRec" index="2D7PX4" />
       </concept>
+      <concept id="7553992366101796980" name="xjsnark.structure.JAndExpression" flags="ng" index="2DlVhW" />
       <concept id="7553992366104093706" name="xjsnark.structure.ValueOp" flags="ng" index="2Ds8w2" />
       <concept id="7495353643616961541" name="xjsnark.structure.SingleLineCommentClassMember" flags="ng" index="DJdLC">
         <property id="7495353643619293787" name="text" index="DRO8Q" />
+      </concept>
+      <concept id="7553992366094736353" name="xjsnark.structure.VerifyStatement" flags="ng" index="2DKZvD">
+        <child id="7553992366094744703" name="condition" index="2DKX1R" />
       </concept>
       <concept id="2787941026031223911" name="xjsnark.structure.JBooleanConversion" flags="ng" index="2DT8nK">
         <child id="2787941026031223913" name="argument" index="2DT8nY" />
         <child id="2787941026031223912" name="jType" index="2DT8nZ" />
       </concept>
+      <concept id="8264408278343476866" name="xjsnark.structure.JNotEqualsExpression" flags="ng" index="2JLfk8" />
       <concept id="6555837584709755947" name="xjsnark.structure.PreTestBlock" flags="ng" index="3jfauB">
         <child id="6555837584709755948" name="statements" index="3jfauw" />
       </concept>
@@ -213,6 +218,10 @@
       </concept>
       <concept id="7263056763233056571" name="xjsnark.structure.ProgramDefinition" flags="ig" index="1KMFyu" />
       <concept id="6307611378306596055" name="xjsnark.structure.JBooleanType" flags="ig" index="1QD1ZQ" />
+      <concept id="9096502420330357553" name="xjsnark.structure.JUnsignedIntegerConversion" flags="ng" index="3SuevK">
+        <child id="9096502420330357585" name="argument" index="3Sueug" />
+        <child id="9096502420330357558" name="jType" index="3SuevR" />
+      </concept>
       <concept id="4415826925292972403" name="xjsnark.structure.TestBlock" flags="lg" index="1UYk92">
         <property id="6555837584710830772" name="active" index="3j8K$S" />
         <property id="6555837584709755745" name="name" index="3jfa3H" />
@@ -358,7 +367,57 @@
           </node>
         </node>
         <node concept="3clFbH" id="2qKKpuf8D76" role="3cqZAp" />
-        <node concept="3clFbH" id="2qKKpufKsWT" role="3cqZAp" />
+        <node concept="3SKdUt" id="6Tv3n5x51M6" role="3cqZAp">
+          <node concept="3SKdUq" id="6Tv3n5x51M8" role="3SKWNk">
+            <property role="3SKdUp" value="Additional safety checks (just precautionary)" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6Tv3n5wZuHX" role="3cqZAp">
+          <node concept="3cpWsn" id="6Tv3n5wZuI0" role="3cpWs9">
+            <property role="TrG5h" value="order" />
+            <node concept="3qc1$W" id="6Tv3n5wZuHV" role="1tU5fm">
+              <property role="3qc1Xj" value="256" />
+            </node>
+            <node concept="3SuevK" id="6Tv3n5wZv2v" role="33vP2m">
+              <node concept="3qc1$W" id="6Tv3n5wZv2x" role="3SuevR">
+                <property role="3qc1Xj" value="256" />
+              </node>
+              <node concept="Xl_RD" id="6Tv3n5wZv5g" role="3Sueug">
+                <property role="Xl_RC" value="115792089210356248762697446949407573529996955224135760342422259061068512044369" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2DKZvD" id="6Tv3n5wZvZF" role="3cqZAp">
+          <node concept="2DlVhW" id="6Tv3n5x55_e" role="2DKX1R">
+            <node concept="1eOMI4" id="6Tv3n5x56ye" role="3uHU7w">
+              <node concept="2JLfk8" id="6Tv3n5x55JA" role="1eOMHV">
+                <node concept="3SuevK" id="6Tv3n5x55MN" role="3uHU7w">
+                  <node concept="3qc1$W" id="6Tv3n5x55MP" role="3SuevR">
+                    <property role="3qc1Xj" value="256" />
+                  </node>
+                  <node concept="3cmrfG" id="6Tv3n5x55Ug" role="3Sueug">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6Tv3n5x55Cj" role="3uHU7B">
+                  <ref role="3cqZAo" node="2qKKpuf8BFS" resolve="sk" />
+                </node>
+              </node>
+            </node>
+            <node concept="1eOMI4" id="6Tv3n5x9RiK" role="3uHU7B">
+              <node concept="3eOVzh" id="6Tv3n5wZwkt" role="1eOMHV">
+                <node concept="37vLTw" id="6Tv3n5wZwh6" role="3uHU7B">
+                  <ref role="3cqZAo" node="2qKKpuf8BFS" resolve="sk" />
+                </node>
+                <node concept="37vLTw" id="6Tv3n5wZwnZ" role="3uHU7w">
+                  <ref role="3cqZAo" node="6Tv3n5wZuI0" resolve="order" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6Tv3n5x9TEm" role="3cqZAp" />
         <node concept="3cpWs8" id="2qKKpuf8LRz" role="3cqZAp">
           <node concept="3cpWsn" id="2qKKpuf8LRA" role="3cpWs9">
             <property role="TrG5h" value="table" />
@@ -1194,6 +1253,43 @@
             <node concept="10M0yZ" id="2qKKpufl1kG" role="37vLTJ">
               <ref role="1PxDUh" to="85wc:~Config" resolve="Config" />
               <ref role="3cqZAo" to="85wc:~Config.hexOutputEnabled" resolve="hexOutputEnabled" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6Tv3n5wZoWb" role="3cqZAp" />
+        <node concept="3SKdUt" id="6Tv3n5wZpgS" role="3cqZAp">
+          <node concept="3SKdUq" id="6Tv3n5wZpgU" role="3SKWNk">
+            <property role="3SKdUp" value="In the above example with a 256-bit exponent, we don't need to check against a 0/0 case." />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6Tv3n5xa007" role="3cqZAp">
+          <node concept="3SKdUq" id="6Tv3n5xa009" role="3SKWNk">
+            <property role="3SKdUp" value="Even if sk was set to be the order, we would get a non-zero divided by zero case in the last iteration," />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6Tv3n5xa1TH" role="3cqZAp">
+          <node concept="3SKdUq" id="6Tv3n5xa1TJ" role="3SKWNk">
+            <property role="3SKdUp" value=" which is unsatisfiable. " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6Tv3n5wZq3P" role="3cqZAp">
+          <node concept="3SKdUq" id="6Tv3n5wZq3R" role="3SKWNk">
+            <property role="3SKdUp" value="The checks are a bit costly for non-native fields when they are out of range, as we have to check if " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6Tv3n5xa6YX" role="3cqZAp">
+          <node concept="3SKdUq" id="6Tv3n5xa6YY" role="3SKWNk">
+            <property role="3SKdUp" value=" the modulus divides the denominator, so we disable the checks here. " />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6Tv3n5wZp1n" role="3cqZAp">
+          <node concept="37vLTI" id="6Tv3n5wZpb5" role="3clFbG">
+            <node concept="3clFbT" id="6Tv3n5wZpcP" role="37vLTx">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="10M0yZ" id="6Tv3n5wZp1m" role="37vLTJ">
+              <ref role="1PxDUh" to="85wc:~Config" resolve="Config" />
+              <ref role="3cqZAo" to="85wc:~Config.enforceInternalDivisionNonZeroChecks" resolve="enforceInternalDivisionNonZeroChecks" />
             </node>
           </node>
         </node>
