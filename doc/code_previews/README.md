@@ -3,13 +3,13 @@
 For illustration purposes, this file includes snapshots from the examples currently implemented in the framework. The ``sample_generated_intermediate_code`` directory shows examples of the intermediate java files that xJsnark generates after processing the code below.
 
 # Examples
-- [SHA-256 (Unpadded)](https://github.com/akosba/xjsnark/tree/master/code_previews/README.md#sha-256-unpadded)
-- [RSA Secret Key Knowledge](https://github.com/akosba/xjsnark/tree/master/code_previews/README.md#rsa-secret-key-knowledge)
-- [EC Secret Key Knowledge](https://github.com/akosba/xjsnark/tree/master/code_previews/README.md#ec-secret-key-knowledge)
-- [AES 128](https://github.com/akosba/xjsnark/tree/master/code_previews/README.md#aes-128)
-- [Sudoku 9x9](https://github.com/akosba/xjsnark/tree/master/code_previews#sudoku-9x9)
-- [Sorting](https://github.com/akosba/xjsnark/tree/master/code_previews/README.md#sorting)
-- [ZeroCash Pour Circuit](https://github.com/akosba/xjsnark/tree/master/code_previews/README.md#zerocash-pour-circuit)
+- [SHA-256 (Unpadded)](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#sha-256-unpadded)
+- [RSA Secret Key Knowledge](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#rsa-secret-key-knowledge)
+- [EC Secret Key Knowledge](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#ec-secret-key-knowledge)
+- [AES 128](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#aes-128)
+- [Sudoku 9x9](https://github.com/akosba/xjsnark/tree/master/doc/code_previews#sudoku-9x9)
+- [Sorting](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#sorting)
+- [ZeroCash Pour Circuit](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#zerocash-pour-circuit)
 
 ## SHA-256 (Unpadded)
 This is a high-level code for SHA-256. Compared to manually-developed circuit in low-level libraries such as libsnark gadget libraries or [jsnark](https://github.com/akosba/jsnark/blob/d12b6d93a0ec1760ffe34b7f36e4fb4d8562ca93/JsnarkCircuitBuilder/src/examples/gadgets/hash/SHA256Gadget.java), in which the programmer has to take care of the range of the variables, and write optimizations for maj and ch computations, xJsnark aims to produce optimized circuits from the high-level code, whenever possible. The back end applies several techniques to minimize the number of constraints which leads to an optimized implementation.
