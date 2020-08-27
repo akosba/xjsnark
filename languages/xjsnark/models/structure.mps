@@ -837,5 +837,74 @@
       <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5CNaGjSr7E0">
+    <property role="1pbfSe" value="1386194244" />
+    <property role="TrG5h" value="GroupRecord" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5CNaGjSr7E1" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="5CNaGjSr7E3" role="1TKVEl">
+      <property role="TrG5h" value="modulus" />
+      <ref role="AX2Wp" node="hhaVGVf" resolve="BigDecimal" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5CNaGjSr9rf">
+    <property role="1pbfSe" value="1386201491" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="JGroupType" />
+    <property role="34LRSv" value="Z*_" />
+    <ref role="1TJDcQ" node="65gbDjFWKi1" resolve="XjsnarkType" />
+    <node concept="1TJgyj" id="5CNaGjSr9rg" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="groupRec" />
+      <ref role="20lvS9" node="5CNaGjSr7E0" resolve="GroupRecord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5CNaGjSr9rE">
+    <property role="1pbfSe" value="1386201518" />
+    <property role="3GE5qa" value="Roots" />
+    <property role="TrG5h" value="GroupDefTable" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5CNaGjSr9rF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="groupDefinitions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5CNaGjSr7E0" resolve="GroupRecord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5CNaGjSrd38">
+    <property role="1pbfSe" value="1386216332" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="JGroupConversion" />
+    <property role="34LRSv" value="G_" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5CNaGjSrd3$" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="jType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5CNaGjSr9rf" resolve="JGroupType" />
+    </node>
+    <node concept="1TJgyj" id="5CNaGjSrd3_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="argument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5CNaGjSzweC">
+    <property role="1pbfSe" value="1388392044" />
+    <property role="TrG5h" value="GroupInverseOp" />
+    <property role="34LRSv" value="inv" />
+    <property role="3GE5qa" value="ops" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5CNaGjSzweD" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+    <node concept="PrWs8" id="5CNaGjSzweE" role="PzmwI">
+      <ref role="PrY4T" to="tpee:1wHCnsn58oY" resolve="IBinaryLike" />
+    </node>
+  </node>
 </model>
 

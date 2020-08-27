@@ -3337,5 +3337,95 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5CNaGjSr8aJ">
+    <ref role="1XX52x" to="26c9:5CNaGjSr7E0" resolve="GroupRecord" />
+    <node concept="3EZMnI" id="5CNaGjSr8aL" role="2wV5jI">
+      <node concept="2iRfu4" id="5CNaGjSr8aM" role="2iSdaV" />
+      <node concept="3F0A7n" id="5CNaGjSr8aN" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="5CNaGjSr8aO" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="5CNaGjSr8aP" role="3EZMnx">
+        <ref role="1NtTu8" to="26c9:5CNaGjSr7E3" resolve="modulus" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5CNaGjSr9rn">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="26c9:5CNaGjSr9rf" resolve="JGroupType" />
+    <node concept="3EZMnI" id="5CNaGjSr9rp" role="2wV5jI">
+      <property role="1cu_pB" value="3" />
+      <node concept="3F0ifn" id="5CNaGjSr9rq" role="3EZMnx">
+        <property role="3F0ifm" value="Z*_" />
+        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+        <node concept="11LMrY" id="5CNaGjSr9rr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="5CNaGjSr9rs" role="3EZMnx">
+        <ref role="1NtTu8" to="26c9:5CNaGjSr9rg" />
+        <node concept="1sVBvm" id="5CNaGjSr9rt" role="1sWHZn">
+          <node concept="3F0A7n" id="5CNaGjSr9ru" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5CNaGjSr9rv" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5CNaGjSr9rM">
+    <property role="3GE5qa" value="Roots" />
+    <ref role="1XX52x" to="26c9:5CNaGjSr9rE" resolve="GroupDefTable" />
+    <node concept="3EZMnI" id="5CNaGjSr9rO" role="2wV5jI">
+      <node concept="3F0ifn" id="5CNaGjSr9rP" role="3EZMnx">
+        <property role="3F0ifm" value="Group Mappings:" />
+      </node>
+      <node concept="2iRkQZ" id="5CNaGjSr9rQ" role="2iSdaV" />
+      <node concept="3F2HdR" id="5CNaGjSr9rR" role="3EZMnx">
+        <ref role="1NtTu8" to="26c9:5CNaGjSr9rF" />
+        <node concept="2iRkQZ" id="5CNaGjSr9rS" role="2czzBx" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5CNaGjSrd3H">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="26c9:5CNaGjSrd38" resolve="JGroupConversion" />
+    <node concept="3EZMnI" id="5CNaGjSrd4a" role="2wV5jI">
+      <node concept="3F1sOY" id="5CNaGjSrd4b" role="3EZMnx">
+        <ref role="1NtTu8" to="26c9:5CNaGjSrd3$" />
+      </node>
+      <node concept="3F0ifn" id="5CNaGjSrd4c" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="5CNaGjSrd4d" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5CNaGjSrd4e" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5CNaGjSrd4f" role="3EZMnx">
+        <ref role="1NtTu8" to="26c9:5CNaGjSrd3_" />
+      </node>
+      <node concept="3F0ifn" id="5CNaGjSrd4g" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="5CNaGjSrd4h" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5CNaGjSrd4i" role="3F10Kt" />
+      </node>
+      <node concept="2iRfu4" id="5CNaGjSrd4j" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5CNaGjSzweK">
+    <property role="3GE5qa" value="ops" />
+    <ref role="1XX52x" to="26c9:5CNaGjSzweC" resolve="GroupInverseOp" />
+    <node concept="3F0ifn" id="5CNaGjSzweM" role="2wV5jI">
+      <property role="3F0ifm" value="inv" />
+    </node>
+  </node>
 </model>
 

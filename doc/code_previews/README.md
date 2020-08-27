@@ -5,6 +5,7 @@ For illustration purposes, this file includes snapshots from the examples curren
 # Examples
 - [SHA-256 (Unpadded)](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#sha-256-unpadded)
 - [RSA Secret Key Knowledge](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#rsa-secret-key-knowledge)
+- [RSA Modular Exponentiation] (https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#rsa-modular-exponentiation)
 - [EC Secret Key Knowledge](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#ec-secret-key-knowledge)
 - [AES 128](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#aes-128)
 - [Sudoku 9x9](https://github.com/akosba/xjsnark/tree/master/doc/code_previews#sudoku-9x9)
@@ -17,6 +18,15 @@ This is a high-level code for SHA-256. Compared to manually-developed circuit in
 ## RSA Secret Key Knowledge
 This example illustrates the support for long integer types and operations by xJsnark.
 ![alt text](examples_snapshots/RSA_Secret_Key_Knowledge.png)
+## RSA Modular Exponentiation
+This example shows how to use the long integer modular arithmetic supported by xJsnark to implement modular exponentiation for RSA. This is supported through a type for the multiplicative group of integers modulo N. See the code for more notes. This version includes examples for fixed modulus fixed exponent and fixed modulus variable exponent. Support for types with variable modulus has not been pushed to the front end of this version yet. Note that [Jsnark](https://github.com/akosba/jsnark/tree/master/JsnarkCircuitBuilder/src/examples/gadgets/rsa) has implementations that can support all these cases and includes the optimizations of xJsnark. 
+
+Fixed modulus and fixed exponent:
+![alt text](examples_snapshots/RSAModExpFixedModulusFixedExponent.png)
+
+Fixed modulus and variable exponent:
+![alt text](examples_snapshots/RSAModExpFixedModulusVariableExponent.png)
+
 ## EC Secret Key Knowledge
 This example illustrates the parameterized field types that can be defined by the user. Even, if the circuit operates in a non-native zk-SNARK field, the complexity of the code does not change. These field types are not only for making programming easier, but also the back end utilizes these information to make much better decisions.
 ### Field Definition

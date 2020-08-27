@@ -512,13 +512,16 @@
     <property role="TrG5h" value="Types" />
     <node concept="3Tm1VV" id="3ZyZ1ekptiU" role="1B3o_S" />
     <node concept="DJdLC" id="3ZyZ1ekptvB" role="jymVt">
-      <property role="DRO8Q" value="In this partial release, the supported types are parameterized unsigned integers and finite field types" />
+      <property role="DRO8Q" value="In this partial release, the supported types are the boolean (bit), parameterized unsigned integer, finite field and" />
+    </node>
+    <node concept="DJdLC" id="65Ie7c$m4Yq" role="jymVt">
+      <property role="DRO8Q" value="and multiplicative group types." />
     </node>
     <node concept="DJdLC" id="3ZyZ1ekpuEL" role="jymVt">
       <property role="DRO8Q" value="The programmer can use java types for loop bounds and other places, but for circuit inputs" />
     </node>
     <node concept="DJdLC" id="3ZyZ1ekpwQc" role="jymVt">
-      <property role="DRO8Q" value="and outputs, the xjsnark types should be used." />
+      <property role="DRO8Q" value="and outputs, the xjsnark types must be used." />
     </node>
     <node concept="2tJIrI" id="3ZyZ1ekpvpe" role="jymVt" />
     <node concept="DJdLC" id="3ZyZ1ekpxC2" role="jymVt">
