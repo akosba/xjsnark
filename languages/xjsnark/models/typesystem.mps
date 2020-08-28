@@ -13184,7 +13184,7 @@
             <node concept="liA8E" id="6Vn41i6wIXZ" role="2OqNvi">
               <ref role="37wK5l" to="xlxw:~BigInteger.isProbablePrime(int):boolean" resolve="isProbablePrime" />
               <node concept="3cmrfG" id="6Vn41i6wIY0" role="37wK5m">
-                <property role="3cmrfH" value="80" />
+                <property role="3cmrfH" value="100" />
               </node>
             </node>
           </node>
@@ -13192,7 +13192,7 @@
         <node concept="3clFbS" id="6Vn41i6wIDR" role="3clFbx">
           <node concept="a7r0C" id="6Vn41i6wJ3o" role="3cqZAp">
             <node concept="Xl_RD" id="6Vn41i6wJ3E" role="a7wSD">
-              <property role="Xl_RC" value="The provided number does not seem to be a prime.\nIf you are using this to implement another algebraic structure, make sure to use the allowed operations only and apply it on elements of that structure." />
+              <property role="Xl_RC" value="The provided number does not seem to be a prime number." />
             </node>
             <node concept="1YBJjd" id="6Vn41i6wJbc" role="2OEOjV">
               <ref role="1YBMHb" node="6Vn41i6wDAm" resolve="fieldRecord" />

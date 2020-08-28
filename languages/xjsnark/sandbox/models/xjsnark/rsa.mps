@@ -525,10 +525,10 @@
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="RSAModExpFixedModulusVariableExponent" />
     <node concept="DJdLC" id="5CNaGjSSMfz" role="jymVt">
-      <property role="DRO8Q" value="This circuit computes b = a^e mod N where N is a 2048-bit modulus/" />
+      <property role="DRO8Q" value="This circuit computes b = a^e mod N where N is a 2048-bit modulus." />
     </node>
     <node concept="DJdLC" id="5CNaGjSSMf$" role="jymVt">
-      <property role="DRO8Q" value="This assumes a fixed N that is set in a GroupDefTable and a variable 17-bit public exponent." />
+      <property role="DRO8Q" value="This assumes a fixed N that is set in a GroupDefTable and a variable 17-bit exponent." />
     </node>
     <node concept="DJdLC" id="65Ie7c$2A6H" role="jymVt">
       <property role="DRO8Q" value="This is just for illustration. In many settings, the public exponent can be hardcoded for" />
@@ -537,6 +537,10 @@
       <property role="DRO8Q" value="RSA signatures and encryption." />
     </node>
     <node concept="2tJIrI" id="65Ie7c$2_Vk" role="jymVt" />
+    <node concept="DJdLC" id="4P_MmFBd7ul" role="jymVt">
+      <property role="DRO8Q" value="Note that the circuit will be more expensive in the variable exponent case." />
+    </node>
+    <node concept="2tJIrI" id="4P_MmFBd7i1" role="jymVt" />
     <node concept="DJdLC" id="65Ie7c$2Ckk" role="jymVt">
       <property role="DRO8Q" value="See notes about the Z*_N type in RSAModExpFixedModulusFixedExponent" />
     </node>
@@ -728,7 +732,7 @@
                 <node concept="1pGfFk" id="5CNaGjSSPu9" role="2ShVmc">
                   <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String,int)" resolve="BigInteger" />
                   <node concept="Xl_RD" id="5CNaGjSSPvh" role="37wK5m">
-                    <property role="Xl_RC" value="11111" />
+                    <property role="Xl_RC" value="10001" />
                   </node>
                   <node concept="3cmrfG" id="5CNaGjSSPKm" role="37wK5m">
                     <property role="3cmrfH" value="16" />
@@ -814,7 +818,7 @@
                               <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
                               <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
                               <node concept="2nou5x" id="5CNaGjSSMha" role="37wK5m">
-                                <property role="2noCCI" value="11111" />
+                                <property role="2noCCI" value="10001" />
                               </node>
                             </node>
                             <node concept="37vLTw" id="5CNaGjSSMhb" role="37wK5m">

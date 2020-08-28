@@ -5,7 +5,7 @@ For illustration purposes, this file includes snapshots from the examples curren
 # Examples
 - [SHA-256 (Unpadded)](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#sha-256-unpadded)
 - [RSA Secret Key Knowledge](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#rsa-secret-key-knowledge)
-- [RSA Modular Exponentiation] (https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#rsa-modular-exponentiation)
+- [RSA Modular Exponentiation](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#rsa-modular-exponentiation)
 - [EC Secret Key Knowledge](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#ec-secret-key-knowledge)
 - [AES 128](https://github.com/akosba/xjsnark/tree/master/doc/code_previews/README.md#aes-128)
 - [Sudoku 9x9](https://github.com/akosba/xjsnark/tree/master/doc/code_previews#sudoku-9x9)
