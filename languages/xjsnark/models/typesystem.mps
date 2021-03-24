@@ -444,6 +444,7 @@
         <child id="1225711182005" name="list" index="1y566C" />
         <child id="1225711191269" name="index" index="1y58nS" />
       </concept>
+      <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
@@ -13909,6 +13910,161 @@
     <node concept="1YaCAy" id="5CNaGjSzwn5" role="1YuTPh">
       <property role="TrG5h" value="groupInverseOp" />
       <ref role="1YaFvo" to="26c9:5CNaGjSzweC" resolve="GroupInverseOp" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="11yOGSguH6E">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="xJsnarkStaticFieldInitialization3" />
+    <node concept="3clFbS" id="11yOGSguH6F" role="18ibNy">
+      <node concept="3clFbJ" id="11yOGSguH6G" role="3cqZAp">
+        <node concept="1Wc70l" id="11yOGSguH6H" role="3clFbw">
+          <node concept="2OqwBi" id="11yOGSguH6I" role="3uHU7w">
+            <node concept="2OqwBi" id="11yOGSguH6J" role="2Oq$k0">
+              <node concept="1YBJjd" id="11yOGSguH6K" role="2Oq$k0">
+                <ref role="1YBMHb" node="11yOGSguH6Y" resolve="staticFieldDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="11yOGSguH6L" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fz3vP1I" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="11yOGSguH6M" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="11yOGSguH6N" role="3uHU7B">
+            <node concept="2OqwBi" id="11yOGSguH6O" role="2Oq$k0">
+              <node concept="1YBJjd" id="11yOGSguH6P" role="2Oq$k0">
+                <ref role="1YBMHb" node="11yOGSguH6Y" resolve="staticFieldDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="11yOGSguH6Q" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="11yOGSguH6R" role="2OqNvi">
+              <node concept="chp4Y" id="11yOGSguHbQ" role="cj9EA">
+                <ref role="cht4Q" to="tpee:f_0Q1BR" resolve="ArrayType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="11yOGSguH6T" role="3clFbx">
+          <node concept="3clFbJ" id="11yOGSguHg8" role="3cqZAp">
+            <node concept="3clFbS" id="11yOGSguHga" role="3clFbx">
+              <node concept="a7r0C" id="11yOGSguH6U" role="3cqZAp">
+                <node concept="Xl_RD" id="11yOGSguH6V" role="a7wSD">
+                  <property role="Xl_RC" value="Initialization for static members that have xJsnark types should be done within code that is reachable from outsource() to avoid issues.\n For example, you could group all static member initialization into one (static) method, and call it in outsource()." />
+                </node>
+                <node concept="1YBJjd" id="11yOGSguH6W" role="2OEOjV">
+                  <ref role="1YBMHb" node="11yOGSguH6Y" resolve="staticFieldDeclaration" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="11yOGSguHg9" role="3cqZAp" />
+            </node>
+            <node concept="2OqwBi" id="11yOGSguJQW" role="3clFbw">
+              <node concept="2OqwBi" id="11yOGSguJ5C" role="2Oq$k0">
+                <node concept="1PxgMI" id="11yOGSguIQc" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <ref role="1PxNhF" to="tpee:f_0Q1BR" resolve="ArrayType" />
+                  <node concept="2OqwBi" id="11yOGSguHrH" role="1PxMeX">
+                    <node concept="1YBJjd" id="11yOGSguHgr" role="2Oq$k0">
+                      <ref role="1YBMHb" node="11yOGSguH6Y" resolve="staticFieldDeclaration" />
+                    </node>
+                    <node concept="3TrEf2" id="11yOGSguIjx" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="11yOGSguJE6" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:f_0Q1BS" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="11yOGSguK8R" role="2OqNvi">
+                <node concept="chp4Y" id="11yOGSguK9H" role="cj9EA">
+                  <ref role="cht4Q" to="26c9:65gbDjFWKi1" resolve="XjsnarkType" />
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="11yOGSgFu4u" role="9aQIa">
+              <node concept="3clFbS" id="11yOGSgFu4v" role="9aQI4">
+                <node concept="3clFbJ" id="11yOGSgFmU8" role="3cqZAp">
+                  <node concept="3clFbS" id="11yOGSgFmUa" role="3clFbx">
+                    <node concept="a7r0C" id="11yOGSgFtGh" role="3cqZAp">
+                      <node concept="Xl_RD" id="11yOGSgFtGi" role="a7wSD">
+                        <property role="Xl_RC" value="Initialization for static members that have xJsnark types should be done within code that is reachable from outsource() to avoid issues.\n For example, you could group all static member initialization into one (static) method, and call it in outsource()." />
+                      </node>
+                      <node concept="1YBJjd" id="11yOGSgFtGj" role="2OEOjV">
+                        <ref role="1YBMHb" node="11yOGSguH6Y" resolve="staticFieldDeclaration" />
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="11yOGSgFmU9" role="3cqZAp" />
+                  </node>
+                  <node concept="3eOSWO" id="11yOGSgS3Ri" role="3clFbw">
+                    <node concept="3cmrfG" id="11yOGSgS3Rl" role="3uHU7w">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="2OqwBi" id="11yOGSgFt0t" role="3uHU7B">
+                      <node concept="2OqwBi" id="11yOGSgFpfG" role="2Oq$k0">
+                        <node concept="2OqwBi" id="11yOGSgFose" role="2Oq$k0">
+                          <node concept="2OqwBi" id="11yOGSgFn5T" role="2Oq$k0">
+                            <node concept="1YBJjd" id="11yOGSgFmUB" role="2Oq$k0">
+                              <ref role="1YBMHb" node="11yOGSguH6Y" resolve="staticFieldDeclaration" />
+                            </node>
+                            <node concept="3TrEf2" id="11yOGSgFnZX" role="2OqNvi">
+                              <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+                            </node>
+                          </node>
+                          <node concept="2Rf3mk" id="11yOGSh4I5D" role="2OqNvi">
+                            <node concept="1xMEDy" id="11yOGSh4I5F" role="1xVPHs">
+                              <node concept="chp4Y" id="11yOGSh4IdV" role="ri$Ld">
+                                <ref role="cht4Q" to="tpee:f_0Q1BR" resolve="ArrayType" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3zZkjj" id="11yOGSgFqDZ" role="2OqNvi">
+                          <node concept="1bVj0M" id="11yOGSgFqE1" role="23t8la">
+                            <node concept="3clFbS" id="11yOGSgFqE2" role="1bW5cS">
+                              <node concept="3clFbF" id="11yOGSh4IAy" role="3cqZAp">
+                                <node concept="2OqwBi" id="11yOGSgFswE" role="3clFbG">
+                                  <node concept="2OqwBi" id="11yOGSgFrRi" role="2Oq$k0">
+                                    <node concept="1PxgMI" id="11yOGSgFrDK" role="2Oq$k0">
+                                      <property role="1BlNFB" value="true" />
+                                      <ref role="1PxNhF" to="tpee:f_0Q1BR" resolve="ArrayType" />
+                                      <node concept="37vLTw" id="11yOGSgFrl9" role="1PxMeX">
+                                        <ref role="3cqZAo" node="11yOGSgFqE3" resolve="it" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="11yOGSgFseW" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpee:f_0Q1BS" />
+                                    </node>
+                                  </node>
+                                  <node concept="1mIQ4w" id="11yOGSgFsLV" role="2OqNvi">
+                                    <node concept="chp4Y" id="11yOGSgFsS5" role="cj9EA">
+                                      <ref role="cht4Q" to="26c9:65gbDjFWKi1" resolve="XjsnarkType" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Rh6nW" id="11yOGSgFqE3" role="1bW2Oz">
+                              <property role="TrG5h" value="it" />
+                              <node concept="2jxLKc" id="11yOGSgFqE4" role="1tU5fm" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="34oBXx" id="11yOGSgFthA" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="11yOGSguH6X" role="3cqZAp" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="11yOGSguH6Y" role="1YuTPh">
+      <property role="TrG5h" value="staticFieldDeclaration" />
+      <ref role="1YaFvo" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
     </node>
   </node>
 </model>

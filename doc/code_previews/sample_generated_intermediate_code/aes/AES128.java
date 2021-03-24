@@ -81,8 +81,12 @@ public class AES128 extends CircuitGenerator {
     super.__defineInputs();
 
 
+
     plaintext = (UnsignedInteger[]) UnsignedInteger.createInputArray(CircuitGenerator.__getActiveCircuitGenerator(), Util.getArrayDimensions(plaintext), 8);
     key = (UnsignedInteger[]) UnsignedInteger.createInputArray(CircuitGenerator.__getActiveCircuitGenerator(), Util.getArrayDimensions(key), 8);
+
+
+
 
 
 
@@ -97,6 +101,8 @@ public class AES128 extends CircuitGenerator {
   public void __defineOutputs() {
     super.__defineOutputs();
     UnsignedInteger.makeOutput(this, ciphertext);
+
+
 
 
 
@@ -123,10 +129,19 @@ public class AES128 extends CircuitGenerator {
 
 
 
+
+
+
+
   }
   @Override
   public void __defineWitnesses() {
     super.__defineWitnesses();
+
+
+
+
+
 
 
 
@@ -165,6 +180,10 @@ public class AES128 extends CircuitGenerator {
       state = shiftRows(state);
       state = mixColumns(state);
       state = addRoundkey(state, round * 4 * 4, (round + 1) * 4 * 4 - 1);
+
+      // note: the methods substate(), shiftRows(), mixColumns(), addRoundKey() could be also be  
+      // written in a way that updates the state array directly in place. 
+
     }
     state = subState(state);
     state = shiftRows(state);
@@ -222,18 +241,20 @@ public class AES128 extends CircuitGenerator {
     return newW;
   }
   private UnsignedInteger[] subWord(UnsignedInteger[] w) {
+    UnsignedInteger[] newW = (UnsignedInteger[]) UnsignedInteger.createZeroArray(CircuitGenerator.__getActiveCircuitGenerator(), new int[]{w.length}, 8);
     for (int j = 0; j < w.length; j++) {
-      w[j].assign(sBoxMem.read(w[j]), 8);
+      newW[j].assign(sBoxMem.read(w[j]), 8);
     }
-    return w;
+    return newW;
   }
   private UnsignedInteger[][] subState(UnsignedInteger[][] state) {
+    UnsignedInteger[][] newState = (UnsignedInteger[][]) UnsignedInteger.createZeroArray(CircuitGenerator.__getActiveCircuitGenerator(), new int[]{4, 4}, 8);
     for (int i = 0; i < state.length; i++) {
       for (int j = 0; j < state[i].length; j++) {
-        state[i][j].assign(sBoxMem.read(state[i][j]), 8);
+        newState[i][j].assign(sBoxMem.read(state[i][j]), 8);
       }
     }
-    return state;
+    return newState;
   }
   private UnsignedInteger gal_mul_const(UnsignedInteger x, int c) {
 
@@ -293,17 +314,18 @@ public class AES128 extends CircuitGenerator {
   private UnsignedInteger[][] mixColumns(UnsignedInteger[][] state) {
 
     UnsignedInteger[] a = (UnsignedInteger[]) UnsignedInteger.createZeroArray(CircuitGenerator.__getActiveCircuitGenerator(), new int[]{4}, 8);
+    UnsignedInteger[][] newState = (UnsignedInteger[][]) UnsignedInteger.createZeroArray(CircuitGenerator.__getActiveCircuitGenerator(), new int[]{4, 4}, 8);
 
     for (int c = 0; c < 4; c++) {
       for (int i = 0; i < 4; i++) {
         a[i].assign(state[i][c], 8);
       }
-      state[0][c].assign(gal_mul_const(a[0].copy(8), 2).xorBitwise(gal_mul_const(a[1].copy(8), 3)).xorBitwise(a[2]).xorBitwise(a[3]), 8);
-      state[1][c].assign(a[0].xorBitwise(gal_mul_const(a[1].copy(8), 2)).xorBitwise(gal_mul_const(a[2].copy(8), 3)).xorBitwise(a[3]), 8);
-      state[2][c].assign(a[0].xorBitwise(a[1]).xorBitwise(gal_mul_const(a[2].copy(8), 2)).xorBitwise(gal_mul_const(a[3].copy(8), 3)), 8);
-      state[3][c].assign(gal_mul_const(a[0].copy(8), 3).xorBitwise(a[1]).xorBitwise(a[2]).xorBitwise(gal_mul_const(a[3].copy(8), 2)), 8);
+      newState[0][c].assign(gal_mul_const(a[0].copy(8), 2).xorBitwise(gal_mul_const(a[1].copy(8), 3)).xorBitwise(a[2]).xorBitwise(a[3]), 8);
+      newState[1][c].assign(a[0].xorBitwise(gal_mul_const(a[1].copy(8), 2)).xorBitwise(gal_mul_const(a[2].copy(8), 3)).xorBitwise(a[3]), 8);
+      newState[2][c].assign(a[0].xorBitwise(a[1]).xorBitwise(gal_mul_const(a[2].copy(8), 2)).xorBitwise(gal_mul_const(a[3].copy(8), 3)), 8);
+      newState[3][c].assign(gal_mul_const(a[0].copy(8), 3).xorBitwise(a[1]).xorBitwise(a[2]).xorBitwise(gal_mul_const(a[3].copy(8), 2)), 8);
     }
-    return state;
+    return newState;
   }
   private UnsignedInteger[][] addRoundkey(UnsignedInteger[][] state, int from, int to) {
     UnsignedInteger[][] newState = (UnsignedInteger[][]) UnsignedInteger.createZeroArray(CircuitGenerator.__getActiveCircuitGenerator(), new int[]{4, 4}, 8);
