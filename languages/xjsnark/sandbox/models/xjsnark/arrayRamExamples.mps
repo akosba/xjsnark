@@ -199,6 +199,7 @@
         <child id="2787941026031223913" name="argument" index="2DT8nY" />
         <child id="2787941026031223912" name="jType" index="2DT8nZ" />
       </concept>
+      <concept id="8264408278343476866" name="xjsnark.structure.JNotEqualsExpression" flags="ng" index="2JLfk8" />
       <concept id="2280652580002804071" name="xjsnark.structure.MemoryAccessExpression" flags="ng" index="SwV0n">
         <child id="2280652580002804074" name="index" index="SwV0q" />
         <child id="2280652580002804076" name="memory" index="SwV0s" />
@@ -331,13 +332,28 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7OFUa2xB0lX" role="jymVt" />
-    <node concept="2tJIrI" id="7OFUa2xB0lY" role="jymVt" />
     <node concept="3clFb_" id="7OFUa2xB0lZ" role="jymVt">
       <property role="TrG5h" value="outsource" />
       <node concept="3cqZAl" id="7OFUa2xB0m0" role="3clF45" />
       <node concept="3Tm1VV" id="7OFUa2xB0m1" role="1B3o_S" />
       <node concept="3clFbS" id="7OFUa2xB0m2" role="3clF47">
         <node concept="3clFbH" id="7OFUa2xB5xZ" role="3cqZAp" />
+        <node concept="3SKdUt" id="5zSZca3Ea6_" role="3cqZAp">
+          <node concept="3SKdUq" id="5zSZca3Ea6B" role="3SKWNk">
+            <property role="3SKdUp" value="Note: this example is to just illustrate the usage of bwhile." />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5zSZca3Eaok" role="3cqZAp">
+          <node concept="3SKdUq" id="5zSZca3Eaom" role="3SKWNk">
+            <property role="3SKdUp" value="In this use case, binary search is not the most efficient. Running a linear search to find the " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5zSZca3Ecz2" role="3cqZAp">
+          <node concept="3SKdUq" id="5zSZca3Ecz3" role="3SKWNk">
+            <property role="3SKdUp" value="the element would be better." />
+          </node>
+        </node>
+        <node concept="3clFbH" id="5zSZca3E9Zh" role="3cqZAp" />
         <node concept="3SKdUt" id="7OFUa2xOyZp" role="3cqZAp">
           <node concept="3SKdUq" id="7OFUa2xOyZr" role="3SKWNk">
             <property role="3SKdUp" value="since we are going to access random elements in the array, we use the RAM type" />
@@ -482,23 +498,65 @@
               </node>
               <node concept="3eNFk2" id="7OFUa2xBbon" role="3eNLev">
                 <node concept="3clFbS" id="7OFUa2xBbop" role="3eOfB_">
-                  <node concept="3clFbF" id="7OFUa2xBbVu" role="3cqZAp">
-                    <node concept="37vLTI" id="7OFUa2xBc0Z" role="3clFbG">
-                      <node concept="3cpWsd" id="7OFUa2xBca8" role="37vLTx">
-                        <node concept="3SuevK" id="7OFUa2xBcbT" role="3uHU7w">
-                          <node concept="3qc1$W" id="7OFUa2xBcbV" role="3SuevR">
-                            <property role="3qc1Xj" value="32" />
+                  <node concept="3SKdUt" id="5zSZca3E9kj" role="3cqZAp">
+                    <node concept="3SKdUq" id="5zSZca3E9kl" role="3SKWNk">
+                      <property role="3SKdUp" value="Since we use unsigned integers, we avoid the case of 0 - 1, because this will get the high variable" />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="5zSZca3E9L$" role="3cqZAp">
+                    <node concept="3SKdUq" id="5zSZca3E9LA" role="3SKWNk">
+                      <property role="3SKdUp" value="to be outside the allowed index range, which could lead to problematic behavior, as the memory circuit" />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="5zSZca3EaBW" role="3cqZAp">
+                    <node concept="3SKdUq" id="5zSZca3EaBY" role="3SKWNk">
+                      <property role="3SKdUp" value="returns a default value (0), when it's queried using an out-of-bounds index. " />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="5zSZca3EcKn" role="3cqZAp">
+                    <node concept="3SKdUq" id="5zSZca3EcKp" role="3SKWNk">
+                      <property role="3SKdUp" value="Other safety checks are possible, e.g., adding an if condition in the beginning to ensure that the element" />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="5zSZca3EcWK" role="3cqZAp">
+                    <node concept="3SKdUq" id="5zSZca3EcWM" role="3SKWNk">
+                      <property role="3SKdUp" value="is in range." />
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="5zSZca3lPUb" role="3cqZAp">
+                    <node concept="3clFbS" id="5zSZca3lPUd" role="3clFbx">
+                      <node concept="3clFbF" id="7OFUa2xBbVu" role="3cqZAp">
+                        <node concept="37vLTI" id="7OFUa2xBc0Z" role="3clFbG">
+                          <node concept="3cpWsd" id="7OFUa2xBca8" role="37vLTx">
+                            <node concept="3SuevK" id="7OFUa2xBcbT" role="3uHU7w">
+                              <node concept="3qc1$W" id="7OFUa2xBcbV" role="3SuevR">
+                                <property role="3qc1Xj" value="32" />
+                              </node>
+                              <node concept="3cmrfG" id="7OFUa2xBcdk" role="3Sueug">
+                                <property role="3cmrfH" value="1" />
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="7OFUa2xBc2H" role="3uHU7B">
+                              <ref role="3cqZAo" node="7OFUa2xB9GA" resolve="mid" />
+                            </node>
                           </node>
-                          <node concept="3cmrfG" id="7OFUa2xBcdk" role="3Sueug">
-                            <property role="3cmrfH" value="1" />
+                          <node concept="37vLTw" id="7OFUa2xBbVt" role="37vLTJ">
+                            <ref role="3cqZAo" node="7OFUa2xB66k" resolve="high" />
                           </node>
-                        </node>
-                        <node concept="37vLTw" id="7OFUa2xBc2H" role="3uHU7B">
-                          <ref role="3cqZAo" node="7OFUa2xB9GA" resolve="mid" />
                         </node>
                       </node>
-                      <node concept="37vLTw" id="7OFUa2xBbVt" role="37vLTJ">
-                        <ref role="3cqZAo" node="7OFUa2xB66k" resolve="high" />
+                    </node>
+                    <node concept="2JLfk8" id="5zSZca3lQ1d" role="3clFbw">
+                      <node concept="3SuevK" id="5zSZca3lQ2c" role="3uHU7w">
+                        <node concept="3qc1$W" id="5zSZca3lQ2e" role="3SuevR">
+                          <property role="3qc1Xj" value="32" />
+                        </node>
+                        <node concept="3cmrfG" id="5zSZca3lQ3_" role="3Sueug">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="5zSZca3lQ6X" role="3uHU7B">
+                        <ref role="3cqZAo" node="7OFUa2xB9GA" resolve="mid" />
                       </node>
                     </node>
                   </node>
@@ -550,15 +608,15 @@
               <ref role="37wK5l" to="wyt6:~Math.ceil(double):double" resolve="ceil" />
               <node concept="FJ1c_" id="7OFUa2xB7MV" role="37wK5m">
                 <node concept="2YIFZM" id="7OFUa2xB7Tf" role="3uHU7w">
-                  <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
                   <ref role="37wK5l" to="wyt6:~Math.log(double):double" resolve="log" />
+                  <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
                   <node concept="3cmrfG" id="7OFUa2xB7WY" role="37wK5m">
                     <property role="3cmrfH" value="2" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="7OFUa2xB7jm" role="3uHU7B">
-                  <ref role="37wK5l" to="wyt6:~Math.log(double):double" resolve="log" />
                   <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                  <ref role="37wK5l" to="wyt6:~Math.log(double):double" resolve="log" />
                   <node concept="37vLTw" id="7OFUa2xB9eN" role="37wK5m">
                     <ref role="3cqZAo" node="7OFUa2xB1LK" resolve="SIZE" />
                   </node>
