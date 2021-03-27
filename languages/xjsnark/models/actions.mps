@@ -1938,7 +1938,7 @@
                     <node concept="liA8E" id="5CNaGjSrhew" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
                       <node concept="3cmrfG" id="5CNaGjSrhex" role="37wK5m">
-                        <property role="3cmrfH" value="2" />
+                        <property role="3cmrfH" value="3" />
                       </node>
                       <node concept="3cpWsd" id="5CNaGjSrhey" role="37wK5m">
                         <node concept="3cmrfG" id="5CNaGjSrhez" role="3uHU7w">
@@ -2100,7 +2100,7 @@
                             <node concept="liA8E" id="5CNaGjSrmnC" role="2OqNvi">
                               <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
                               <node concept="3cmrfG" id="5CNaGjSrmnD" role="37wK5m">
-                                <property role="3cmrfH" value="2" />
+                                <property role="3cmrfH" value="3" />
                               </node>
                               <node concept="3cpWsd" id="5CNaGjSrmnE" role="37wK5m">
                                 <node concept="3cmrfG" id="5CNaGjSrmnF" role="3uHU7w">
@@ -2205,7 +2205,7 @@
                     <node concept="liA8E" id="5CNaGjSrmon" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                       <node concept="Xl_RD" id="5CNaGjSrmoo" role="37wK5m">
-                        <property role="Xl_RC" value="G_" />
+                        <property role="Xl_RC" value="Z*_" />
                       </node>
                     </node>
                   </node>
@@ -2253,7 +2253,7 @@
                     <node concept="liA8E" id="5CNaGjSrwG4" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
                       <node concept="3cmrfG" id="5CNaGjSrwG5" role="37wK5m">
-                        <property role="3cmrfH" value="2" />
+                        <property role="3cmrfH" value="3" />
                       </node>
                       <node concept="3cpWsd" id="5CNaGjSrwG6" role="37wK5m">
                         <node concept="3cmrfG" id="5CNaGjSrwG7" role="3uHU7w">
@@ -2449,7 +2449,7 @@
                             <node concept="liA8E" id="5CNaGjSrth7" role="2OqNvi">
                               <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
                               <node concept="3cmrfG" id="5CNaGjSrth8" role="37wK5m">
-                                <property role="3cmrfH" value="2" />
+                                <property role="3cmrfH" value="3" />
                               </node>
                               <node concept="3cpWsd" id="5CNaGjSrth9" role="37wK5m">
                                 <node concept="3cmrfG" id="5CNaGjSrtha" role="3uHU7w">
@@ -2545,7 +2545,7 @@
                   <node concept="liA8E" id="5CNaGjSrthM" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                     <node concept="Xl_RD" id="5CNaGjSrthN" role="37wK5m">
-                      <property role="Xl_RC" value="G_" />
+                      <property role="Xl_RC" value="Z*_" />
                     </node>
                   </node>
                 </node>

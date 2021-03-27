@@ -858,6 +858,7 @@
     <node concept="1TJgyj" id="5CNaGjSr9rg" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="groupRec" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5CNaGjSr7E0" resolve="GroupRecord" />
     </node>
   </node>
@@ -878,8 +879,8 @@
     <property role="1pbfSe" value="1386216332" />
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="JGroupConversion" />
-    <property role="34LRSv" value="G_" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="34LRSv" value="Z*_" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="5CNaGjSrd3$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="jType" />
