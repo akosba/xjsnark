@@ -11100,8 +11100,51 @@
             <node concept="Xl_RD" id="18zTa4dwpvi" role="2MkJ7o">
               <property role="Xl_RC" value="Log instructions can only be used with xJsnark types" />
             </node>
-            <node concept="1YBJjd" id="18zTa4dwprE" role="2OEOjV">
-              <ref role="1YBMHb" node="18zTa4dwnZD" resolve="log" />
+            <node concept="2OqwBi" id="5KFiyIQAkzq" role="2OEOjV">
+              <node concept="1YBJjd" id="18zTa4dwprE" role="2Oq$k0">
+                <ref role="1YBMHb" node="18zTa4dwnZD" resolve="log" />
+              </node>
+              <node concept="3TrEf2" id="5KFiyIQAkQ1" role="2OqNvi">
+                <ref role="3Tt5mk" to="26c9:18zTa4dwmIs" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5KFiyIQAjtC" role="3cqZAp">
+        <node concept="3clFbS" id="5KFiyIQAjtE" role="3clFbx">
+          <node concept="2MkqsV" id="5KFiyIQAkvM" role="3cqZAp">
+            <node concept="Xl_RD" id="5KFiyIQAkvN" role="2MkJ7o">
+              <property role="Xl_RC" value="Log messages can only be of String type" />
+            </node>
+            <node concept="2OqwBi" id="5KFiyIQAkUH" role="2OEOjV">
+              <node concept="1YBJjd" id="5KFiyIQAkvO" role="2Oq$k0">
+                <ref role="1YBMHb" node="18zTa4dwnZD" resolve="log" />
+              </node>
+              <node concept="3TrEf2" id="5KFiyIQAl5i" role="2OqNvi">
+                <ref role="3Tt5mk" to="26c9:18zTa4dwmNy" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="5KFiyIQAjtD" role="3cqZAp" />
+        </node>
+        <node concept="3fqX7Q" id="5KFiyIQAjva" role="3clFbw">
+          <node concept="2OqwBi" id="5KFiyIQAkig" role="3fr31v">
+            <node concept="2OqwBi" id="5KFiyIQAk2$" role="2Oq$k0">
+              <node concept="2OqwBi" id="5KFiyIQAj$$" role="2Oq$k0">
+                <node concept="1YBJjd" id="5KFiyIQAjve" role="2Oq$k0">
+                  <ref role="1YBMHb" node="18zTa4dwnZD" resolve="log" />
+                </node>
+                <node concept="3TrEf2" id="5KFiyIQAjRm" role="2OqNvi">
+                  <ref role="3Tt5mk" to="26c9:18zTa4dwmNy" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="5KFiyIQAkcd" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="5KFiyIQAkpt" role="2OqNvi">
+              <node concept="chp4Y" id="5KFiyIQAksn" role="cj9EA">
+                <ref role="cht4Q" to="tpee:hP7QB7G" resolve="StringType" />
+              </node>
             </node>
           </node>
         </node>
