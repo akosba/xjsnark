@@ -427,6 +427,27 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="6V9UfnbFDgs" role="3cqZAp">
+          <node concept="3SKdUq" id="6V9UfnbFDFy" role="3SKWNk">
+            <property role="3SKdUp" value="Note: The precedence of the NOT operator is different from usual due to difficulty in setting the precdence of " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6V9UfnbSgc9" role="3cqZAp">
+          <node concept="3SKdUq" id="6V9UfnbSgca" role="3SKWNk">
+            <property role="3SKdUp" value="new unary operators in this environment." />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6V9UfnbFDFZ" role="3cqZAp">
+          <node concept="3SKdUq" id="6V9UfnbFDG0" role="3SKWNk">
+            <property role="3SKdUp" value="Use parentheses to control the behavior." />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6V9UfnbSgjE" role="3cqZAp">
+          <node concept="3SKdUq" id="6V9UfnbSgjF" role="3SKWNk">
+            <property role="3SKdUp" value="For example for an expression like !x &amp;&amp; y, it should be written as (NOT x) AND y." />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6V9UfnbFDZC" role="3cqZAp" />
         <node concept="3clFbH" id="3ZyZ1ekn7lI" role="3cqZAp" />
         <node concept="3SKdUt" id="3ZyZ1eknaBy" role="3cqZAp">
           <node concept="3SKdUq" id="3ZyZ1eknaB$" role="3SKWNk">

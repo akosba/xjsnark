@@ -14110,5 +14110,23 @@
       <ref role="1YaFvo" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
     </node>
   </node>
+  <node concept="18kY7G" id="6V9UfnbhFF7">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="JNotExpressionPrecedence" />
+    <node concept="3clFbS" id="6V9UfnbhFF8" role="18ibNy">
+      <node concept="Dpp1Q" id="6V9UfnbhGe2" role="3cqZAp">
+        <node concept="Xl_RD" id="6V9UfnbhGe$" role="Dpw9R">
+          <property role="Xl_RC" value="The precedence of the NOT operator is different from usual due to difficulty in setting the precdence of new unary operators in this environment.\n Use parentheses to control the behavior. \n For example for an expression like !x &amp;&amp; y, it should be written as (NOT x) AND y." />
+        </node>
+        <node concept="1YBJjd" id="6V9UfnbhGeV" role="2OEOjV">
+          <ref role="1YBMHb" node="6V9UfnbhFFm" resolve="jNotExpression" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6V9UfnbhFFm" role="1YuTPh">
+      <property role="TrG5h" value="jNotExpression" />
+      <ref role="1YaFvo" to="26c9:6zlb0z1wECl" resolve="JNotExpression" />
+    </node>
+  </node>
 </model>
 
