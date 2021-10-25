@@ -36642,39 +36642,38 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbF" id="1bbdoCsfYqb" role="3cqZAp">
-        <node concept="2OqwBi" id="1bbdoCsfYqY" role="3clFbG">
-          <node concept="2YIFZM" id="6w4Q6P7cLo_" role="2Oq$k0">
-            <ref role="1Pybhc" to="7jix:~CircuitGenerator" resolve="CircuitGenerator" />
-            <ref role="37wK5l" to="7jix:~CircuitGenerator.__getActiveCircuitGenerator():backend.structure.CircuitGenerator" resolve="__getActiveCircuitGenerator" />
-          </node>
-          <node concept="liA8E" id="1bbdoCsfYsk" role="2OqNvi">
-            <ref role="37wK5l" to="7jix:~CircuitGenerator.__addOneAssertion(backend.structure.Wire,java.lang.String...):void" resolve="__addOneAssertion" />
-            <node concept="2OqwBi" id="1bbdoCsfYA2" role="37wK5m">
-              <node concept="37vLTw" id="1bbdoCsfY$Z" role="2Oq$k0">
-                <ref role="3cqZAo" node="1bbdoCsfYzb" resolve="b" />
-                <node concept="29HgVG" id="1bbdoCsfYFE" role="lGtFl">
-                  <node concept="3NFfHV" id="1bbdoCsfYFF" role="3NFExx">
-                    <node concept="3clFbS" id="1bbdoCsfYFG" role="2VODD2">
-                      <node concept="3clFbF" id="1bbdoCsfYFM" role="3cqZAp">
-                        <node concept="2OqwBi" id="1bbdoCsfYFH" role="3clFbG">
-                          <node concept="3TrEf2" id="6w4Q6PdYXm4" role="2OqNvi">
-                            <ref role="3Tt5mk" to="26c9:6zlb0z15JLZ" />
-                          </node>
-                          <node concept="30H73N" id="1bbdoCsfYFL" role="2Oq$k0" />
-                        </node>
+      <node concept="3clFbF" id="2ut0lNm14bd" role="3cqZAp">
+        <node concept="2OqwBi" id="2ut0lNm14cc" role="3clFbG">
+          <node concept="37vLTw" id="2ut0lNm14bb" role="2Oq$k0">
+            <ref role="3cqZAo" node="1bbdoCsfYzb" resolve="b" />
+            <node concept="29HgVG" id="2ut0lNmivVj" role="lGtFl">
+              <node concept="3NFfHV" id="2ut0lNmivVk" role="3NFExx">
+                <node concept="3clFbS" id="2ut0lNmivVl" role="2VODD2">
+                  <node concept="3clFbF" id="2ut0lNmivVr" role="3cqZAp">
+                    <node concept="2OqwBi" id="2ut0lNmivVm" role="3clFbG">
+                      <node concept="3TrEf2" id="2ut0lNmivVp" role="2OqNvi">
+                        <ref role="3Tt5mk" to="26c9:6zlb0z15JLZ" />
                       </node>
+                      <node concept="30H73N" id="2ut0lNmivVq" role="2Oq$k0" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="liA8E" id="1bbdoCsfYEi" role="2OqNvi">
-                <ref role="37wK5l" to="hr8v:~Bit.getWire():backend.structure.Wire" resolve="getWire" />
+            </node>
+          </node>
+          <node concept="liA8E" id="2ut0lNmivDJ" role="2OqNvi">
+            <ref role="37wK5l" to="hr8v:~Bit.forceEqual(backend.auxTypes.IAuxType):void" resolve="forceEqual" />
+            <node concept="2ShNRf" id="2ut0lNmivEN" role="37wK5m">
+              <node concept="1pGfFk" id="2ut0lNmivTz" role="2ShVmc">
+                <ref role="37wK5l" to="hr8v:~Bit.&lt;init&gt;(boolean)" resolve="Bit" />
+                <node concept="3clFbT" id="2ut0lNmivU4" role="37wK5m">
+                  <property role="3clFbU" value="true" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="raruj" id="1bbdoCsfYIC" role="lGtFl" />
+        <node concept="raruj" id="2ut0lNm1jwT" role="lGtFl" />
       </node>
     </node>
   </node>
