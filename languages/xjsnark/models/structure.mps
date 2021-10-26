@@ -476,16 +476,6 @@
         <ref role="20lvS9" node="3BesNbzYLfF" resolve="OutputBlock" />
       </node>
     </node>
-    <node concept="1X3_iC" id="1F6kLWsNg9B" role="lGtFl">
-      <property role="3V$3am" value="linkDeclaration" />
-      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
-      <node concept="1TJgyj" id="1F6kLWsLA7o" role="8Wnug">
-        <property role="20lmBu" value="aggregation" />
-        <property role="20kJfa" value="initBlock" />
-        <property role="20lbJX" value="1" />
-        <ref role="20lvS9" to=":^" resolve="PreProgramSetup" />
-      </node>
-    </node>
     <node concept="PrWs8" id="5YAr2jJR4h$" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

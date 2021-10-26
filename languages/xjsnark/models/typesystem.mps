@@ -14128,5 +14128,476 @@
       <ref role="1YaFvo" to="26c9:6zlb0z1wECl" resolve="JNotExpression" />
     </node>
   </node>
+  <node concept="18kY7G" id="6nIQUR5TDXM">
+    <property role="3GE5qa" value="Errors.unsupported" />
+    <property role="TrG5h" value="LeftShiftXjsnarkTypes" />
+    <node concept="3clFbS" id="6nIQUR5TDXN" role="18ibNy">
+      <node concept="3clFbJ" id="6nIQUR5TDXY" role="3cqZAp">
+        <node concept="2OqwBi" id="6nIQUR5TF5c" role="3clFbw">
+          <node concept="2OqwBi" id="6nIQUR5TF5d" role="2Oq$k0">
+            <node concept="2OqwBi" id="6nIQUR5TF5e" role="2Oq$k0">
+              <node concept="1YBJjd" id="6nIQUR5TF5f" role="2Oq$k0">
+                <ref role="1YBMHb" node="6nIQUR5TDXP" resolve="shiftLeftExpression" />
+              </node>
+              <node concept="3TrEf2" id="6nIQUR5TFpX" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fJuHU4r" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="6nIQUR5TF5h" role="2OqNvi" />
+          </node>
+          <node concept="1mIQ4w" id="6nIQUR5TF5i" role="2OqNvi">
+            <node concept="chp4Y" id="6nIQUR5TF5j" role="cj9EA">
+              <ref role="cht4Q" to="26c9:3BesNbzZACe" resolve="JUnsignedIntegerType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6nIQUR5TDY0" role="3clFbx">
+          <node concept="2MkqsV" id="6nIQUR5TFrT" role="3cqZAp">
+            <node concept="Xl_RD" id="6nIQUR5TFst" role="2MkJ7o">
+              <property role="Xl_RC" value="Using an uint on the right hand side is unsupported in this version. " />
+            </node>
+            <node concept="1YBJjd" id="6nIQUR5TFs5" role="2OEOjV">
+              <ref role="1YBMHb" node="6nIQUR5TDXP" resolve="shiftLeftExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6nIQUR5TDXP" role="1YuTPh">
+      <property role="TrG5h" value="shiftLeftExpression" />
+      <ref role="1YaFvo" to="tpee:hPGRDYT" resolve="ShiftLeftExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5QfAAs46N1U">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="ExternalBlockMethodCalls" />
+    <node concept="3clFbS" id="5QfAAs46N1V" role="18ibNy">
+      <node concept="Dpp1Q" id="5QfAAs46N26" role="3cqZAp">
+        <node concept="Xl_RD" id="5QfAAs46N2F" role="Dpw9R">
+          <property role="Xl_RC" value="Any code or method calls from this block should not implement any circuit logic or create/assign variables of xJsnark types.\n Use the .val operator to control or read the values of existing variables." />
+        </node>
+        <node concept="1YBJjd" id="5QfAAs46N2o" role="2OEOjV">
+          <ref role="1YBMHb" node="5QfAAs46N1X" resolve="externalBlock" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5QfAAs46N1X" role="1YuTPh">
+      <property role="TrG5h" value="externalBlock" />
+      <ref role="1YaFvo" to="26c9:6zlb0z1A6Zw" resolve="ExternalBlock" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5QfAAs46Nas">
+    <property role="3GE5qa" value="Warnings" />
+    <property role="TrG5h" value="TestBlockMethodCalls" />
+    <node concept="3clFbS" id="5QfAAs46Nat" role="18ibNy">
+      <node concept="Dpp1Q" id="5QfAAs46Nau" role="3cqZAp">
+        <node concept="Xl_RD" id="5QfAAs46Nav" role="Dpw9R">
+          <property role="Xl_RC" value="Any code or method calls from this block (both pre and post) should not implement any circuit logic or create/assign variables of xJsnark types.\n Use the .val operator to control or read the values of existing variables." />
+        </node>
+        <node concept="1YBJjd" id="5QfAAs46Naw" role="2OEOjV">
+          <ref role="1YBMHb" node="5QfAAs46Nax" resolve="testBlock" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5QfAAs46Nax" role="1YuTPh">
+      <property role="TrG5h" value="testBlock" />
+      <ref role="1YaFvo" to="26c9:3P8aN57Gm_N" resolve="TestBlock" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6nIQUR5TFE8">
+    <property role="3GE5qa" value="Errors.unsupported" />
+    <property role="TrG5h" value="RightShiftXjsnarkTypes" />
+    <node concept="3clFbS" id="6nIQUR5TFE9" role="18ibNy">
+      <node concept="3clFbJ" id="6nIQUR5TFEa" role="3cqZAp">
+        <node concept="2OqwBi" id="6nIQUR5TFEb" role="3clFbw">
+          <node concept="2OqwBi" id="6nIQUR5TFEc" role="2Oq$k0">
+            <node concept="2OqwBi" id="6nIQUR5TFEd" role="2Oq$k0">
+              <node concept="1YBJjd" id="6nIQUR5TFEe" role="2Oq$k0">
+                <ref role="1YBMHb" node="6nIQUR5TFEn" resolve="shiftRightExpression" />
+              </node>
+              <node concept="3TrEf2" id="6nIQUR5TFEf" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fJuHU4r" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="6nIQUR5TFEg" role="2OqNvi" />
+          </node>
+          <node concept="1mIQ4w" id="6nIQUR5TFEh" role="2OqNvi">
+            <node concept="chp4Y" id="6nIQUR5TFEi" role="cj9EA">
+              <ref role="cht4Q" to="26c9:3BesNbzZACe" resolve="JUnsignedIntegerType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6nIQUR5TFEj" role="3clFbx">
+          <node concept="2MkqsV" id="6nIQUR5TFEk" role="3cqZAp">
+            <node concept="Xl_RD" id="6nIQUR5TFEl" role="2MkJ7o">
+              <property role="Xl_RC" value="Using an uint on the right hand side is unsupported in this version." />
+            </node>
+            <node concept="1YBJjd" id="6nIQUR5TFEm" role="2OEOjV">
+              <ref role="1YBMHb" node="6nIQUR5TFEn" resolve="shiftRightExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6nIQUR5TFEn" role="1YuTPh">
+      <property role="TrG5h" value="shiftRightExpression" />
+      <ref role="1YaFvo" to="tpee:hPGS57v" resolve="ShiftRightExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6nIQUR5TFJn">
+    <property role="3GE5qa" value="Errors" />
+    <property role="TrG5h" value="WrongLocationOfAssignments" />
+    <node concept="3clFbS" id="6nIQUR5TFJo" role="18ibNy">
+      <node concept="3clFbJ" id="6nIQUR5TJct" role="3cqZAp">
+        <node concept="2OqwBi" id="6nIQUR5TJAp" role="3clFbw">
+          <node concept="2OqwBi" id="6nIQUR5TJgv" role="2Oq$k0">
+            <node concept="1YBJjd" id="6nIQUR5TJcD" role="2Oq$k0">
+              <ref role="1YBMHb" node="6nIQUR5TFJq" resolve="assignmentExpression" />
+            </node>
+            <node concept="3JvlWi" id="6nIQUR5TJt5" role="2OqNvi" />
+          </node>
+          <node concept="1mIQ4w" id="6nIQUR5TJJb" role="2OqNvi">
+            <node concept="chp4Y" id="6nIQUR5TJJG" role="cj9EA">
+              <ref role="cht4Q" to="26c9:65gbDjFWKi1" resolve="XjsnarkType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6nIQUR5TJcv" role="3clFbx">
+          <node concept="3clFbJ" id="6nIQUR5TFJz" role="3cqZAp">
+            <node concept="2OqwBi" id="6nIQUR5TGNz" role="3clFbw">
+              <node concept="2OqwBi" id="6nIQUR5TFN_" role="2Oq$k0">
+                <node concept="1YBJjd" id="6nIQUR5TFJJ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6nIQUR5TFJq" resolve="assignmentExpression" />
+                </node>
+                <node concept="z$bX8" id="6nIQUR5TGjY" role="2OqNvi" />
+              </node>
+              <node concept="2HwmR7" id="6nIQUR5TIpo" role="2OqNvi">
+                <node concept="1bVj0M" id="6nIQUR5TIpq" role="23t8la">
+                  <node concept="3clFbS" id="6nIQUR5TIpr" role="1bW5cS">
+                    <node concept="3clFbF" id="6nIQUR5TIrn" role="3cqZAp">
+                      <node concept="22lmx$" id="6nIQUR5TIPD" role="3clFbG">
+                        <node concept="2OqwBi" id="6nIQUR5TIWL" role="3uHU7w">
+                          <node concept="37vLTw" id="6nIQUR5TITa" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6nIQUR5TIps" resolve="it" />
+                          </node>
+                          <node concept="1mIQ4w" id="6nIQUR5TJ4j" role="2OqNvi">
+                            <node concept="chp4Y" id="6nIQUR5TJ7p" role="cj9EA">
+                              <ref role="cht4Q" to="26c9:6zlb0z1A6Zw" resolve="ExternalBlock" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="6nIQUR5TIu7" role="3uHU7B">
+                          <node concept="37vLTw" id="6nIQUR5TIrm" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6nIQUR5TIps" resolve="it" />
+                          </node>
+                          <node concept="1mIQ4w" id="6nIQUR5TIzR" role="2OqNvi">
+                            <node concept="chp4Y" id="6nIQUR5TIHt" role="cj9EA">
+                              <ref role="cht4Q" to="26c9:3P8aN57Gm_N" resolve="TestBlock" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="6nIQUR5TIps" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="6nIQUR5TIpt" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6nIQUR5TFJ_" role="3clFbx">
+              <node concept="2MkqsV" id="6nIQUR5TJKH" role="3cqZAp">
+                <node concept="3cpWs3" id="6nIQUR5TK4E" role="2MkJ7o">
+                  <node concept="Xl_RD" id="6nIQUR5TKan" role="3uHU7w">
+                    <property role="Xl_RC" value=" is not allowed in this block, as circuit logic should not be added here. Use the .val operator to assign values." />
+                  </node>
+                  <node concept="3cpWs3" id="6nIQUR5TJSZ" role="3uHU7B">
+                    <node concept="Xl_RD" id="6nIQUR5TJKT" role="3uHU7B">
+                      <property role="Xl_RC" value="An assignment to a variable of type " />
+                    </node>
+                    <node concept="2OqwBi" id="6nIQUR5TJTh" role="3uHU7w">
+                      <node concept="1YBJjd" id="6nIQUR5TJTi" role="2Oq$k0">
+                        <ref role="1YBMHb" node="6nIQUR5TFJq" resolve="assignmentExpression" />
+                      </node>
+                      <node concept="3JvlWi" id="6nIQUR5TJTj" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1YBJjd" id="6nIQUR5TKgO" role="2OEOjV">
+                  <ref role="1YBMHb" node="6nIQUR5TFJq" resolve="assignmentExpression" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="5QfAAs4JE1$" role="3cqZAp" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="5QfAAs4JDVc" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="6nIQUR5TFJq" role="1YuTPh">
+      <property role="TrG5h" value="assignmentExpression" />
+      <ref role="1YaFvo" to="tpee:fz7vLUm" resolve="AssignmentExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6nIQUR6rGfJ">
+    <property role="3GE5qa" value="Errors" />
+    <property role="TrG5h" value="WrongLocationOfExternalBlock" />
+    <node concept="3clFbS" id="6nIQUR6rGfK" role="18ibNy">
+      <node concept="3clFbJ" id="6nIQUR6rGfL" role="3cqZAp">
+        <node concept="2OqwBi" id="6nIQUR6rGfM" role="3clFbw">
+          <node concept="2OqwBi" id="6nIQUR6rGfN" role="2Oq$k0">
+            <node concept="1YBJjd" id="6nIQUR6rGfO" role="2Oq$k0">
+              <ref role="1YBMHb" node="6nIQUR6rGgn" resolve="externalBlock" />
+            </node>
+            <node concept="z$bX8" id="6nIQUR6rGfP" role="2OqNvi" />
+          </node>
+          <node concept="2HwmR7" id="6nIQUR6rGfQ" role="2OqNvi">
+            <node concept="1bVj0M" id="6nIQUR6rGfR" role="23t8la">
+              <node concept="3clFbS" id="6nIQUR6rGfS" role="1bW5cS">
+                <node concept="3clFbF" id="6nIQUR6rGfT" role="3cqZAp">
+                  <node concept="22lmx$" id="6nIQUR6rIV8" role="3clFbG">
+                    <node concept="2OqwBi" id="6nIQUR6rJ5o" role="3uHU7w">
+                      <node concept="37vLTw" id="6nIQUR6rIZS" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6nIQUR6rGg3" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="6nIQUR6rJdV" role="2OqNvi">
+                        <node concept="chp4Y" id="6nIQUR6rJiW" role="cj9EA">
+                          <ref role="cht4Q" to="tpee:fzclF8n" resolve="IfStatement" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="22lmx$" id="6nIQUR6rGfU" role="3uHU7B">
+                      <node concept="2OqwBi" id="6nIQUR6rGfZ" role="3uHU7B">
+                        <node concept="37vLTw" id="6nIQUR6rGg0" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6nIQUR6rGg3" resolve="it" />
+                        </node>
+                        <node concept="1mIQ4w" id="6nIQUR6rGg1" role="2OqNvi">
+                          <node concept="chp4Y" id="6nIQUR6rGg2" role="cj9EA">
+                            <ref role="cht4Q" to="26c9:3P8aN57Gm_N" resolve="TestBlock" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="6nIQUR6rGfV" role="3uHU7w">
+                        <node concept="37vLTw" id="6nIQUR6rGfW" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6nIQUR6rGg3" resolve="it" />
+                        </node>
+                        <node concept="1mIQ4w" id="6nIQUR6rGfX" role="2OqNvi">
+                          <node concept="chp4Y" id="6nIQUR6rGfY" role="cj9EA">
+                            <ref role="cht4Q" to="26c9:6zlb0z1A6Zw" resolve="ExternalBlock" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="6nIQUR6rGg3" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="2jxLKc" id="6nIQUR6rGg4" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6nIQUR6rGg5" role="3clFbx">
+          <node concept="3clFbJ" id="6nIQUR6rGg6" role="3cqZAp">
+            <node concept="2OqwBi" id="6nIQUR6rGg7" role="3clFbw">
+              <node concept="2OqwBi" id="6nIQUR6rGg8" role="2Oq$k0">
+                <node concept="1YBJjd" id="6nIQUR6rGg9" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6nIQUR6rGgn" resolve="externalBlock" />
+                </node>
+                <node concept="3JvlWi" id="6nIQUR6rGga" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="6nIQUR6rGgb" role="2OqNvi">
+                <node concept="chp4Y" id="6nIQUR6rGgc" role="cj9EA">
+                  <ref role="cht4Q" to="26c9:65gbDjFWKi1" resolve="XjsnarkType" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6nIQUR6rGgd" role="3clFbx">
+              <node concept="2MkqsV" id="6nIQUR6rGge" role="3cqZAp">
+                <node concept="Xl_RD" id="6nIQUR6rGgi" role="2MkJ7o">
+                  <property role="Xl_RC" value="Unexpected location of external block " />
+                </node>
+                <node concept="1YBJjd" id="6nIQUR6rGgm" role="2OEOjV">
+                  <ref role="1YBMHb" node="6nIQUR6rGgn" resolve="externalBlock" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6nIQUR6rGgn" role="1YuTPh">
+      <property role="TrG5h" value="externalBlock" />
+      <ref role="1YaFvo" to="26c9:6zlb0z1A6Zw" resolve="ExternalBlock" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6nIQUR5zCWb">
+    <property role="TrG5h" value="LocationOfReturnStmt" />
+    <property role="3GE5qa" value="Errors.unsupported" />
+    <node concept="3clFbS" id="6nIQUR5zCWc" role="18ibNy">
+      <node concept="3clFbJ" id="6nIQUR5zDqF" role="3cqZAp">
+        <node concept="2OqwBi" id="6nIQUR5zEj3" role="3clFbw">
+          <node concept="2OqwBi" id="6nIQUR5zDve" role="2Oq$k0">
+            <node concept="1YBJjd" id="6nIQUR5zDqR" role="2Oq$k0">
+              <ref role="1YBMHb" node="6nIQUR5zCWe" resolve="returnStatement" />
+            </node>
+            <node concept="z$bX8" id="6nIQUR5zDM1" role="2OqNvi" />
+          </node>
+          <node concept="2HwmR7" id="6nIQUR5zF6q" role="2OqNvi">
+            <node concept="1bVj0M" id="6nIQUR5zF6s" role="23t8la">
+              <node concept="3clFbS" id="6nIQUR5zF6t" role="1bW5cS">
+                <node concept="3clFbF" id="6nIQUR5zF8p" role="3cqZAp">
+                  <node concept="1Wc70l" id="6nIQUR5zFu_" role="3clFbG">
+                    <node concept="1eOMI4" id="6nIQUR6dBFn" role="3uHU7w">
+                      <node concept="22lmx$" id="6nIQUR6dBPW" role="1eOMHV">
+                        <node concept="2OqwBi" id="6nIQUR6dDMs" role="3uHU7w">
+                          <node concept="2OqwBi" id="6nIQUR6dCvm" role="2Oq$k0">
+                            <node concept="1PxgMI" id="6nIQUR6dCgL" role="2Oq$k0">
+                              <property role="1BlNFB" value="true" />
+                              <ref role="1PxNhF" to="tpee:fzclF8n" resolve="IfStatement" />
+                              <node concept="37vLTw" id="6nIQUR6dBVl" role="1PxMeX">
+                                <ref role="3cqZAo" node="6nIQUR5zF6u" resolve="it" />
+                              </node>
+                            </node>
+                            <node concept="3Tsc0h" id="6nIQUR6dCWz" role="2OqNvi">
+                              <ref role="3TtcxE" to="tpee:hzeNLa7" />
+                            </node>
+                          </node>
+                          <node concept="2HwmR7" id="6nIQUR6dG4F" role="2OqNvi">
+                            <node concept="1bVj0M" id="6nIQUR6dG4H" role="23t8la">
+                              <node concept="3clFbS" id="6nIQUR6dG4I" role="1bW5cS">
+                                <node concept="3clFbF" id="6nIQUR6dGdl" role="3cqZAp">
+                                  <node concept="2OqwBi" id="6nIQUR6dHgu" role="3clFbG">
+                                    <node concept="2OqwBi" id="6nIQUR6dGX$" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="6nIQUR6dGla" role="2Oq$k0">
+                                        <node concept="37vLTw" id="6nIQUR6dGdk" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="6nIQUR6dG4J" resolve="it2" />
+                                        </node>
+                                        <node concept="3TrEf2" id="6nIQUR6dGHc" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="tpee:hzeO9wY" />
+                                        </node>
+                                      </node>
+                                      <node concept="3JvlWi" id="6nIQUR6dH6f" role="2OqNvi" />
+                                    </node>
+                                    <node concept="1mIQ4w" id="6nIQUR6dHsU" role="2OqNvi">
+                                      <node concept="chp4Y" id="6nIQUR6dHA6" role="cj9EA">
+                                        <ref role="cht4Q" to="26c9:5u98M4xbjNn" resolve="JBooleanType" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="Rh6nW" id="6nIQUR6dG4J" role="1bW2Oz">
+                                <property role="TrG5h" value="it2" />
+                                <node concept="2jxLKc" id="6nIQUR6dG4K" role="1tU5fm" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="6nIQUR5zH6W" role="3uHU7B">
+                          <node concept="2OqwBi" id="6nIQUR5zGKW" role="2Oq$k0">
+                            <node concept="2OqwBi" id="6nIQUR5zFQs" role="2Oq$k0">
+                              <node concept="1PxgMI" id="6nIQUR5zFDi" role="2Oq$k0">
+                                <property role="1BlNFB" value="true" />
+                                <ref role="1PxNhF" to="tpee:fzclF8n" resolve="IfStatement" />
+                                <node concept="37vLTw" id="6nIQUR5zFy$" role="1PxMeX">
+                                  <ref role="3cqZAo" node="6nIQUR5zF6u" resolve="it" />
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="6nIQUR5zGtY" role="2OqNvi">
+                                <ref role="3Tt5mk" to="tpee:fzclF8o" />
+                              </node>
+                            </node>
+                            <node concept="3JvlWi" id="6nIQUR5zGWW" role="2OqNvi" />
+                          </node>
+                          <node concept="1mIQ4w" id="6nIQUR5zHg$" role="2OqNvi">
+                            <node concept="chp4Y" id="6nIQUR5zHmm" role="cj9EA">
+                              <ref role="cht4Q" to="26c9:5u98M4xbjNn" resolve="JBooleanType" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6nIQUR5zFb9" role="3uHU7B">
+                      <node concept="37vLTw" id="6nIQUR5zF8o" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6nIQUR5zF6u" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="6nIQUR5zFiT" role="2OqNvi">
+                        <node concept="chp4Y" id="6nIQUR5zFlV" role="cj9EA">
+                          <ref role="cht4Q" to="tpee:fzclF8n" resolve="IfStatement" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="6nIQUR5zF6u" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="2jxLKc" id="6nIQUR5zF6v" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6nIQUR5zDqH" role="3clFbx">
+          <node concept="2MkqsV" id="6nIQUR5zHsd" role="3cqZAp">
+            <node concept="Xl_RD" id="6nIQUR5zHsT" role="2MkJ7o">
+              <property role="Xl_RC" value="Return statements in if statements that are guarded by an xJsnark bit type are not supported." />
+            </node>
+            <node concept="1YBJjd" id="6nIQUR5zHsp" role="2OEOjV">
+              <ref role="1YBMHb" node="6nIQUR5zCWe" resolve="returnStatement" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eNFk2" id="6nIQUR6rJp0" role="3eNLev">
+          <node concept="2OqwBi" id="6nIQUR6rKzw" role="3eO9$A">
+            <node concept="2OqwBi" id="6nIQUR6rJAH" role="2Oq$k0">
+              <node concept="1YBJjd" id="6nIQUR6rJym" role="2Oq$k0">
+                <ref role="1YBMHb" node="6nIQUR5zCWe" resolve="returnStatement" />
+              </node>
+              <node concept="z$bX8" id="6nIQUR6rK2I" role="2OqNvi" />
+            </node>
+            <node concept="2HwmR7" id="6nIQUR6rLsT" role="2OqNvi">
+              <node concept="1bVj0M" id="6nIQUR6rLsV" role="23t8la">
+                <node concept="3clFbS" id="6nIQUR6rLsW" role="1bW5cS">
+                  <node concept="3clFbF" id="6nIQUR6rLux" role="3cqZAp">
+                    <node concept="2OqwBi" id="6nIQUR6rLxh" role="3clFbG">
+                      <node concept="37vLTw" id="6nIQUR6rLuw" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6nIQUR6rLsX" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="6nIQUR6rLDJ" role="2OqNvi">
+                        <node concept="chp4Y" id="6nIQUR6rLGL" role="cj9EA">
+                          <ref role="cht4Q" to="26c9:1bbdoCqDWd3" resolve="BoundedLoop" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="6nIQUR6rLsX" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="6nIQUR6rLsY" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="6nIQUR6rJp2" role="3eOfB_">
+            <node concept="2MkqsV" id="6nIQUR6rLKs" role="3cqZAp">
+              <node concept="Xl_RD" id="6nIQUR6rLKt" role="2MkJ7o">
+                <property role="Xl_RC" value="Return statements in bwhile blocks are not supported." />
+              </node>
+              <node concept="1YBJjd" id="6nIQUR6rLKu" role="2OEOjV">
+                <ref role="1YBMHb" node="6nIQUR5zCWe" resolve="returnStatement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6nIQUR5zCWe" role="1YuTPh">
+      <property role="TrG5h" value="returnStatement" />
+      <ref role="1YaFvo" to="tpee:fzcpWvY" resolve="ReturnStatement" />
+    </node>
+  </node>
 </model>
 
