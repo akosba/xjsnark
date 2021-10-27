@@ -14173,11 +14173,11 @@
     <property role="TrG5h" value="ExternalBlockMethodCalls" />
     <node concept="3clFbS" id="5QfAAs46N1V" role="18ibNy">
       <node concept="Dpp1Q" id="5QfAAs46N26" role="3cqZAp">
-        <node concept="Xl_RD" id="5QfAAs46N2F" role="Dpw9R">
-          <property role="Xl_RC" value="Any code or method calls from this block should not implement any circuit logic or create/assign variables of xJsnark types.\n Use the .val operator to control or read the values of existing variables." />
-        </node>
         <node concept="1YBJjd" id="5QfAAs46N2o" role="2OEOjV">
           <ref role="1YBMHb" node="5QfAAs46N1X" resolve="externalBlock" />
+        </node>
+        <node concept="Xl_RD" id="l8uOR_BWnK" role="Dpw9R">
+          <property role="Xl_RC" value="Any code or method calls from this block should not implement any circuit logic or create/change variables of xJsnark types through a direct assignment.\n Use the .val operator to assign values to existing input/witness variables and to read the values of existing variables. See example." />
         </node>
       </node>
     </node>
@@ -14192,7 +14192,7 @@
     <node concept="3clFbS" id="5QfAAs46Nat" role="18ibNy">
       <node concept="Dpp1Q" id="5QfAAs46Nau" role="3cqZAp">
         <node concept="Xl_RD" id="5QfAAs46Nav" role="Dpw9R">
-          <property role="Xl_RC" value="Any code or method calls from this block (both pre and post) should not implement any circuit logic or create/assign variables of xJsnark types.\n Use the .val operator to control or read the values of existing variables." />
+          <property role="Xl_RC" value="Any code or method calls from this block (both pre and post) should not implement any circuit logic or create/change variables of xJsnark types through a direct assignment.\n Use the .val operator to assign values to existing input/witness variables in the pre block, and to read the values of the output variables in the post block. See examples." />
         </node>
         <node concept="1YBJjd" id="5QfAAs46Naw" role="2OEOjV">
           <ref role="1YBMHb" node="5QfAAs46Nax" resolve="testBlock" />
