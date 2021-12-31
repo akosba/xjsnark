@@ -429,6 +429,11 @@
             <property role="3SKdUp" value="bwhile receives a runtime conditional, but also needs a bound." />
           </node>
         </node>
+        <node concept="3SKdUt" id="hNkMuwWGA6" role="3cqZAp">
+          <node concept="3SKdUq" id="hNkMuwWGA8" role="3SKWNk">
+            <property role="3SKdUp" value="This could be written in a simpler and more efficient way." />
+          </node>
+        </node>
         <node concept="8rfr9" id="7OFUa2xB5BG" role="3cqZAp">
           <node concept="2d3UOw" id="7OFUa2xB6WC" role="2$JKZa">
             <node concept="37vLTw" id="7OFUa2xB6Yz" role="3uHU7w">
@@ -601,24 +606,29 @@
               </node>
             </node>
           </node>
-          <node concept="10QFUN" id="7OFUa2xB9wK" role="8rdcG">
-            <node concept="10Oyi0" id="7OFUa2xB9_g" role="10QFUM" />
-            <node concept="2YIFZM" id="7OFUa2xB7cK" role="10QFUP">
-              <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-              <ref role="37wK5l" to="wyt6:~Math.ceil(double):double" resolve="ceil" />
-              <node concept="FJ1c_" id="7OFUa2xB7MV" role="37wK5m">
-                <node concept="2YIFZM" id="7OFUa2xB7Tf" role="3uHU7w">
-                  <ref role="37wK5l" to="wyt6:~Math.log(double):double" resolve="log" />
-                  <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-                  <node concept="3cmrfG" id="7OFUa2xB7WY" role="37wK5m">
-                    <property role="3cmrfH" value="2" />
+          <node concept="3cpWs3" id="17wBQ7CbuK" role="8rdcG">
+            <node concept="3cmrfG" id="17wBQ7Cb$m" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="10QFUN" id="7OFUa2xB9wK" role="3uHU7B">
+              <node concept="10Oyi0" id="7OFUa2xB9_g" role="10QFUM" />
+              <node concept="2YIFZM" id="7OFUa2xB7cK" role="10QFUP">
+                <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                <ref role="37wK5l" to="wyt6:~Math.ceil(double):double" resolve="ceil" />
+                <node concept="FJ1c_" id="7OFUa2xB7MV" role="37wK5m">
+                  <node concept="2YIFZM" id="7OFUa2xB7Tf" role="3uHU7w">
+                    <ref role="37wK5l" to="wyt6:~Math.log(double):double" resolve="log" />
+                    <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                    <node concept="3cmrfG" id="7OFUa2xB7WY" role="37wK5m">
+                      <property role="3cmrfH" value="2" />
+                    </node>
                   </node>
-                </node>
-                <node concept="2YIFZM" id="7OFUa2xB7jm" role="3uHU7B">
-                  <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-                  <ref role="37wK5l" to="wyt6:~Math.log(double):double" resolve="log" />
-                  <node concept="37vLTw" id="7OFUa2xB9eN" role="37wK5m">
-                    <ref role="3cqZAo" node="7OFUa2xB1LK" resolve="SIZE" />
+                  <node concept="2YIFZM" id="7OFUa2xB7jm" role="3uHU7B">
+                    <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                    <ref role="37wK5l" to="wyt6:~Math.log(double):double" resolve="log" />
+                    <node concept="37vLTw" id="7OFUa2xB9eN" role="37wK5m">
+                      <ref role="3cqZAo" node="7OFUa2xB1LK" resolve="SIZE" />
+                    </node>
                   </node>
                 </node>
               </node>
