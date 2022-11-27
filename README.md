@@ -24,8 +24,8 @@ This table includes a list of the examples that are currently available in the r
  
 ### Installation
 
-- Install MPS 3.3.5: https://confluence.jetbrains.com/display/MPS/Download+MPS+3.3.5
-(Consistency with future versions not guaranteed, so updating to higher versions might require some migration effort). With respect to the operating system, I think xjsnark should work on all the operating system versions in the above link (Both Ubuntu and Windows were tried). However, if running the output circuits on libsnark is desired, then any libsnark environment constraints will apply.
+- Install MPS 3.3.5: https://www.jetbrains.com/mps/download/previous.html. Consistency with other versions is not guaranteed, so using more recent versions of MPS might require some migration effort. 
+With respect to the operating system, I think xjsnark should work on all the provided versions of MPS 3.3.5 in the above link (Both Ubuntu and Windows were tried). However, if running the output circuits on libsnark is desired, then any libsnark environment constraints will apply.
 
 - Install Git: https://git-scm.com/downloads (if not installed already), then link the Git executable to the MPS framework: File->Settings->Version Control->Git -> Path to Git Executable
 
